@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Contact Us</title>
+<link rel="stylesheet" href="style.css">
+</head>
+
+<body class="auth-page">
+
+<div class="auth-container">
+  <div class="auth-card">
+
+    <h2>Contact Support</h2>
+
+    <form id="contactForm">
+      <input type="text" placeholder="Your Name" required>
+      <input type="email" placeholder="Your Email" required>
+
+      <textarea placeholder="Message" required
+      style="width:100%; padding:12px; border-radius:8px; margin-bottom:15px; background:#0b1018; color:white;"></textarea>
+
+      <button type="submit">Send Message</button>
+    </form>
+
+    <p id="contactMsg" style="margin-top:10px; color:#9ea7b3;"></p>
+
+    <a href="index.html" style="color:#d4af37; display:block; margin-top:15px;">
+      ← Back to Home
+    </a>
+
+  </div>
+</div>
+
+<!-- =========================
+     EMAILJS SDK (UPDATED)
+========================= -->
+<script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
+
+<script>
+  (function () {
+    emailjs.init("4x7TunwBjBhNSxbhu"); // YOUR PUBLIC KEY (FIXED)
+  })();
+</script>
+
+<!-- =========================
+     FORM HANDLER
+========================= -->
+<script>
+document.getElementById("contactForm").addEventListener("submit", function(e) {
+  e.preventDefault();
+
+  const msg = document.getElementById("contactMsg");
+  msg.innerText = "Sending...";
+
+  emailjs.send("service_dcymfve", "template_oyp0p6u", {
+    from_name: this[0].value,
+    from_email: this[1].value,
+    message: this[2].value
+  })
+  .then(() => {
+    msg.innerText = "Message sent successfully!";
+    this.reset();
+  })
+  .catch((error) => {
+    msg.innerText = "Failed to send message.";
+    console.log(error);
+  });
+});
+</script>
+
+</body>
+</html>

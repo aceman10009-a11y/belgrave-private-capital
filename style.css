@@ -1,0 +1,407 @@
+:root{
+  --gold:#d4af37;
+  --bg:#090b10;
+  --card:#121722;
+  --text:#ffffff;
+  --muted:#9ea7b3;
+}
+
+*{
+  margin:0;
+  padding:0;
+  box-sizing:border-box;
+}
+
+body{
+  font-family:'Inter',sans-serif;
+  background:var(--bg);
+  color:var(--text);
+  position:relative;
+  overflow-x:hidden;
+}
+
+/* =========================
+   WATERMARK LOGO (SAFE LAYER)
+========================= */
+body::before{
+  content:"";
+  position:fixed;
+  inset:0;
+  background:url('assets/logo.png') no-repeat center;
+  background-size:420px;
+  opacity:0.035;
+  pointer-events:none;
+  z-index:0;
+}
+
+/* ALL MAIN CONTENT ABOVE WATERMARK */
+.navbar,
+.hero,
+.stats,
+.services,
+.reviews,
+.footer,
+.auth-page{
+  position:relative;
+  z-index:1;
+}
+
+/* =========================
+   NAVBAR
+========================= */
+.navbar{
+  display:flex;
+  justify-content:space-between;
+  align-items:center;
+  padding:25px 80px;
+  border-bottom:1px solid rgba(255,255,255,.08);
+}
+
+.logo-container{
+  display:flex;
+  align-items:center;
+  gap:15px;
+}
+
+.logo{
+  height:55px;
+}
+
+.logo-container span{
+  font-weight:600;
+}
+
+nav{
+  display:flex;
+  gap:30px;
+}
+
+nav a{
+  color:white;
+  text-decoration:none;
+}
+
+.login-btn{
+  background:var(--gold);
+  border:none;
+  padding:12px 25px;
+  cursor:pointer;
+  font-weight:600;
+  border-radius:6px;
+}
+
+/* =========================
+   HERO (LANDING PAGE)
+========================= */
+.hero{
+  height:85vh;
+  display:flex;
+  align-items:center;
+  padding:0 100px;
+  background:
+    radial-gradient(circle at top left, rgba(212,175,55,.08), transparent 40%),
+    linear-gradient(rgba(0,0,0,.75), rgba(0,0,0,.85)),
+    url('assets/landingpage.jpeg');
+  background-size:cover;
+  background-position:center;
+}
+
+.hero-content{
+  max-width:700px;
+}
+
+.hero h1{
+  font-family:'Playfair Display',serif;
+  font-size:5rem;
+  margin-bottom:20px;
+}
+
+.hero p{
+  font-size:1.2rem;
+  line-height:1.8;
+  color:var(--muted);
+}
+
+.hero-buttons{
+  margin-top:40px;
+  display:flex;
+  gap:15px;
+}
+
+.hero-buttons button{
+  padding:15px 30px;
+  border:none;
+  cursor:pointer;
+  border-radius:6px;
+}
+
+.hero-buttons button:first-child{
+  background:var(--gold);
+}
+
+.secondary{
+  background:transparent;
+  border:1px solid white;
+  color:white;
+}
+
+/* =========================
+   STATS
+========================= */
+.stats{
+  display:grid;
+  grid-template-columns:repeat(4,1fr);
+  gap:25px;
+  padding:80px;
+}
+
+.stat-card{
+  background:var(--card);
+  padding:35px;
+  border-radius:15px;
+  text-align:center;
+}
+
+.stat-card h3{
+  font-size:2rem;
+  color:var(--gold);
+}
+
+/* =========================
+   SERVICES
+========================= */
+.services, .reviews{
+  padding:80px;
+}
+
+.section-sub{
+  color:var(--muted);
+  max-width:800px;
+  margin:10px auto 40px;
+  text-align:center;
+}
+
+.service-grid{
+  display:grid;
+  grid-template-columns:repeat(3,1fr);
+  gap:25px;
+}
+
+.service-card{
+  background:var(--card);
+  padding:25px;
+  border-radius:12px;
+  border:1px solid rgba(255,255,255,0.05);
+}
+
+.service-card h3{
+  color:var(--gold);
+  margin-bottom:10px;
+}
+
+/* =========================
+   REVIEWS
+========================= */
+.reviews h2{
+  text-align:center;
+  margin-bottom:40px;
+  font-size:2.5rem;
+}
+
+.review-grid{
+  display:grid;
+  grid-template-columns:repeat(3,1fr);
+  gap:30px;
+}
+
+.review-card{
+  background:var(--card);
+  padding:30px;
+  border-radius:15px;
+}
+
+.review-card h4{
+  margin-top:20px;
+  color:var(--gold);
+}
+
+/* =========================
+   FOOTER
+========================= */
+.footer{
+  padding:60px 80px;
+  border-top:1px solid rgba(255,255,255,.08);
+}
+
+.footer-grid{
+  display:grid;
+  grid-template-columns:2fr 1fr 1fr;
+  gap:40px;
+  margin-bottom:30px;
+}
+
+.footer h3, .footer h4{
+  color:var(--gold);
+  margin-bottom:10px;
+}
+
+.footer p{
+  color:var(--muted);
+  line-height:1.6;
+}
+
+.copyright{
+  text-align:center;
+  color:#666;
+}
+
+/* =========================
+   AUTH BASE (CRITICAL FIX)
+========================= */
+.auth-page{
+  display:flex;
+  justify-content:center;
+  align-items:center;
+  min-height:100vh;
+  position:relative;
+  overflow:hidden;
+}
+
+/* LOGIN PAGE */
+.auth-page.login{
+  background:
+    linear-gradient(rgba(8,12,18,.88), rgba(8,12,18,.96)),
+    url('assets/loginpage.jpeg');
+  background-size:cover;
+  background-position:center;
+  background-repeat:no-repeat;
+}
+
+/* SIGNUP PAGE */
+.auth-page.signup{
+  background:
+    linear-gradient(rgba(8,12,18,.88), rgba(8,12,18,.96)),
+    url('assets/signup.jpg');
+  background-size:cover;
+  background-position:center;
+  background-repeat:no-repeat;
+}
+
+/* =========================
+   AUTH CONTAINER (FIXED ALIGNMENT)
+========================= */
+.auth-container{
+  width:100%;
+  display:flex;
+  justify-content:center;
+  align-items:center;
+  padding:20px;
+  position:relative;
+  z-index:2;
+}
+
+/* =========================
+   AUTH CARD (SAFE STRUCTURE)
+========================= */
+.auth-card{
+  width:450px;
+  background:#121722;
+  padding:40px;
+  border-radius:18px;
+  box-shadow:0 20px 60px rgba(0,0,0,.4);
+  border:1px solid rgba(212,175,55,.2);
+  position:relative;
+  z-index:2;
+}
+
+/* =========================
+   AUTH LOGO (DO NOT REMOVE)
+========================= */
+.auth-logo{
+  text-align:center;
+  margin-bottom:30px;
+}
+
+.auth-logo h1{
+  font-size:28px;
+  color:var(--gold);
+  margin-bottom:5px;
+}
+
+.auth-logo p{
+  color:var(--muted);
+}
+
+/* =========================
+   INPUTS
+========================= */
+.auth-card h2{
+  text-align:center;
+  margin-bottom:20px;
+}
+
+.auth-card input{
+  width:100%;
+  padding:14px;
+  margin-bottom:15px;
+  border:none;
+  border-radius:8px;
+  background:#0b1018;
+  color:white;
+}
+
+.password-wrapper{
+  display:flex;
+  align-items:center;
+  background:#0b1018;
+  border-radius:8px;
+  margin-bottom:15px;
+}
+
+.password-wrapper input{
+  background:transparent;
+  margin:0;
+}
+
+.password-wrapper button{
+  background:none;
+  border:none;
+  color:var(--gold);
+  padding:0 15px;
+  cursor:pointer;
+  display:flex;
+  align-items:center;
+  justify-content:center;
+}
+
+/* =========================
+   BUTTONS
+========================= */
+.auth-card button{
+  width:100%;
+  padding:14px;
+  background:var(--gold);
+  border:none;
+  border-radius:8px;
+  font-weight:600;
+  cursor:pointer;
+  margin-top:10px;
+}
+
+/* =========================
+   LINKS
+========================= */
+.auth-link{
+  text-align:center;
+  margin:15px 0;
+  font-size:14px;
+}
+
+.auth-link a{
+  color:var(--gold);
+  text-decoration:none;
+}
+
+.auth-link a:hover{
+  text-decoration:underline;
+}
