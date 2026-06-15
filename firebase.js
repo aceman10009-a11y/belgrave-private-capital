@@ -19,9 +19,9 @@ import {
 
 const firebaseConfig = {
   apiKey: "AIzaSyBJB-Y_s1S4cCX-guX9NutQ_Y2MeWTuYgU",
-  authDomain: "belgrave-private-capital.firebaseapp.com",
-  projectId: "belgrave-private-capital",
-  storageBucket: "belgrave-private-capital.appspot.com",
+  authDomain: "belgrave-private-Bank.firebaseapp.com",
+  projectId: "belgrave-private-Bank",
+  storageBucket: "belgrave-private-Bank.appspot.com",
   messagingSenderId: "370723937976",
   appId: "1:370723937976:web:762b19f25e73deba815e4d"
 };

@@ -1,4 +1,4 @@
-console.log("Belgrave Private Capital Loaded");
+console.log("Belgrave Private BankLoaded");
 
 const loginBtn = document.querySelector(".login-btn");
 
