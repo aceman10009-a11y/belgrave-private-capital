@@ -4,7 +4,7 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Belgrave Private Capital</title>
-
+<link rel="icon" type="image/png" href="assets/favicon.png">
 <link rel="stylesheet" href="style.css">
 
 <!-- Fonts -->
@@ -16,6 +16,8 @@
 
 <body>
 
+
+<div class="main">
 <header class="navbar">
 
 <div class="logo-container">
@@ -36,31 +38,46 @@ Online Banking
 
 </header>
 
+
+
 <!-- HERO -->
 <section class="hero">
+  <div class="hero-content">
+    <h1>Private Banking For Global Wealth</h1>
 
-<div class="hero-content">
+    <p>
+      Preserving and growing wealth through personalized banking,
+      investment management, and family office services.
+    </p>
 
-<h1>Private Banking For Global Wealth</h1>
+    <div class="hero-buttons">
+      <a href="signup.html" class="btn">Become A Client</a>
+      <a href="#services" class="btn secondary">View Services</a>
+    </div>
+  </div>
+</section>
 
-<p>
-Preserving and growing wealth through personalized banking,
-investment management and family office services.
-</p>
+<!-- SERVICES (must be BELOW hero) -->
+<section id="services" class="features">
 
-<div class="hero-buttons">
-<button onclick="window.location.href='signup.html'">
-Become A Client
-</button>
+  <div class="card">
+    <h3>Private Account Management</h3>
+    <p>Dedicated savings and investment account structuring for long-term capital growth.</p>
+  </div>
 
-<button class="secondary">
-View Services
-</button>
-</div>
+  <div class="card">
+    <h3>Wealth Preservation Strategy</h3>
+    <p>Structured financial planning designed to preserve and grow generational wealth.</p>
+  </div>
 
-</div>
+  <div class="card">
+    <h3>Compliance-Aware Access</h3>
+    <p>Services may be subject to regional regulatory requirements.</p>
+  </div>
 
 </section>
+
+</body>
 
 <!-- STATS -->
 <section class="stats">
@@ -169,7 +186,7 @@ Trusted by global investors and family offices worldwide.
 <div class="review-card">
 <p>Highly responsive advisors and reporting.</p>
 <h4>Daniel Prescott</h4>
-</div>
+
 
 </div>
 
@@ -178,72 +195,69 @@ Trusted by global investors and family offices worldwide.
 <!-- FOOTER -->
 <footer class="footer">
 
-<div class="footer-grid">
+  <div class="footer-grid">
 
-<!-- BRAND -->
-<div>
-<h3>Belgrave Private Capital</h3>
-<p>
-A private wealth institution focused on long-term capital preservation and global investment access.
-</p>
-</div>
+    <!-- BRAND -->
+    <div>
+      <h3>Belgrave Private Capital</h3>
+      <p>
+        A private wealth institution focused on long-term capital preservation and global investment access.
+      </p>
+    </div>
 
-<!-- SERVICES -->
-<div>
-<h4>Services</h4>
-<p>Private Banking</p>
-<p>Wealth Management</p>
-<p>Investment Advisory</p>
-<p>Family Office</p>
-<p>Global Payments</p>
-</div>
+    <!-- SERVICES -->
+    <div>
+      <h4>Services</h4>
+      <p>Private Banking</p>
+      <p>Wealth Management</p>
+      <p>Investment Advisory</p>
+      <p>Family Office</p>
+      <p>Global Payments</p>
+    </div>
 
-<!-- CONTACT -->
-<section id="contact" style="padding:60px 80px;">
-  <h2>Contact Us</h2>
+    <!-- CONTACT INFO ONLY -->
+    <div>
+      <h4>Contact</h4>
 
-  <form id="contactForm">
-    <input type="text" placeholder="Your Name" required>
-    <input type="email" placeholder="Your Email" required>
-    <textarea placeholder="Message" required></textarea>
+      <p>
+        <i class="fa-solid fa-envelope"></i>
+        support@belgraveprivatecapital.com
+      </p>
 
-    <button type="submit">Send Message</button>
-  </form>
+      <p>
+        <i class="fa-brands fa-whatsapp"></i>
+        +45 71 33 43 57
+      </p>
 
-  <p id="contactMsg"></p>
-</section>
-<p>
-<i class="fa-solid fa-envelope"></i>
-support@belgraveprivatecapital.com
-</p>
+      <p>24/7 Private Desk</p>
+      <p>Relationship Managers</p>
+      <p>Secure Messaging</p>
+      <p>Client Support</p>
 
-<p>
-<a href="https://wa.me/4571334357" target="_blank">
-<i class="fa-brands fa-whatsapp"></i>
-+45 71 33 43 57
-</a>
-</p>
+    </div>
 
-<p>24/7 Private Desk</p>
-<p>Relationship Managers</p>
-<p>Secure Messaging</p>
-<p>Client Support</p>
+  </div> <!-- END GRID -->
 
-</div>
+  <!-- CONTACT FORM (SEPARATE FROM GRID) -->
+  <section id="contact" style="padding:60px 80px;">
+    <h2>Contact Us</h2>
 
-</div>
+    <form id="contactForm">
+      <input type="text" placeholder="Your Name" required>
+      <input type="email" placeholder="Your Email" required>
+      <textarea placeholder="Message" required></textarea>
+      <button type="submit">Send Message</button>
+    </form>
 
-<p class="copyright">
-© 2011–2026 Belgrave Private Capital | All Rights Reserved.
-</p>
-<section style="padding:60px 80px;">
-  <h2>Contact Us</h2>
-  <p class="section-sub">
-    24/7 Private Banking Support Available Worldwide
+    <p id="contactMsg"></p>
+  </section>
+
+  <p class="copyright">
+    © 2011–2026 Belgrave Private Capital | All Rights Reserved.
   </p>
-</section>
-</footer>
 
+</footer>
+</div> <!-- END MAIN -->
 <script src="script.js"></script>
 <div id="chatWidget" style="
 position:fixed;

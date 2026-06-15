@@ -3,6 +3,7 @@
 <head>
 <title>Contact Us</title>
 <link rel="stylesheet" href="style.css">
+<link rel="icon" type="image/png" href="assets/favicon.png">
 </head>
 
 <body class="auth-page">
@@ -13,13 +14,17 @@
     <h2>Contact Support</h2>
 
     <form id="contactForm">
-      <input type="text" placeholder="Your Name" required>
-      <input type="email" placeholder="Your Email" required>
+      <input id="name" type="text" placeholder="Your Name" required>
 
-      <textarea placeholder="Message" required
-      style="width:100%; padding:12px; border-radius:8px; margin-bottom:15px; background:#0b1018; color:white;"></textarea>
+<input id="email" type="email" placeholder="Your Email" required>
 
-      <button type="submit">Send Message</button>
+<textarea
+id="message"
+placeholder="Message"
+required
+style="width:100%; padding:12px; border-radius:8px; margin-bottom:15px; background:#0b1018; color:white;">
+</textarea>
+         <button type="submit">Send Message</button>
     </form>
 
     <p id="contactMsg" style="margin-top:10px; color:#9ea7b3;"></p>
@@ -65,7 +70,6 @@ document.getElementById("contactForm").addEventListener("submit", function(e) {
     msg.innerText = "Failed to send message.";
     console.log(error);
   });
-});
 </script>
 
 </body>

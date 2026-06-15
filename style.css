@@ -4,6 +4,12 @@
   --card:#121722;
   --text:#ffffff;
   --muted:#9ea7b3;
+
+  --space-xs: 8px;
+  --space-sm: 16px;
+  --space-md: 32px;
+  --space-lg: 64px;
+  --space-xl: 96px;
 }
 
 *{
@@ -23,17 +29,21 @@ body{
 /* =========================
    WATERMARK LOGO (SAFE LAYER)
 ========================= */
-body::before{
-  content:"";
-  position:fixed;
-  inset:0;
-  background:url('assets/logo.png') no-repeat center;
-  background-size:420px;
-  opacity:0.035;
-  pointer-events:none;
-  z-index:0;
+body {
+  position: relative;
+  z-index: 1;
 }
 
+body::before {
+  content: "";
+  position: fixed;
+  inset: 0;
+  background: url('assets/logo.png') no-repeat center;
+  background-size: 420px;
+  opacity: 0.035;
+  pointer-events: none;
+  z-index: 0;
+}
 /* ALL MAIN CONTENT ABOVE WATERMARK */
 .navbar,
 .hero,
@@ -56,7 +66,18 @@ body::before{
   padding:25px 80px;
   border-bottom:1px solid rgba(255,255,255,.08);
 }
+@media (max-width: 768px){
+  .navbar{
+    flex-direction:column;
+    gap:15px;
+    padding:20px;
+  }
 
+  nav{
+    flex-wrap:wrap;
+    justify-content:center;
+  }
+}
 .logo-container{
   display:flex;
   align-items:center;
@@ -97,7 +118,7 @@ nav a{
   height:85vh;
   display:flex;
   align-items:center;
-  padding:0 100px;
+  padding:0 var(--space-xl);
   background:
     radial-gradient(circle at top left, rgba(212,175,55,.08), transparent 40%),
     linear-gradient(rgba(0,0,0,.75), rgba(0,0,0,.85)),
@@ -105,18 +126,21 @@ nav a{
   background-size:cover;
   background-position:center;
 }
-
 .hero-content{
   max-width:700px;
 }
 
-.hero h1{
-  font-family:'Playfair Display',serif;
-  font-size:5rem;
-  margin-bottom:20px;
+.hero-content h1{
+  font-size:4.2rem;
+  line-height:1.1;
+  letter-spacing:-1px;
+}
+.hero-content p{
+  font-size:1.1rem;
+  opacity:0.85;
 }
 
-.hero p{
+.hero-content p{
   font-size:1.2rem;
   line-height:1.8;
   color:var(--muted);
@@ -128,18 +152,13 @@ nav a{
   gap:15px;
 }
 
-.hero-buttons button{
+/* IMPORTANT FIX: you use <a class="btn"> not buttons */
+.hero-buttons .btn{
   padding:15px 30px;
-  border:none;
-  cursor:pointer;
   border-radius:6px;
+  display:inline-block;
 }
-
-.hero-buttons button:first-child{
-  background:var(--gold);
-}
-
-.secondary{
+.btn.secondary{
   background:transparent;
   border:1px solid white;
   color:white;
@@ -152,53 +171,45 @@ nav a{
   display:grid;
   grid-template-columns:repeat(4,1fr);
   gap:25px;
-  padding:80px;
+  padding: var(--space-xl);
 }
-
 .stat-card{
   background:var(--card);
   padding:35px;
   border-radius:15px;
   text-align:center;
 }
-
 .stat-card h3{
   font-size:2rem;
   color:var(--gold);
 }
-
 /* =========================
    SERVICES
 ========================= */
 .services, .reviews{
-  padding:80px;
+  padding: var(--space-xl);
 }
-
 .section-sub{
   color:var(--muted);
   max-width:800px;
   margin:10px auto 40px;
   text-align:center;
 }
-
 .service-grid{
   display:grid;
   grid-template-columns:repeat(3,1fr);
   gap:25px;
 }
-
 .service-card{
   background:var(--card);
   padding:25px;
   border-radius:12px;
   border:1px solid rgba(255,255,255,0.05);
 }
-
 .service-card h3{
   color:var(--gold);
   margin-bottom:10px;
 }
-
 /* =========================
    REVIEWS
 ========================= */
@@ -207,54 +218,54 @@ nav a{
   margin-bottom:40px;
   font-size:2.5rem;
 }
-
 .review-grid{
   display:grid;
   grid-template-columns:repeat(3,1fr);
   gap:30px;
 }
-
 .review-card{
   background:var(--card);
   padding:30px;
   border-radius:15px;
 }
-
 .review-card h4{
   margin-top:20px;
   color:var(--gold);
 }
-
 /* =========================
    FOOTER
 ========================= */
 .footer{
-  padding:60px 80px;
+  padding:var(--space-xl);
   border-top:1px solid rgba(255,255,255,.08);
 }
-
 .footer-grid{
   display:grid;
   grid-template-columns:2fr 1fr 1fr;
   gap:40px;
   margin-bottom:30px;
 }
-
 .footer h3, .footer h4{
   color:var(--gold);
   margin-bottom:10px;
 }
-
 .footer p{
   color:var(--muted);
   line-height:1.6;
+}
+.footer p{
+  margin:6px 0;
+}
+.footer p:hover{
+  color: var(--gold);
+  cursor: pointer;
+  transition: 0.3s;
 }
 
 .copyright{
   text-align:center;
   color:#666;
 }
-
 /* =========================
    AUTH BASE (CRITICAL FIX)
 ========================= */
@@ -266,7 +277,6 @@ nav a{
   position:relative;
   overflow:hidden;
 }
-
 /* LOGIN PAGE */
 .auth-page.login{
   background:
@@ -276,7 +286,6 @@ nav a{
   background-position:center;
   background-repeat:no-repeat;
 }
-
 /* SIGNUP PAGE */
 .auth-page.signup{
   background:
@@ -286,7 +295,6 @@ nav a{
   background-position:center;
   background-repeat:no-repeat;
 }
-
 /* =========================
    AUTH CONTAINER (FIXED ALIGNMENT)
 ========================= */
@@ -299,7 +307,6 @@ nav a{
   position:relative;
   z-index:2;
 }
-
 /* =========================
    AUTH CARD (SAFE STRUCTURE)
 ========================= */
@@ -327,11 +334,9 @@ nav a{
   color:var(--gold);
   margin-bottom:5px;
 }
-
 .auth-logo p{
   color:var(--muted);
 }
-
 /* =========================
    INPUTS
 ========================= */
@@ -339,7 +344,6 @@ nav a{
   text-align:center;
   margin-bottom:20px;
 }
-
 .auth-card input{
   width:100%;
   padding:14px;
@@ -349,7 +353,6 @@ nav a{
   background:#0b1018;
   color:white;
 }
-
 .password-wrapper{
   display:flex;
   align-items:center;
@@ -357,12 +360,10 @@ nav a{
   border-radius:8px;
   margin-bottom:15px;
 }
-
 .password-wrapper input{
   background:transparent;
   margin:0;
 }
-
 .password-wrapper button{
   background:none;
   border:none;
@@ -373,7 +374,6 @@ nav a{
   align-items:center;
   justify-content:center;
 }
-
 /* =========================
    BUTTONS
 ========================= */
@@ -387,7 +387,6 @@ nav a{
   cursor:pointer;
   margin-top:10px;
 }
-
 /* =========================
    LINKS
 ========================= */
@@ -396,12 +395,80 @@ nav a{
   margin:15px 0;
   font-size:14px;
 }
-
 .auth-link a{
   color:var(--gold);
   text-decoration:none;
 }
-
 .auth-link a:hover{
   text-decoration:underline;
+}
+.btn {
+  padding: 12px 22px;
+  background: #d4af37;
+  color: #0b0f14;
+  text-decoration: none;
+  margin: 5px;
+  border-radius: 6px;
+  font-weight: 600;
+  display: inline-block;
+}
+
+.btn.secondary {
+  background: transparent;
+  border: 1px solid #d4af37;
+  color: #d4af37;
+}
+.features {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 25px;
+  padding: var(--space-xl);
+}
+.card {
+  transition: 0.3s ease;
+}
+.card:hover {
+  transform: translateY(-5px);
+  border: 1px solid #d4af37;
+}
+@media (max-width: 768px){
+  .hero{
+    padding: 40px 20px;
+    text-align:center;
+    flex-direction:column;
+    height:auto;
+  }
+
+  .hero h1{
+    font-size:2.5rem;
+  }
+
+  .stats{
+    grid-template-columns:1fr;
+  }
+
+  .service-grid{
+    grid-template-columns:1fr;
+  }
+
+  .footer-grid{
+    grid-template-columns:1fr;
+  }
+}
+*{
+  transition: all 0.25s ease;
+}
+.card,
+.service-card,
+.stat-card,
+.review-card{
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+.service-card:hover,
+.stat-card:hover,
+.review-card:hover,
+.card:hover{
+  transform: translateY(-6px);
+  box-shadow: 0 20px 40px rgba(0,0,0,0.35);
+  border-color: rgba(212,175,55,0.4);
 }
