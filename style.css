@@ -26,6 +26,11 @@ body{
   overflow-x:hidden;
 }
 
+.main{
+  position:relative;
+  z-index:1;
+}
+
 /* =========================
    WATERMARK LOGO (SAFE LAYER)
 ========================= */
@@ -498,4 +503,21 @@ nav a:hover{
   transform: translateY(-6px);
   box-shadow: 0 20px 40px rgba(0,0,0,0.35);
   border-color: rgba(212,175,55,0.4);
+}
+#activityPanel {
+  position: fixed;
+  left: 20px;
+  bottom: 20px;
+  width: 280px;
+  background: #121722;
+  border: 1px solid #d4af37;
+  border-radius: 10px;
+  padding: 10px;
+  color: white;
+  font-size: 12px;
+  z-index: 9999;
+}
+#statementPopup,
+#transferPopup {
+  display: none;
 }

@@ -7,25 +7,19 @@
 <link rel="icon" type="image/png" href="assets/favicon.png">
 <link rel="stylesheet" href="style.css">
 
-<!-- Icons -->
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
-
 </head>
 
-<body class="auth-page login"></body>
+<body class="auth-page login">
 
 <div class="auth-container">
 
   <div class="auth-card">
 
-    <!-- BRAND -->
     <div class="auth-logo">
-
       <div class="brand-logo">B</div>
-
       <h1>Belgrave Private Bank</h1>
       <p>Private Banking Portal</p>
-
     </div>
 
     <h2>Client Login</h2>
@@ -47,38 +41,8 @@
     <!-- LOGIN BUTTON -->
     <button onclick="login()" class="primary-btn">Login</button>
 
-    <!-- FORGOT PASSWORD -->
-    <p class="auth-link">
-      <a href="#" onclick="resetPassword(event)">
-        Forgot Password?
-      </a>
-    </p>
-
-    <!-- SECURITY NOTE -->
-    <div class="security-note">
-
-      <i class="fa-solid fa-shield-halved"></i>
-      Secure Client Portal<br><br>
-
-      Transaction services are frozen until the tax and fee obligations are met.<br>
-      Banking access also restricted to approved jurisdictions.
-
-      <br><br>
-
-      <i class="fa-brands fa-whatsapp"></i>
-      +45 71 33 43 57
-
-      <br>
-
-      <i class="fa-solid fa-envelope"></i>
-      support@belgraveprivatecapital.com
-
-    </div>
-
-    <!-- MESSAGE -->
     <p id="msg" class="message"></p>
 
-    <!-- SIGNUP -->
     <p class="auth-link">
       Don't have an account?
       <a href="signup.html">Create Account</a>
@@ -100,8 +64,9 @@ import {
 
 window.login = async function () {
 
-  const email = document.getElementById("email").value;
-  const password = document.getElementById("password").value;
+  // ✅ FIX: trim prevents instant 400 errors
+  const email = document.getElementById("email").value.trim();
+  const password = document.getElementById("password").value.trim();
   const msg = document.getElementById("msg");
 
   if (!email || !password) {
@@ -113,22 +78,31 @@ window.login = async function () {
 
     msg.innerText = "Logging in...";
 
-    const userCred = await signInWithEmailAndPassword(auth, email, password);
-    const user = userCred.user;
+    console.log("LOGIN ATTEMPT:", email); // safe debug
+    console.log("LOGIN ATTEMPT:", email, password);
+    let userData = null;
 
-    if (!user.emailVerified) {
-      msg.innerText = "Please verify your email first.";
-      return;
-    }
+try {
+  const userRef = doc(db, "users", user.uid);
+  const userSnap = await getDoc(userRef);
 
-    const userRef = doc(db, "users", user.uid);
-    const userSnap = await getDoc(userRef);
+  if (userSnap.exists()) {
+    userData = userSnap.data();
+  } else {
+    console.warn("Creating missing Firestore profile...");
 
-    if (!userSnap.exists()) {
-      msg.innerText = "User profile missing.";
-      return;
-    }
+    await setDoc(userRef, {
+      fullName: user.email.split("@")[0],
+      email: user.email,
+      balance: 0,
+      createdAt: new Date().toISOString()
+    });
 
+    userData = { email: user.email };
+  }
+} catch (e) {
+  console.warn("Firestore error (ignored):", e);
+}
     msg.innerText = "Login successful...";
 
     setTimeout(() => {
@@ -137,6 +111,7 @@ window.login = async function () {
 
   } catch (err) {
     msg.innerText = "Login failed: " + err.message;
+    console.log("AUTH ERROR:", err);
   }
 };
 

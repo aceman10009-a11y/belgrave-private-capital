@@ -14,14 +14,16 @@ import {
   sendEmailVerification,
   sendPasswordResetEmail,
   onAuthStateChanged,
-  signOut
+  signOut,
+  setPersistence,
+  browserLocalPersistence
 } from "https://www.gstatic.com/firebasejs/12.14.0/firebase-auth.js";
 
 const firebaseConfig = {
   apiKey: "AIzaSyBJB-Y_s1S4cCX-guX9NutQ_Y2MeWTuYgU",
-  authDomain: "belgrave-private-Bank.firebaseapp.com",
-  projectId: "belgrave-private-Bank",
-  storageBucket: "belgrave-private-Bank.appspot.com",
+  authDomain: "belgrave-private-bank.firebaseapp.com",
+  projectId: "belgrave-private-bank",
+  storageBucket: "belgrave-private-bank.appspot.com",
   messagingSenderId: "370723937976",
   appId: "1:370723937976:web:762b19f25e73deba815e4d"
 };
@@ -30,7 +32,8 @@ const firebaseConfig = {
 const app = initializeApp(firebaseConfig);
 const auth = getAuth(app);
 const db = getFirestore(app);
-
+setPersistence(auth, browserLocalPersistence)
+  .catch((err) => console.warn("Persistence error:", err));
 // Export everything needed
 export {
   auth,

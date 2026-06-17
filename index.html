@@ -4,6 +4,7 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Belgrave Private Bank</title>
+
 <link rel="icon" type="image/png" href="assets/favicon.png">
 <link rel="stylesheet" href="style.css">
 
@@ -16,29 +17,26 @@
 
 <body>
 
-
 <div class="main">
+
+<!-- NAVBAR -->
 <header class="navbar">
+  <div class="logo-container">
+    <img src="assets/logo.png" alt="Belgrave Logo" class="logo">
+    <span>Belgrave Private Bank</span>
+  </div>
 
-<div class="logo-container">
-<img src="assets/logo.png" alt="Belgrave Logo" class="logo">
-<span>Belgrave Private Bank</span>
-</div>
+  <nav>
+    <a href="index.html">Home</a>
+    <a href="signup.html">Private Banking</a>
+    <a href="signup.html">Wealth Management</a>
+    <a href="contact.html">Contact</a>
+  </nav>
 
-<nav>
-<a href="index.html">Home</a>
-<a href="signup.html">Private Banking</a>
-<a href="signup.html">Wealth Management</a>
-<a href="contact.html">Contact</a>
-</nav>
-
-<button class="login-btn" onclick="window.location.href='login.html'">
-Online Banking
-</button>
-
+  <button class="login-btn" onclick="window.location.href='login.html'">
+    Online Banking
+  </button>
 </header>
-
-
 
 <!-- HERO -->
 <section class="hero">
@@ -57,7 +55,7 @@ Online Banking
   </div>
 </section>
 
-<!-- SERVICES (must be BELOW hero) -->
+<!-- SERVICES -->
 <section id="services" class="features">
 
   <div class="card">
@@ -76,8 +74,6 @@ Online Banking
   </div>
 
 </section>
-
-</body>
 
 <!-- STATS -->
 <section class="stats">
@@ -104,8 +100,7 @@ Online Banking
 
 </section>
 
-<!-- SERVICES -->
-<section class="services"></section>
+<!-- SERVICES SECTION -->
 <section class="services">
   <h2>Investment Solutions</h2>
   <p class="section-sub">
@@ -113,6 +108,7 @@ Online Banking
   </p>
 </section>
 
+<!-- WEALTH -->
 <section class="reviews">
   <h2>Wealth Management</h2>
   <p class="section-sub">
@@ -160,8 +156,6 @@ A comprehensive suite of wealth management and financial services designed for h
 
 </div>
 
-</section>
-
 <!-- TESTIMONIALS -->
 <section class="reviews">
 
@@ -186,109 +180,67 @@ Trusted by global investors and family offices worldwide.
 <div class="review-card">
 <p>Highly responsive advisors and reporting.</p>
 <h4>Daniel Prescott</h4>
-
-
 </div>
 
+</div>
 </section>
 
 <!-- FOOTER -->
 <footer class="footer">
 
-  <div class="footer-grid">
+<div class="footer-grid">
 
-    <!-- BRAND -->
-    <div>
-      <h3>Belgrave Private Bank</h3>
-      <p>
-        A private wealth institution focused on long-term capital preservation and global investment access.
-      </p>
-    </div>
+<div>
+<h3>Belgrave Private Bank</h3>
+<p>A private wealth institution focused on long-term capital preservation and global investment access.</p>
+</div>
 
-    <!-- SERVICES -->
-    <div>
-      <h4>Services</h4>
-      <p>Private Banking</p>
-      <p>Wealth Management</p>
-      <p>Investment Advisory</p>
-      <p>Family Office</p>
-      <p>Global Payments</p>
-    </div>
+<div>
+<h4>Services</h4>
+<p>Private Banking</p>
+<p>Wealth Management</p>
+<p>Investment Advisory</p>
+<p>Family Office</p>
+<p>Global Payments</p>
+</div>
 
-    <!-- CONTACT INFO ONLY -->
-    <div>
-      <h4>Contact</h4>
+<div>
+<h4>Contact</h4>
 
-      <p>
-        <i class="fa-solid fa-envelope"></i>
-        support@belgraveprivatecapital.com
-      </p>
+<p><i class="fa-solid fa-envelope"></i> support@belgraveprivatecapital.com</p>
+<p><i class="fa-brands fa-whatsapp"></i> +45 71 33 43 57</p>
 
-      <p>
-        <i class="fa-brands fa-whatsapp"></i>
-        +45 71 33 43 57
-      </p>
+</div>
 
-      <p>24/7 Private Desk</p>
-      <p>Relationship Managers</p>
-      <p>Secure Messaging</p>
-      <p>Client Support</p>
+</div>
 
-    </div>
-
-  </div> <!-- END GRID -->
-
-  <!-- CONTACT FORM (SEPARATE FROM GRID) -->
-  <section id="contact" style="padding:60px 80px;">
-    <h2>Contact Us</h2>
-
-    <form id="contactForm">
-      <input type="text" placeholder="Your Name" required>
-      <input type="email" placeholder="Your Email" required>
-      <textarea placeholder="Message" required></textarea>
-      <button type="submit">Send Message</button>
-    </form>
-
-    <p id="contactMsg"></p>
-  </section>
-
-  <p class="copyright">
-    © 2011–2026 Belgrave Private Bank | All Rights Reserved.
-  </p>
+<p class="copyright">
+© 2011–2026 Belgrave Private Bank | All Rights Reserved.
+</p>
 
 </footer>
-</div> <!-- END MAIN -->
+
+</div>
+
+<!-- ONLY ONE SCRIPT -->
 <script src="script.js"></script>
-<div id="chatWidget" style="
-position:fixed;
-bottom:20px;
-right:20px;
-width:300px;
-background:#121722;
-border:1px solid #d4af37;
-border-radius:10px;
-display:none;
-">
 
-<div style="padding:10px; font-weight:bold;">
-Live Support
-</div>
+<!-- CHATWOOT (ONLY CHAT SYSTEM) -->
+<script>
+(function(d,t) {
+  var BASE_URL="https://app.chatwoot.com";
+  var g=d.createElement(t),s=d.getElementsByTagName(t)[0];
+  g.src=BASE_URL+"/packs/js/sdk.js";
+  g.async = true;
+  s.parentNode.insertBefore(g,s);
+  g.onload=function(){
+    window.chatwootSDK.run({
+      websiteToken: 'R56yu5wbqHqADuUC8hKGc6Uy',
+      baseUrl: BASE_URL
+    })
+  }
+})(document,"script");
+</script>
 
-<div id="chatMessages" style="height:200px; overflow:auto; padding:10px;"></div>
-
-<input id="chatInput" placeholder="Type message..." style="width:100%; padding:10px;">
-</div>
-
-<button onclick="toggleChat()" style="
-position:fixed;
-bottom:20px;
-right:20px;
-background:#d4af37;
-border:none;
-padding:10px 15px;
-cursor:pointer;
-">
-Chat
-</button>
 </body>
 </html>
