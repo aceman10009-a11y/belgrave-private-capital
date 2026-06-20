@@ -28,13 +28,39 @@ const firebaseConfig = {
   appId: "1:370723937976:web:762b19f25e73deba815e4d"
 };
 
-// Initialize Firebase
+// =====================
+// INIT APP (ONLY ONCE)
+// =====================
 const app = initializeApp(firebaseConfig);
+
 const auth = getAuth(app);
 const db = getFirestore(app);
+
+// =====================
+// AUTH PERSISTENCE
+// =====================
 setPersistence(auth, browserLocalPersistence)
   .catch((err) => console.warn("Persistence error:", err));
-// Export everything needed
+
+// =====================
+// AUTH STATE (NO UI LOGIC HERE)
+// =====================
+onAuthStateChanged(auth, (user) => {
+  if (!user) {
+    window.location.href = "login.html";
+    return;
+  }
+
+  console.log("AUTH READY:", user.uid);
+
+  // ❌ DO NOT TOUCH UI HERE
+  // ❌ NO welcome text, no DOM manipulation
+  // script.js handles all UI rendering
+});
+
+// =====================
+// EXPORTS
+// =====================
 export {
   auth,
   db,

@@ -6,45 +6,53 @@
 <title>Belgrave Private Bank | Dashboard</title>
 
 <link rel="stylesheet" href="style.css">
-
 <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600;700&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
 <link rel="icon" type="image/png" href="assets/favicon.png">
-
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-XXXXXXXXXX"></script>
-<script>
-window.dataLayer = window.dataLayer || [];
-function gtag(){dataLayer.push(arguments);}
-gtag('js', new Date());
-gtag('config', 'G-XXXXXXXXXX');
-</script>
-
 </head>
+
 <body>
 
-<!-- AUTH CHECK -->
+<!-- AUTH -->
 <script type="module">
-import { auth, onAuthStateChanged } from "./firebase.js";
+import { auth, onAuthStateChanged, db, doc, getDoc } from "./firebase.js";
 
-let authReady = false;
+onAuthStateChanged(auth, async (user) => {
 
-onAuthStateChanged(auth, (user) => {
+  const welcome = document.getElementById("welcomeUser");
 
-  console.log("AUTH STATE:", user);
+  // Always ensure UI exists first
+  if (!welcome) return;
 
-  if (!authReady) {
-    authReady = true;
-    return;
-  }
-
+  // No user → redirect
   if (!user) {
     window.location.href = "login.html";
     return;
   }
 
-  console.log("Logged in as:", user.email);
+  // DEFAULT (FIREBASE NEVER CONTROLS CORE UI)
+  welcome.innerText = "Welcome back, Fred";
 
-  if (!user.emailVerified) {
-    console.warn("Email not verified yet");
+  try {
+    const ref = doc(db, "users", user.uid);
+    const snap = await getDoc(ref);
+
+    if (snap.exists()) {
+      const data = snap.data();
+
+      const name =
+        data.fullName?.split(" ")[0] ||
+        data.firstName ||
+        null;
+
+      if (name) {
+        welcome.innerText = `Welcome back, ${name}`;
+      }
+    } else {
+      console.log("No user profile found (using fallback name)");
+    }
+
+  } catch (e) {
+    console.warn("Firestore ignored (non-critical):", e.message);
   }
 });
 </script>
@@ -56,72 +64,32 @@ onAuthStateChanged(auth, (user) => {
   </div>
 
   <nav>
-    <a href="index.html">Home</a>
-    <a href="#">Accounts</a>
-    <a href="#">Investments</a>
-    <a href="#">Statements</a>
+    <a href="#" onclick="confirmHome()">Home</a>
+    <a href="#" onclick="openAccounts()">Accounts</a>
+    <a href="#" onclick="openInvestments()">Investments</a>
+    <a href="#" onclick="openStatement()">Statements</a>
+    <a href="#" onclick="toggleTransactions()">Transactions</a>
+    <a href="#" onclick="openCards()">Cards</a>
   </nav>
 
-  <button class="login-btn" onclick="transferAttempt()">
+  <button onclick="transferAttempt()" class="login-btn">
     Transfer Funds
   </button>
 </header>
 
 <section class="account-header">
-  <div class="account-info">
-    <h1>Private Wealth Overview</h1>
-    <p>Welcome back, Premium Client</p>
-  </div>
-
-  <div class="account-meta">
-    <div>
-      <span>Client Tier</span>
-      <strong>Private Banking</strong>
-    </div>
-
-    <div>
-      <span>Account Status</span>
-      <strong>Active</strong>
-    </div>
-
-    <div>
-      <span>Relationship Manager</span>
-      <strong>Assigned</strong>
-    </div>
-  </div>
+  <h1>Private Wealth Overview</h1>
+  <p id="welcomeUser">Loading...</p>
 </section>
 
 <section class="stats">
-  <div class="stat-card">
-    <h3>$148.7M</h3>
-    <p>Total Assets</p>
-  </div>
-
-  <div class="stat-card">
-    <h3>$24.3M</h3>
-    <p>Cash Balance</p>
-  </div>
-
-  <div class="stat-card">
-    <h3>$124.4M</h3>
-    <p>Investment Portfolio</p>
-  </div>
-
-  <div class="stat-card">
-    <h3>+12.4%</h3>
-    <p>Annual Return</p>
-  </div>
+  <div class="stat-card"><h3 id="balance">$0</h3><p>Cash Balance</p></div>
+  <div class="stat-card"><h3 id="totalIncome">$0</h3><p>Total Income</p></div>
+  <div class="stat-card"><h3 id="totalExpenses">$0</h3><p>Total Expenses</p></div>
 </section>
 
-<!-- ✅ FIXED BUTTONS -->
-<section class="actions" style="padding:40px 80px;">
-  <button class="login-btn" onclick="transferAttempt()">New Transfer</button>
-  <button class="secondary" onclick="openStatement()">Download Statement</button>
-  <button class="secondary" onclick="messageAdvisor()">Message Advisor</button>
-</section>
-
-<section class="transactions" style="padding:40px 80px;">
-  <h2 style="margin-bottom:20px;">Transaction History</h2>
+<section class="transactions">
+  <h2>Transaction History</h2>
 
   <table>
     <thead>
@@ -136,89 +104,55 @@ onAuthStateChanged(auth, (user) => {
     <tbody id="transactionTable"></tbody>
   </table>
 </section>
+<section class="transactions">
+  ...
+</section>
 
-<div id="transferPopup" class="popup">
+<!-- ✅ PUT CARDS HERE -->
+<section id="cardsSection" style="display:none; padding:40px 80px;">
+  <h2>Your Cards</h2>
+
+  <div class="card-grid">
+    <div class="card">
+      <h3>Visa Platinum</h3>
+      <p>Status: Active-works only in USA</p>
+    </div>
+
+    <div class="card">
+      <h3>Mastercard Black</h3>
+      <p>Status: Restricted-works anywhere depending on status</p>
+    </div>
+  </div>
+</section>
+
+<!-- POPUPS -->
+<div id="transferPopup" class="popup" style="display:none;">
   <h3>Transfer Restricted</h3>
-  <p>
-    Cross-border transfers are currently unavailable in this environment.<br><br>
-    Reason: Compliance verification pending (KYC/AML review)
-  </p>
+  <p>Transfers are currently restricted under compliance rules.</p>
   <button onclick="closePopup()">Close</button>
 </div>
 
-<!-- ✅ STATEMENT POPUP (UNCHANGED STRUCTURE) -->
-<div id="statementPopup" class="popup">
+<div id="statementPopup" class="popup" style="display:none;">
   <h3>Download Statement</h3>
 
-  <label>From:</label>
   <input type="date" id="fromDate">
-
-  <label>To:</label>
   <input type="date" id="toDate">
 
   <button onclick="downloadStatement()">Download</button>
   <button onclick="closeStatement()">Close</button>
 </div>
 
-<div id="activityPanel" style="
-position:fixed;
-left:20px;
-bottom:20px;
-width:280px;
-background:#121722;
-border:1px solid #d4af37;
-border-radius:10px;
-padding:10px;
-color:white;
-font-size:12px;
-z-index:9999;
-">
+<!-- SINGLE CLEAN ACTIVITY PANEL -->
+<div id="activityPanel" class="activity-panel collapsed">
+  <div class="activity-header" onclick="toggleActivityPanel()">
+    <h4>System Activity</h4>
+    <span id="activityToggle">▲</span>
+  </div>
 
-<h4 style="margin:0 0 10px 0;">System Activity</h4>
-<div id="activityLog"></div>
-
+  <div id="activityLog" class="activity-log"></div>
 </div>
 
 <script src="script.js"></script>
 
 </body>
-
-<script>
-(function(d,t) {
-  var BASE_URL="https://app.chatwoot.com";
-  var g=d.createElement(t),s=d.getElementsByTagName(t)[0];
-  g.src=BASE_URL+"/packs/js/sdk.js";
-  g.async = true;
-  s.parentNode.insertBefore(g,s);
-  g.onload=function(){
-    window.chatwootSDK.run({
-      websiteToken: 'R56yu5wbqHqADuUC8hKGc6Uy',
-      baseUrl: BASE_URL
-    })
-  }
-})(document,"script");
-</script>
-
-<script>
-window.addEventListener("load", () => {
-  const box = document.getElementById("activityLog");
-
-  if (box) {
-    box.innerHTML = "";
-
-    const messages = [
-      "System initialized",
-      "Secure session active",
-      "Dashboard ready"
-    ];
-
-    messages.forEach(msg => {
-      const div = document.createElement("div");
-      div.textContent = "• " + msg;
-      box.appendChild(div);
-    });
-  }
-});
-</script>
-
 </html>

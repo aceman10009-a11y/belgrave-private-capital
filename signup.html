@@ -70,7 +70,8 @@ window.signup = async function () {
     return;
   }
 
-  let profileTimeout; // 🔥 scoped so we can always clear it
+  let user = null;
+  let profileTimeout;
 
   try {
 
@@ -78,37 +79,46 @@ window.signup = async function () {
 
     // 1. CREATE AUTH USER
     const userCred = await createUserWithEmailAndPassword(auth, email, password);
-    const user = userCred.user;
+    user = userCred.user;
 
     console.log("Auth user created:", user.uid);
 
-    // 2. CREATE FIRESTORE PROFILE
-    msg.innerText = "Setting up profile...";
-
+    // 2. SAFETY TIMEOUT (prevents stuck state)
     profileTimeout = setTimeout(() => {
-      msg.innerText = "Taking too long... redirecting to login.";
+      msg.innerText = "Profile setup delayed... retrying safe redirect.";
       window.location.href = "login.html";
-    }, 5000);
+    }, 8000);
 
-    console.log("BEFORE FIRESTORE");
+    msg.innerText = "Setting up secure profile...";
 
-    await setDoc(doc(db, "users", user.uid), {
-      fullName,
+    // 3. ENSURE PROFILE ALWAYS EXISTS (FORCE SAFE WRITE)
+    const userRef = doc(db, "users", user.uid);
+
+    await setDoc(userRef, {
+      fullName: fullName,
       firstName: fullName.split(" ")[0],
       lastName: fullName.split(" ").slice(1).join(" ") || "",
-      email,
-      balance: 0,
-      createdAt: new Date().toISOString()
-    });
+      email: email,
 
-    console.log("AFTER FIRESTORE");
+      // 🔥 CRITICAL FIX: enforce numeric + default values
+      balance: 0,
+      cashBalance: 0,
+      investmentBalance: 0,
+      totalAssets: 0,
+
+      createdAt: new Date().toISOString()
+    }, { merge: true }); // 🔥 prevents overwrite issues
 
     clearTimeout(profileTimeout);
 
-    msg.innerText = "Profile ready...";
+    console.log("Profile guaranteed for UID:", user.uid);
 
-    // 3. EMAIL VERIFICATION
-    await sendEmailVerification(user).catch(console.warn);
+    msg.innerText = "Verifying email...";
+
+    // 4. EMAIL VERIFICATION (non-blocking)
+    await sendEmailVerification(user).catch(err => {
+      console.warn("Email verification failed:", err);
+    });
 
     msg.innerText = "Account created successfully. Redirecting...";
 
@@ -120,7 +130,26 @@ window.signup = async function () {
 
     if (profileTimeout) clearTimeout(profileTimeout);
 
-    console.error(err);
+    console.error("SIGNUP ERROR:", err);
+
+    // 🔥 RECOVERY: if auth succeeded but firestore failed
+    if (user) {
+      try {
+        await setDoc(doc(db, "users", user.uid), {
+          fullName,
+          balance: 0,
+          createdAt: new Date().toISOString()
+        }, { merge: true });
+
+        msg.innerText = "Account created (recovered). Redirecting...";
+        setTimeout(() => window.location.href = "login.html", 2000);
+        return;
+
+      } catch (e) {
+        console.error("Recovery failed:", e);
+      }
+    }
+
     msg.innerText = err.code + " | " + err.message;
   }
 };
