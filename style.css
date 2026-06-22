@@ -1,4 +1,21 @@
-:root{
+/* RESET (put this first) */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html, body {
+  width: 100%;
+  max-width: 100%;
+  overflow-x: hidden;
+  font-family: Arial, sans-serif;
+  background: var(--bg);
+  color: var(--text);
+}
+
+/* VARIABLES (put this AFTER reset) */
+:root {
   --gold:#d4af37;
   --bg:#090b10;
   --card:#121722;
@@ -11,7 +28,32 @@
   --space-lg: 64px;
   --space-xl: 96px;
 }
-
+html, body {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  max-width: 100%;
+  overflow-x: hidden;
+}
+* {
+  box-sizing: border-box;
+}
+.container {
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 16px;
+}
+section {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+.flex {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 16px;
+}
 *{
   margin:0;
   padding:0;          
@@ -627,4 +669,117 @@ button:hover {
 }
 .table-container {
   overflow-x: auto;
+}
+/* =========================
+   MOBILE RESPONSIVE CORE
+========================= */
+
+@media screen and (max-width: 768px) {
+
+  body {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    overflow-x: hidden;
+  }
+
+  .auth-container {
+    width: 100%;
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+  }
+
+  .auth-card {
+    width: 100%;
+    max-width: 420px;
+    padding: 20px;
+    border-radius: 12px;
+  }
+
+  input, button {
+    width: 100%;
+    font-size: 16px;
+  }
+  .primary-btn, button {
+    width: 100%;
+    padding: 14px;
+  }
+
+  h1 {
+    font-size: 22px;
+  }
+
+  h2 {
+    font-size: 18px;
+  }
+
+}input {
+  font-size: 16px; /* prevents iOS zoom auto-zoom */
+}
+@media screen and (max-width: 768px) {
+
+  button,
+  .primary-btn {
+    width: 100%;
+    padding: 11px 14px;
+    font-size: 14px;
+    border-radius: 12px;
+    font-weight: 500;
+  }
+
+}.password-wrapper {
+  position: relative;
+  width: 100%;
+  display: block;
+}
+
+.password-wrapper input {
+  width: 100%;
+  padding: 12px 45px 12px 12px; /* space for eye button */
+  font-size: 16px;
+  box-sizing: border-box;
+}
+
+.password-wrapper button {
+  position: absolute;
+  right: 10px;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 34px;
+  height: 34px;
+  border: none;
+  background: transparent;
+  font-size: 16px;
+  cursor: pointer;
+  z-index: 10;
+}
+@media screen and (max-width: 768px) {
+
+  .auth-card {
+    width: 100%;
+    max-width: 420px;
+    padding: 20px;
+  }
+
+  button,
+  .primary-btn {
+    width: 100%;
+    padding: 11px 14px;
+    font-size: 14px;
+    border-radius: 12px;
+    font-weight: 500;
+  }
+
+  h1 {
+    font-size: 22px;
+  }
+
+  h2 {
+    font-size: 18px;
+  }
+
+  .container {
+    padding: 0 12px;
+  }
 }

@@ -14,27 +14,23 @@
 
 <!-- AUTH -->
 <script type="module">
+
 import { auth, onAuthStateChanged, db, doc, getDoc } from "./firebase.js";
-let authHandled = false;
 
 onAuthStateChanged(auth, async (user) => {
-
-  if (authHandled) return;
-  authHandled = true;
-
-  const welcome = document.getElementById("welcomeUser");
-  if (!welcome) return;
 
   if (!user) {
     window.location.replace("login.html");
     return;
   }
-  if (sessionInterval) {
-  clearInterval(sessionInterval);
-  sessionInterval = null;
-}
 
-  welcome.innerText = "Welcome back, Fred";
+  // ✅ EVERYTHING THAT NEEDS USER MUST GO INSIDE HERE
+
+  const welcome = document.getElementById("welcomeUser");
+
+  if (welcome) {
+    welcome.innerText = "Loading...";
+  }
 
   try {
     const ref = doc(db, "users", user.uid);
@@ -45,16 +41,27 @@ onAuthStateChanged(auth, async (user) => {
 
       const name =
         data.fullName?.split(" ")[0] ||
-        data.firstName ||
         "User";
 
-      welcome.innerText = `Welcome back, ${name}`;
+      if (welcome) {
+        welcome.innerText = `Welcome back, ${name}`;
+      }
     }
 
-  } catch (e) {
-    console.warn("Firestore ignored:", e.message);
+  } catch (err) {
+    console.warn("Dashboard load error:", err);
   }
+
 });
+
+/* =========================
+   3. LOGOUT (GLOBAL)
+========================= */
+window.logout = async function () {
+  await auth.signOut();
+  window.location.href = "login.html";
+};
+
 </script>
 
 <header class="navbar">
