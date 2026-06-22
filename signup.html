@@ -22,20 +22,26 @@
 
     <h2>Create Account</h2>
 
-    <input id="fullName" type="text" placeholder="Full Name">
-    <input id="email" type="email" placeholder="Email Address">
+    <!-- FORM WRAPPER ADDED -->
+    <form id="signupForm">
 
-    <div class="password-wrapper">
-      <input id="password" type="password" placeholder="Create Password">
-      <button type="button" onclick="togglePassword()">👁</button>
-    </div>
+      <input id="fullName" type="text" placeholder="Full Name">
+      <input id="email" type="email" placeholder="Email Address">
 
-    <div class="strength-box">
-      <div id="strengthBar"></div>
-      <small id="strengthText">Password Strength</small>
-    </div>
+      <div class="password-wrapper">
+        <input id="password" type="password" placeholder="Create Password">
+        <button type="button" onclick="togglePassword()">👁</button>
+      </div>
 
-    <button onclick="signup()">Create Account</button>
+      <div class="strength-box">
+        <div id="strengthBar"></div>
+        <small id="strengthText">Password Strength</small>
+      </div>
+
+      <!-- FIXED BUTTON TYPE -->
+      <button type="submit">Create Account</button>
+
+    </form>
 
     <p id="msg" class="message"></p>
 
@@ -58,7 +64,9 @@ import {
   sendEmailVerification
 } from "./firebase.js";
 
-window.signup = async function () {
+/* SIGNUP HANDLER (NO RELOAD SAFE) */
+window.signup = async function (e) {
+  if (e) e.preventDefault(); // 🔥 prevents page refresh
 
   const fullName = document.getElementById("fullName").value.trim();
   const email = document.getElementById("email").value.trim();
@@ -107,6 +115,10 @@ window.signup = async function () {
   }
 };
 
+/* CONNECT FORM SUBMIT TO HANDLER */
+document.getElementById("signupForm").addEventListener("submit", window.signup);
+
+/* PASSWORD TOGGLE (UNCHANGED - SAFE) */
 window.togglePassword = function () {
   const password = document.getElementById("password");
   password.type = password.type === "password" ? "text" : "password";
