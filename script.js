@@ -121,14 +121,18 @@ window.openCards = function () {
 };
 
 // ================= SESSION =================
+let sessionInterval = null;
 
 function startSessionTimer() {
   let t = 300;
 
-  setInterval(() => {
+  sessionInterval = setInterval(() => {
     t--;
+
     if (t <= 0) {
-      window.location.href = "login.html";
+      clearInterval(sessionInterval);
+      sessionInterval = null;
+      window.location.replace("login.html");
     }
   }, 1000);
 }

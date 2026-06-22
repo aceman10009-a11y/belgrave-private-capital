@@ -4,9 +4,9 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Belgrave Private Bank | Client Login</title>
+
 <link rel="icon" type="image/png" href="assets/favicon.png">
 <link rel="stylesheet" href="style.css">
-
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
 </head>
 
@@ -24,13 +24,11 @@
 
     <h2>Client Login</h2>
 
-    <!-- EMAIL -->
     <div class="input-group">
       <i class="fa-solid fa-envelope"></i>
       <input id="email" type="email" placeholder="Email Address">
     </div>
 
-    <!-- PASSWORD -->
     <div class="password-wrapper">
       <input id="password" type="password" placeholder="Password">
       <button type="button" onclick="togglePassword()">
@@ -38,7 +36,6 @@
       </button>
     </div>
 
-    <!-- LOGIN BUTTON -->
     <button onclick="login()" class="primary-btn">Login</button>
 
     <p id="msg" class="message"></p>
@@ -56,15 +53,11 @@
 
 import {
   auth,
-  db,
-  signInWithEmailAndPassword,
-  doc,
-  getDoc
+  signInWithEmailAndPassword
 } from "./firebase.js";
 
 window.login = async function () {
 
-  // ✅ FIX: trim prevents instant 400 errors
   const email = document.getElementById("email").value.trim();
   const password = document.getElementById("password").value.trim();
   const msg = document.getElementById("msg");
@@ -75,43 +68,21 @@ window.login = async function () {
   }
 
   try {
-
     msg.innerText = "Logging in...";
 
-    console.log("LOGIN ATTEMPT:", email); // safe debug
-    console.log("LOGIN ATTEMPT:", email, password);
-    let userData = null;
+    const userCred = await signInWithEmailAndPassword(auth, email, password);
 
-try {
-  const userRef = doc(db, "users", user.uid);
-  const userSnap = await getDoc(userRef);
+    console.log("LOGIN SUCCESS:", userCred.user.uid);
 
-  if (userSnap.exists()) {
-    userData = userSnap.data();
-  } else {
-    console.warn("Creating missing Firestore profile...");
-
-    await setDoc(userRef, {
-      fullName: user.email.split("@")[0],
-      email: user.email,
-      balance: 0,
-      createdAt: new Date().toISOString()
-    });
-
-    userData = { email: user.email };
-  }
-} catch (e) {
-  console.warn("Firestore error (ignored):", e);
-}
     msg.innerText = "Login successful...";
 
     setTimeout(() => {
       window.location.href = "dashboard.html";
-    }, 1000);
+    }, 800);
 
   } catch (err) {
-    msg.innerText = "Login failed: " + err.message;
     console.log("AUTH ERROR:", err);
+    msg.innerText = err.message;
   }
 };
 

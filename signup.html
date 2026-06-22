@@ -71,86 +71,39 @@ window.signup = async function () {
   }
 
   let user = null;
-  let profileTimeout;
 
   try {
 
     msg.innerText = "Creating account...";
 
-    // 1. CREATE AUTH USER
     const userCred = await createUserWithEmailAndPassword(auth, email, password);
     user = userCred.user;
 
-    console.log("Auth user created:", user.uid);
-
-    // 2. SAFETY TIMEOUT (prevents stuck state)
-    profileTimeout = setTimeout(() => {
-      msg.innerText = "Profile setup delayed... retrying safe redirect.";
-      window.location.href = "login.html";
-    }, 8000);
-
-    msg.innerText = "Setting up secure profile...";
-
-    // 3. ENSURE PROFILE ALWAYS EXISTS (FORCE SAFE WRITE)
     const userRef = doc(db, "users", user.uid);
 
     await setDoc(userRef, {
       fullName: fullName,
-      firstName: fullName.split(" ")[0],
-      lastName: fullName.split(" ").slice(1).join(" ") || "",
       email: email,
-
-      // 🔥 CRITICAL FIX: enforce numeric + default values
       balance: 0,
       cashBalance: 0,
       investmentBalance: 0,
       totalAssets: 0,
-
       createdAt: new Date().toISOString()
-    }, { merge: true }); // 🔥 prevents overwrite issues
-
-    clearTimeout(profileTimeout);
-
-    console.log("Profile guaranteed for UID:", user.uid);
+    }, { merge: true });
 
     msg.innerText = "Verifying email...";
 
-    // 4. EMAIL VERIFICATION (non-blocking)
-    await sendEmailVerification(user).catch(err => {
-      console.warn("Email verification failed:", err);
-    });
+    await sendEmailVerification(user).catch(() => {});
 
     msg.innerText = "Account created successfully. Redirecting...";
 
     setTimeout(() => {
       window.location.href = "login.html";
-    }, 2000);
+    }, 1500);
 
   } catch (err) {
-
-    if (profileTimeout) clearTimeout(profileTimeout);
-
     console.error("SIGNUP ERROR:", err);
-
-    // 🔥 RECOVERY: if auth succeeded but firestore failed
-    if (user) {
-      try {
-        await setDoc(doc(db, "users", user.uid), {
-          fullName,
-          balance: 0,
-          createdAt: new Date().toISOString()
-        }, { merge: true });
-
-        msg.innerText = "Account created (recovered). Redirecting...";
-        setTimeout(() => window.location.href = "login.html", 2000);
-        return;
-
-      } catch (e) {
-        console.error("Recovery failed:", e);
-      }
-    }
-
-    msg.innerText = err.code + " | " + err.message;
+    msg.innerText = err.message;
   }
 };
 
@@ -159,45 +112,7 @@ window.togglePassword = function () {
   password.type = password.type === "password" ? "text" : "password";
 };
 
-window.addEventListener("DOMContentLoaded", () => {
-
-  const passwordInput = document.getElementById("password");
-  const strengthBar = document.getElementById("strengthBar");
-  const strengthText = document.getElementById("strengthText");
-
-  if (!passwordInput || !strengthBar || !strengthText) return;
-
-  passwordInput.addEventListener("input", () => {
-
-    const value = passwordInput.value;
-    let score = 0;
-
-    if (value.length >= 10) score++;
-    if (/[A-Z]/.test(value)) score++;
-    if (/[a-z]/.test(value)) score++;
-    if (/[0-9]/.test(value)) score++;
-    if (/[\W_]/.test(value)) score++;
-
-    if (score <= 2) {
-      strengthBar.style.width = "33%";
-      strengthBar.style.background = "red";
-      strengthText.innerText = "Weak Password";
-    }
-    else if (score <= 4) {
-      strengthBar.style.width = "66%";
-      strengthBar.style.background = "orange";
-      strengthText.innerText = "Medium Password";
-    }
-    else {
-      strengthBar.style.width = "100%";
-      strengthBar.style.background = "limegreen";
-      strengthText.innerText = "Strong Password";
-    }
-
-  });
-
-});
-
 </script>
+
 </body>
 </html>

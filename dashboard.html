@@ -15,21 +15,25 @@
 <!-- AUTH -->
 <script type="module">
 import { auth, onAuthStateChanged, db, doc, getDoc } from "./firebase.js";
+let authHandled = false;
 
 onAuthStateChanged(auth, async (user) => {
 
-  const welcome = document.getElementById("welcomeUser");
+  if (authHandled) return;
+  authHandled = true;
 
-  // Always ensure UI exists first
+  const welcome = document.getElementById("welcomeUser");
   if (!welcome) return;
 
-  // No user → redirect
   if (!user) {
-    window.location.href = "login.html";
+    window.location.replace("login.html");
     return;
   }
+  if (sessionInterval) {
+  clearInterval(sessionInterval);
+  sessionInterval = null;
+}
 
-  // DEFAULT (FIREBASE NEVER CONTROLS CORE UI)
   welcome.innerText = "Welcome back, Fred";
 
   try {
@@ -42,17 +46,13 @@ onAuthStateChanged(auth, async (user) => {
       const name =
         data.fullName?.split(" ")[0] ||
         data.firstName ||
-        null;
+        "User";
 
-      if (name) {
-        welcome.innerText = `Welcome back, ${name}`;
-      }
-    } else {
-      console.log("No user profile found (using fallback name)");
+      welcome.innerText = `Welcome back, ${name}`;
     }
 
   } catch (e) {
-    console.warn("Firestore ignored (non-critical):", e.message);
+    console.warn("Firestore ignored:", e.message);
   }
 });
 </script>
