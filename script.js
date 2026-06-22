@@ -25,7 +25,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
     logActivity("Secure session started");
 
-    startSessionTimer();
+    // startSessionTimer();
     initLedgerSystem();
 
     setTimeout(() => {
