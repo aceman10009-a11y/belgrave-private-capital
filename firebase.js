@@ -21,13 +21,12 @@ import {
 
 const firebaseConfig = {
   apiKey: "AIzaSyBJB-Y_s1S4cCX-guX9NutQ_Y2MeWTuYgU",
-  authDomain: "belgrave-private-bank.firebaseapp.com",
-  projectId: "belgrave-private-bank",
-  storageBucket: "belgrave-private-bank.appspot.com",
+  authDomain: "belgrave-private-capital.firebaseapp.com",
+  projectId: "belgrave-private-capital",
+  storageBucket: "belgrave-private-capital.firebasestorage.app",
   messagingSenderId: "370723937976",
   appId: "1:370723937976:web:762b19f25e73deba815e4d"
 };
-
 // =====================
 // INIT APP (ONLY ONCE)
 // =====================
@@ -41,22 +40,6 @@ const db = getFirestore(app);
 // =====================
 setPersistence(auth, browserLocalPersistence)
   .catch((err) => console.warn("Persistence error:", err));
-
-// =====================
-// AUTH STATE (NO UI LOGIC HERE)
-// =====================
-onAuthStateChanged(auth, (user) => {
-  if (!user) {
-    window.location.href = "login.html";
-    return;
-  }
-
-  console.log("AUTH READY:", user.uid);
-
-  // ❌ DO NOT TOUCH UI HERE
-  // ❌ NO welcome text, no DOM manipulation
-  // script.js handles all UI rendering
-});
 
 // =====================
 // EXPORTS
