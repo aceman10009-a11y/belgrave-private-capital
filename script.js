@@ -216,15 +216,26 @@ function initLedgerSystem() {
 }
 
 // ================= ACTIVITY TOGGLE =================
-
 window.toggleActivityPanel = function () {
   const panel = document.getElementById("activityPanel");
   const icon = document.getElementById("activityToggle");
 
-  if (!panel || !icon) return;
+  if (!panel) return;
 
-  panel.classList.toggle("collapsed");
-  icon.textContent = panel.classList.contains("collapsed") ? "▲" : "▼";
+  // Hidden completely
+  if (panel.style.display === "none" || panel.style.display === "") {
+    panel.style.display = "block";
+
+    if (icon) icon.textContent = "▼";
+
+    panel.classList.remove("collapsed");
+    return;
+  }
+
+  // Visible -> hide completely
+  panel.style.display = "none";
+
+  if (icon) icon.textContent = "▲";
 };
 // ================= TRANSACTIONS TOGGLE =================
 
@@ -238,4 +249,29 @@ window.toggleTransactions = function () {
   section.style.display = isHidden ? "block" : "none";
 
   logActivity(isHidden ? "Transactions opened" : "Transactions hidden");
+};
+window.showRestriction = function () {
+  const popup = document.getElementById("transferPopup");
+  if (popup) popup.style.display = "flex";
+};
+
+window.openDeposit = function () {
+  window.showRestriction();
+};
+
+window.openWithdraw = function () {
+  window.showRestriction();
+};
+
+window.openTransfer = function () {
+  window.showRestriction();
+};
+
+window.openStatements = function () {
+  const popup = document.getElementById("statementPopup");
+  if (popup) popup.style.display = "flex";
+};
+
+window.openSettings = function () {
+  alert("Settings coming soon");
 };

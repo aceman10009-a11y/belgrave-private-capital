@@ -9,6 +9,7 @@
 <link rel="stylesheet" href="style.css">
 
 <!-- Fonts -->
+<!-- Fonts -->
 <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600;700&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
 
 <!-- Icons -->
@@ -19,19 +20,19 @@
 
 <div class="main">
 
-<!-- NAVBAR -->
 <header class="navbar">
   <div class="logo-container">
     <img src="assets/logo.png" alt="Belgrave Logo" class="logo">
     <span>Belgrave Private Bank</span>
   </div>
 
-  <nav>
-    <a href="index.html">Home</a>
-    <a href="signup.html">Private Banking</a>
-    <a href="signup.html">Wealth Management</a>
-    <a href="contact.html">Contact</a>
-  </nav>
+<nav>
+  <a href="index.html">Home</a>
+  <a href="#services">Banking</a>
+  <a href="#services">Investments</a>
+  <a href="#security">Security</a>
+  <a href="contact.html">Contact</a>
+</nav>
 
   <button class="login-btn" onclick="window.location.href='login.html'">
     Online Banking
@@ -39,20 +40,96 @@
 </header>
 
 <!-- HERO -->
+<!-- HERO -->
 <section class="hero">
-  <div class="hero-content">
-    <h1>Private Banking For Global Wealth</h1>
 
-    <p>
-      Preserving and growing wealth through personalized banking,
-      investment management, and family office services.
-    </p>
+    <div class="hero-left">
 
-    <div class="hero-buttons">
-      <a href="signup.html" class="btn">Become A Client</a>
-      <a href="#services" class="btn secondary">View Services</a>
+        <span class="hero-tag">
+            PRIVATE BANKING • WEALTH MANAGEMENT
+        </span>
+
+        <h1>
+            Banking Designed Around
+            <span>Global Wealth.</span>
+        </h1>
+
+        <p>
+            Experience private banking, international wealth management,
+            investment advisory and secure online banking tailored for
+            individuals, families and institutions worldwide.
+        </p>
+
+        <div class="hero-buttons">
+
+            <a href="signup.html" class="btn">
+                Open an Account
+            </a>
+
+            <a href="login.html" class="btn secondary">
+                Online Banking
+            </a>
+
+        </div>
+
     </div>
-  </div>
+
+    <div class="hero-right">
+
+        <div class="dashboard-preview">
+
+            <div class="dashboard-header">
+
+                <div>
+                    <small>Available Balance</small>
+                    <h2>$12,580,430.00</h2>
+                </div>
+
+                <span class="status">
+                    ● Secure
+                </span>
+
+            </div>
+
+            <div class="dashboard-cards">
+
+                <div class="mini-card">
+                    <small>Portfolio</small>
+                    <h3>$8.4M</h3>
+                    <span>+4.26%</span>
+                </div>
+
+                <div class="mini-card">
+                    <small>Cash Available</small>
+                    <h3>$824,000</h3>
+                    <span>USD</span>
+                </div>
+
+            </div>
+
+            <div class="quick-actions">
+
+                <button>
+                    <i class="fa-solid fa-paper-plane"></i>
+                    Transfer
+                </button>
+
+                <button>
+                    <i class="fa-solid fa-building-columns"></i>
+                    Deposit
+                </button>
+
+                <button>
+                    <i class="fa-solid fa-chart-line"></i>
+                    Invest
+                </button>
+
+            </div>
+
+        </div>
+
+    </div>
+
 </section>
 
 <!-- SERVICES -->
@@ -76,27 +153,135 @@
 </section>
 
 <!-- STATS -->
+<!-- FINANCIAL SNAPSHOT -->
+
 <section class="stats">
 
-<div class="stat-card">
-<h3 id="balance">$967.9M</h3>
-<p>Assets Under Management</p>
-</div>
+    <div class="stat-card">
 
-<div class="stat-card">
-<h3>500+</h3>
-<p>Global Clients</p>
-</div>
+        <i class="fa-solid fa-building-columns stat-icon"></i>
 
-<div class="stat-card">
-<h3>24/7</h3>
-<p>Relationship Support</p>
-</div>
+        <h3>$967.9M</h3>
 
-<div class="stat-card">
-<h3>11</h3>
-<p>Countries Served</p>
-</div>
+        <p>Assets Under Management</p>
+
+    </div>
+
+    <div class="stat-card">
+
+        <i class="fa-solid fa-globe stat-icon"></i>
+
+        <h3>42</h3>
+
+        <p>Countries Served</p>
+
+    </div>
+
+    <div class="stat-card">
+
+        <i class="fa-solid fa-users stat-icon"></i>
+
+        <h3>18,400</h3>
+
+        <p>Private Clients</p>
+
+    </div>
+
+    <div class="stat-card">
+
+        <i class="fa-solid fa-shield-halved stat-icon"></i>
+
+        <h3>99.98%</h3>
+
+        <p>Platform Availability</p>
+
+    </div>
+
+</section>
+<!-- ONLINE BANKING PLATFORM -->
+
+<section class="banking-preview">
+
+    <div class="banking-left">
+
+        <span class="hero-tag">
+            DIGITAL BANKING
+        </span>
+
+        <h2>Bank Anywhere.<br>Manage Everything.</h2>
+
+        <p>
+            Access your accounts, manage investments, transfer funds,
+            monitor your portfolio and communicate securely with your
+            relationship manager from one unified banking platform.
+        </p>
+
+        <ul class="bank-features">
+
+            <li><i class="fa-solid fa-check"></i> Secure Online Banking</li>
+
+            <li><i class="fa-solid fa-check"></i> International Transfers</li>
+
+            <li><i class="fa-solid fa-check"></i> Portfolio Monitoring</li>
+
+            <li><i class="fa-solid fa-check"></i> Multi-Currency Accounts</li>
+
+        </ul>
+
+        <a href="login.html" class="btn">
+            Launch Online Banking
+        </a>
+
+    </div>
+
+    <div class="banking-right">
+
+        <div class="screen-card">
+
+            <div class="screen-top">
+
+                <span>Recent Activity</span>
+
+                <span class="status">LIVE</span>
+
+            </div>
+
+            <div class="transaction">
+
+                <div>
+                    <strong>Investment Dividend</strong>
+                    <small>Today</small>
+                </div>
+
+                <strong class="positive">+$4,820</strong>
+
+            </div>
+
+            <div class="transaction">
+
+                <div>
+                    <strong>International Transfer</strong>
+                    <small>Completed</small>
+                </div>
+
+                <strong>-$1,250</strong>
+
+            </div>
+
+            <div class="transaction">
+
+                <div>
+                    <strong>Portfolio Growth</strong>
+                    <small>This Month</small>
+                </div>
+
+                <strong class="positive">+6.84%</strong>
+
+            </div>
+
+        </div>
+
+    </div>
 
 </section>
 
@@ -116,13 +301,21 @@
   </p>
 </section>
 
-<h2>Private Banking Services</h2>
+<section id="banking" class="services">
 
-<p class="section-sub">
-A comprehensive suite of wealth management and financial services designed for high-net-worth individuals, family offices, and institutional clients.
-</p>
+    <h2>Private Banking Services</h2>
 
-<div class="service-grid">
+    <p class="section-sub">
+        A comprehensive suite of wealth management and financial services designed for high-net-worth individuals, family offices, and institutional clients.
+    </p>
+
+    <div class="service-grid">
+
+        <!-- all six service cards stay exactly as they are -->
+
+    </div>
+
+</section>
 
 <div class="service-card">
 <h3>Private Banking</h3>
@@ -155,7 +348,34 @@ A comprehensive suite of wealth management and financial services designed for h
 </div>
 
 </div>
+<section id="security" class="security-section">
 
+    <h2>Security & Trust</h2>
+
+    <p class="section-sub">
+        Every client relationship is protected by industry-standard security practices and dedicated support.
+    </p>
+
+    <div class="service-grid">
+
+        <div class="service-card">
+            <h3><i class="fa-solid fa-shield-halved"></i> Bank-Level Security</h3>
+            <p>Advanced encryption helps protect your online banking sessions and account information.</p>
+        </div>
+
+        <div class="service-card">
+            <h3><i class="fa-solid fa-user-lock"></i> Secure Access</h3>
+            <p>Multi-factor authentication and continuous monitoring provide an additional layer of protection.</p>
+        </div>
+
+        <div class="service-card">
+            <h3><i class="fa-solid fa-headset"></i> Dedicated Support</h3>
+            <p>Relationship managers and client support are available to assist with your banking needs.</p>
+        </div>
+
+    </div>
+
+</section>
 <!-- TESTIMONIALS -->
 <section class="reviews">
 
@@ -171,15 +391,9 @@ Trusted by global investors and family offices worldwide.
 <p>Exceptional service and investment guidance.</p>
 <h4>Michael Thornton</h4>
 </div>
-
 <div class="review-card">
 <p>Outstanding private banking experience.</p>
 <h4>Sophia Whitmore</h4>
-</div>
-
-<div class="review-card">
-<p>Highly responsive advisors and reporting.</p>
-<h4>Daniel Prescott</h4>
 </div>
 
 </div>
@@ -188,34 +402,91 @@ Trusted by global investors and family offices worldwide.
 <!-- FOOTER -->
 <footer class="footer">
 
+<div class="footer-top">
+
+<h2>Ready to Experience Private Banking?</h2>
+
+<p>
+Open your Belgrave Private Bank account and enjoy
+secure banking, wealth management and global financial services.
+</p>
+
+<div class="footer-buttons">
+
+<a href="signup.html" class="btn">
+Open Account
+</a>
+
+<a href="login.html" class="btn secondary">
+Online Banking
+</a>
+
+</div>
+
+</div>
+
+<hr>
+
 <div class="footer-grid">
 
 <div>
-<h3>Belgrave Private Bank</h3>
-<p>A private wealth institution focused on long-term capital preservation and global investment access.</p>
+
+<div class="footer-brand">
+    <img src="assets/logo.png" class="footer-logo" alt="Belgrave Private Bank">
+    <h3>Belgrave Private Bank</h3>
+</div>
+
+<p>
+Serving private clients with secure banking,
+investment management and wealth preservation.
+</p>
+
 </div>
 
 <div>
-<h4>Services</h4>
+
+<h4>Banking</h4>
+
 <p>Private Banking</p>
-<p>Wealth Management</p>
+
 <p>Investment Advisory</p>
+
 <p>Family Office</p>
+
 <p>Global Payments</p>
+
 </div>
 
 <div>
-<h4>Contact</h4>
 
-<p><i class="fa-solid fa-envelope"></i> support@belgraveprivatecapital.com</p>
-<p><i class="fa-brands fa-whatsapp"></i> +45 71 33 43 57</p>
+<h4>Support</h4>
+
+<p><i class="fa-solid fa-envelope"></i>
+support@belgraveprivatebank.com
+</p>
+
+<p><i class="fa-brands fa-whatsapp"></i>
++45 71 33 43 57
+</p>
+
+<p><i class="fa-solid fa-location-dot"></i>
+Copenhagen, Denmark
+</p>
 
 </div>
 
 </div>
+
+<hr>
 
 <p class="copyright">
-© 2011–2026 Belgrave Private Bank | All Rights Reserved.
+
+© 2011–2026 Belgrave Private Bank
+
+<br><br>
+
+Your deposits and investments may be subject to applicable regulations and eligibility requirements depending on your jurisdiction.
+
 </p>
 
 </footer>

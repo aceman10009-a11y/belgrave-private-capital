@@ -1,0 +1,466 @@
+/* ===== GLOBAL DASHBOARD RESET ===== */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, sans-serif;
+}
+
+body {
+  background: #0b0f1a;
+  color: #fff;
+}
+
+/* ===== DASHBOARD LAYOUT BASE ===== */
+.dashboard-container {
+  display: grid;
+  grid-template-columns: 260px 1fr;
+  min-height: 100vh;
+}
+
+/* ===== SIDEBAR (future use) ===== */
+.sidebar {
+  background: #0f1629;
+  padding: 20px;
+}
+
+/* ===== MAIN CONTENT AREA ===== */
+.main-content {
+  padding: 25px;
+}
+/* ===== CARD SECTION ===== */
+.card-section {
+  display: flex;
+  justify-content: flex-start;
+  margin-top: 20px;
+}
+
+/* ===== BANK CARD ===== */
+.bank-card {
+  width: 420px;
+  height: 240px;
+  border-radius: 18px;
+  padding: 20px;
+  color: #fff;
+  position: relative;
+  background: linear-gradient(135deg, #0b1220, #111a2e);
+  box-shadow: 0 20px 50px rgba(0,0,0,0.5);
+  overflow: hidden;
+}
+
+/* glow effect */
+.bank-card::before {
+  content: "";
+  position: absolute;
+  top: -50%;
+  right: -40%;
+  width: 300px;
+  height: 300px;
+  background: radial-gradient(circle, rgba(255,215,0,0.25), transparent 60%);
+}
+
+/* top row */
+.card-top {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 14px;
+  letter-spacing: 1px;
+  color: gold;
+}
+
+.toggle-eye {
+  cursor: pointer;
+  opacity: 0.8;
+  transition: 0.2s;
+}
+
+.toggle-eye:hover {
+  opacity: 1;
+  transform: scale(1.1);
+}
+
+/* chip */
+.card-chip {
+  width: 45px;
+  height: 35px;
+  margin-top: 25px;
+  border-radius: 6px;
+  background: linear-gradient(135deg, #d4af37, #b8860b);
+}
+
+/* number */
+.card-number {
+  margin-top: 25px;
+  font-size: 18px;
+  letter-spacing: 3px;
+}
+
+/* bottom info */
+.card-bottom {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 25px;
+}
+
+.card-bottom small {
+  opacity: 0.6;
+}
+.main-content {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+
+/* SECTION SPACING STANDARD */
+section {
+  margin-bottom: 20px;
+}
+
+/* MAKE SIDEBAR FEEL REAL */
+.sidebar {
+  color: #cbd5e1;
+  font-size: 14px;
+  line-height: 2;
+}
+
+/* SOFT SECTION SEPARATION (fixes “flat” look) */
+.card-section,
+.stats-section,
+.transactions-section,
+.quick-actions {
+  background: rgba(255, 255, 255, 0.02);
+  border: 1px solid rgba(255, 255, 255, 0.05);
+  border-radius: 14px;
+  padding: 18px;
+}
+/* ===== RESPONSIVE FIX ===== */
+@media (max-width: 768px) {
+
+  .dashboard-container {
+    grid-template-columns: 1fr;
+  }
+
+  .sidebar {
+    display: none; /* or convert to hamburger later */
+  }
+
+  .main-content {
+    padding: 15px;
+  }
+
+  .card-section {
+    display: flex;
+    justify-content: center;
+  }
+
+  .bank-card {
+    width: 100%;
+    max-width: 360px;
+  }
+
+}
+/* ===== PIN OVERLAY CONTROL ===== */
+.pin-modal {
+  position: fixed;
+  inset: 0;
+  background: rgba(0,0,0,0.85);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 9999;
+}
+/* hide PIN after unlock */
+.pin-modal.hidden {
+  display: none;
+}
+@media (max-width: 768px) {
+
+  .dashboard-container {
+    flex-direction: column;
+  }
+
+  .sidebar {
+    display: block;
+    position: fixed;
+    left: -260px;
+    top: 0;
+    height: 100vh;
+    width: 240px;
+    background: #0b1220;
+    z-index: 999;
+    transition: 0.3s;
+    padding: 20px;
+  }
+
+  .sidebar.active {
+    left: 0;
+  }
+
+}
+/* ================= FINAL MOBILE SYSTEM (SINGLE SOURCE OF TRUTH) ================= */
+@media (max-width: 768px) {
+
+  .dashboard-container {
+    grid-template-columns: 1fr;
+    overflow-x: hidden;
+  }
+
+  .sidebar {
+    position: fixed;
+    top: 0;
+    left: -260px;
+    width: 240px;
+    height: 100vh;
+    background: #0b1220;
+    z-index: 9999;
+    transition: left 0.3s ease;
+    padding: 20px;
+  }
+
+  .sidebar.active {
+    left: 0;
+  }
+
+  .main-content {
+    width: 100%;
+    padding: 12px;
+  }
+
+  .menu-btn {
+    position: fixed;
+    top: 12px;
+    left: 12px;
+    z-index: 10000;
+  }
+
+  .quick-actions-container,
+  .stats {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+  }
+
+  .transactions {
+    overflow-x: auto;
+  }
+
+  .transactions table {
+    min-width: 600px;
+  }
+
+  .bank-card {
+    width: 100%;
+    max-width: 360px;
+    margin: 0 auto;
+  }
+}
+/* ================= FIX CENTERING ISSUE ================= */
+@media (max-width: 768px) {
+
+  .dashboard-container {
+    display: block !important;
+  }
+
+  .sidebar {
+    position: fixed;
+    top: 0;
+    left: -260px;
+    width: 240px;
+    height: 100vh;
+    background: #0b1220;
+    z-index: 9999;
+    transition: left 0.3s ease;
+  }
+
+  .sidebar.active {
+    left: 0;
+  }
+
+  .main-content {
+    margin: 0 !important;
+    width: 100% !important;
+    padding: 15px;
+  }
+
+  .menu-btn {
+    position: fixed;
+    top: 12px;
+    left: 12px;
+    z-index: 10000;
+  }
+
+  .bank-card,
+  .balance-card {
+    margin: 0 auto;
+  }
+
+  .quick-actions-container,
+  .stats {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+  }
+
+  .transactions {
+    overflow-x: auto;
+  }
+
+  .transactions table {
+    min-width: 600px;
+  }
+}
+.activity-button{
+    position:fixed;
+    bottom:25px;
+    right:25px;
+
+    padding:12px 18px;
+
+    border:none;
+    border-radius:30px;
+
+    background:#0d2d62;
+    color:#fff;
+
+    cursor:pointer;
+
+    z-index:999;
+    box-shadow:0 8px 20px rgba(0,0,0,.25);
+
+    transition:.3s;
+}
+
+.activity-button:hover{
+    transform:translateY(-2px);
+}
+
+.activity-panel{
+    position:fixed;
+    right:25px;
+    bottom:80px;
+    z-index:998;
+}
+/*=============================
+TRANSACTIONS
+==============================*/
+
+.transaction-header{
+display:flex;
+justify-content:space-between;
+align-items:center;
+margin-bottom:20px;
+}
+
+.view-all-btn{
+
+background:none;
+border:none;
+color:#0d2d62;
+font-weight:600;
+cursor:pointer;
+
+}
+
+.transaction-cards{
+
+display:flex;
+flex-direction:column;
+gap:16px;
+
+}
+
+.transaction-card{
+
+background:#fff;
+
+border-radius:18px;
+
+padding:18px;
+
+box-shadow:0 8px 20px rgba(0,0,0,.08);
+
+}
+
+.transaction-card-top{
+
+display:flex;
+
+justify-content:space-between;
+
+margin-bottom:12px;
+
+}
+
+.transaction-title{
+
+font-weight:600;
+
+font-size:16px;
+
+}
+
+.transaction-date{
+
+font-size:13px;
+
+color:#888;
+
+}
+
+.credit{
+
+color:#1ca34a;
+
+font-weight:700;
+
+}
+
+.debit{
+
+color:#d83b3b;
+
+font-weight:700;
+
+}
+
+.transaction-category{
+
+margin-top:10px;
+
+font-size:13px;
+
+color:#777;
+
+}
+
+.transaction-table{
+
+display:none;
+
+}
+
+@media(min-width:992px){
+
+.transaction-cards{
+
+display:none;
+
+}
+
+.transaction-table{
+
+display:block;
+
+}
+
+}
+.status {
+    display: inline-block;
+    padding: 4px 12px;
+    border-radius: 20px;
+    background: #e9f9ef;
+    color: #1c8c4a;
+    font-size: 12px;
+    font-weight: 600;
+}

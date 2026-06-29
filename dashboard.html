@@ -3,34 +3,48 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
 <title>Belgrave Private Bank | Dashboard</title>
 
 <link rel="stylesheet" href="style.css">
+<link rel="stylesheet" href="dashboard.css">
+
 <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600;700&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
 <link rel="icon" type="image/png" href="assets/favicon.png">
 </head>
 
 <body>
 
-<!-- AUTH -->
-<script type="module">
+<!-- ================= MOBILE MENU BUTTON ================= -->
+<button onclick="toggleSidebar()" class="menu-btn">☰</button>
 
+<!-- ================= PIN MODAL ================= -->
+<div class="pin-modal" id="pinModal">
+  <div class="pin-box">
+    <h3>Enter 4-digit PIN</h3>
+
+    <input type="password" maxlength="4" id="pinInput" placeholder="••••"/>
+
+    <button onclick="verifyPin()">
+      Unlock Card
+    </button>
+
+    <p id="pinError"></p>
+  </div>
+</div>
+
+<!-- ================= AUTH SCRIPT ================= -->
+<script type="module">
 import { auth, onAuthStateChanged, db, doc, getDoc } from "./firebase.js";
 
 onAuthStateChanged(auth, async (user) => {
-
   if (!user) {
     window.location.replace("login.html");
     return;
   }
 
-  // ✅ EVERYTHING THAT NEEDS USER MUST GO INSIDE HERE
-
   const welcome = document.getElementById("welcomeUser");
-
-  if (welcome) {
-    welcome.innerText = "Loading...";
-  }
+  if (welcome) welcome.innerText = "Loading...";
 
   try {
     const ref = doc(db, "users", user.uid);
@@ -38,128 +52,273 @@ onAuthStateChanged(auth, async (user) => {
 
     if (snap.exists()) {
       const data = snap.data();
-
-      const name =
-        data.fullName?.split(" ")[0] ||
-        "User";
+      const name = data.fullName?.split(" ")[0] || "User";
 
       if (welcome) {
         welcome.innerText = `Welcome back, ${name}`;
       }
     }
-
   } catch (err) {
-    console.warn("Dashboard load error:", err);
+    console.warn(err);
   }
-
 });
 
-/* =========================
-   3. LOGOUT (GLOBAL)
-========================= */
+/* logout */
 window.logout = async function () {
   await auth.signOut();
   window.location.href = "login.html";
 };
 
+/* safe sidebar fallback (prevents errors if not defined yet) */
+window.toggleSidebar = window.toggleSidebar || function () {
+  const sidebar = document.querySelector(".sidebar");
+  if (sidebar) sidebar.classList.toggle("active");
+};
 </script>
 
-<header class="navbar">
-  <div class="logo-container">
-    <img src="assets/logo.png" class="logo">
-    <span>Belgrave Private Bank</span>
-  </div>
+<!-- ================= DASHBOARD ROOT ================= -->
+<div class="dashboard-container">
 
-  <nav>
-    <a href="#" onclick="confirmHome()">Home</a>
-    <a href="#" onclick="openAccounts()">Accounts</a>
-    <a href="#" onclick="openInvestments()">Investments</a>
-    <a href="#" onclick="openStatement()">Statements</a>
+  <!-- SIDEBAR -->
+  <div class="sidebar">
+    <div class="sidebar-title">Belgrave Private Bank</div>
+
+    <a href="#" onclick="goHome()">Home</a>
+    <a href="#" onclick="goAccounts()">Accounts</a>
+    <a href="#" onclick="goInvestments()">Investments</a>
+    <a href="#" onclick="openStatements()">Statements</a>
     <a href="#" onclick="toggleTransactions()">Transactions</a>
     <a href="#" onclick="openCards()">Cards</a>
-  </nav>
+    <a href="#" onclick="openTransfers()">Transfer Funds</a>
+    <a href="#" onclick="openSettings()">Settings</a>
+  </div>
 
-  <button onclick="transferAttempt()" class="login-btn">
-    Transfer Funds
-  </button>
-</header>
+  <!-- MAIN CONTENT -->
+  <div class="main-content">
 
-<section class="account-header">
-  <h1>Private Wealth Overview</h1>
-  <p id="welcomeUser">Loading...</p>
-</section>
+    <!-- HERO -->
+    <section class="dashboard-hero">
+      <span class="hero-tag">PRIVATE BANKING</span>
 
-<section class="stats">
-  <div class="stat-card"><h3 id="balance">$0</h3><p>Cash Balance</p></div>
-  <div class="stat-card"><h3 id="totalIncome">$0</h3><p>Total Income</p></div>
-  <div class="stat-card"><h3 id="totalExpenses">$0</h3><p>Total Expenses</p></div>
-</section>
+      <h1 id="welcomeUser">Loading...</h1>
 
-<section class="transactions">
-  <h2>Transaction History</h2>
+      <p>Manage your wealth securely from one unified banking platform.</p>
 
-  <table>
-    <thead>
-      <tr>
-        <th>Date</th>
-        <th>Description</th>
-        <th>Category</th>
-        <th>Amount</th>
-      </tr>
-    </thead>
+      <div class="balance-card">
+        <small>Available Balance</small>
+        <h2 id="balance">$0</h2>
+        <span class="secure-badge">● Secure Banking</span>
+      </div>
+    </section>
 
-    <tbody id="transactionTable"></tbody>
-  </table>
-</section>
-<section class="transactions">
-  ...
-</section>
+    <!-- CARD -->
+    <section class="card-section">
+      <div class="bank-card" id="bankCard">
 
-<!-- ✅ PUT CARDS HERE -->
-<section id="cardsSection" style="display:none; padding:40px 80px;">
-  <h2>Your Cards</h2>
+        <div class="card-top">
+          <span>Belgrave Private Card</span>
+          <div class="toggle-eye" onclick="toggleCardReveal()">👁️</div>
+        </div>
 
-  <div class="card-grid">
-    <div class="card">
-      <h3>Visa Platinum</h3>
-      <p>Status: Active-works only in USA</p>
+        <div class="card-chip"></div>
+
+        <div class="card-number" id="cardNumber">
+          •••• •••• •••• 4821
+        </div>
+
+        <div class="card-bottom">
+          <div>
+            <small>Card Holder</small>
+            <p>Fred Hallman</p>
+          </div>
+
+          <div>
+            <small>Expiry</small>
+            <p>09/29</p>
+          </div>
+        </div>
+
+      </div>
+    </section>
+   <!-- ================= QUICK ACTIONS ================= -->
+<section class="quick-actions">
+  <div class="quick-actions-container">
+
+    <div class="action-card" onclick="openDeposit()">
+      <div class="icon">💰</div>
+      <h3>Deposit</h3>
+      <p>Add funds to your account</p>
     </div>
 
-    <div class="card">
-      <h3>Mastercard Black</h3>
-      <p>Status: Restricted-works anywhere depending on status</p>
+    <div class="action-card" onclick="openWithdraw()">
+      <div class="icon">📤</div>
+      <h3>Withdraw</h3>
+      <p>Send money to your bank</p>
     </div>
+
+    <div class="action-card" onclick="openTransfer()">
+      <div class="icon">🔄</div>
+      <h3>Transfer</h3>
+      <p>Move funds instantly</p>
+    </div>
+
+    <div class="action-card" onclick="openStatements()">
+      <div class="icon">📊</div>
+      <h3>Statements</h3>
+      <p>View account history</p>
+    </div>
+
   </div>
 </section>
 
-<!-- POPUPS -->
-<div id="transferPopup" class="popup" style="display:none;">
-  <h3>Transfer Restricted</h3>
-  <p>Transfers are currently restricted under compliance rules.</p>
-  <button onclick="closePopup()">Close</button>
+<!-- ================= STATS ================= -->
+<section class="stats">
+
+  <div class="stat-card">
+    <small>Available Balance</small>
+    <h3 id="balance">$0</h3>
+    <p>Primary Account</p>
+  </div>
+
+  <div class="stat-card">
+    <h3 id="totalIncome">$0</h3>
+    <p>Total Income</p>
+  </div>
+
+  <div class="stat-card">
+    <h3 id="totalExpenses">$0</h3>
+    <p>Total Expenses</p>
+  </div>
+
+</section>
+
+<!-- ================= TRANSACTIONS ================= -->
+<section class="transactions">
+
+    <div class="transaction-header">
+        <h2>Previous Transactions (2024-2025)</h2>
+
+        <button class="view-all-btn">
+            View All
+        </button>
+    </div>
+
+<h3 class="transaction-year">
+    Recent Transactions (2026)
+</h3>
+
+<!-- Mobile Transaction Cards -->
+<div id="transactionCards" class="transaction-cards"></div>
+
+<!-- Desktop Table -->
+<div class="transaction-table">
+
+        <table>
+
+            <thead>
+                <tr>
+                    <th>Date</th>
+                    <th>Description</th>
+                    <th>Category</th>
+                    <th>Debit</th>
+                    <th>Credit</th>
+                    <th>Balance</th>
+                    <th>Status</th>
+                </tr>
+            </thead>
+
+            <tbody id="transactionTable"></tbody>
+
+        </table>
+
+    </div>
+
+</section>
+
+<!-- ================= CARDS SECTION ================= -->
+<section id="cardsSection" style="display:none; padding:40px;">
+  <h2>Your Cards</h2>
+</section>
+
 </div>
+
+</div>
+
+<!-- ================= POPUPS (FIXED - NO DUPLICATES) ================= -->
+<div id="transferPopup" class="popup" style="display:none;"></div>
 
 <div id="statementPopup" class="popup" style="display:none;">
-  <h3>Download Statement</h3>
+  <div class="popup-box">
+    <h3>Account Statement</h3>
 
-  <input type="date" id="fromDate">
-  <input type="date" id="toDate">
+    <input type="date" id="fromDate">
+    <input type="date" id="toDate">
 
-  <button onclick="downloadStatement()">Download</button>
-  <button onclick="closeStatement()">Close</button>
+    <button onclick="downloadStatement()">Download</button>
+    <button onclick="closeStatement()">Close</button>
+  </div>
 </div>
 
-<!-- SINGLE CLEAN ACTIVITY PANEL -->
-<div id="activityPanel" class="activity-panel collapsed">
+<!-- ================= ACTIVITY PANEL ================= -->
+ <button id="activityButton" class="activity-button" onclick="toggleActivityPanel()">
+    📋 Activity
+</button>
+<div id="activityPanel" class="activity-panel" style="display:none;"></div>
   <div class="activity-header" onclick="toggleActivityPanel()">
     <h4>System Activity</h4>
     <span id="activityToggle">▲</span>
   </div>
 
-  <div id="activityLog" class="activity-log"></div>
+  <div id="activityLog"></div>
 </div>
 
+<!-- ================= SCRIPTS ================= -->
 <script src="script.js"></script>
+<script src="actions.js"></script>
+
+<script>
+let cardUnlocked = false;
+let revealed = false;
+
+const cardData = {
+  last4: "4821",
+  fullNumber: "5391 7284 1928 4821"
+};
+
+function unlockDashboard() {
+  const modal = document.getElementById("pinModal");
+  if (modal) modal.style.display = "none";
+}
+
+function verifyPin() {
+  const pinInput = document.getElementById("pinInput");
+  const pin = pinInput ? pinInput.value : "";
+
+  if (pin === "1234") {
+    cardUnlocked = true;
+    unlockDashboard();
+  } else {
+    const err = document.getElementById("pinError");
+    if (err) err.innerText = "Invalid PIN";
+  }
+}
+
+function toggleCardReveal() {
+  const card = document.getElementById("cardNumber");
+
+  if (!cardUnlocked) {
+    const modal = document.getElementById("pinModal");
+    if (modal) modal.style.display = "flex";
+    return;
+  }
+
+  revealed = !revealed;
+
+  card.innerText = revealed
+    ? cardData.fullNumber
+    : `•••• •••• •••• ${cardData.last4}`;
+}
+</script>
 
 </body>
 </html>
