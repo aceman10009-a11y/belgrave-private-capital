@@ -1,319 +1,313 @@
 /* ===== GLOBAL DASHBOARD RESET ===== */
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-  font-family: Arial, sans-serif;
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:Arial,sans-serif;
 }
 
-body {
-  background: #0b0f1a;
-  color: #fff;
+body{
+    background:#0b0f1a;
+    color:#fff;
 }
 
-/* ===== DASHBOARD LAYOUT BASE ===== */
-.dashboard-container {
-  display: grid;
-  grid-template-columns: 260px 1fr;
-  min-height: 100vh;
+/* ===== DASHBOARD LAYOUT ===== */
+
+.dashboard-container{
+    display:grid;
+    grid-template-columns:260px 1fr;
+    min-height:100vh;
 }
 
-/* ===== SIDEBAR (future use) ===== */
-.sidebar {
-  background: #0f1629;
-  padding: 20px;
+/* ===== SIDEBAR ===== */
+
+.sidebar{
+    background:#0f1629;
+    color:#cbd5e1;
+    padding:20px;
+    font-size:14px;
+    line-height:2;
 }
 
-/* ===== MAIN CONTENT AREA ===== */
-.main-content {
-  padding: 25px;
+/* ===== MAIN CONTENT ===== */
+
+.main-content{
+    display:flex;
+    flex-direction:column;
+    gap:24px;
+    padding:25px;
 }
+
+/* ===== STANDARD SECTION SPACING ===== */
+
+section{
+    margin-bottom:20px;
+}
+
 /* ===== CARD SECTION ===== */
-.card-section {
-  display: flex;
-  justify-content: flex-start;
-  margin-top: 20px;
+
+.card-section{
+    display:flex;
+    justify-content:flex-start;
+    margin-top:20px;
 }
 
 /* ===== BANK CARD ===== */
-.bank-card {
-  width: 420px;
-  height: 240px;
-  border-radius: 18px;
-  padding: 20px;
-  color: #fff;
-  position: relative;
-  background: linear-gradient(135deg, #0b1220, #111a2e);
-  box-shadow: 0 20px 50px rgba(0,0,0,0.5);
-  overflow: hidden;
+
+.bank-card{
+    width:420px;
+    height:240px;
+    border-radius:18px;
+    padding:20px;
+    color:#fff;
+    position:relative;
+    overflow:hidden;
+
+    background:
+    linear-gradient(135deg,#0b1220,#111a2e);
+
+    box-shadow:0 20px 50px rgba(0,0,0,.5);
 }
 
-/* glow effect */
-.bank-card::before {
-  content: "";
-  position: absolute;
-  top: -50%;
-  right: -40%;
-  width: 300px;
-  height: 300px;
-  background: radial-gradient(circle, rgba(255,215,0,0.25), transparent 60%);
+/* Gold glow */
+
+.bank-card::before{
+
+    content:"";
+
+    position:absolute;
+
+    top:-50%;
+    right:-40%;
+
+    width:300px;
+    height:300px;
+
+    background:
+    radial-gradient(circle,
+    rgba(255,215,0,.25),
+    transparent 60%);
 }
 
-/* top row */
-.card-top {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  font-size: 14px;
-  letter-spacing: 1px;
-  color: gold;
+/* ===== CARD TOP ===== */
+
+.card-top{
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+
+    font-size:14px;
+    letter-spacing:1px;
+
+    color:gold;
 }
 
-.toggle-eye {
-  cursor: pointer;
-  opacity: 0.8;
-  transition: 0.2s;
+/* ===== EYE ===== */
+
+.toggle-eye{
+    cursor:pointer;
+    opacity:.8;
+    transition:.25s;
 }
 
-.toggle-eye:hover {
-  opacity: 1;
-  transform: scale(1.1);
+.toggle-eye:hover{
+    opacity:1;
+    transform:scale(1.08);
 }
 
-/* chip */
-.card-chip {
-  width: 45px;
-  height: 35px;
-  margin-top: 25px;
-  border-radius: 6px;
-  background: linear-gradient(135deg, #d4af37, #b8860b);
+/* ===== CHIP ===== */
+
+.card-chip{
+
+    width:45px;
+    height:35px;
+
+    margin-top:25px;
+
+    border-radius:6px;
+
+    background:
+    linear-gradient(135deg,#d4af37,#b8860b);
 }
 
-/* number */
-.card-number {
-  margin-top: 25px;
-  font-size: 18px;
-  letter-spacing: 3px;
+/* ===== NUMBER ===== */
+
+.card-number{
+
+    margin-top:25px;
+
+    font-size:18px;
+    letter-spacing:3px;
 }
 
-/* bottom info */
-.card-bottom {
-  display: flex;
-  justify-content: space-between;
-  margin-top: 25px;
+/* ===== CARD FOOTER ===== */
+
+.card-bottom{
+
+    display:flex;
+    justify-content:space-between;
+
+    margin-top:25px;
 }
 
-.card-bottom small {
-  opacity: 0.6;
-}
-.main-content {
-  display: flex;
-  flex-direction: column;
-  gap: 24px;
+.card-bottom small{
+    opacity:.6;
 }
 
-/* SECTION SPACING STANDARD */
-section {
-  margin-bottom: 20px;
-}
+/* ===== PREMIUM SECTIONS ===== */
 
-/* MAKE SIDEBAR FEEL REAL */
-.sidebar {
-  color: #cbd5e1;
-  font-size: 14px;
-  line-height: 2;
-}
-
-/* SOFT SECTION SEPARATION (fixes “flat” look) */
 .card-section,
+.quick-actions,
 .stats-section,
-.transactions-section,
-.quick-actions {
-  background: rgba(255, 255, 255, 0.02);
-  border: 1px solid rgba(255, 255, 255, 0.05);
-  border-radius: 14px;
-  padding: 18px;
+.transactions-section{
+
+    background:rgba(255,255,255,.02);
+
+    border:1px solid rgba(255,255,255,.05);
+
+    border-radius:14px;
+
+    padding:18px;
 }
-/* ===== RESPONSIVE FIX ===== */
-@media (max-width: 768px) {
 
-  .dashboard-container {
-    grid-template-columns: 1fr;
-  }
+/* ===== PIN MODAL ===== */
 
-  .sidebar {
-    display: none; /* or convert to hamburger later */
-  }
+.pin-modal{
 
-  .main-content {
-    padding: 15px;
-  }
-
-  .card-section {
-    display: flex;
-    justify-content: center;
-  }
-
-  .bank-card {
-    width: 100%;
-    max-width: 360px;
-  }
-
-}
-/* ===== PIN OVERLAY CONTROL ===== */
-.pin-modal {
-  position: fixed;
-  inset: 0;
-  background: rgba(0,0,0,0.85);
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  z-index: 9999;
-}
-/* hide PIN after unlock */
-.pin-modal.hidden {
-  display: none;
-}
-@media (max-width: 768px) {
-
-  .dashboard-container {
-    flex-direction: column;
-  }
-
-  .sidebar {
-    display: block;
-    position: fixed;
-    left: -260px;
-    top: 0;
-    height: 100vh;
-    width: 240px;
-    background: #0b1220;
-    z-index: 999;
-    transition: 0.3s;
-    padding: 20px;
-  }
-
-  .sidebar.active {
-    left: 0;
-  }
-
-}
-/* ================= FINAL MOBILE SYSTEM (SINGLE SOURCE OF TRUTH) ================= */
-@media (max-width: 768px) {
-
-  .dashboard-container {
-    grid-template-columns: 1fr;
-    overflow-x: hidden;
-  }
-
-  .sidebar {
-    position: fixed;
-    top: 0;
-    left: -260px;
-    width: 240px;
-    height: 100vh;
-    background: #0b1220;
-    z-index: 9999;
-    transition: left 0.3s ease;
-    padding: 20px;
-  }
-
-  .sidebar.active {
-    left: 0;
-  }
-
-  .main-content {
-    width: 100%;
-    padding: 12px;
-  }
-
-  .menu-btn {
-    position: fixed;
-    top: 12px;
-    left: 12px;
-    z-index: 10000;
-  }
-
-  .quick-actions-container,
-  .stats {
-    display: flex;
-    flex-direction: column;
-    gap: 12px;
-  }
-
-  .transactions {
-    overflow-x: auto;
-  }
-
-  .transactions table {
-    min-width: 600px;
-  }
-
-  .bank-card {
-    width: 100%;
-    max-width: 360px;
-    margin: 0 auto;
-  }
-}
-/* ================= FIX CENTERING ISSUE ================= */
-@media (max-width: 768px) {
-
-  .dashboard-container {
-    display: block !important;
-  }
-
-  .sidebar {
-    position: fixed;
-    top: 0;
-    left: -260px;
-    width: 240px;
-    height: 100vh;
-    background: #0b1220;
-    z-index: 9999;
-    transition: left 0.3s ease;
-  }
-
-  .sidebar.active {
-    left: 0;
-  }
-
-  .main-content {
-    margin: 0 !important;
-    width: 100% !important;
-    padding: 15px;
-  }
-
-  .menu-btn {
-    position: fixed;
-    top: 12px;
-    left: 12px;
-    z-index: 10000;
-  }
-
-  .bank-card,
-  .balance-card {
-    margin: 0 auto;
-  }
-
-  .quick-actions-container,
-  .stats {
-    display: flex;
-    flex-direction: column;
-    gap: 12px;
-  }
-
-  .transactions {
-    overflow-x: auto;
-  }
-
-  .transactions table {
-    min-width: 600px;
-  }
-}
-.activity-button{
     position:fixed;
-    bottom:25px;
+    inset:0;
+
+    display:flex;
+    justify-content:center;
+    align-items:center;
+
+    background:rgba(0,0,0,.85);
+
+    z-index:9999;
+}
+
+.pin-modal.hidden{
+    display:none;
+}
+
+/* ===== MOBILE ===== */
+
+@media (max-width:768px){
+
+    .dashboard-container{
+        display:block;
+    }
+
+    .sidebar{
+
+        position:fixed;
+
+        top:0;
+        left:-260px;
+
+        width:240px;
+        height:100vh;
+
+        background:#0b1220;
+
+        transition:.3s;
+
+        z-index:999;
+
+        padding:20px;
+    }
+
+    .sidebar.active{
+        left:0;
+    }
+
+    .main-content{
+        padding:15px;
+    }
+
+    .card-section{
+        justify-content:center;
+    }
+
+    .bank-card{
+        width:100%;
+        max-width:360px;
+    }
+}
+/* ================= MOBILE LAYOUT ================= */
+
+@media (max-width:768px){
+
+    .dashboard-container{
+        display:block;
+        overflow-x:hidden;
+    }
+
+    .sidebar{
+        position:fixed;
+        top:0;
+        left:-260px;
+
+        width:240px;
+        height:100vh;
+
+        background:#0b1220;
+
+        padding:20px;
+
+        transition:left .3s ease;
+
+        z-index:9999;
+    }
+
+    .sidebar.active{
+        left:0;
+    }
+
+    .main-content{
+        width:100%;
+        margin:0;
+        padding:15px;
+    }
+
+    .menu-btn{
+        position:fixed;
+        top:12px;
+        left:12px;
+        z-index:10000;
+    }
+
+    .bank-card,
+    .balance-card{
+        width:100%;
+        max-width:360px;
+        margin:0 auto;
+    }
+
+    .quick-actions-container,
+    .stats{
+        display:flex;
+        flex-direction:column;
+        gap:12px;
+    }
+
+    .transactions{
+        overflow-x:auto;
+    }
+
+    .transactions table{
+        min-width:600px;
+    }
+}
+
+/* ================= ACTIVITY BUTTON ================= */
+
+.activity-button{
+
+    position:fixed;
+
     right:25px;
+    bottom:25px;
 
     padding:12px 18px;
 
@@ -326,141 +320,169 @@ section {
     cursor:pointer;
 
     z-index:999;
+
     box-shadow:0 8px 20px rgba(0,0,0,.25);
 
-    transition:.3s;
+    transition:.25s;
 }
 
 .activity-button:hover{
     transform:translateY(-2px);
 }
 
+/* ================= ACTIVITY PANEL ================= */
+
 .activity-panel{
+
     position:fixed;
+
     right:25px;
     bottom:80px;
+
     z-index:998;
 }
-/*=============================
-TRANSACTIONS
-==============================*/
+/* =============================
+   TRANSACTIONS
+============================= */
 
 .transaction-header{
-display:flex;
-justify-content:space-between;
-align-items:center;
-margin-bottom:20px;
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    margin-bottom:20px;
+}
+
+.transaction-header h2{
+    font-size:24px;
+    font-weight:700;
+}
+
+.transaction-year{
+    margin:20px 0 15px;
+    color:#bfa14a;
+    font-size:15px;
+    font-weight:600;
+    letter-spacing:.08em;
+    text-transform:uppercase;
 }
 
 .view-all-btn{
+    background:none;
+    border:none;
+    color:#bfa14a;
+    font-weight:600;
+    cursor:pointer;
+    transition:.25s;
+}
 
-background:none;
-border:none;
-color:#0d2d62;
-font-weight:600;
-cursor:pointer;
-
+.view-all-btn:hover{
+    opacity:.8;
 }
 
 .transaction-cards{
-
-display:flex;
-flex-direction:column;
-gap:16px;
-
+    display:flex;
+    flex-direction:column;
+    gap:16px;
 }
 
 .transaction-card{
-
-background:#fff;
-
-border-radius:18px;
-
-padding:18px;
-
-box-shadow:0 8px 20px rgba(0,0,0,.08);
-
+    background:#ffffff;
+    color:#111827;
+    border-radius:18px;
+    padding:18px;
+    box-shadow:0 8px 20px rgba(0,0,0,.08);
 }
 
 .transaction-card-top{
-
-display:flex;
-
-justify-content:space-between;
-
-margin-bottom:12px;
-
+    display:flex;
+    justify-content:space-between;
+    margin-bottom:12px;
 }
 
 .transaction-title{
-
-font-weight:600;
-
-font-size:16px;
-
+    font-weight:600;
+    font-size:16px;
 }
 
 .transaction-date{
-
-font-size:13px;
-
-color:#888;
-
-}
-
-.credit{
-
-color:#1ca34a;
-
-font-weight:700;
-
-}
-
-.debit{
-
-color:#d83b3b;
-
-font-weight:700;
-
+    font-size:13px;
+    color:#888;
 }
 
 .transaction-category{
+    margin-top:10px;
+    font-size:13px;
+    color:#777;
+}
 
-margin-top:10px;
+.credit{
+    color:#1ca34a;
+    font-weight:700;
+}
 
-font-size:13px;
-
-color:#777;
-
+.debit{
+    color:#d83b3b;
+    font-weight:700;
 }
 
 .transaction-table{
-
-display:none;
-
+    display:none;
 }
 
-@media(min-width:992px){
-
-.transaction-cards{
-
-display:none;
-
+.transaction-table table{
+    width:100%;
+    border-collapse:collapse;
 }
 
-.transaction-table{
-
-display:block;
-
+.transaction-table th{
+    background:#0f1629;
+    color:#fff;
+    text-align:left;
+    padding:14px;
+    font-size:14px;
 }
 
+.transaction-table td{
+    padding:14px;
+    border-bottom:1px solid rgba(255,255,255,.08);
+    font-size:14px;
 }
-.status {
-    display: inline-block;
-    padding: 4px 12px;
-    border-radius: 20px;
-    background: #e9f9ef;
-    color: #1c8c4a;
-    font-size: 12px;
-    font-weight: 600;
+
+.transaction-table tr:hover{
+    background:rgba(255,255,255,.03);
+}
+
+.status{
+    display:inline-block;
+    padding:5px 12px;
+    border-radius:20px;
+    background:#e9f9ef;
+    color:#1c8c4a;
+    font-size:12px;
+    font-weight:600;
+}
+
+@media (min-width:992px){
+
+    .transaction-cards{
+        display:none;
+    }
+
+    .transaction-table{
+        display:block;
+    }
+
+}
+html, body {
+    height: 100%;
+    overflow: auto;
+}
+
+.dashboard-container {
+    min-height: 100vh;
+}
+
+.main-content {
+    height: 100vh;
+    overflow-y: auto;
 }

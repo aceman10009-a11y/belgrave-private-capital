@@ -640,3 +640,6 @@ function renderTransactions() {
 }
 
 window.addEventListener("DOMContentLoaded", renderTransactions);
+function goHome() {
+  window.location.href = "index.html";
+};
