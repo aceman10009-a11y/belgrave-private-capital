@@ -1,0 +1,16 @@
+/* ==========================================================
+   BELGRAVE PRIVATE BANK
+   DASHBOARD
+==========================================================
+
+   FILE STRUCTURE
+   --------------
+   1. dashboard-components.css
+   2. dashboard-sections.css
+   3. dashboard-responsive.css
+
+========================================================== */
+
+@import url("dashboard-components.css");
+@import url("dashboard-sections.css");
+@import url("dashboard-responsive.css");

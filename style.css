@@ -264,6 +264,11 @@ nav a:hover{
 /* =========================
    REVIEWS
 ========================= */
+
+.reviews{
+  padding: 80px 20px;
+}
+
 .reviews h2,
 .services h2{
   text-align:center;
@@ -273,16 +278,19 @@ nav a:hover{
   color:var(--gold);
   letter-spacing:1px;
 }
+
 .review-grid{
   display:grid;
-  grid-template-columns:repeat(3,1fr);
+  grid-template-columns:repeat(auto-fit, minmax(280px,1fr));
   gap:30px;
 }
+
 .review-card{
   background:var(--card);
   padding:30px;
   border-radius:15px;
 }
+
 .review-card h4{
   margin-top:20px;
   color:var(--gold);
@@ -293,28 +301,34 @@ PREMIUM FOOTER
 
 .footer{
   background:#0F172A;
-  padding:var(--space-xl);
+  padding:60px 20px;
   border-top:1px solid rgba(255,255,255,.08);
 }
+
 .footer-grid{
   display:grid;
-  grid-template-columns:2fr 1fr 1fr;
+  grid-template-columns:repeat(auto-fit,minmax(220px,1fr));
   gap:40px;
   margin-bottom:30px;
 }
-.footer h3, .footer h4{
+
+.footer h3,
+.footer h4{
   color:var(--gold);
   margin-bottom:10px;
 }
+
 .footer h3{
-    text-align:center;
+  text-align:center;
 }
+
 .footer p{
   color:var(--muted);
   line-height:1.6;
   margin:6px 0;
   text-align:center;
 }
+
 .footer a{
   color:#CBD5E1;
   text-decoration:none;
@@ -322,17 +336,19 @@ PREMIUM FOOTER
 }
 
 .footer a:hover{
-    color:var(--gold);
+  color:var(--gold);
 }
+
 .copyright{
   text-align:center;
   color:#666;
 }
+
 .footer-logo{
-    width:52px;
-    height:auto;
-    display:block;
-    margin-bottom:15px;
+  width:52px;
+  height:auto;
+  display:block;
+  margin:0 auto 15px;
 }
 /* =========================
    AUTH BASE (CRITICAL FIX)
@@ -541,8 +557,16 @@ PREMIUM FOOTER
     margin:0 auto 12px;
 }
 }
-*{
-  transition: all 0.25s ease;
+a,
+button,
+.btn,
+.card,
+.service-card,
+.review-card,
+.stat-card{
+
+transition:.25s ease;
+
 }
 .card,
 .service-card,
@@ -1585,4 +1609,39 @@ font-size:2.2rem;
     flex-direction:column;
     align-items:center;
     justify-content:center;
+}
+/* =========================
+   MOBILE FIXES
+========================= */
+
+@media (max-width:768px){
+
+  .reviews{
+    padding:60px 16px;
+  }
+
+  .review-grid{
+    grid-template-columns:1fr;
+    gap:20px;
+  }
+
+  .footer{
+    padding:50px 16px;
+  }
+
+  .footer-grid{
+    grid-template-columns:1fr;
+    text-align:center;
+    gap:30px;
+  }
+
+  .footer-buttons{
+    flex-direction:column;
+    align-items:center;
+  }
+
+  .footer-buttons .btn{
+    width:100%;
+    max-width:320px;
+  }
 }

@@ -1,0 +1,51 @@
+/* ==========================================================
+   BELGRAVE PRIVATE BANK
+   DASHBOARD RESPONSIVE
+========================================================== */
+
+
+/* ==========================
+   Tablet
+========================== */
+
+@media (max-width:992px){
+
+    .dashboard-container{
+        grid-template-columns:1fr;
+    }
+
+    .sidebar{
+        display:none;
+    }
+
+    .main-content{
+        padding:20px;
+    }
+
+    .bank-card{
+        width:100%;
+        max-width:380px;
+    }
+
+}
+
+
+/* ==========================
+   Mobile
+========================== */
+
+@media (max-width:768px){
+
+    .main-content{
+        padding:15px;
+    }
+
+    .card-section{
+        justify-content:center;
+    }
+
+    .transaction-table{
+        overflow-x:auto;
+    }
+
+}

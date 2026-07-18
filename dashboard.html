@@ -6,8 +6,13 @@
 
 <title>Belgrave Private Bank | Dashboard</title>
 
-<link rel="stylesheet" href="style.css">
-<link rel="stylesheet" href="dashboard.css">
+<link rel="stylesheet" href="css/base.css">
+<link rel="stylesheet" href="css/components.css">
+
+<link rel="stylesheet" href="css/dashboard.css">
+<link rel="stylesheet" href="css/dashboard-components.css">
+<link rel="stylesheet" href="css/dashboard-sections.css">
+<link rel="stylesheet" href="css/dashboard-responsive.css">
 
 <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600;700&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
 <link rel="icon" type="image/png" href="assets/favicon.png">
@@ -176,7 +181,7 @@ window.toggleSidebar = window.toggleSidebar || function () {
 
   <div class="stat-card">
     <small>Available Balance</small>
-    <h3 id="balance">$0</h3>
+    <h3 id="primaryBalance">$0</h3>
     <p>Primary Account</p>
   </div>
 
@@ -273,8 +278,8 @@ window.toggleSidebar = window.toggleSidebar || function () {
 </div>
 
 <!-- ================= SCRIPTS ================= -->
-<script src="script.js"></script>
 <script src="actions.js"></script>
+<script src="script.js"></script>
 
 <script>
 let cardUnlocked = false;

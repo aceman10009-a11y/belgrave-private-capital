@@ -1,0 +1,96 @@
+/* ==========================================================
+   BELGRAVE PRIVATE BANK
+   DASHBOARD SECTIONS
+==========================================================
+
+   CONTENTS
+   --------
+   1. Dashboard Sections
+   2. Transactions
+
+========================================================== */
+
+
+/* ==========================================================
+   DASHBOARD SECTIONS
+========================================================== */
+
+.dashboard-section{
+    background:white;
+    border-radius:20px;
+    padding:25px;
+    border:1px solid #E5E7EB;
+    box-shadow:0 10px 30px rgba(15,23,42,.06);
+}
+
+.stats-section,
+.transactions-section,
+.quick-actions{
+    background:white;
+    border-radius:20px;
+    padding:25px;
+}
+
+
+/* ==========================================================
+   TRANSACTIONS
+========================================================== */
+
+.transaction-header{
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+}
+
+.view-all-btn{
+    background:none;
+    border:none;
+    color:var(--primary);
+    cursor:pointer;
+    font-weight:600;
+}
+
+.transaction-cards{
+    display:flex;
+    flex-direction:column;
+    gap:15px;
+}
+
+.transaction-card{
+    background:#F8FAFC;
+    border-radius:16px;
+    padding:18px;
+}
+
+.transaction-card-top{
+    display:flex;
+    justify-content:space-between;
+}
+
+.transaction-title{
+    font-weight:600;
+}
+
+.transaction-date{
+    font-size:.85rem;
+    color:var(--muted);
+}
+
+.credit{
+    color:#16A34A;
+    font-weight:700;
+}
+
+.debit{
+    color:#DC2626;
+    font-weight:700;
+}
+
+.status{
+    display:inline-block;
+    padding:5px 12px;
+    border-radius:20px;
+    background:#DCFCE7;
+    color:#15803D;
+    font-size:.75rem;
+}

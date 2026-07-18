@@ -1,0 +1,141 @@
+/* ==========================================================
+   BELGRAVE PRIVATE BANK
+   BASE STYLES
+   ==========================================================
+
+   CONTENTS
+   --------
+   1. Reset
+   2. CSS Variables
+   3. HTML & Body
+   4. Watermark
+   5. Typography
+
+========================================================== */
+
+
+/* ==========================================
+   RESET
+========================================== */
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+
+/* ==========================================
+   CSS VARIABLES
+========================================== */
+
+:root {
+
+  /* Brand */
+  --gold: #C9A227;
+  --gold-light: #E6C768;
+
+  /* Backgrounds */
+  --bg: #EEF2F7;
+  --surface: #FFFFFF;
+  --surface-2: #F7F9FC;
+
+  /* Cards */
+  --card: var(--surface);
+
+  /* Text */
+  --text: #1F2937;
+  --muted: #6B7280;
+
+  /* Accent */
+  --primary: #1F4FD6;
+  --success: #16A34A;
+  --danger: #DC2626;
+
+  /* Borders */
+  --border: #E5E7EB;
+
+  /* Shadows */
+  --shadow-sm: 0 4px 12px rgba(15, 23, 42, .06);
+  --shadow-md: 0 10px 30px rgba(15, 23, 42, .08);
+  --shadow-lg: 0 18px 45px rgba(15, 23, 42, .12);
+
+  /* Border Radius */
+  --radius-sm: 12px;
+  --radius-md: 18px;
+  --radius-lg: 24px;
+
+  /* Spacing */
+  --space-xs: 8px;
+  --space-sm: 16px;
+  --space-md: 32px;
+  --space-lg: 64px;
+  --space-xl: 96px;
+}
+
+
+/* ==========================================
+   HTML & BODY
+========================================== */
+
+html,
+body {
+  font-family: 'Inter', sans-serif;
+  background: var(--bg);
+  color: var(--text);
+  position: relative;
+  overflow-x: hidden;
+
+  letter-spacing: -0.2px;
+  -webkit-font-smoothing: antialiased;
+  text-rendering: optimizeLegibility;
+}
+
+
+/* ==========================================
+   WATERMARK
+========================================== */
+
+body {
+  position: relative;
+  z-index: 1;
+}
+
+body::before {
+  content: "";
+  position: fixed;
+  inset: 0;
+
+  background: url("../assets/logo.png") no-repeat center;
+  background-size: 420px;
+
+  opacity: 0.035;
+
+  pointer-events: none;
+  z-index: 0;
+}
+
+
+/* ==========================================
+   TYPOGRAPHY
+========================================== */
+
+h1,
+h2,
+.hero-left h1 {
+  font-family: 'Playfair Display', serif;
+  font-weight: 600;
+  letter-spacing: -1px;
+}
+
+h3,
+h4,
+h5 {
+  font-family: 'Inter', sans-serif;
+  font-weight: 600;
+}
+
+p {
+  font-size: 1rem;
+  line-height: 1.8;
+}

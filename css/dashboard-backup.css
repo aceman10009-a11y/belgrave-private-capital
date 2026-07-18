@@ -1,0 +1,581 @@
+/* ==========================================================
+   BELGRAVE PRIVATE BANK
+   DASHBOARD
+==========================================================
+
+   CONTENTS
+   --------
+   1. Dashboard Layout
+   2. Sidebar
+   3. Main Content
+   4. Bank Card
+   5. Dashboard Sections
+   6. Transactions
+   7. Activity Panel
+   8. PIN Modal
+   9. Responsive
+
+========================================================== */
+
+
+/* ==========================================================
+   DASHBOARD LAYOUT
+========================================================== */
+
+
+.dashboard-container{
+
+    display:grid;
+
+    grid-template-columns:260px 1fr;
+
+    min-height:100vh;
+
+    background:#EEF2F7;
+
+}
+
+
+
+.main-content{
+
+    padding:30px;
+
+    display:flex;
+
+    flex-direction:column;
+
+    gap:25px;
+
+}
+
+
+
+/* ==========================================================
+   SIDEBAR
+========================================================== */
+
+
+.sidebar{
+
+    background:
+
+    linear-gradient(
+        180deg,
+        #111827,
+        #020617
+    );
+
+    color:#CBD5E1;
+
+    padding:25px;
+
+}
+
+
+.sidebar a{
+
+    color:#CBD5E1;
+
+    text-decoration:none;
+
+    display:block;
+
+    padding:12px;
+
+    border-radius:10px;
+
+    transition:.3s;
+
+}
+
+
+.sidebar a:hover{
+
+    background:rgba(255,255,255,.08);
+
+    color:var(--gold);
+
+}
+
+
+
+/* ==========================================================
+   BANK CARD
+========================================================== */
+
+
+.card-section{
+
+    display:flex;
+
+    justify-content:flex-start;
+
+}
+
+
+
+.bank-card{
+
+    width:420px;
+
+    height:240px;
+
+    padding:25px;
+
+    border-radius:24px;
+
+    position:relative;
+
+    overflow:hidden;
+
+
+    background:
+
+    linear-gradient(
+        135deg,
+        #111827,
+        #020617
+    );
+
+
+    color:white;
+
+
+    box-shadow:
+
+    0 25px 60px rgba(0,0,0,.25);
+
+}
+
+
+
+.bank-card::before{
+
+    content:"";
+
+    position:absolute;
+
+    width:300px;
+
+    height:300px;
+
+    right:-120px;
+
+    top:-120px;
+
+
+    background:
+
+    radial-gradient(
+        circle,
+        rgba(201,162,39,.35),
+        transparent 65%
+    );
+
+}
+
+
+
+.card-top{
+
+    display:flex;
+
+    justify-content:space-between;
+
+    color:var(--gold);
+
+}
+
+
+
+.card-chip{
+
+    width:45px;
+
+    height:35px;
+
+    margin-top:30px;
+
+    border-radius:7px;
+
+
+    background:
+
+    linear-gradient(
+        135deg,
+        #E6C768,
+        #B8860B
+    );
+
+}
+
+
+
+.card-number{
+
+    margin-top:30px;
+
+    font-size:18px;
+
+    letter-spacing:3px;
+
+}
+
+
+
+.card-bottom{
+
+    display:flex;
+
+    justify-content:space-between;
+
+    margin-top:30px;
+
+}
+
+
+
+.card-bottom small{
+
+    opacity:.7;
+
+}
+
+
+
+/* ==========================================================
+   DASHBOARD SECTIONS
+========================================================== */
+
+
+.dashboard-section{
+
+    background:white;
+
+    border-radius:20px;
+
+    padding:25px;
+
+    border:1px solid #E5E7EB;
+
+    box-shadow:
+
+    0 10px 30px rgba(15,23,42,.06);
+
+}
+
+
+
+.stats-section,
+.transactions-section,
+.quick-actions{
+
+    background:white;
+
+    border-radius:20px;
+
+    padding:25px;
+
+}
+
+
+
+/* ==========================================================
+   TRANSACTIONS
+========================================================== */
+
+
+.transaction-header{
+
+    display:flex;
+
+    justify-content:space-between;
+
+    align-items:center;
+
+}
+
+
+
+.view-all-btn{
+
+    background:none;
+
+    border:none;
+
+    color:var(--primary);
+
+    cursor:pointer;
+
+    font-weight:600;
+
+}
+
+
+
+.transaction-cards{
+
+    display:flex;
+
+    flex-direction:column;
+
+    gap:15px;
+
+}
+
+
+
+.transaction-card{
+
+    background:#F8FAFC;
+
+    border-radius:16px;
+
+    padding:18px;
+
+}
+
+
+
+.transaction-card-top{
+
+    display:flex;
+
+    justify-content:space-between;
+
+}
+
+
+
+.transaction-title{
+
+    font-weight:600;
+
+}
+
+
+
+.transaction-date{
+
+    font-size:.85rem;
+
+    color:var(--muted);
+
+}
+
+
+
+.credit{
+
+    color:#16A34A;
+
+    font-weight:700;
+
+}
+
+
+
+.debit{
+
+    color:#DC2626;
+
+    font-weight:700;
+
+}
+
+
+
+.status{
+
+    display:inline-block;
+
+    padding:5px 12px;
+
+    border-radius:20px;
+
+    background:#DCFCE7;
+
+    color:#15803D;
+
+    font-size:.75rem;
+
+}
+
+
+
+/* ==========================================================
+   ACTIVITY PANEL
+========================================================== */
+
+
+.activity-button{
+
+    position:fixed;
+
+    right:25px;
+
+    bottom:25px;
+
+    padding:12px 18px;
+
+    border:none;
+
+    border-radius:30px;
+
+    background:#111827;
+
+    color:white;
+
+    cursor:pointer;
+
+    z-index:999;
+
+}
+
+
+
+.activity-panel{
+
+    position:fixed;
+
+    right:25px;
+
+    bottom:80px;
+
+    width:280px;
+
+    background:white;
+
+    border-radius:16px;
+
+    padding:15px;
+
+    box-shadow:
+
+    0 15px 40px rgba(0,0,0,.15);
+
+}
+
+
+
+.activity-header{
+
+    display:flex;
+
+    justify-content:space-between;
+
+}
+
+
+
+.activity-log{
+
+    max-height:160px;
+
+    overflow:auto;
+
+}
+
+
+
+/* ==========================================================
+   PIN MODAL
+========================================================== */
+
+
+.pin-modal{
+
+    position:fixed;
+
+    inset:0;
+
+    background:rgba(0,0,0,.8);
+
+    display:flex;
+
+    align-items:center;
+
+    justify-content:center;
+
+    z-index:9999;
+
+}
+
+
+
+.pin-modal.hidden{
+
+    display:none;
+
+}
+
+
+
+/* ==========================================================
+   RESPONSIVE
+========================================================== */
+
+
+@media(max-width:992px){
+
+
+.dashboard-container{
+
+    grid-template-columns:1fr;
+
+}
+
+
+.sidebar{
+
+    display:none;
+
+}
+
+
+.main-content{
+
+    padding:20px;
+
+}
+
+
+.bank-card{
+
+    width:100%;
+
+    max-width:380px;
+
+}
+
+
+}
+
+
+
+@media(max-width:768px){
+
+
+.main-content{
+
+    padding:15px;
+
+}
+
+
+.card-section{
+
+    justify-content:center;
+
+}
+
+
+.transaction-table{
+
+    overflow-x:auto;
+
+}
+
+
+}

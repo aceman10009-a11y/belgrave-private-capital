@@ -1,0 +1,314 @@
+/* ==========================================================
+   BELGRAVE PRIVATE BANK
+   HOME LAYOUT
+==========================================================
+
+   CONTENTS
+   --------
+   1. Hero
+   2. Hero Dashboard
+   3. Financial Snapshot
+
+========================================================== */
+
+
+/* ==========================================================
+   HERO
+========================================================== */
+
+.hero{
+
+    display:grid;
+    grid-template-columns:1.1fr .9fr;
+
+    align-items:center;
+
+    gap:70px;
+
+    min-height:92vh;
+
+    padding:80px;
+
+    background:linear-gradient(
+        135deg,
+        #F4F7FB 0%,
+        #EEF3F9 100%
+    );
+
+}
+
+
+/* ==========================================================
+   HERO CONTENT
+========================================================== */
+
+.hero-left h1{
+
+    margin:20px 0;
+
+    font-size:4rem;
+
+    line-height:1.1;
+
+    color:var(--text);
+
+}
+
+
+.hero-left h1 span{
+
+    color:var(--primary);
+
+}
+
+
+.hero-left p{
+
+    max-width:600px;
+
+    margin-top:25px;
+
+    font-size:1.15rem;
+
+    line-height:1.9;
+
+    color:var(--muted);
+
+}
+
+
+
+/* ==========================================================
+   HERO TAG
+========================================================== */
+
+.hero-tag{
+
+    display:inline-block;
+
+    padding:8px 18px;
+
+    border-radius:999px;
+
+    background:rgba(31,79,214,.08);
+
+    color:var(--primary);
+
+    font-size:.85rem;
+
+    font-weight:600;
+
+    letter-spacing:1px;
+
+}
+
+
+
+/* ==========================================================
+   HERO BUTTONS
+========================================================== */
+
+.hero-buttons{
+
+    display:flex;
+
+    gap:15px;
+
+    margin-top:40px;
+
+}
+
+
+.hero-buttons .btn{
+
+    display:inline-flex;
+
+    justify-content:center;
+
+    align-items:center;
+
+    padding:15px 30px;
+
+}
+
+
+
+/* ==========================================================
+   HERO DASHBOARD
+========================================================== */
+
+.dashboard-preview{
+
+    background:#14213D;
+
+    padding:30px;
+
+    border-radius:24px;
+
+    color:white;
+
+    box-shadow:var(--shadow-lg);
+
+    animation:floatCard 5s ease-in-out infinite;
+
+}
+
+
+.dashboard-header{
+
+    display:flex;
+
+    justify-content:space-between;
+
+    align-items:center;
+
+    margin-bottom:30px;
+
+}
+
+
+.dashboard-cards{
+
+    display:grid;
+
+    grid-template-columns:1fr 1fr;
+
+    gap:20px;
+
+}
+
+
+.mini-card{
+
+    background:rgba(255,255,255,.08);
+
+    padding:20px;
+
+    border-radius:16px;
+
+    backdrop-filter:blur(8px);
+
+}
+
+
+.quick-actions{
+
+    display:grid;
+
+    grid-template-columns:repeat(3,1fr);
+
+    gap:15px;
+
+}
+
+
+.quick-actions button{
+
+    padding:14px;
+
+    border-radius:12px;
+
+    border:none;
+
+    cursor:pointer;
+
+}
+
+
+
+/* ==========================================================
+   DASHBOARD ANIMATION
+========================================================== */
+
+@keyframes floatCard{
+
+    0%{
+        transform:translateY(0);
+    }
+
+    50%{
+        transform:translateY(-8px);
+    }
+
+    100%{
+        transform:translateY(0);
+    }
+
+}
+
+
+
+/* ==========================================================
+   FINANCIAL SNAPSHOT
+========================================================== */
+
+.stats{
+
+    display:grid;
+
+    grid-template-columns:repeat(4,1fr);
+
+    gap:22px;
+
+    padding:70px 80px;
+
+    margin-top:-35px;
+
+    position:relative;
+
+    z-index:5;
+
+}
+
+
+.stat-card{
+
+    background:var(--surface);
+
+    padding:30px;
+
+    border-radius:22px;
+
+    border:1px solid rgba(31,79,214,.08);
+
+    box-shadow:var(--shadow-md);
+
+    transition:.35s;
+
+}
+
+
+.stat-card:hover{
+
+    transform:translateY(-8px);
+
+    box-shadow:var(--shadow-lg);
+
+}
+
+
+.stat-icon{
+
+    font-size:2rem;
+
+    margin-bottom:18px;
+
+    color:var(--primary);
+
+}
+
+
+.stat-card h3{
+
+    font-size:2rem;
+
+    margin-bottom:10px;
+
+}
+
+
+.stat-card p{
+
+    color:var(--muted);
+
+}
