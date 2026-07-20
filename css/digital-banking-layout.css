@@ -1,0 +1,371 @@
+/* ==========================================================
+   BELGRAVE PRIVATE BANK
+   DIGITAL BANKING
+   LAYOUT
+========================================================== */
+
+
+/* ==========================================================
+   DIGITAL BANKING SECTION
+========================================================== */
+
+.banking-preview{
+
+    position:relative;
+
+    display:grid;
+
+    grid-template-columns:1.05fr .95fr;
+
+    align-items:center;
+
+    gap:90px;
+
+    padding:150px 8%;
+
+    overflow:hidden;
+
+    background:
+
+        radial-gradient(
+
+            circle at 85% 20%,
+
+            rgba(169,124,43,.08),
+
+            transparent 42%
+
+        ),
+
+        linear-gradient(
+
+            180deg,
+
+            #0B0B0D,
+
+            #111214
+
+        );
+
+}
+
+
+/* ==========================================================
+   CONTENT COLUMN
+========================================================== */
+
+.banking-left{
+
+    position:relative;
+
+    z-index:2;
+
+    max-width:620px;
+
+}
+
+
+.banking-left h2{
+
+    margin:24px 0;
+
+    font-family:"Playfair Display",serif;
+
+    font-size:3.5rem;
+
+    line-height:1.12;
+
+    letter-spacing:-1px;
+
+}
+
+
+.banking-left p{
+
+    margin-bottom:42px;
+
+    max-width:560px;
+
+    line-height:2;
+
+}
+
+
+/* ==========================================================
+   FEATURE LIST
+========================================================== */
+
+.bank-features{
+
+    display:grid;
+
+    grid-template-columns:repeat(2,minmax(180px,1fr));
+
+    gap:18px 28px;
+
+    margin:0 0 42px;
+
+    padding:0;
+
+    list-style:none;
+
+}
+
+
+.bank-features li{
+
+    display:flex;
+
+    align-items:center;
+
+    gap:12px;
+
+}
+
+
+/* ==========================================================
+   RIGHT COLUMN
+========================================================== */
+
+.banking-right{
+
+    position:relative;
+
+    display:flex;
+
+    justify-content:center;
+
+    align-items:center;
+
+    min-height:620px;
+
+}
+
+
+/* ==========================================================
+   CARD SHOWCASE AREA
+========================================================== */
+
+.cards-showcase{
+
+    position:relative;
+
+    width:620px;
+
+    height:620px;
+
+}
+
+
+/* ==========================================================
+   DASHBOARD POSITION
+========================================================== */
+
+.screen-card{
+
+    position:absolute;
+
+    top:50%;
+
+    left:50%;
+
+    transform:translate(-50%,-50%);
+
+    width:360px;
+
+    z-index:1;
+
+}
+
+
+/* ==========================================================
+   LARGE DESKTOP
+========================================================== */
+
+@media (max-width:1400px){
+
+    .banking-preview{
+
+        gap:70px;
+
+        padding:140px 7%;
+
+    }
+
+    .cards-showcase{
+
+        width:560px;
+
+        height:560px;
+
+    }
+
+}
+
+
+/* ==========================================================
+   LAPTOP
+========================================================== */
+
+@media (max-width:1200px){
+
+    .banking-preview{
+
+        grid-template-columns:1fr;
+
+        gap:80px;
+
+        text-align:center;
+
+    }
+
+    .banking-left{
+
+        margin:auto;
+
+    }
+
+    .bank-features{
+
+        max-width:650px;
+
+        margin:0 auto 40px;
+
+    }
+
+    .banking-right{
+
+        min-height:560px;
+
+    }
+
+}
+
+
+/* ==========================================================
+   TABLET
+========================================================== */
+
+@media (max-width:992px){
+
+    .banking-preview{
+
+        padding:120px 6%;
+
+    }
+
+    .banking-left h2{
+
+        font-size:3rem;
+
+    }
+
+    .cards-showcase{
+
+        width:500px;
+
+        height:500px;
+
+    }
+
+}
+
+
+/* ==========================================================
+   MOBILE
+========================================================== */
+
+@media (max-width:768px){
+
+    .banking-preview{
+
+        padding:90px 24px;
+
+        gap:60px;
+
+    }
+
+    .banking-left h2{
+
+        font-size:2.4rem;
+
+    }
+
+    .banking-left p{
+
+        line-height:1.8;
+
+    }
+
+    .bank-features{
+
+        grid-template-columns:1fr;
+
+        gap:16px;
+
+        text-align:left;
+
+    }
+
+    .banking-right{
+
+        min-height:470px;
+
+    }
+
+    .cards-showcase{
+
+        width:100%;
+
+        max-width:380px;
+
+        height:420px;
+
+        margin:auto;
+
+    }
+
+}
+
+
+/* ==========================================================
+   SMALL MOBILE
+========================================================== */
+
+@media (max-width:480px){
+
+    .banking-preview{
+
+        padding:80px 20px;
+
+    }
+
+    .banking-left h2{
+
+        font-size:2rem;
+
+        line-height:1.2;
+
+    }
+
+    .banking-left p{
+
+        font-size:.96rem;
+
+    }
+
+    .banking-right{
+
+        min-height:390px;
+
+    }
+
+    .cards-showcase{
+
+        max-width:320px;
+
+        height:360px;
+
+    }
+
+}

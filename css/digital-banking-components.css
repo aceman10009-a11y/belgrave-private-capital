@@ -1,0 +1,266 @@
+/* ==========================================================
+   PREMIUM CARD FAN
+========================================================== */
+
+.cards-fan{
+
+    position:absolute;
+
+    inset:0;
+
+    z-index:3;
+
+}
+
+
+/* ==========================================================
+   CARD WRAPPERS
+========================================================== */
+
+.cards-fan .card{
+
+    position:absolute;
+
+    transition:
+
+        transform .45s ease,
+
+        filter .45s ease,
+
+        opacity .45s ease;
+
+}
+
+
+/* ==========================================================
+   CARD IMAGES
+========================================================== */
+
+.cards-fan img{
+
+    display:block;
+
+    width:300px;
+
+    height:auto;
+
+    border-radius:20px;
+
+    user-select:none;
+
+    pointer-events:none;
+
+    filter:
+
+        drop-shadow(0 30px 60px rgba(0,0,0,.45));
+
+}
+
+/* ==========================================================
+   CARD POSITIONS
+========================================================== */
+
+.card-left-back{
+
+    left:50%;
+
+    top:50%;
+
+    transform:
+        translate(-240px,-180px)
+        rotate(-18deg);
+
+    z-index:2;
+
+}
+
+.card-left-front{
+
+    left:50%;
+
+    top:50%;
+
+    transform:
+        translate(-270px,-20px)
+        rotate(-10deg);
+
+    z-index:5;
+
+}
+
+.card-right-back{
+
+    left:50%;
+
+    top:50%;
+
+    transform:
+        translate(40px,-180px)
+        rotate(18deg);
+
+    z-index:2;
+
+}
+
+.card-right-front{
+
+    left:50%;
+
+    top:50%;
+
+    transform:
+        translate(70px,-20px)
+        rotate(10deg);
+
+    z-index:5;
+
+}
+/* ==========================================================
+   HOVER EFFECT
+========================================================== */
+
+.cards-fan .card{
+
+    transition:
+        filter .4s ease,
+        opacity .4s ease;
+
+}
+
+.cards-fan img{
+
+    transition:
+        transform .4s ease;
+
+}
+
+.cards-fan:hover .card{
+
+    opacity:.75;
+
+}
+
+.cards-fan .card:hover{
+
+    opacity:1;
+
+    filter:brightness(1.08);
+
+    z-index:20;
+
+}
+
+.cards-fan .card:hover img{
+
+    transform:
+        translateY(-10px)
+        scale(1.03);
+
+}
+/* ==========================================================
+   RESPONSIVE
+========================================================== */
+
+@media (max-width:1200px){
+
+    .cards-fan img{
+
+        width:260px;
+
+    }
+
+}
+
+@media (max-width:992px){
+
+    .cards-fan img{
+
+        width:220px;
+
+    }
+
+    .card-left-back{
+
+        transform:
+            translate(-180px,-150px)
+            rotate(-18deg);
+
+    }
+
+    .card-left-front{
+
+        transform:
+            translate(-210px,-10px)
+            rotate(-10deg);
+
+    }
+
+    .card-right-back{
+
+        transform:
+            translate(20px,-150px)
+            rotate(18deg);
+
+    }
+
+    .card-right-front{
+
+        transform:
+            translate(50px,-10px)
+            rotate(10deg);
+
+    }
+
+}
+
+@media (max-width:768px){
+
+    .cards-fan img{
+
+        width:180px;
+
+    }
+
+    .card-left-back{
+
+        transform:
+            translate(-145px,-120px)
+            rotate(-15deg);
+
+    }
+
+    .card-left-front{
+
+        transform:
+            translate(-165px,0)
+            rotate(-8deg);
+
+    }
+
+    .card-right-back{
+
+        transform:
+            translate(0,-120px)
+            rotate(15deg);
+
+    }
+
+    .card-right-front{
+
+        transform:
+            translate(20px,0)
+            rotate(8deg);
+
+    }
+
+}
+
+@media (max-width:480px){
+
+    .cards-fan img{
+
+        width:145px;
+
+    }
+
+}
