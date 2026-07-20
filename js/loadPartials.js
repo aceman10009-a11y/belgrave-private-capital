@@ -6,15 +6,27 @@ async function loadPartial(id, file) {
         return;
     }
 
-    document.getElementById(id).innerHTML =
-        await response.text();
+    const container = document.getElementById(id);
+
+    if (!container) {
+        console.error(`Container #${id} not found.`);
+        return;
+    }
+
+    container.innerHTML = await response.text();
 }
 
 document.addEventListener("DOMContentLoaded", () => {
 
-    loadPartial("navbar","partials/navbar.html");
+    loadPartial(
+        "navbar",
+        "partials/navbar.html"
+    );
 
-    loadPartial("hero","partials/hero.html");
+    loadPartial(
+        "hero",
+        "partials/hero.html"
+    );
 
     loadPartial(
         "financialSnapshot",
@@ -22,22 +34,27 @@ document.addEventListener("DOMContentLoaded", () => {
     );
 
     loadPartial(
-        "services",
+        "servicesSection",
         "partials/services.html"
     );
 
     loadPartial(
-        "digitalBanking",
+        "digitalBankingSection",
         "partials/digital-banking.html"
     );
 
     loadPartial(
-        "testimonials",
+        "securitySection",
+        "partials/security.html"
+    );
+
+    loadPartial(
+        "testimonialsSection",
         "partials/testimonials.html"
     );
 
     loadPartial(
-        "footer",
+        "footerSection",
         "partials/footer.html"
     );
 

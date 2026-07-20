@@ -1,141 +1,129 @@
 /* ==========================================================
    BELGRAVE PRIVATE BANK
    BASE STYLES
-   ==========================================================
-
-   CONTENTS
-   --------
-   1. Reset
-   2. CSS Variables
-   3. HTML & Body
-   4. Watermark
-   5. Typography
-
 ========================================================== */
 
-
-/* ==========================================
+/* =========================
    RESET
-========================================== */
+========================= */
 
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
+*,
+*::before,
+*::after{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
 }
 
-
-/* ==========================================
-   CSS VARIABLES
-========================================== */
-
-:root {
-
-  /* Brand */
-  --gold: #C9A227;
-  --gold-light: #E6C768;
-
-  /* Backgrounds */
-  --bg: #EEF2F7;
-  --surface: #FFFFFF;
-  --surface-2: #F7F9FC;
-
-  /* Cards */
-  --card: var(--surface);
-
-  /* Text */
-  --text: #1F2937;
-  --muted: #6B7280;
-
-  /* Accent */
-  --primary: #1F4FD6;
-  --success: #16A34A;
-  --danger: #DC2626;
-
-  /* Borders */
-  --border: #E5E7EB;
-
-  /* Shadows */
-  --shadow-sm: 0 4px 12px rgba(15, 23, 42, .06);
-  --shadow-md: 0 10px 30px rgba(15, 23, 42, .08);
-  --shadow-lg: 0 18px 45px rgba(15, 23, 42, .12);
-
-  /* Border Radius */
-  --radius-sm: 12px;
-  --radius-md: 18px;
-  --radius-lg: 24px;
-
-  /* Spacing */
-  --space-xs: 8px;
-  --space-sm: 16px;
-  --space-md: 32px;
-  --space-lg: 64px;
-  --space-xl: 96px;
+html{
+    scroll-behavior:smooth;
 }
 
-
-/* ==========================================
-   HTML & BODY
-========================================== */
-
-html,
-body {
-  font-family: 'Inter', sans-serif;
-  background: var(--bg);
-  color: var(--text);
-  position: relative;
-  overflow-x: hidden;
-
-  letter-spacing: -0.2px;
-  -webkit-font-smoothing: antialiased;
-  text-rendering: optimizeLegibility;
+body{
+    font-family:"Inter",sans-serif;
+    background:#0B0B0D;
+    color:#FFFFFF;
+    overflow-x:hidden;
+    line-height:1.7;
+    -webkit-font-smoothing:antialiased;
+    text-rendering:optimizeLegibility;
 }
 
+/* =========================
+   VARIABLES
+========================= */
 
-/* ==========================================
-   WATERMARK
-========================================== */
+:root{
 
-body {
-  position: relative;
-  z-index: 1;
+    --gold:#C9A227;
+    --gold-light:#E5C86A;
+
+    --bg:#0B0B0D;
+    --surface:#111214;
+    --surface-2:#18191C;
+
+    --text:#FFFFFF;
+    --muted:rgba(255,255,255,.72);
+
+    --border:rgba(255,255,255,.08);
+
+    --radius-sm:14px;
+    --radius-md:22px;
+    --radius-lg:32px;
+
+    --shadow-sm:0 12px 35px rgba(0,0,0,.25);
+    --shadow-md:0 20px 55px rgba(0,0,0,.35);
+    --shadow-lg:0 35px 80px rgba(0,0,0,.50);
+
 }
 
-body::before {
-  content: "";
-  position: fixed;
-  inset: 0;
+/* =========================
+   IMAGES
+========================= */
 
-  background: url("../assets/logo.png") no-repeat center;
-  background-size: 420px;
-
-  opacity: 0.035;
-
-  pointer-events: none;
-  z-index: 0;
+img{
+    display:block;
+    max-width:100%;
 }
 
+/* =========================
+   LINKS
+========================= */
 
-/* ==========================================
-   TYPOGRAPHY
-========================================== */
-
-h1,
-h2,
-.hero-left h1 {
-  font-family: 'Playfair Display', serif;
-  font-weight: 600;
-  letter-spacing: -1px;
+a{
+    color:inherit;
+    text-decoration:none;
 }
 
-h3,
-h4,
-h5 {
-  font-family: 'Inter', sans-serif;
-  font-weight: 600;
+/* =========================
+   BUTTONS
+========================= */
+
+.btn{
+
+    display:inline-flex;
+
+    justify-content:center;
+    align-items:center;
+
+    padding:16px 34px;
+
+    border-radius:999px;
+
+    font-weight:600;
+
+    transition:.35s;
+
+    cursor:pointer;
+
 }
 
-p {
-  font-size: 1rem;
-  line-height: 1.8;
+.btn-primary{
+
+    background:var(--gold);
+
+    color:#111;
+
+}
+
+.btn-primary:hover{
+
+    transform:translateY(-3px);
+
+}
+
+.btn-secondary{
+
+    border:1px solid rgba(255,255,255,.18);
+
+    color:white;
+
+    backdrop-filter:blur(14px);
+
+}
+
+.btn-secondary:hover{
+
+    background:rgba(255,255,255,.06);
+
 }

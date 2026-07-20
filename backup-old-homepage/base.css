@@ -1,0 +1,161 @@
+/* ==========================================================
+   BELGRAVE PRIVATE BANK
+   BASE STYLES
+   ==========================================================
+
+   CONTENTS
+   --------
+   1. Reset
+   2. CSS Variables
+   3. HTML & Body
+   4. Watermark
+   5. Typography
+
+========================================================== */
+
+
+/* ==========================================
+   RESET
+========================================== */
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+
+/* ==========================================
+   CSS VARIABLES
+========================================== */
+
+:root {
+
+  /* ======================================
+     BELGRAVE LUXURY PRIVATE BANK THEME
+  ====================================== */
+
+  /* Brand */
+  --gold: #C9A227;
+  --gold-light: #E6C768;
+
+  /* Backgrounds */
+  --bg: #050505;
+  --surface: rgba(255,255,255,0.08);
+  --surface-2: rgba(255,255,255,0.04);
+
+  /* Cards */
+  --card: rgba(255,255,255,0.08);
+
+  /* Text */
+  --text: #ffffff;
+  --muted: rgba(255,255,255,.65);
+
+  /* Accent */
+  --primary: #C9A227;
+  --success: #22C55E;
+  --danger: #EF4444;
+
+  /* Borders */
+  --border: rgba(255,255,255,.15);
+
+  /* Shadows */
+  --shadow-sm:
+    0 8px 25px rgba(0,0,0,.25);
+
+  --shadow-md:
+    0 20px 50px rgba(0,0,0,.35);
+
+  --shadow-lg:
+    0 35px 80px rgba(0,0,0,.5);
+
+
+  /* Glass */
+  --glass:
+    rgba(255,255,255,.08);
+
+  --glass-border:
+    rgba(255,255,255,.18);
+
+
+  /* Border Radius */
+  --radius-sm: 12px;
+  --radius-md: 18px;
+  --radius-lg: 28px;
+
+
+  /* Spacing */
+  --space-xs: 8px;
+  --space-sm: 16px;
+  --space-md: 32px;
+  --space-lg: 64px;
+  --space-xl: 96px;
+
+}
+
+
+/* ==========================================
+   HTML & BODY
+========================================== */
+
+html,
+body {
+  font-family: 'Inter', sans-serif;
+  background: var(--bg);
+  color: var(--text);
+  position: relative;
+  overflow-x: hidden;
+
+  letter-spacing: -0.2px;
+  -webkit-font-smoothing: antialiased;
+  text-rendering: optimizeLegibility;
+}
+
+
+/* ==========================================
+   WATERMARK
+========================================== */
+
+body {
+  position: relative;
+  z-index: 1;
+}
+
+body::before {
+  content: "";
+  position: fixed;
+  inset: 0;
+
+  background: url("../assets/hero/landingpage.jpeg") no-repeat center;
+  background-size: 420px;
+
+  opacity: 0.035;
+
+  pointer-events: none;
+  z-index: 0;
+}
+
+
+/* ==========================================
+   TYPOGRAPHY
+========================================== */
+
+h1,
+h2,
+.hero-left h1 {
+  font-family: 'Playfair Display', serif;
+  font-weight: 600;
+  letter-spacing: -1px;
+}
+
+h3,
+h4,
+h5 {
+  font-family: 'Inter', sans-serif;
+  font-weight: 600;
+}
+
+p {
+  font-size: 1rem;
+  line-height: 1.8;
+}
