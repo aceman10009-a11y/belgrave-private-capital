@@ -1,14 +1,226 @@
 /* ==========================================================
    BELGRAVE PRIVATE BANK
-   AUTHENTICATION
-   ==========================================================
-
-   CONTENTS
-   --------
-   1. Login
-   2. Signup
-   3. Forgot Password
-   4. Reset Password
-   5. Authentication Responsive
-
+   AUTHENTICATION PAGES
 ========================================================== */
+
+
+.auth-page{
+
+    min-height:100vh;
+
+    display:flex;
+
+    align-items:center;
+
+    justify-content:center;
+
+    padding:40px 20px;
+
+    background:
+        linear-gradient(
+            rgba(5,8,15,.82),
+            rgba(5,8,15,.92)
+        ),
+        url("../assets/banking-lobby.jpg");
+
+    background-size:cover;
+
+    background-position:center;
+
+    color:white;
+
+}
+
+
+/* AUTH WRAPPER */
+
+.auth-container{
+
+    width:100%;
+
+    max-width:460px;
+
+}
+
+
+/* CARD */
+
+.auth-card{
+
+    padding:45px;
+
+    background:
+
+    rgba(255,255,255,.08);
+
+    border:
+
+    1px solid rgba(212,175,55,.25);
+
+    border-radius:28px;
+
+    backdrop-filter:blur(18px);
+
+    box-shadow:
+    0 30px 80px rgba(0,0,0,.45);
+
+}
+
+
+/* LOGO */
+
+.auth-logo{
+
+    text-align:center;
+
+    margin-bottom:35px;
+
+}
+
+
+.auth-logo img{
+
+    width:90px;
+
+    margin-bottom:15px;
+
+}
+
+
+.auth-logo h1{
+
+    font-family:"Playfair Display",serif;
+
+    font-size:32px;
+
+}
+
+
+.auth-logo span{
+
+    color:#d4af37;
+
+    letter-spacing:3px;
+
+    font-size:12px;
+
+}
+
+
+/* FORM */
+
+.auth-card h2{
+
+    text-align:center;
+
+    font-family:"Playfair Display",serif;
+
+    margin-bottom:30px;
+
+}
+
+
+.auth-card label{
+
+    display:block;
+
+    margin-bottom:8px;
+
+    font-size:14px;
+
+}
+
+
+.auth-card input{
+
+    width:100%;
+
+    padding:15px;
+
+    margin-bottom:20px;
+
+    border-radius:12px;
+
+    border:1px solid rgba(255,255,255,.2);
+
+    background:rgba(0,0,0,.25);
+
+    color:white;
+
+    outline:none;
+
+}
+
+
+.auth-card input:focus{
+
+    border-color:#d4af37;
+
+}
+
+
+/* BUTTON */
+
+.auth-card button{
+
+    width:100%;
+
+    padding:15px;
+
+    border:none;
+
+    border-radius:50px;
+
+    background:#d4af37;
+
+    color:#080b12;
+
+    font-weight:700;
+
+    cursor:pointer;
+
+    transition:.3s ease;
+
+}
+
+
+.auth-card button:hover{
+
+    transform:translateY(-3px);
+
+}
+
+
+/* LINKS */
+
+.auth-link{
+
+    text-align:center;
+
+    margin-top:25px;
+
+    color:rgba(255,255,255,.75);
+
+}
+
+
+.auth-link a{
+
+    color:#d4af37;
+
+    text-decoration:none;
+
+}
+
+
+/* MOBILE */
+
+@media(max-width:500px){
+
+    .auth-card{
+
+        padding:30px 25px;
+
+    }
+
+}

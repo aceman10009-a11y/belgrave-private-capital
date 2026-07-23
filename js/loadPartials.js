@@ -1,20 +1,29 @@
 async function loadPartial(id, file) {
+
     const response = await fetch(file);
 
     if (!response.ok) {
+
         console.error(`Unable to load ${file}`);
+
         return;
+
     }
 
     const container = document.getElementById(id);
 
     if (!container) {
+
         console.error(`Container #${id} not found.`);
+
         return;
+
     }
 
     container.innerHTML = await response.text();
+
 }
+
 
 document.addEventListener("DOMContentLoaded", () => {
 
@@ -41,6 +50,11 @@ document.addEventListener("DOMContentLoaded", () => {
     loadPartial(
         "digitalBankingSection",
         "partials/digital-banking.html"
+    );
+
+    loadPartial(
+        "cardsSection",
+        "partials/cards-section.html"
     );
 
     loadPartial(

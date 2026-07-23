@@ -1,57 +1,80 @@
 /* ==========================================================
    BELGRAVE PRIVATE BANK
-   COMPONENTS
+   SHARED COMPONENTS
 ==========================================================
 
    CONTENTS
    --------
-   1. Navigation
-   2. Buttons
-   3. Activity Panel
-   4. Footer
+   1. Buttons
+   2. Activity Panel
+   3. Footer
 
 ========================================================== */
+
 
 /* ==========================================================
    BUTTONS
 ========================================================== */
 
-
+.btn,
 .login-btn{
 
-    background:var(--gold);
+    display:inline-flex;
+
+    justify-content:center;
+    align-items:center;
+
+    gap:.6rem;
+
+    padding:15px 30px;
 
     border:none;
 
-    padding:12px 25px;
-
-    border-radius:6px;
+    border-radius:var(--radius-sm);
 
     cursor:pointer;
 
+    font-size:.95rem;
+
     font-weight:600;
+
+    letter-spacing:.02em;
+
+    text-decoration:none;
+
+    transition:
+        transform .35s ease,
+        background-color .35s ease,
+        color .35s ease,
+        border-color .35s ease,
+        box-shadow .35s ease;
 
 }
 
 
 
-.btn{
-
-    display:inline-block;
-
-    padding:12px 22px;
-
-    margin:5px;
-
-    text-decoration:none;
+.btn-primary,
+.login-btn{
 
     background:var(--gold);
 
-    color:#0b0f14;
+    color:#0B0B0D;
 
-    border-radius:6px;
+}
 
-    font-weight:600;
+
+
+.btn-secondary{
+
+    background:transparent;
+
+    color:var(--gold);
+
+    border:1px solid rgba(201,162,39,.55);
+
+    backdrop-filter:blur(14px);
+
+    -webkit-backdrop-filter:blur(14px);
 
 }
 
@@ -60,24 +83,41 @@
 .btn:hover,
 .login-btn:hover{
 
-    transform:translateY(-2px);
+    transform:translateY(-3px);
 
-    transition:.3s;
-
-    box-shadow:
-    0 8px 25px rgba(212,175,55,.25);
+    box-shadow:var(--shadow-sm);
 
 }
 
 
 
-.btn.secondary{
+.btn-primary:hover,
+.login-btn:hover{
 
-    background:transparent;
+    background:var(--gold-light);
 
-    border:1px solid var(--gold);
+}
 
-    color:var(--gold);
+
+
+.btn-secondary:hover{
+
+    background:rgba(201,162,39,.10);
+
+    border-color:var(--gold);
+
+    color:#FFF;
+
+}
+
+
+
+.btn:focus-visible,
+.login-btn:focus-visible{
+
+    outline:2px solid var(--gold);
+
+    outline-offset:4px;
 
 }
 
@@ -87,34 +127,33 @@
    ACTIVITY PANEL
 ========================================================== */
 
-
 .activity-panel{
 
     position:fixed;
 
     right:20px;
+
     bottom:20px;
 
     width:280px;
-
-    background:#121722;
-
-    border:1px solid var(--gold);
-
-    border-radius:10px;
-
-    color:#fff;
-
-    font-size:12px;
 
     overflow:hidden;
 
     z-index:9999;
 
-    box-shadow:
-    0 8px 20px rgba(0,0,0,.4);
+    color:#FFF;
 
-    transition:.3s;
+    font-size:12px;
+
+    background:var(--surface);
+
+    border:1px solid rgba(201,162,39,.40);
+
+    border-radius:var(--radius-md);
+
+    box-shadow:var(--shadow-md);
+
+    transition:.35s ease;
 
 }
 
@@ -128,13 +167,13 @@
 
     align-items:center;
 
-    padding:10px;
+    padding:12px 14px;
 
     cursor:pointer;
 
-    background:#0f141d;
+    background:#0F141D;
 
-    border-bottom:1px solid var(--gold);
+    border-bottom:1px solid rgba(201,162,39,.25);
 
 }
 
@@ -146,7 +185,9 @@
 
     color:var(--gold);
 
-    font-size:12px;
+    font-size:.78rem;
+
+    letter-spacing:.05em;
 
 }
 
@@ -158,17 +199,18 @@
 
     overflow-y:auto;
 
-    padding:8px;
+    padding:10px;
 
 }
 
 
 
-.activity-log div{
+.activity-log div,
+#activityLog div{
 
-    margin-bottom:4px;
+    margin-bottom:6px;
 
-    opacity:.9;
+    opacity:.92;
 
 }
 
@@ -182,29 +224,25 @@
 
 
 
-#activityLog div{
+/* ==========================================================
+   FOOTER
+========================================================== */
 
-    margin-bottom:4px;
+.footer{
 
-    opacity:.9;
+    padding:90px 0;
+
+    background:#0F172A;
+
+    border-top:1px solid var(--border);
 
 }
 
 
 
-/* ==========================================================
-   FOOTER
-========================================================== */
+.footer .container{
 
-
-.footer{
-
-    background:#0F172A;
-
-    padding:60px 20px;
-
-    border-top:
-    1px solid rgba(255,255,255,.08);
+    display:block;
 
 }
 
@@ -214,12 +252,23 @@
 
     display:grid;
 
-    grid-template-columns:
-    repeat(auto-fit,minmax(220px,1fr));
+    grid-template-columns:repeat(auto-fit,minmax(260px,1fr));
 
-    gap:40px;
+    gap:50px;
 
-    margin-bottom:30px;
+    margin-bottom:50px;
+
+}
+
+
+
+.footer-logo{
+
+    width:56px;
+
+    height:auto;
+
+    margin-bottom:20px;
 
 }
 
@@ -228,9 +277,9 @@
 .footer h3,
 .footer h4{
 
-    color:var(--gold);
+    margin-bottom:16px;
 
-    margin-bottom:10px;
+    color:var(--gold);
 
 }
 
@@ -238,7 +287,7 @@
 
 .footer h3{
 
-    text-align:center;
+    font-size:1.4rem;
 
 }
 
@@ -246,13 +295,9 @@
 
 .footer p{
 
-    margin:6px 0;
+    margin:8px 0;
 
-    color:var(--muted);
-
-    text-align:center;
-
-    line-height:1.6;
+    line-height:1.8;
 
 }
 
@@ -262,9 +307,9 @@
 
     color:#CBD5E1;
 
-    text-decoration:none;
-
-    transition:.3s;
+    transition:
+        color .3s ease,
+        opacity .3s ease;
 
 }
 
@@ -278,24 +323,45 @@
 
 
 
-.footer-logo{
+.copyright{
 
-    width:52px;
+    margin-top:30px;
 
-    height:auto;
+    padding-top:30px;
 
-    display:block;
+    text-align:center;
 
-    margin:0 auto 15px;
+    color:#777;
+
+    border-top:1px solid var(--border);
 
 }
 
 
 
-.copyright{
+/* ==========================================================
+   RESPONSIVE
+========================================================== */
 
-    text-align:center;
+@media (max-width:768px){
 
-    color:#666;
+    .btn,
+    .login-btn{
+
+        width:100%;
+
+    }
+
+    .footer{
+
+        padding:70px 0;
+
+    }
+
+    .footer-grid{
+
+        gap:40px;
+
+    }
 
 }

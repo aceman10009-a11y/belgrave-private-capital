@@ -3,53 +3,82 @@
    BASE STYLES
 ========================================================== */
 
-/* =========================
+
+/* ==========================================================
    RESET
-========================= */
+========================================================== */
 
 *,
 *::before,
 *::after{
+
     margin:0;
     padding:0;
+
     box-sizing:border-box;
+
 }
+
 
 html{
+
     scroll-behavior:smooth;
+
 }
+
 
 body{
+
     font-family:"Inter",sans-serif;
-    background:#0B0B0D;
-    color:#FFFFFF;
-    overflow-x:hidden;
+
+    background:var(--bg);
+
+    color:var(--text);
+
     line-height:1.7;
+
+    overflow-x:hidden;
+
     -webkit-font-smoothing:antialiased;
+
     text-rendering:optimizeLegibility;
+
 }
 
-/* =========================
-   VARIABLES
-========================= */
+
+/* ==========================================================
+   DESIGN TOKENS
+========================================================== */
 
 :root{
 
+    /* Brand */
+
     --gold:#C9A227;
     --gold-light:#E5C86A;
+
+    /* Backgrounds */
 
     --bg:#0B0B0D;
     --surface:#111214;
     --surface-2:#18191C;
 
+    /* Typography */
+
     --text:#FFFFFF;
     --muted:rgba(255,255,255,.72);
 
+    /* Borders */
+
     --border:rgba(255,255,255,.08);
+
+    /* Radius */
 
     --radius-sm:14px;
     --radius-md:22px;
     --radius-lg:32px;
+
+    /* Shadows */
 
     --shadow-sm:0 12px 35px rgba(0,0,0,.25);
     --shadow-md:0 20px 55px rgba(0,0,0,.35);
@@ -57,73 +86,70 @@ body{
 
 }
 
-/* =========================
-   IMAGES
-========================= */
+
+/* ==========================================================
+   MEDIA
+========================================================== */
 
 img{
+
     display:block;
+
     max-width:100%;
+
+    height:auto;
+
 }
 
-/* =========================
+
+/* ==========================================================
    LINKS
-========================= */
+========================================================== */
 
 a{
+
     color:inherit;
+
     text-decoration:none;
-}
-
-/* =========================
-   BUTTONS
-========================= */
-
-.btn{
-
-    display:inline-flex;
-
-    justify-content:center;
-    align-items:center;
-
-    padding:16px 34px;
-
-    border-radius:999px;
-
-    font-weight:600;
-
-    transition:.35s;
-
-    cursor:pointer;
 
 }
 
-.btn-primary{
 
-    background:var(--gold);
+/* ==========================================================
+   TYPOGRAPHY
+========================================================== */
 
-    color:#111;
+h1,
+h2,
+h3,
+h4,
+h5,
+h6{
 
-}
+    font-family:"Playfair Display",serif;
 
-.btn-primary:hover{
+    font-weight:700;
 
-    transform:translateY(-3px);
-
-}
-
-.btn-secondary{
-
-    border:1px solid rgba(255,255,255,.18);
-
-    color:white;
-
-    backdrop-filter:blur(14px);
+    line-height:1.15;
 
 }
 
-.btn-secondary:hover{
 
-    background:rgba(255,255,255,.06);
+p{
+
+    color:var(--muted);
+
+}
+
+
+/* ==========================================================
+   UTILITIES
+========================================================== */
+
+.container{
+
+    width:min(1280px,92%);
+
+    margin-inline:auto;
 
 }

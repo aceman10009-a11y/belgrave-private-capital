@@ -1,0 +1,188 @@
+/* ==========================================================
+   BELGRAVE PRIVATE BANK
+   PREMIUM CARDS
+========================================================== */
+
+.cards-section{
+
+    padding:140px 8%;
+
+    background:
+        radial-gradient(circle at top,
+        rgba(212,175,55,.08),
+        transparent 45%),
+        linear-gradient(
+        180deg,
+        #090d14,
+        #101722);
+
+}
+
+
+.cards-grid{
+
+    display:grid;
+
+    grid-template-columns:repeat(2,1fr);
+
+    gap:40px;
+
+    margin-top:70px;
+
+}
+
+
+.premium-card{
+
+    background:#151d28;
+
+    border:1px solid rgba(212,175,55,.12);
+
+    border-radius:24px;
+
+    padding:40px;
+
+    text-align:center;
+
+    transition:.35s ease;
+
+}
+
+
+.premium-card:hover{
+
+    transform:translateY(-12px);
+
+    border-color:#d4af37;
+
+    box-shadow:
+
+        0 30px 70px rgba(0,0,0,.45);
+
+}
+
+
+.premium-card img{
+
+    width:320px;
+
+    max-width:100%;
+
+    margin-bottom:28px;
+
+    transition:.35s;
+
+}
+
+
+.premium-card:hover img{
+
+    transform:scale(1.05);
+
+}
+
+
+.premium-card h3{
+
+    font-family:"Playfair Display",serif;
+
+    font-size:1.8rem;
+
+    color:#fff;
+
+    margin-bottom:18px;
+
+}
+
+
+.premium-card p{
+
+    color:#b9c2cf;
+
+    line-height:1.8;
+
+}
+
+
+@media(max-width:900px){
+
+    .cards-grid{
+
+        grid-template-columns:1fr;
+
+    }
+
+}
+/* ==========================================================
+   CARDS HEADING
+========================================================== */
+
+.cards-heading{
+
+    text-align:center;
+
+    max-width:760px;
+
+    margin:0 auto 70px;
+
+}
+
+.cards-title{
+
+    margin:22px 0 16px;
+
+    font-family:"Playfair Display",serif;
+
+    font-size:clamp(2.8rem,5vw,4.8rem);
+
+    line-height:1.08;
+
+    letter-spacing:-.03em;
+
+    color:#f8f6f2;
+
+}
+
+.cards-title span{
+
+    display:block;
+
+    color:#d4af37;
+
+}
+
+.title-divider{
+
+    width:90px;
+
+    height:3px;
+
+    margin:26px auto 34px;
+
+    border-radius:999px;
+
+    background:linear-gradient(
+        90deg,
+        transparent,
+        #d4af37,
+        transparent
+    );
+
+    box-shadow:
+        0 0 16px rgba(212,175,55,.55);
+
+}
+
+.cards-description{
+
+    max-width:640px;
+
+    margin:auto;
+
+    font-size:1.08rem;
+
+    line-height:2;
+
+    color:rgba(255,255,255,.72);
+
+}
