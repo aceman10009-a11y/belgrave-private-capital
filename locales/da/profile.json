@@ -1,0 +1,76 @@
+{
+  "title": "Kundeprofil",
+
+  "hero": {
+    "tag": "PROFIL",
+    "title": "Administrer Din Private Banking-Profil",
+    "description": "Gennemse og opdater dine personlige oplysninger, præferencer og kontodetaljer."
+  },
+
+  "personal": {
+    "title": "Personlige Oplysninger",
+
+    "fields": {
+      "fullName": "Fulde Navn",
+      "email": "E-mailadresse",
+      "phone": "Telefonnummer",
+      "dateOfBirth": "Fødselsdato",
+      "nationality": "Nationalitet",
+      "address": "Bopælsadresse"
+    }
+  },
+
+  "account": {
+    "title": "Kontooplysninger",
+
+    "details": {
+      "accountNumber": "Kontonummer",
+      "accountType": "Kontotype",
+      "status": "Kontostatus",
+      "opened": "Kontoåbningsdato"
+    },
+
+    "types": {
+      "private": "Private Banking-Konto",
+      "premium": "Premium Kundekonto",
+      "business": "Erhvervsbankkonto"
+    }
+  },
+
+  "preferences": {
+    "title": "Kundepræferencer",
+
+    "communication": {
+      "title": "Kommunikationspræferencer",
+      "email": "E-mailkommunikation",
+      "phone": "Telefonisk Kommunikation",
+      "alerts": "Sikkerhedsadvarsler"
+    },
+
+    "language": {
+      "title": "Foretrukket Sprog",
+      "description": "Vælg det sprog, der bruges til din banking-oplevelse."
+    }
+  },
+
+  "security": {
+    "title": "Profilsikkerhed",
+
+    "items": {
+      "lastLogin": "Seneste Login",
+      "devices": "Betroede Enheder",
+      "sessions": "Aktive Sessioner"
+    }
+  },
+
+  "messages": {
+    "updated": "Profil opdateret med succes.",
+    "restricted": "Profilændringer er i øjeblikket begrænset under bankmæssig kontrol."
+  },
+
+  "buttons": {
+    "edit": "Rediger Profil",
+    "save": "Gem Ændringer",
+    "cancel": "Annuller"
+  }
+}

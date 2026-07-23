@@ -1,0 +1,63 @@
+{
+  "title": "Transfers",
+
+  "hero": {
+    "tag": "GLOBAL TRANSFERS",
+    "title": "Secure International Money Transfers",
+    "description": "Send and receive funds worldwide with secure payment solutions designed for private banking clients."
+  },
+
+  "transfer": {
+    "title": "Make a Transfer",
+    "description": "Transfer funds securely between your Belgrave accounts and approved external accounts.",
+
+    "fields": {
+      "recipient": "Recipient Name",
+      "accountNumber": "Account Number",
+      "bankName": "Bank Name",
+      "amount": "Transfer Amount",
+      "currency": "Currency",
+      "reference": "Payment Reference"
+    },
+
+    "button": "Transfer Funds"
+  },
+
+  "types": {
+    "title": "Transfer Services",
+
+    "international": {
+      "title": "International Transfers",
+      "description": "Move funds across borders with reliable global payment networks."
+    },
+
+    "domestic": {
+      "title": "Domestic Transfers",
+      "description": "Complete local transfers quickly and securely."
+    },
+
+    "wire": {
+      "title": "Wire Transfers",
+      "description": "Execute high-value wire transfers with enhanced security controls."
+    }
+  },
+
+  "security": {
+    "title": "Transfer Security",
+    "description": "Every transaction is monitored through advanced fraud prevention systems and compliance controls."
+  },
+
+  "messages": {
+    "processing": "Your transfer is being processed.",
+    "successful": "Transfer completed successfully.",
+    "failed": "Transfer could not be completed.",
+    "restricted": "Transfers are currently restricted under banking jurisdiction review.",
+    "pending": "Your transfer is pending approval."
+  },
+
+  "cta": {
+    "title": "Need Assistance With a Transfer?",
+    "description": "Contact your dedicated relationship manager for transfer support.",
+    "button": "Contact Support"
+  }
+}

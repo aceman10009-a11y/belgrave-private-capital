@@ -1,0 +1,29 @@
+{
+  "cta": {
+    "title": "Oplev Private Banking Uden Kompromis",
+    "description": "Åbn din konto hos Belgrave Private Bank i dag og få glæde af personlig banking, global formueforvaltning, sikker digital banking og dedikeret finansiel ekspertise, skræddersyet til dine mål."
+  },
+
+  "brand": {
+    "name": "Belgrave",
+    "subtitle": "PRIVATE BANK",
+    "description": "Leverer skræddersyet private banking, international formueforvaltning, investeringsrådgivning og sikre finansielle løsninger til privatpersoner, familier og institutioner verden over."
+  },
+
+  "services": {
+    "title": "Vores Tjenester",
+    "privateBanking": "Private Banking",
+    "wealthManagement": "Formueforvaltning",
+    "security": "Sikkerhed & Beskyttelse",
+    "contact": "Kontakt Os"
+  },
+
+  "contact": {
+    "title": "Kontakt",
+    "location": "København, Danmark"
+  },
+
+  "legal": {
+    "disclaimer": "Belgrave Private Bank leverer private banking- og formueforvaltningstjenester. Produkter og tjenester er muligvis ikke tilgængelige i alle jurisdiktioner og er underlagt gældende love, regler og kvalifikationskrav."
+  }
+}

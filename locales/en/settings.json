@@ -1,0 +1,77 @@
+{
+  "title": "Settings",
+
+  "profile": {
+    "title": "Profile Settings",
+    "description": "Manage your personal information and account preferences.",
+
+    "fields": {
+      "name": "Full Name",
+      "email": "Email Address",
+      "phone": "Phone Number",
+      "country": "Country",
+      "address": "Address"
+    }
+  },
+
+  "security": {
+    "title": "Security Settings",
+
+    "password": {
+      "title": "Password Management",
+      "change": "Change Password",
+      "current": "Current Password",
+      "new": "New Password",
+      "confirm": "Confirm New Password"
+    },
+
+    "authentication": {
+      "title": "Authentication",
+      "twoFactor": "Two-Factor Authentication",
+      "enabled": "Enabled",
+      "disabled": "Disabled"
+    }
+  },
+
+  "preferences": {
+    "title": "Preferences",
+
+    "language": {
+      "title": "Language Preference",
+      "description": "Select your preferred language."
+    },
+
+    "notifications": {
+      "title": "Notifications",
+      "email": "Email Notifications",
+      "security": "Security Alerts",
+      "transactions": "Transaction Notifications"
+    }
+  },
+
+  "account": {
+    "title": "Account Management",
+
+    "statement": {
+      "title": "Account Statements",
+      "description": "View and download your account statements."
+    },
+
+    "privacy": {
+      "title": "Privacy Controls",
+      "description": "Manage your privacy and data preferences."
+    }
+  },
+
+  "messages": {
+    "saved": "Settings saved successfully.",
+    "restricted": "Settings are currently restricted under banking jurisdiction review.",
+    "comingSoon": "Settings coming soon."
+  },
+
+  "buttons": {
+    "save": "Save Changes",
+    "cancel": "Cancel",
+    "update": "Update Settings"
+  }
+}

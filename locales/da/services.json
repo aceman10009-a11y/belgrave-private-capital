@@ -1,0 +1,76 @@
+{
+  "hero": {
+    "tag": "VORES TJENESTER",
+    "title": "Private Banking-Løsninger Designet Til Dig",
+    "description": "Belgrave Private Bank tilbyder skræddersyede finansielle løsninger til enkeltpersoner, familier, iværksættere og globale virksomheder."
+  },
+
+  "intro": {
+    "title": "Omfattende Finansielle Tjenester",
+    "description": "Vores specialister kombinerer erfaring, ekspertise og sikker teknologi for at levere personlige bank- og formueløsninger."
+  },
+
+  "services": {
+    "privateBanking": {
+      "title": "Private Banking",
+      "description": "Dedikerede relationschefer og personlige banktjenester designet omkring din økonomiske livsstil."
+    },
+
+    "wealthManagement": {
+      "title": "Formueforvaltning",
+      "description": "Beskyt, bevar og øg din formue gennem skræddersyede investeringsstrategier og langsigtet planlægning."
+    },
+
+    "investmentSolutions": {
+      "title": "Investeringsløsninger",
+      "description": "Få adgang til globale investeringsmuligheder, porteføljestrategier og professionel finansiel rådgivning."
+    },
+
+    "internationalBanking": {
+      "title": "International Banking",
+      "description": "Administrer globale finanser med konti i flere valutaer, internationale betalinger og valutaløsninger."
+    },
+
+    "premiumCards": {
+      "title": "Premium Bankkort",
+      "description": "Eksklusive debet- og kreditkort med forbedret sikkerhed, global accept og særlige fordele."
+    },
+
+    "digitalBanking": {
+      "title": "Digital Banking",
+      "description": "Sikre digitale bankværktøjer, der giver nem adgang og fuld kontrol over din økonomi."
+    },
+
+    "businessBanking": {
+      "title": "Erhvervsbanking",
+      "description": "Avancerede bankløsninger designet til iværksættere, ledere og internationale virksomheder."
+    },
+
+    "familyOffice": {
+      "title": "Family Office-Tjenester",
+      "description": "Specialiserede løsninger til formuebevarelse, generationsplanlægning og langsigtet økonomisk styring."
+    }
+  },
+
+  "security": {
+    "title": "Avanceret Sikkerhed",
+    "description": "Alle tjenester understøttes af kryptering, overvågning mod svindel og strenge compliance-standarder."
+  },
+
+  "benefits": {
+    "title": "Hvorfor Kunder Vælger Belgrave",
+
+    "relationshipManager": "Dedikeret Relationschef",
+    "globalAccess": "Global Bankadgang",
+    "securePlatform": "Meget Sikker Digital Platform",
+    "multiCurrency": "Banking I Flere Valutaer",
+    "investmentExperts": "Professionel Investeringsrådgivning",
+    "prioritySupport": "24/7 Prioriteret Kundesupport"
+  },
+
+  "cta": {
+    "title": "Oplev En Højere Standard Inden For Banking",
+    "description": "Tal med vores private banking-specialister og udforsk løsninger designet omkring dine mål.",
+    "button": "Kontakt En Private Banker"
+  }
+}

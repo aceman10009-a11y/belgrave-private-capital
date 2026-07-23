@@ -1,0 +1,77 @@
+{
+  "title": "Opret Konto | Belgrave Private Bank",
+
+  "hero": {
+    "title": "Registrering Til Private Banking",
+    "description": "Opret din Belgrave Private Bank-konto og begynd din private banking-oplevelse."
+  },
+
+  "form": {
+    "title": "Opret Konto",
+
+    "fields": {
+      "firstName": "Fornavn",
+      "lastName": "Efternavn",
+      "fullName": "Fulde Navn",
+      "email": "E-mailadresse",
+      "phone": "Telefonnummer",
+      "password": "Adgangskode",
+      "confirmPassword": "Bekræft Adgangskode"
+    },
+
+    "placeholders": {
+      "firstName": "Indtast dit fornavn",
+      "lastName": "Indtast dit efternavn",
+      "email": "Indtast din e-mailadresse",
+      "phone": "Indtast dit telefonnummer",
+      "password": "Opret en adgangskode",
+      "confirmPassword": "Bekræft din adgangskode"
+    },
+
+    "button": "Opret Konto"
+  },
+
+  "password": {
+    "strength": "Adgangskodestyrke",
+    "weak": "Svag",
+    "medium": "Middel",
+    "strong": "Stærk",
+    "requirements": {
+      "length": "Minimum 8 tegn",
+      "uppercase": "Mindst ét stort bogstav",
+      "number": "Mindst ét tal",
+      "special": "Mindst ét specialtegn"
+    }
+  },
+
+  "accountType": {
+    "title": "Vælg Kontotype",
+
+    "private": {
+      "title": "Private Banking-Konto",
+      "description": "Personlige bankløsninger designet til enkeltpersoner og familier."
+    },
+
+    "business": {
+      "title": "Erhvervsbankkonto",
+      "description": "Finansielle løsninger designet til iværksættere og organisationer."
+    }
+  },
+
+  "messages": {
+    "creating": "Opretter din konto...",
+    "success": "Konto oprettet med succes.",
+    "error": "Kunne ikke oprette konto. Prøv venligst igen.",
+    "exists": "En konto med denne e-mail findes allerede."
+  },
+
+  "login": {
+    "question": "Har du allerede en konto?",
+    "button": "Log Ind"
+  },
+
+  "security": {
+    "title": "Dine Oplysninger Er Beskyttet",
+    "description": "Dine personlige oplysninger er sikret ved hjælp af avancerede banksikkerhedsstandarder."
+  }
+}

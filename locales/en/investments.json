@@ -1,0 +1,76 @@
+{
+  "hero": {
+    "tag": "INVESTMENT SOLUTIONS",
+    "title": "Grow And Preserve Your Wealth",
+    "description": "Belgrave Private Bank provides sophisticated investment solutions designed to help clients achieve long-term financial objectives."
+  },
+
+  "intro": {
+    "title": "Global Investment Expertise",
+    "description": "Our specialists combine market knowledge, strategic planning, and personalised advice to build investment solutions aligned with your goals."
+  },
+
+  "services": {
+    "title": "Investment Services",
+
+    "portfolioManagement": {
+      "title": "Portfolio Management",
+      "description": "Professionally managed portfolios designed around your risk profile, objectives, and investment strategy."
+    },
+
+    "wealthPlanning": {
+      "title": "Investment Planning",
+      "description": "Strategic investment planning focused on preserving and growing wealth over time."
+    },
+
+    "globalMarkets": {
+      "title": "Global Markets Access",
+      "description": "Access opportunities across international markets, asset classes, and investment sectors."
+    },
+
+    "alternativeInvestments": {
+      "title": "Alternative Investments",
+      "description": "Explore opportunities including private equity, real estate, and other specialised investments."
+    }
+  },
+
+  "portfolio": {
+    "title": "Portfolio Solutions",
+
+    "balanced": {
+      "title": "Balanced Portfolio",
+      "description": "A diversified approach designed for steady long-term growth."
+    },
+
+    "growth": {
+      "title": "Growth Portfolio",
+      "description": "Investment strategies focused on capital appreciation and global opportunities."
+    },
+
+    "preservation": {
+      "title": "Wealth Preservation Portfolio",
+      "description": "Designed to protect assets while maintaining sustainable financial growth."
+    }
+  },
+
+  "markets": {
+    "title": "Global Investment Access",
+
+    "equities": "Global Equities",
+    "bonds": "Government And Corporate Bonds",
+    "realEstate": "Real Estate Investments",
+    "privateEquity": "Private Equity",
+    "commodities": "Commodities"
+  },
+
+  "security": {
+    "title": "Responsible Investment Management",
+    "description": "Our investment approach focuses on transparency, professional oversight, and disciplined risk management."
+  },
+
+  "cta": {
+    "title": "Build Your Investment Strategy",
+    "description": "Speak with our investment specialists to create a solution designed around your financial ambitions.",
+    "button": "Explore Investment Solutions"
+  }
+}

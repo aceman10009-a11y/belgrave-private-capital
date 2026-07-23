@@ -1,0 +1,142 @@
+{
+  "site": {
+    "name": "Belgrave Private Bank",
+    "shortName": "Belgrave",
+    "tagline": "Private Banking. Global Wealth. Trusted Security.",
+    "copyright": "© 2026 Belgrave Private Bank. All Rights Reserved."
+  },
+
+  "meta": {
+    "title": "Belgrave Private Bank",
+    "description": "Belgrave Private Bank provides private banking, wealth management, international payments, investment services, premium banking cards and secure digital banking."
+  },
+
+  "language": {
+    "label": "Language",
+    "select": "Select Language"
+  },
+
+  "buttons": {
+    "learnMore": "Learn More",
+    "readMore": "Read More",
+    "getStarted": "Get Started",
+    "openAccount": "Open Account",
+    "login": "Login",
+    "logout": "Logout",
+    "register": "Register",
+    "createAccount": "Create Account",
+    "contactUs": "Contact Us",
+    "discoverMore": "Discover More",
+    "applyNow": "Apply Now",
+    "explore": "Explore",
+    "viewAll": "View All",
+    "continue": "Continue",
+    "back": "Back",
+    "next": "Next",
+    "cancel": "Cancel",
+    "save": "Save",
+    "submit": "Submit",
+    "confirm": "Confirm",
+    "download": "Download",
+    "upload": "Upload",
+    "search": "Search",
+    "send": "Send",
+    "close": "Close",
+    "transfer": "Transfer",
+    "deposit": "Deposit",
+    "withdraw": "Withdraw"
+  },
+
+  "forms": {
+    "required": "Required",
+    "optional": "Optional",
+    "firstName": "First Name",
+    "lastName": "Last Name",
+    "fullName": "Full Name",
+    "email": "Email Address",
+    "phone": "Phone Number",
+    "country": "Country",
+    "city": "City",
+    "address": "Address",
+    "message": "Message",
+    "password": "Password",
+    "confirmPassword": "Confirm Password",
+    "username": "Username",
+    "accountNumber": "Account Number"
+  },
+
+  "status": {
+    "active": "Active",
+    "inactive": "Inactive",
+    "online": "Online",
+    "offline": "Offline",
+    "available": "Available",
+    "pending": "Pending",
+    "processing": "Processing",
+    "completed": "Completed",
+    "successful": "Successful",
+    "failed": "Failed",
+    "verified": "Verified",
+    "unverified": "Unverified",
+    "secured": "Secured",
+    "restricted": "Restricted"
+  },
+
+  "labels": {
+    "currency": "Currency",
+    "amount": "Amount",
+    "balance": "Balance",
+    "account": "Account",
+    "portfolio": "Portfolio",
+    "investment": "Investment",
+    "wealth": "Wealth",
+    "security": "Security",
+    "transaction": "Transaction",
+    "reference": "Reference",
+    "date": "Date",
+    "time": "Time",
+    "client": "Client",
+    "category": "Category",
+    "description": "Description",
+    "debit": "Debit",
+    "credit": "Credit",
+    "expiry": "Expiry",
+    "holder": "Cardholder"
+  },
+
+  "messages": {
+    "loading": "Loading...",
+    "pleaseWait": "Please wait...",
+    "comingSoon": "Coming Soon",
+    "noResults": "No results found.",
+    "success": "Operation completed successfully.",
+    "error": "Something went wrong. Please try again.",
+    "saved": "Changes saved successfully.",
+    "submitted": "Your request has been submitted successfully.",
+    "returnHome": "Return to homepage",
+    "welcome": "Welcome",
+    "initializing": "System initializing..."
+  },
+
+  "errors": {
+    "required": "This field is required.",
+    "invalidEmail": "Please enter a valid email address.",
+    "invalidPhone": "Please enter a valid phone number.",
+    "passwordMismatch": "Passwords do not match.",
+    "network": "Network connection unavailable.",
+    "server": "Server error. Please try again later.",
+    "unauthorized": "You are not authorized to perform this action.",
+    "notFound": "The requested resource could not be found."
+  },
+
+  "accessibility": {
+    "openMenu": "Open navigation menu",
+    "closeMenu": "Close navigation menu",
+    "previous": "Previous",
+    "next": "Next",
+    "play": "Play",
+    "pause": "Pause",
+    "showPassword": "Show password",
+    "hidePassword": "Hide password"
+  }
+}

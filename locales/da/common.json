@@ -1,0 +1,142 @@
+{
+  "site": {
+    "name": "Belgrave Private Bank",
+    "shortName": "Belgrave",
+    "tagline": "Privatbank. Global Formue. Betroet Sikkerhed.",
+    "copyright": "© 2026 Belgrave Private Bank. Alle Rettigheder Forbeholdes."
+  },
+
+  "meta": {
+    "title": "Belgrave Private Bank",
+    "description": "Belgrave Private Bank tilbyder private banking, formueforvaltning, internationale betalinger, investeringstjenester, premium bankkort og sikker digital banking."
+  },
+
+  "language": {
+    "label": "Sprog",
+    "select": "Vælg Sprog"
+  },
+
+  "buttons": {
+    "learnMore": "Læs Mere",
+    "readMore": "Læs Mere",
+    "getStarted": "Kom I Gang",
+    "openAccount": "Åbn Konto",
+    "login": "Log Ind",
+    "logout": "Log Ud",
+    "register": "Registrer",
+    "createAccount": "Opret Konto",
+    "contactUs": "Kontakt Os",
+    "discoverMore": "Opdag Mere",
+    "applyNow": "Ansøg Nu",
+    "explore": "Udforsk",
+    "viewAll": "Se Alle",
+    "continue": "Fortsæt",
+    "back": "Tilbage",
+    "next": "Næste",
+    "cancel": "Annuller",
+    "save": "Gem",
+    "submit": "Indsend",
+    "confirm": "Bekræft",
+    "download": "Download",
+    "upload": "Upload",
+    "search": "Søg",
+    "send": "Send",
+    "close": "Luk",
+    "transfer": "Overfør",
+    "deposit": "Indbetal",
+    "withdraw": "Hæv"
+  },
+
+  "forms": {
+    "required": "Påkrævet",
+    "optional": "Valgfri",
+    "firstName": "Fornavn",
+    "lastName": "Efternavn",
+    "fullName": "Fulde Navn",
+    "email": "E-mailadresse",
+    "phone": "Telefonnummer",
+    "country": "Land",
+    "city": "By",
+    "address": "Adresse",
+    "message": "Besked",
+    "password": "Adgangskode",
+    "confirmPassword": "Bekræft Adgangskode",
+    "username": "Brugernavn",
+    "accountNumber": "Kontonummer"
+  },
+
+  "status": {
+    "active": "Aktiv",
+    "inactive": "Inaktiv",
+    "online": "Online",
+    "offline": "Offline",
+    "available": "Tilgængelig",
+    "pending": "Afventer",
+    "processing": "Behandles",
+    "completed": "Gennemført",
+    "successful": "Vellykket",
+    "failed": "Mislykket",
+    "verified": "Bekræftet",
+    "unverified": "Ikke Bekræftet",
+    "secured": "Sikret",
+    "restricted": "Begrænset"
+  },
+
+  "labels": {
+    "currency": "Valuta",
+    "amount": "Beløb",
+    "balance": "Saldo",
+    "account": "Konto",
+    "portfolio": "Portefølje",
+    "investment": "Investering",
+    "wealth": "Formue",
+    "security": "Sikkerhed",
+    "transaction": "Transaktion",
+    "reference": "Reference",
+    "date": "Dato",
+    "time": "Tid",
+    "client": "Kunde",
+    "category": "Kategori",
+    "description": "Beskrivelse",
+    "debit": "Debet",
+    "credit": "Kredit",
+    "expiry": "Udløbsdato",
+    "holder": "Kortindehaver"
+  },
+
+  "messages": {
+    "loading": "Indlæser...",
+    "pleaseWait": "Vent venligst...",
+    "comingSoon": "Kommer Snart",
+    "noResults": "Ingen resultater fundet.",
+    "success": "Handlingen blev gennemført.",
+    "error": "Noget gik galt. Prøv igen.",
+    "saved": "Ændringer blev gemt.",
+    "submitted": "Din forespørgsel er blevet sendt.",
+    "returnHome": "Vend tilbage til forsiden",
+    "welcome": "Velkommen",
+    "initializing": "System initialiserer..."
+  },
+
+  "errors": {
+    "required": "Dette felt er påkrævet.",
+    "invalidEmail": "Indtast venligst en gyldig e-mailadresse.",
+    "invalidPhone": "Indtast venligst et gyldigt telefonnummer.",
+    "passwordMismatch": "Adgangskoderne matcher ikke.",
+    "network": "Netværksforbindelse utilgængelig.",
+    "server": "Serverfejl. Prøv igen senere.",
+    "unauthorized": "Du har ikke tilladelse til denne handling.",
+    "notFound": "Den ønskede ressource kunne ikke findes."
+  },
+
+  "accessibility": {
+    "openMenu": "Åbn navigationsmenu",
+    "closeMenu": "Luk navigationsmenu",
+    "previous": "Forrige",
+    "next": "Næste",
+    "play": "Afspil",
+    "pause": "Pause",
+    "showPassword": "Vis adgangskode",
+    "hidePassword": "Skjul adgangskode"
+  }
+}

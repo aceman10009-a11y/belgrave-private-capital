@@ -1,0 +1,66 @@
+{
+  "hero": {
+    "tag": "SECURITY",
+    "title": "Advanced Security Without Compromise",
+    "description": "Belgrave Private Bank protects your wealth and personal information through advanced technology, strict controls, and continuous monitoring."
+  },
+
+  "intro": {
+    "title": "Your Security Is Our Priority",
+    "description": "Our security framework combines encryption, fraud prevention, compliance monitoring, and operational controls to safeguard every client relationship."
+  },
+
+  "protection": {
+    "title": "Security Protection",
+
+    "encryption": {
+      "title": "Advanced Encryption",
+      "description": "All sensitive information and transactions are protected using advanced encryption technologies."
+    },
+
+    "monitoring": {
+      "title": "24/7 Security Monitoring",
+      "description": "Our systems continuously monitor account activity to detect and prevent unauthorized access."
+    },
+
+    "fraud": {
+      "title": "Fraud Prevention",
+      "description": "Sophisticated security systems help identify suspicious activity and protect client assets."
+    },
+
+    "privacy": {
+      "title": "Client Privacy",
+      "description": "Your personal and financial information is handled with strict confidentiality standards."
+    }
+  },
+
+  "features": {
+    "title": "Security Features",
+
+    "multiFactor": "Multi-Factor Authentication",
+    "secureTransactions": "Secure Transaction Verification",
+    "accountMonitoring": "Real-Time Account Monitoring",
+    "compliance": "Global Compliance Standards",
+    "dataProtection": "Protected Client Data"
+  },
+
+  "alerts": {
+    "title": "Security Alerts",
+
+    "login": "New login detected on your account.",
+    "transaction": "Transaction verification required.",
+    "restricted": "This operation is currently restricted under banking jurisdiction review."
+  },
+
+  "messages": {
+    "secured": "Your account security status is active.",
+    "protected": "Your information is protected.",
+    "warning": "Please contact your relationship manager if you notice unusual activity."
+  },
+
+  "cta": {
+    "title": "Need Security Assistance?",
+    "description": "Our support team is available to assist with account security questions and concerns.",
+    "button": "Contact Security Team"
+  }
+}

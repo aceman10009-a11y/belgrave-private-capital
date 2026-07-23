@@ -1,6 +1,8 @@
 <header class="navbar">
 
+
     <a href="index.html" class="logo-container">
+
 
         <img
             src="assets/logo.png"
@@ -8,40 +10,167 @@
             class="logo"
         >
 
+
         <div class="brand">
 
-            <h2>Belgrave</h2>
 
-            <span>PRIVATE BANK</span>
+            <h2 data-i18n="brand.name">
+                Belgrave
+            </h2>
+
+
+            <span data-i18n="brand.subtitle">
+                PRIVATE BANK
+            </span>
+
 
         </div>
 
+
     </a>
+
+
+
+
 
     <nav>
 
-        <a href="index.html">Home</a>
 
-        <a href="#banking">Banking</a>
+        <a
+            href="index.html"
+            data-i18n="navbar.home">
+            Home
+        </a>
 
-        <a href="#wealth">Wealth</a>
 
-        <a href="#security">Security</a>
 
-        <a href="contact.html">Contact</a>
+        <a
+            href="#banking"
+            data-i18n="navbar.banking.label">
+            Banking
+        </a>
+
+
+
+        <a
+            href="#wealth"
+            data-i18n="navbar.wealth.label">
+            Wealth
+        </a>
+
+
+
+        <a
+            href="#security"
+            data-i18n="navbar.security.label">
+            Security
+        </a>
+
+
+
+        <a
+            href="contact.html"
+            data-i18n="navbar.contact">
+            Contact
+        </a>
+
 
     </nav>
 
+
+
+
+
+
     <div class="nav-actions">
 
-        <a href="login.html" class="nav-login">
+
+
+       <div class="language-switcher">
+        
+
+    <select
+        id="languageSwitcher"
+        aria-label="Language Selector">
+
+        <option value="en">
+            English
+        </option>
+
+        <option value="de">
+            Deutsch
+        </option>
+
+        <option value="fr">
+            Français
+        </option>
+
+        <option value="es">
+            Español
+        </option>
+
+        <option value="da">
+            Dansk
+        </option>
+
+        <option value="fi">
+            Suomi
+        </option>
+
+        <option value="nl">
+            Nederlands
+        </option>
+
+        <option value="no">
+            Norsk
+        </option>
+
+        <option value="pl">
+            Polski
+        </option>
+
+        <option value="pt">
+            Português
+        </option>
+
+        <option value="ru">
+            Русский
+        </option>
+
+    </select>
+
+</div>
+
+
+
+
+        <a
+            href="login.html"
+            class="nav-login"
+            data-i18n="common.buttons.login">
+
             Login
+
         </a>
 
-        <a href="signup.html" class="nav-open">
+
+
+
+
+        <a
+            href="signup.html"
+            class="nav-open"
+            data-i18n="common.buttons.openAccount">
+
             Open Account
+
         </a>
+
+
+
 
     </div>
+
+
 
 </header>

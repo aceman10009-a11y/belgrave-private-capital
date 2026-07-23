@@ -1,0 +1,76 @@
+{
+  "title": "Client Profile",
+
+  "hero": {
+    "tag": "PROFILE",
+    "title": "Manage Your Private Banking Profile",
+    "description": "Review and update your personal information, preferences, and account details."
+  },
+
+  "personal": {
+    "title": "Personal Information",
+
+    "fields": {
+      "fullName": "Full Name",
+      "email": "Email Address",
+      "phone": "Phone Number",
+      "dateOfBirth": "Date of Birth",
+      "nationality": "Nationality",
+      "address": "Residential Address"
+    }
+  },
+
+  "account": {
+    "title": "Account Information",
+
+    "details": {
+      "accountNumber": "Account Number",
+      "accountType": "Account Type",
+      "status": "Account Status",
+      "opened": "Account Opening Date"
+    },
+
+    "types": {
+      "private": "Private Banking Account",
+      "premium": "Premium Client Account",
+      "business": "Business Banking Account"
+    }
+  },
+
+  "preferences": {
+    "title": "Client Preferences",
+
+    "communication": {
+      "title": "Communication Preferences",
+      "email": "Email Communication",
+      "phone": "Telephone Communication",
+      "alerts": "Security Alerts"
+    },
+
+    "language": {
+      "title": "Preferred Language",
+      "description": "Choose the language used for your banking experience."
+    }
+  },
+
+  "security": {
+    "title": "Profile Security",
+
+    "items": {
+      "lastLogin": "Last Login",
+      "devices": "Trusted Devices",
+      "sessions": "Active Sessions"
+    }
+  },
+
+  "messages": {
+    "updated": "Profile updated successfully.",
+    "restricted": "Profile changes are currently restricted under banking jurisdiction review."
+  },
+
+  "buttons": {
+    "edit": "Edit Profile",
+    "save": "Save Changes",
+    "cancel": "Cancel"
+  }
+}

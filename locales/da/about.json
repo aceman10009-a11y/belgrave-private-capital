@@ -1,0 +1,62 @@
+{
+  "hero": {
+    "tag": "OM BELGRAVE",
+    "title": "En tradition af tillid, ekspertise og private banking",
+    "description": "Belgrave Private Bank tilbyder pålidelige finansielle løsninger til enkeltpersoner, familier, iværksættere og globale virksomheder, der søger langsigtet økonomisk tryghed."
+  },
+
+  "intro": {
+    "title": "Hvem Vi Er",
+    "description": "Vi er en privatbank, der er dedikeret til at levere personlige finansielle tjenester, global ekspertise og sikre løsninger inden for formueforvaltning."
+  },
+
+  "mission": {
+    "title": "Vores Mission",
+    "description": "At skabe fremragende private banking-oplevelser gennem tillidsfulde relationer, innovative løsninger og ansvarlig økonomisk forvaltning."
+  },
+
+  "vision": {
+    "title": "Vores Vision",
+    "description": "At blive en betroet global partner for kunder, der ønsker at bevare og udvikle deres formue gennem generationer."
+  },
+
+  "values": {
+    "title": "Vores Kerneværdier",
+
+    "trust": {
+      "title": "Tillid",
+      "description": "Vi opbygger langvarige relationer gennem integritet, gennemsigtighed og pålidelighed."
+    },
+
+    "excellence": {
+      "title": "Ekspertise",
+      "description": "Vi leverer ekstraordinær service gennem viden, præcision og engagement."
+    },
+
+    "security": {
+      "title": "Sikkerhed",
+      "description": "Vi beskytter kundernes formue gennem avancerede systemer og strenge operationelle standarder."
+    },
+
+    "innovation": {
+      "title": "Innovation",
+      "description": "Vi kombinerer traditionel private banking med moderne finansiel teknologi."
+    }
+  },
+
+  "history": {
+    "title": "Vores Arv",
+    "description": "Belgrave Private Bank repræsenterer en forpligtelse til fremragende private banking ved at kombinere global finansiel viden med personlige kunderelationer."
+  },
+
+  "leadership": {
+    "title": "Erfarent Lederskab",
+    "description": "Vores specialister har omfattende erfaring inden for private banking, investeringer, formueforvaltning og international finans."
+  },
+
+  "cta": {
+    "title": "Oplev Fremragende Private Banking",
+    "description": "Opdag hvordan Belgrave Private Bank kan hjælpe med at beskytte og udvikle din økonomiske fremtid.",
+    "button": "Kontakt Os"
+  }
+}

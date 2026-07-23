@@ -1,0 +1,66 @@
+{
+  "hero": {
+    "tag": "SIKKERHED",
+    "title": "Avanceret sikkerhed uden kompromis",
+    "description": "Belgrave Private Bank beskytter din formue og dine personlige oplysninger gennem avanceret teknologi, strenge kontroller og kontinuerlig overvågning."
+  },
+
+  "intro": {
+    "title": "Din sikkerhed er vores prioritet",
+    "description": "Vores sikkerhedsramme kombinerer kryptering, forebyggelse af svindel, compliance-overvågning og operationelle kontroller for at beskytte alle kunderelationer."
+  },
+
+  "protection": {
+    "title": "Sikkerhedsbeskyttelse",
+
+    "encryption": {
+      "title": "Avanceret kryptering",
+      "description": "Alle følsomme oplysninger og transaktioner er beskyttet ved hjælp af avancerede krypteringsteknologier."
+    },
+
+    "monitoring": {
+      "title": "24/7 sikkerhedsovervågning",
+      "description": "Vores systemer overvåger kontinuerligt kontoaktivitet for at opdage og forhindre uautoriseret adgang."
+    },
+
+    "fraud": {
+      "title": "Forebyggelse af svindel",
+      "description": "Avancerede sikkerhedssystemer hjælper med at identificere mistænkelig aktivitet og beskytte kundernes aktiver."
+    },
+
+    "privacy": {
+      "title": "Kundernes privatliv",
+      "description": "Dine personlige og finansielle oplysninger behandles efter strenge standarder for fortrolighed."
+    }
+  },
+
+  "features": {
+    "title": "Sikkerhedsfunktioner",
+
+    "multiFactor": "Multifaktorgodkendelse",
+    "secureTransactions": "Sikker transaktionsverifikation",
+    "accountMonitoring": "Kontinuerlig kontoovervågning i realtid",
+    "compliance": "Globale compliance-standarder",
+    "dataProtection": "Beskyttelse af kundedata"
+  },
+
+  "alerts": {
+    "title": "Sikkerhedsadvarsler",
+
+    "login": "Nyt login registreret på din konto.",
+    "transaction": "Transaktionsverifikation er påkrævet.",
+    "restricted": "Denne handling er i øjeblikket begrænset under bankmæssig jurisdiktionskontrol."
+  },
+
+  "messages": {
+    "secured": "Din kontosikkerhedsstatus er aktiv.",
+    "protected": "Dine oplysninger er beskyttet.",
+    "warning": "Kontakt venligst din rådgiver, hvis du bemærker usædvanlig aktivitet."
+  },
+
+  "cta": {
+    "title": "Har du brug for sikkerhedshjælp?",
+    "description": "Vores supportteam står klar til at hjælpe med spørgsmål og bekymringer vedrørende kontosikkerhed.",
+    "button": "Kontakt sikkerhedsteamet"
+  }
+}

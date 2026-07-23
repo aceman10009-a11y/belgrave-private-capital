@@ -1,0 +1,79 @@
+{
+  "hero": {
+    "tag": "PREMIUM BANKING CARDS",
+    "title": "Exclusive Cards Designed For Your Lifestyle",
+    "description": "Belgrave premium debit and credit cards combine advanced security, global acceptance, and exclusive benefits for private banking clients."
+  },
+
+  "intro": {
+    "title": "A Higher Standard Of Banking Cards",
+    "description": "Our premium cards provide flexibility, convenience, and enhanced protection for your everyday and international financial needs."
+  },
+
+  "creditCards": {
+    "title": "Premium Credit Cards",
+
+    "items": {
+      "platinum": {
+        "title": "Platinum Credit Card",
+        "description": "A premium credit solution offering worldwide acceptance and exclusive client benefits."
+      },
+
+      "elite": {
+        "title": "Elite Credit Card",
+        "description": "Designed for clients seeking enhanced privileges, rewards, and global financial flexibility."
+      }
+    }
+  },
+
+  "debitCards": {
+    "title": "Premium Debit Cards",
+
+    "items": {
+      "world": {
+        "title": "World Debit Card",
+        "description": "Secure access to your funds with global payment capabilities."
+      },
+
+      "private": {
+        "title": "Private Banking Debit Card",
+        "description": "A personalised debit card experience connected to your private banking account."
+      }
+    }
+  },
+
+  "features": {
+    "title": "Card Benefits",
+
+    "security": {
+      "title": "Advanced Security",
+      "description": "Protected with modern fraud monitoring and secure transaction technology."
+    },
+
+    "globalAccess": {
+      "title": "Global Acceptance",
+      "description": "Use your Belgrave card worldwide wherever premium payments are accepted."
+    },
+
+    "concierge": {
+      "title": "Concierge Services",
+      "description": "Access dedicated support and lifestyle assistance."
+    },
+
+    "rewards": {
+      "title": "Exclusive Rewards",
+      "description": "Enjoy selected benefits designed for private banking clients."
+    }
+  },
+
+  "security": {
+    "title": "Secure Every Transaction",
+    "description": "Every card transaction is protected through advanced security controls and continuous monitoring."
+  },
+
+  "cta": {
+    "title": "Request Your Premium Banking Card",
+    "description": "Speak with our specialists to explore the card solution that best fits your financial lifestyle.",
+    "button": "Apply For A Card"
+  }
+}

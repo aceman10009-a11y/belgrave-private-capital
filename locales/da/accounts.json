@@ -1,0 +1,74 @@
+{
+  "hero": {
+    "tag": "KONTI",
+    "title": "Bankkonti Designet til Private Kunder",
+    "description": "Belgrave Private Bank tilbyder sikre kontoløsninger designet til enkeltpersoner, familier og virksomheder, der har brug for fleksible globale banktjenester."
+  },
+
+  "intro": {
+    "title": "Dit Økonomiske Fundament",
+    "description": "Vores konti kombinerer sikkerhed, fleksibilitet og personlig service for at understøtte din daglige bankforretning og dine langsigtede økonomiske mål."
+  },
+
+  "types": {
+    "title": "Kontoløsninger",
+
+    "private": {
+      "title": "Privatbankkonto",
+      "description": "En førsteklasses kontooplevelse med dedikeret rådgivning, skræddersyede tjenester og eksklusive bankfordele."
+    },
+
+    "premium": {
+      "title": "Premiumkonto",
+      "description": "Udvidede bankfunktioner designet til kunder, der ønsker ekstra fleksibilitet og økonomisk bekvemmelighed."
+    },
+
+    "business": {
+      "title": "Erhvervskonto",
+      "description": "Omfattende bankløsninger til iværksættere, ledere og internationale virksomheder."
+    },
+
+    "international": {
+      "title": "International Konto",
+      "description": "Kontoløsninger med flere valutaer til kunder, der håndterer økonomi på tværs af globale markeder."
+    }
+  },
+
+  "features": {
+    "title": "Kontofunktioner",
+
+    "multiCurrency": "Banktjenester i Flere Valutaer",
+    "globalPayments": "Global Betalingsadgang",
+    "secureOnline": "Sikker Online Banking",
+    "relationshipManager": "Dedikeret Relationschef",
+    "prioritySupport": "Prioriteret Kundesupport"
+  },
+
+  "management": {
+    "title": "Kontostyring",
+
+    "balance": "Tilgængelig Saldo",
+    "transactions": "Seneste Transaktioner",
+    "statements": "Kontoudtog",
+    "transfers": "Overfør Midler",
+    "settings": "Kontoindstillinger"
+  },
+
+  "security": {
+    "title": "Kontosikkerhed",
+    "description": "Alle konti er beskyttet gennem avanceret sikkerhedsovervågning, kryptering og kontrolforanstaltninger i overensstemmelse med gældende regler."
+  },
+
+  "messages": {
+    "active": "Konto aktiv",
+    "restricted": "Adgang til kontoen er i øjeblikket begrænset på grund af en bankjuridisk gennemgang.",
+    "pending": "Kontobekræftelse afventer.",
+    "updated": "Kontooplysninger blev opdateret korrekt."
+  },
+
+  "cta": {
+    "title": "Åbn Din Privatbankkonto",
+    "description": "Start dit forhold til Belgrave Private Bank og få adgang til skræddersyede finansielle løsninger.",
+    "button": "Åbn Konto"
+  }
+}

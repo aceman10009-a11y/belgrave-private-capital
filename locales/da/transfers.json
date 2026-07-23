@@ -1,0 +1,63 @@
+{
+  "title": "Overførsler",
+
+  "hero": {
+    "tag": "GLOBALE OVERFØRSLER",
+    "title": "Sikre Internationale Pengeoverførsler",
+    "description": "Send og modtag midler globalt med sikre betalingsløsninger designet til private banking-kunder."
+  },
+
+  "transfer": {
+    "title": "Foretag En Overførsel",
+    "description": "Overfør midler sikkert mellem dine Belgrave-konti og godkendte eksterne konti.",
+
+    "fields": {
+      "recipient": "Modtagers Navn",
+      "accountNumber": "Kontonummer",
+      "bankName": "Banknavn",
+      "amount": "Overførselsbeløb",
+      "currency": "Valuta",
+      "reference": "Betalingsreference"
+    },
+
+    "button": "Overfør Midler"
+  },
+
+  "types": {
+    "title": "Overførselstjenester",
+
+    "international": {
+      "title": "Internationale Overførsler",
+      "description": "Flyt midler på tværs af grænser med pålidelige globale betalingsnetværk."
+    },
+
+    "domestic": {
+      "title": "Nationale Overførsler",
+      "description": "Gennemfør lokale overførsler hurtigt og sikkert."
+    },
+
+    "wire": {
+      "title": "Bankoverførsler",
+      "description": "Gennemfør større bankoverførsler med forbedrede sikkerhedskontroller."
+    }
+  },
+
+  "security": {
+    "title": "Overførselssikkerhed",
+    "description": "Alle transaktioner overvåges gennem avancerede systemer til forebyggelse af svindel og compliance-kontroller."
+  },
+
+  "messages": {
+    "processing": "Din overførsel behandles.",
+    "successful": "Overførsel gennemført med succes.",
+    "failed": "Overførslen kunne ikke gennemføres.",
+    "restricted": "Overførsler er i øjeblikket begrænset under bankmæssig jurisdiktionskontrol.",
+    "pending": "Din overførsel afventer godkendelse."
+  },
+
+  "cta": {
+    "title": "Har Du Brug For Hjælp Med En Overførsel?",
+    "description": "Kontakt din dedikerede rådgiver for support med overførsler.",
+    "button": "Kontakt Support"
+  }
+}

@@ -1,0 +1,56 @@
+{
+  "home": "Home",
+
+  "banking": {
+    "label": "Banking",
+    "accounts": "Accounts",
+    "cards": "Cards",
+    "payments": "Payments",
+    "transfers": "Transfers"
+  },
+
+  "wealth": {
+    "label": "Wealth",
+    "wealthManagement": "Wealth Management",
+    "investments": "Investments",
+    "portfolio": "Portfolio",
+    "familyOffice": "Family Office"
+  },
+
+  "services": {
+    "label": "Services",
+    "privateBanking": "Private Banking",
+    "internationalBanking": "International Banking",
+    "digitalBanking": "Digital Banking"
+  },
+
+  "security": {
+    "label": "Security",
+    "protection": "Security & Protection"
+  },
+
+  "about": {
+    "label": "About",
+    "ourStory": "Our Story",
+    "leadership": "Leadership"
+  },
+
+  "contact": "Contact Us",
+
+  "actions": {
+    "login": "Login",
+    "openAccount": "Open Account",
+    "createAccount": "Create Account",
+    "logout": "Logout"
+  },
+
+  "menu": {
+    "open": "Open Menu",
+    "close": "Close Menu"
+  },
+
+  "brand": {
+    "name": "Belgrave",
+    "subtitle": "PRIVATE BANK"
+  }
+}

@@ -1,0 +1,183 @@
+{
+  "hero": {
+    "tag": "PRIVATE BANKING",
+    "title": "Din Arv. Vores Forpligtelse.",
+    "description": "Eksklusive private banking-løsninger designet til at beskytte, bevare og udvikle din formue gennem generationer.",
+    "button": "Opdag Mere",
+
+    "portfolio": {
+      "title": "Privat Portefølje",
+      "status": "● Beskyttet",
+      "investment": "Investering",
+      "performance": "+4.26%",
+      "liquidity": "Likviditet",
+      "currency": "USD",
+      "privateEquity": "Private Equity",
+      "active": "Aktiv",
+      "globalMarkets": "Globale Markeder",
+      "regions": "Regioner"
+    }
+  },
+
+  "stats": {
+    "assetsManaged": {
+      "value": "$967M+",
+      "label": "Forvaltede Aktiver"
+    },
+    "countries": {
+      "value": "42",
+      "label": "Lande"
+    },
+    "clients": {
+      "value": "18.400+",
+      "label": "Private Kunder"
+    },
+    "regions": {
+      "value": "17",
+      "label": "Globale Regioner"
+    }
+  },
+
+  "financialSnapshot": {
+    "tag": "FINANSIELT OVERBLIK",
+    "title": "Finansielt Overblik",
+
+    "assets": {
+      "value": "$967.9M",
+      "label": "Forvaltede Aktiver"
+    },
+
+    "countries": {
+      "value": "42",
+      "label": "Betjente Lande"
+    },
+
+    "clients": {
+      "value": "18.400",
+      "label": "Private Kunder"
+    },
+
+    "availability": {
+      "value": "99,98%",
+      "label": "Platformstilgængelighed"
+    }
+  },
+
+  "services": {
+    "tag": "PRIVATE BANKING",
+    "heading": "Bankløsninger Designet Omkring Din Livsstil",
+    "description": "Enhver bankrelation begynder med at forstå dine mål. Vores specialister leverer skræddersyede finansielle løsninger til privatpersoner, iværksættere, familier og internationale kunder.",
+
+    "privateBanking": {
+      "title": "Private Banking",
+      "description": "Personlige bankløsninger understøttet af dedikerede kunderådgivere."
+    },
+
+    "investmentAdvisory": {
+      "title": "Investeringsrådgivning",
+      "description": "Professionel rådgivning og investeringsstrategier skræddersyet til dine økonomiske mål."
+    },
+
+    "digitalBanking": {
+      "title": "Digital Banking",
+      "description": "Sikker adgang til dine konti gennem moderne digitale bankløsninger."
+    },
+
+    "internationalBanking": {
+      "title": "International Banking",
+      "description": "Globale bankløsninger til kunder, der administrerer formue på tværs af landegrænser."
+    },
+
+    "savingsDeposits": {
+      "title": "Opsparing & Indlån",
+      "description": "Fleksible løsninger designet til sikker formueforvaltning og likviditet."
+    },
+
+    "cashServices": {
+      "title": "Kontant- & Hæveautomatservice",
+      "description": "Praktisk adgang til daglige banktjenester over hele verden."
+    }
+  },
+
+  "digitalBanking": {
+    "tag": "DIGITAL BANKING",
+    "title": "Digital Banking i Verdensklasse",
+    "description": "Administrer din formue sikkert gennem en avanceret digital banking-platform udviklet til moderne private banking-kunder.",
+    "security": "Avanceret Sikkerhed",
+    "access": "Global Adgang",
+    "control": "Fuld Finansiel Kontrol"
+  },
+
+  "cards": {
+    "tag": "PREMIUM KORT",
+    "title": "Eksklusive Bankkort",
+    "description": "Designet til kunder, der forventer mere end almindelig bankdrift. Vores premium debet- og kreditkort kombinerer elegant design, global accept, avanceret sikkerhed og eksklusive private banking-fordele.",
+
+    "signature": {
+      "title": "Signature Kredit",
+      "description": "Premium forbrug med global accept, luksusrejsefordele og eksklusive concierge-tjenester."
+    },
+
+    "platinum": {
+      "title": "Platinum Debet",
+      "description": "Daglig bankdrift med adgang til flere valutaer, kontaktløse betalinger og øjeblikkelige internationale overførsler."
+    },
+
+    "private": {
+      "title": "Private Debet",
+      "description": "Udviklet til internationale livsstile med sikre globale transaktioner og prioriteret banksupport."
+    },
+
+    "infinite": {
+      "title": "Infinite Kredit",
+      "description": "Vores mest eksklusive bankkort med premium-fordele, øget købekraft og luksuriøse finansielle tjenester."
+    }
+  },
+
+  "security": {
+    "tag": "SIKKERHED",
+    "title": "Sikkerhed Uden Kompromis",
+    "description": "Din formue og personlige information er beskyttet gennem avancerede sikkerhedssystemer og strenge operationelle kontroller.",
+
+    "protection": "Aktivbeskyttelse",
+    "protectionDescription": "Hver forbindelse er beskyttet med kryptering på virksomhedsniveau, som benyttes af førende finansielle institutioner verden over.",
+
+    "privacy": "Kundeprivatliv",
+    "privacyDescription": "Intelligent godkendelse hjælper med at beskytte hvert login og alle følsomme transaktioner på tværs af dine konti.",
+
+    "monitoring": "24/7 Sikkerhedsovervågning",
+    "monitoringDescription": "Din private rådgiver og vores sikkerhedsteams overvåger aktivitet og beskytter dine finansielle interesser."
+  },
+
+  "testimonials": {
+    "tag": "KUNDEUDTALELSER",
+    "title": "Betroet af Private Kunder",
+    "description": "Fra iværksættere og virksomhedsejere til family offices og internationale investorer har vores kunder tillid til Belgrave Private Bank for diskret service, ekspertise og langsigtede finansielle partnerskaber.",
+
+    "clients": {
+  "michael": {
+    "review": "Enestående service, professionel rådgivning og en bankoplevelse, der er bygget på tillid. Min personlige rådgiver har konsekvent overgået mine forventninger.",
+    "name": "Michael Thornton",
+    "role": "Private Banking-kunde"
+  },
+
+  "sophia": {
+    "review": "Belgrave leverer den diskretion, ekspertise og personlige opmærksomhed, jeg forventer af en privatbank i verdensklasse. Hver eneste kontakt håndteres professionelt.",
+    "name": "Sophia Whitmore",
+    "role": "Family Office-kunde"
+  },
+
+  "alexander": {
+    "review": "International bankvirksomhed har aldrig været så problemfri. Fra grænseoverskridende transaktioner til investeringsrådgivning håndteres alt effektivt og sikkert.",
+    "name": "Alexander Weber",
+    "role": "International Kunde"
+  }
+}
+  },
+
+  "cta": {
+    "title": "En Højere Standard for Private Banking",
+    "description": "Kontakt Belgrave Private Bank, og udforsk finansielle løsninger designet omkring dine ambitioner.",
+    "button": "Kontakt Os"
+  }
+}

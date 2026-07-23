@@ -1,0 +1,71 @@
+{
+  "hero": {
+    "tag": "FORMUEFORVALTNING",
+    "title": "Bevar Og Voks Din Formue",
+    "description": "Belgrave Private Bank leverer skræddersyede formueforvaltningsstrategier designet til at beskytte aktiver, skabe muligheder og understøtte langsigtede økonomiske mål."
+  },
+
+  "intro": {
+    "title": "Strategisk Formueforvaltning",
+    "description": "Vores specialister kombinerer investeringsekspertise, adgang til globale markeder og personlig planlægning for at hjælpe kunder med at opnå varig økonomisk succes."
+  },
+
+  "services": {
+    "title": "Formueforvaltningstjenester",
+
+    "investmentPlanning": {
+      "title": "Investeringsplanlægning",
+      "description": "Skræddersyede investeringsstrategier designet omkring dine mål, risikoprofil og økonomiske vision."
+    },
+
+    "portfolioManagement": {
+      "title": "Porteføljestyring",
+      "description": "Professionel porteføljestyring med fokus på diversificering, resultater og langsigtet bevarelse af kapital."
+    },
+
+    "estatePlanning": {
+      "title": "Arveplanlægning",
+      "description": "Strukturerede løsninger til at bevare formue og sikre effektiv overførsel mellem generationer."
+    },
+
+    "familyOffice": {
+      "title": "Family Office-Løsninger",
+      "description": "Omfattende formuekoordinering for familier, der ønsker dedikeret økonomisk rådgivning og styring."
+    },
+
+    "privateMarkets": {
+      "title": "Private Markedsinvesteringer",
+      "description": "Adgang til alternative investeringsmuligheder såsom private equity, realaktiver og specialiserede strategier."
+    },
+
+    "taxPlanning": {
+      "title": "Skatteplanlægning",
+      "description": "Strategiske planlægningsløsninger designet til effektiv formueforvaltning."
+    }
+  },
+
+  "approach": {
+    "title": "Vores Tilgang Til Formueforvaltning",
+
+    "preservation": {
+      "title": "Formuebevarelse",
+      "description": "Beskyttelse af dine aktiver gennem disciplinerede strategier og omhyggelig risikostyring."
+    },
+
+    "growth": {
+      "title": "Langsigtet Vækst",
+      "description": "Opbygning af bæredygtig formue gennem nøje udvalgte investeringsmuligheder."
+    },
+
+    "legacy": {
+      "title": "Arve- og Legacy Planlægning",
+      "description": "Hjælp til familier med at skabe en varig økonomisk arv for fremtidige generationer."
+    }
+  },
+
+  "cta": {
+    "title": "Byg Din Økonomiske Arv",
+    "description": "Tal med en Belgrave-formuerådgiver og opdag løsninger designet omkring dine ambitioner.",
+    "button": "Kontakt Formuerådgiver"
+  }
+}

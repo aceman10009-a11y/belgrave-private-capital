@@ -1,0 +1,66 @@
+{
+  "hero": {
+    "tag": "PAYMENTS",
+    "title": "Secure Global Payment Solutions",
+    "description": "Manage domestic and international payments with secure banking infrastructure designed for private clients."
+  },
+
+  "intro": {
+    "title": "Flexible Payment Services",
+    "description": "Belgrave Private Bank provides reliable payment solutions for personal, family, and business financial needs."
+  },
+
+  "services": {
+    "title": "Payment Services",
+
+    "internationalTransfers": {
+      "title": "International Transfers",
+      "description": "Send and receive funds globally with secure international payment services."
+    },
+
+    "wireTransfers": {
+      "title": "Wire Transfers",
+      "description": "Execute high-value transfers with professional support and secure processing."
+    },
+
+    "scheduledPayments": {
+      "title": "Scheduled Payments",
+      "description": "Automate recurring payments and manage financial commitments efficiently."
+    },
+
+    "currencyExchange": {
+      "title": "Currency Exchange",
+      "description": "Access competitive foreign exchange solutions for global transactions."
+    }
+  },
+
+  "transaction": {
+    "title": "Payment Transactions",
+
+    "reference": "Reference",
+    "date": "Date",
+    "amount": "Amount",
+    "currency": "Currency",
+    "recipient": "Recipient",
+    "status": "Status"
+  },
+
+  "status": {
+    "pending": "Pending",
+    "processing": "Processing",
+    "completed": "Completed",
+    "failed": "Failed",
+    "cancelled": "Cancelled"
+  },
+
+  "security": {
+    "title": "Protected Payments",
+    "description": "Every payment is monitored through advanced security controls and fraud prevention systems."
+  },
+
+  "cta": {
+    "title": "Manage Your Payments With Confidence",
+    "description": "Our specialists are available to support your payment requirements.",
+    "button": "Contact Support"
+  }
+}

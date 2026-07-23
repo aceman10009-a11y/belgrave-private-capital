@@ -1,0 +1,51 @@
+{
+  "title": "Belgrave Private Bank | Client Login",
+
+  "hero": {
+    "title": "Private Banking Portal",
+    "description": "Secure access to your Belgrave Private Bank account."
+  },
+
+  "form": {
+    "title": "Client Login",
+
+    "fields": {
+      "email": "Email Address",
+      "password": "Password"
+    },
+
+    "placeholders": {
+      "email": "Enter your email address",
+      "password": "Enter your password"
+    },
+
+    "button": "Login"
+  },
+
+  "options": {
+    "remember": "Remember Me",
+    "forgotPassword": "Forgot Password?"
+  },
+
+  "messages": {
+    "loading": "Authenticating...",
+    "success": "Login successful.",
+    "error": "Invalid email or password.",
+    "locked": "Account access temporarily restricted."
+  },
+
+  "security": {
+    "title": "Secure Banking Access",
+    "description": "Your login session is protected through advanced security monitoring and encryption."
+  },
+
+  "register": {
+    "question": "Do not have an account?",
+    "button": "Create Account"
+  },
+
+  "footer": {
+    "privacy": "Privacy Policy",
+    "terms": "Terms & Conditions"
+  }
+}

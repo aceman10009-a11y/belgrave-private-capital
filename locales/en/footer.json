@@ -1,0 +1,52 @@
+{
+  "brand": {
+    "name": "Belgrave",
+    "subtitle": "PRIVATE BANK",
+    "description": "Private banking solutions built on trust, discretion, and long-term financial relationships."
+  },
+
+  "sections": {
+    "services": {
+      "title": "Our Services",
+      "privateBanking": "Private Banking",
+      "wealthManagement": "Wealth Management",
+      "security": "Security & Protection",
+      "digitalBanking": "Digital Banking"
+    },
+
+    "company": {
+      "title": "Company",
+      "about": "About Us",
+      "leadership": "Leadership",
+      "careers": "Careers",
+      "contact": "Contact Us"
+    },
+
+    "support": {
+      "title": "Support",
+      "help": "Help Centre",
+      "faq": "Frequently Asked Questions",
+      "privacy": "Privacy Policy",
+      "terms": "Terms & Conditions"
+    }
+  },
+
+  "contact": {
+    "title": "Contact",
+    "address": "Global Private Banking Office",
+    "email": "Email",
+    "phone": "Phone"
+  },
+
+  "social": {
+    "title": "Follow Us",
+    "linkedin": "LinkedIn",
+    "twitter": "Twitter",
+    "facebook": "Facebook"
+  },
+
+  "legal": {
+    "copyright": "© 2026 Belgrave Private Bank. All Rights Reserved.",
+    "disclaimer": "Belgrave Private Bank provides financial services subject to applicable regulations and compliance requirements."
+  }
+}

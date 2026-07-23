@@ -1,0 +1,66 @@
+{
+  "hero": {
+    "tag": "BETALINGER",
+    "title": "Sikre Globale Betalingsløsninger",
+    "description": "Administrer nationale og internationale betalinger med en sikker bankinfrastruktur designet til private kunder."
+  },
+
+  "intro": {
+    "title": "Fleksible Betalingstjenester",
+    "description": "Belgrave Private Bank tilbyder pålidelige betalingsløsninger til personlige, familiemæssige og erhvervsmæssige økonomiske behov."
+  },
+
+  "services": {
+    "title": "Betalingstjenester",
+
+    "internationalTransfers": {
+      "title": "Internationale Overførsler",
+      "description": "Send og modtag midler globalt med sikre internationale betalingstjenester."
+    },
+
+    "wireTransfers": {
+      "title": "Bankoverførsler",
+      "description": "Gennemfør større overførsler med professionel support og sikker behandling."
+    },
+
+    "scheduledPayments": {
+      "title": "Planlagte Betalinger",
+      "description": "Automatiser tilbagevendende betalinger og administrer økonomiske forpligtelser effektivt."
+    },
+
+    "currencyExchange": {
+      "title": "Valutaveksling",
+      "description": "Få adgang til konkurrencedygtige valutaløsninger til globale transaktioner."
+    }
+  },
+
+  "transaction": {
+    "title": "Betalingstransaktioner",
+
+    "reference": "Reference",
+    "date": "Dato",
+    "amount": "Beløb",
+    "currency": "Valuta",
+    "recipient": "Modtager",
+    "status": "Status"
+  },
+
+  "status": {
+    "pending": "Afventer",
+    "processing": "Behandles",
+    "completed": "Gennemført",
+    "failed": "Mislykkedes",
+    "cancelled": "Annulleret"
+  },
+
+  "security": {
+    "title": "Beskyttede Betalinger",
+    "description": "Alle betalinger overvåges gennem avancerede sikkerhedskontroller og systemer til forebyggelse af svindel."
+  },
+
+  "cta": {
+    "title": "Administrer Dine Betalinger Med Tillid",
+    "description": "Vores specialister står klar til at hjælpe med dine betalingsbehov.",
+    "button": "Kontakt Support"
+  }
+}

@@ -1,0 +1,134 @@
+{
+  "title": "Belgrave Private Bank | Dashboard",
+
+  "navigation": {
+    "home": "Home",
+    "accounts": "Accounts",
+    "investments": "Investments",
+    "statements": "Statements",
+    "transactions": "Transactions",
+    "cards": "Cards",
+    "transferFunds": "Transfer Funds",
+    "settings": "Settings"
+  },
+
+  "hero": {
+    "tag": "PRIVATE BANKING",
+    "welcome": "Welcome",
+    "loading": "Loading...",
+    "description": "Manage your wealth securely from one unified banking platform."
+  },
+
+  "balance": {
+    "available": "Available Balance",
+    "primaryAccount": "Primary Account",
+    "currency": "USD"
+  },
+
+  "security": {
+    "secureBanking": "Secure Banking",
+    "securityLayerActive": "Security layer active",
+    "secureSessionStarted": "Secure session started"
+  },
+
+  "card": {
+    "title": "Belgrave Private Card",
+    "holder": "Card Holder",
+    "expiry": "Expiry",
+    "show": "Show Card"
+  },
+
+  "actions": {
+    "deposit": {
+      "title": "Deposit",
+      "description": "Add funds to your account"
+    },
+    "withdraw": {
+      "title": "Withdraw",
+      "description": "Send money to your bank"
+    },
+    "transfer": {
+      "title": "Transfer",
+      "description": "Move funds instantly"
+    },
+    "statements": {
+      "title": "Statements",
+      "description": "View account history"
+    }
+  },
+
+  "financialSummary": {
+    "availableBalance": "Available Balance",
+    "totalIncome": "Total Income",
+    "totalExpenses": "Total Expenses"
+  },
+
+  "transactions": {
+    "title": "Previous Transactions",
+    "yearRange": "2024-2025",
+    "date": "Date",
+    "description": "Description",
+    "category": "Category",
+    "debit": "Debit",
+    "credit": "Credit",
+    "balance": "Balance",
+    "status": "Status",
+    "completed": "Completed",
+    "restricted": "Restricted",
+    "hidden": "Transactions hidden",
+    "opened": "Transactions opened"
+  },
+
+  "cards": {
+    "title": "Your Cards",
+    "statement": "Account Statement",
+    "download": "Download",
+    "close": "Close"
+  },
+
+  "activity": {
+    "title": "System Activity",
+    "open": "Open Activity",
+    "close": "Close Activity"
+  },
+
+  "restrictions": {
+    "accounts": {
+      "title": "Accounts Restricted",
+      "message": "Accounts are currently restricted under banking jurisdiction review."
+    },
+
+    "deposits": {
+      "title": "Deposits Restricted",
+      "message": "Deposits are temporarily restricted under banking jurisdiction review."
+    },
+
+    "withdrawals": {
+      "title": "Withdrawals Restricted",
+      "message": "Withdrawals are temporarily restricted under banking jurisdiction review."
+    },
+
+    "transfers": {
+      "title": "Transfers Restricted",
+      "message": "Transfers are temporarily restricted under banking jurisdiction review."
+    },
+
+    "settings": {
+      "title": "Settings Restricted",
+      "message": "Settings are currently restricted under banking jurisdiction review."
+    },
+
+    "investments": {
+      "title": "Investments Locked",
+      "message": "Investments are locked until 2029."
+    }
+  },
+
+  "messages": {
+    "statementRequested": "Statement download requested.",
+    "statementDownloaded": "Statement downloaded.",
+    "statementGenerated": "Statement generated successfully.",
+    "settingsComingSoon": "Settings coming soon.",
+    "operationRestricted": "This operation is currently under banking jurisdiction review."
+  }
+}

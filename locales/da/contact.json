@@ -1,0 +1,69 @@
+{
+  "hero": {
+    "tag": "KONTAKT OS",
+    "title": "Forbind Dig Med Belgrave Private Bank",
+    "description": "Uanset om du har brug for support inden for private banking, rådgivning om formueforvaltning eller hjælp med din konto, står vores specialister klar til at hjælpe."
+  },
+
+  "intro": {
+    "title": "Dedikeret Support Til Vores Kunder",
+    "description": "Vores relationschefer tilbyder personlig assistance og professionel rådgivning tilpasset dine økonomiske behov."
+  },
+
+  "form": {
+    "title": "Send Os En Besked",
+
+    "fields": {
+      "name": "Fulde Navn",
+      "email": "E-mailadresse",
+      "phone": "Telefonnummer",
+      "subject": "Emne",
+      "message": "Besked"
+    },
+
+    "placeholders": {
+      "name": "Indtast dit fulde navn",
+      "email": "Indtast din e-mailadresse",
+      "phone": "Indtast dit telefonnummer",
+      "subject": "Indtast beskedens emne",
+      "message": "Skriv din besked"
+    },
+
+    "button": "Send Besked",
+
+    "success": "Din besked er blevet sendt.",
+    "error": "Kunne ikke sende din besked. Prøv venligst igen."
+  },
+
+  "support": {
+    "title": "Kundesupport",
+
+    "items": {
+      "privateBanking": {
+        "title": "Private Banking Support",
+        "description": "Tal med en dedikeret relationschef om dine bankbehov."
+      },
+
+      "wealthManagement": {
+        "title": "Support Til Formueforvaltning",
+        "description": "Få rådgivning om investeringer, porteføljer og økonomisk planlægning."
+      },
+
+      "technical": {
+        "title": "Digital Banking Support",
+        "description": "Få hjælp med sikker adgang til online banking og platformens tjenester."
+      }
+    }
+  },
+
+  "office": {
+    "title": "Globale Kontorer",
+    "description": "Belgrave Private Bank betjener kunder verden over gennem et globalt netværk af finansielle specialister."
+  },
+
+  "cta": {
+    "title": "Klar Til At Begynde Din Private Banking Rejse?",
+    "description": "Kontakt vores specialister for at opdage skræddersyede finansielle løsninger designet omkring dine mål.",
+    "button": "Kontakt Vores Team"
+  }
+}

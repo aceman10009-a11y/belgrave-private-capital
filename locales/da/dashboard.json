@@ -1,0 +1,137 @@
+{
+  "title": "Belgrave Private Bank | Dashboard",
+
+  "navigation": {
+    "home": "Hjem",
+    "accounts": "Konti",
+    "investments": "Investeringer",
+    "statements": "Kontoudtog",
+    "transactions": "Transaktioner",
+    "cards": "Kort",
+    "transferFunds": "Overfør Midler",
+    "settings": "Indstillinger"
+  },
+
+  "hero": {
+    "tag": "PRIVATE BANKING",
+    "welcome": "Velkommen",
+    "loading": "Indlæser...",
+    "description": "Administrer din formue sikkert fra én samlet banking-platform."
+  },
+
+  "balance": {
+    "available": "Tilgængelig Saldo",
+    "primaryAccount": "Primær Konto",
+    "currency": "USD"
+  },
+
+  "security": {
+    "secureBanking": "Sikker Banking",
+    "securityLayerActive": "Sikkerhedslag aktivt",
+    "secureSessionStarted": "Sikker session startet"
+  },
+
+  "card": {
+    "title": "Belgrave Privatkort",
+    "holder": "Kortindehaver",
+    "expiry": "Udløbsdato",
+    "show": "Vis Kort"
+  },
+
+  "actions": {
+    "deposit": {
+      "title": "Indbetaling",
+      "description": "Tilføj penge til din konto"
+    },
+
+    "withdraw": {
+      "title": "Hævning",
+      "description": "Send penge til din bank"
+    },
+
+    "transfer": {
+      "title": "Overførsel",
+      "description": "Flyt penge øjeblikkeligt"
+    },
+
+    "statements": {
+      "title": "Kontoudtog",
+      "description": "Se kontohistorik"
+    }
+  },
+
+  "financialSummary": {
+    "availableBalance": "Tilgængelig Saldo",
+    "totalIncome": "Samlet Indkomst",
+    "totalExpenses": "Samlede Udgifter"
+  },
+
+  "transactions": {
+    "title": "Tidligere Transaktioner",
+    "yearRange": "2024-2025",
+    "date": "Dato",
+    "description": "Beskrivelse",
+    "category": "Kategori",
+    "debit": "Debet",
+    "credit": "Kredit",
+    "balance": "Saldo",
+    "status": "Status",
+    "completed": "Gennemført",
+    "restricted": "Begrænset",
+    "hidden": "Transaktioner skjult",
+    "opened": "Transaktioner åbnet"
+  },
+
+  "cards": {
+    "title": "Dine Kort",
+    "statement": "Kontoudtog",
+    "download": "Download",
+    "close": "Luk"
+  },
+
+  "activity": {
+    "title": "Systemaktivitet",
+    "open": "Åbn Aktivitet",
+    "close": "Luk Aktivitet"
+  },
+
+  "restrictions": {
+    "accounts": {
+      "title": "Konti Begrænset",
+      "message": "Konti er i øjeblikket begrænset under bankmæssig jurisdiktionskontrol."
+    },
+
+    "deposits": {
+      "title": "Indbetalinger Begrænset",
+      "message": "Indbetalinger er midlertidigt begrænset under bankmæssig jurisdiktionskontrol."
+    },
+
+    "withdrawals": {
+      "title": "Hævninger Begrænset",
+      "message": "Hævninger er midlertidigt begrænset under bankmæssig jurisdiktionskontrol."
+    },
+
+    "transfers": {
+      "title": "Overførsler Begrænset",
+      "message": "Overførsler er midlertidigt begrænset under bankmæssig jurisdiktionskontrol."
+    },
+
+    "settings": {
+      "title": "Indstillinger Begrænset",
+      "message": "Indstillinger er i øjeblikket begrænset under bankmæssig jurisdiktionskontrol."
+    },
+
+    "investments": {
+      "title": "Investeringer Låst",
+      "message": "Investeringer er låst indtil 2029."
+    }
+  },
+
+  "messages": {
+    "statementRequested": "Anmodning om kontoudtog er sendt.",
+    "statementDownloaded": "Kontoudtog downloadet.",
+    "statementGenerated": "Kontoudtog genereret med succes.",
+    "settingsComingSoon": "Indstillinger kommer snart.",
+    "operationRestricted": "Denne handling er i øjeblikket under bankmæssig jurisdiktionskontrol."
+  }
+}

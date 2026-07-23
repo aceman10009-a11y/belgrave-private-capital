@@ -1,0 +1,74 @@
+{
+  "hero": {
+    "tag": "ACCOUNTS",
+    "title": "Banking Accounts Designed for Private Clients",
+    "description": "Belgrave Private Bank offers secure account solutions designed for individuals, families, and businesses requiring flexible global banking services."
+  },
+
+  "intro": {
+    "title": "Your Financial Foundation",
+    "description": "Our accounts combine security, flexibility, and personalized service to support your everyday banking and long-term financial objectives."
+  },
+
+  "types": {
+    "title": "Account Solutions",
+
+    "private": {
+      "title": "Private Banking Account",
+      "description": "A premium account experience with dedicated support, tailored services, and exclusive banking privileges."
+    },
+
+    "premium": {
+      "title": "Premium Account",
+      "description": "Enhanced banking features designed for clients seeking additional flexibility and financial convenience."
+    },
+
+    "business": {
+      "title": "Business Account",
+      "description": "Comprehensive banking solutions for entrepreneurs, executives, and international companies."
+    },
+
+    "international": {
+      "title": "International Account",
+      "description": "Multi-currency account solutions for clients managing finances across global markets."
+    }
+  },
+
+  "features": {
+    "title": "Account Features",
+
+    "multiCurrency": "Multi-Currency Banking",
+    "globalPayments": "Global Payment Access",
+    "secureOnline": "Secure Online Banking",
+    "relationshipManager": "Dedicated Relationship Manager",
+    "prioritySupport": "Priority Client Support"
+  },
+
+  "management": {
+    "title": "Account Management",
+
+    "balance": "Available Balance",
+    "transactions": "Recent Transactions",
+    "statements": "Account Statements",
+    "transfers": "Transfer Funds",
+    "settings": "Account Settings"
+  },
+
+  "security": {
+    "title": "Account Security",
+    "description": "All accounts are protected through advanced security monitoring, encryption, and compliance controls."
+  },
+
+  "messages": {
+    "active": "Account active",
+    "restricted": "Account access is currently restricted under banking jurisdiction review.",
+    "pending": "Account verification is pending.",
+    "updated": "Account information updated successfully."
+  },
+
+  "cta": {
+    "title": "Open Your Private Banking Account",
+    "description": "Begin your relationship with Belgrave Private Bank and access tailored financial solutions.",
+    "button": "Open Account"
+  }
+}

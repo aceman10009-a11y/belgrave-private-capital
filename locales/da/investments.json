@@ -1,0 +1,76 @@
+{
+  "hero": {
+    "tag": "INVESTERINGSLØSNINGER",
+    "title": "Vækst Og Bevar Din Formue",
+    "description": "Belgrave Private Bank tilbyder avancerede investeringsløsninger designet til at hjælpe kunder med at nå langsigtede økonomiske mål."
+  },
+
+  "intro": {
+    "title": "Global Investeringsekspertise",
+    "description": "Vores specialister kombinerer markedsviden, strategisk planlægning og personlig rådgivning for at skabe investeringsløsninger tilpasset dine mål."
+  },
+
+  "services": {
+    "title": "Investeringstjenester",
+
+    "portfolioManagement": {
+      "title": "Porteføljestyring",
+      "description": "Professionelt administrerede porteføljer designet omkring din risikoprofil, dine mål og din investeringsstrategi."
+    },
+
+    "wealthPlanning": {
+      "title": "Investeringsplanlægning",
+      "description": "Strategisk investeringsplanlægning med fokus på at bevare og øge formuen over tid."
+    },
+
+    "globalMarkets": {
+      "title": "Adgang Til Globale Markeder",
+      "description": "Få adgang til muligheder på internationale markeder, aktivklasser og investeringssektorer."
+    },
+
+    "alternativeInvestments": {
+      "title": "Alternative Investeringer",
+      "description": "Udforsk muligheder inden for private equity, ejendomme og andre specialiserede investeringer."
+    }
+  },
+
+  "portfolio": {
+    "title": "Porteføljeløsninger",
+
+    "balanced": {
+      "title": "Balanceret Portefølje",
+      "description": "En diversificeret tilgang designet til stabil langsigtet vækst."
+    },
+
+    "growth": {
+      "title": "Vækstportefølje",
+      "description": "Investeringsstrategier med fokus på kapitalvækst og globale muligheder."
+    },
+
+    "preservation": {
+      "title": "Formuebevaringsportefølje",
+      "description": "Designet til at beskytte aktiver samtidig med at sikre bæredygtig økonomisk vækst."
+    }
+  },
+
+  "markets": {
+    "title": "Global Investeringsadgang",
+
+    "equities": "Globale Aktier",
+    "bonds": "Stats- Og Virksomhedsobligationer",
+    "realEstate": "Ejendomsinvesteringer",
+    "privateEquity": "Private Equity",
+    "commodities": "Råvarer"
+  },
+
+  "security": {
+    "title": "Ansvarlig Investeringsstyring",
+    "description": "Vores investeringstilgang fokuserer på gennemsigtighed, professionelt tilsyn og disciplineret risikostyring."
+  },
+
+  "cta": {
+    "title": "Byg Din Investeringsstrategi",
+    "description": "Tal med vores investeringseksperter for at skabe en løsning designet omkring dine økonomiske ambitioner.",
+    "button": "Udforsk Investeringsløsninger"
+  }
+}

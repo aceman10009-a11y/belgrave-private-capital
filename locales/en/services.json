@@ -1,0 +1,76 @@
+{
+  "hero": {
+    "tag": "OUR SERVICES",
+    "title": "Private Banking Solutions Designed Around You",
+    "description": "Belgrave Private Bank provides tailored financial solutions for individuals, families, entrepreneurs, and global businesses."
+  },
+
+  "intro": {
+    "title": "Comprehensive Financial Services",
+    "description": "Our specialists combine experience, expertise, and secure technology to deliver personalized banking and wealth solutions."
+  },
+
+  "services": {
+    "privateBanking": {
+      "title": "Private Banking",
+      "description": "Dedicated relationship managers and personalized banking services designed around your financial lifestyle."
+    },
+
+    "wealthManagement": {
+      "title": "Wealth Management",
+      "description": "Protect, preserve, and grow your wealth through customized investment strategies and long-term planning."
+    },
+
+    "investmentSolutions": {
+      "title": "Investment Solutions",
+      "description": "Access global investment opportunities, portfolio strategies, and professional financial guidance."
+    },
+
+    "internationalBanking": {
+      "title": "International Banking",
+      "description": "Manage global finances with multi-currency accounts, international payments, and foreign exchange solutions."
+    },
+
+    "premiumCards": {
+      "title": "Premium Banking Cards",
+      "description": "Luxury debit and credit cards with enhanced security, worldwide acceptance, and exclusive benefits."
+    },
+
+    "digitalBanking": {
+      "title": "Digital Banking",
+      "description": "Secure digital banking tools that provide convenient access and complete control of your finances."
+    },
+
+    "businessBanking": {
+      "title": "Business Banking",
+      "description": "Advanced banking solutions designed for entrepreneurs, executives, and international businesses."
+    },
+
+    "familyOffice": {
+      "title": "Family Office Services",
+      "description": "Specialized wealth preservation, succession planning, and multi-generational financial management."
+    }
+  },
+
+  "security": {
+    "title": "Advanced Security",
+    "description": "Every service is supported by encryption, fraud monitoring, and strict compliance standards."
+  },
+
+  "benefits": {
+    "title": "Why Clients Choose Belgrave",
+
+    "relationshipManager": "Dedicated Relationship Manager",
+    "globalAccess": "Global Banking Access",
+    "securePlatform": "Highly Secure Digital Platform",
+    "multiCurrency": "Multi-Currency Banking",
+    "investmentExperts": "Professional Investment Guidance",
+    "prioritySupport": "24/7 Priority Client Support"
+  },
+
+  "cta": {
+    "title": "Discover a Higher Standard of Banking",
+    "description": "Speak with our private banking specialists and explore solutions designed around your goals.",
+    "button": "Contact a Private Banker"
+  }
+}

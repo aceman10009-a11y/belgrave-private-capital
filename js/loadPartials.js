@@ -1,75 +1,112 @@
 async function loadPartial(id, file) {
 
-    const response = await fetch(file);
+    try {
 
-    if (!response.ok) {
+        const response = await fetch(file);
 
-        console.error(`Unable to load ${file}`);
+        if (!response.ok) {
 
-        return;
+            console.error(`Unable to load ${file}`);
+
+            return;
+
+        }
+
+
+        const container = document.getElementById(id);
+
+
+        if (!container) {
+
+            console.error(`Container #${id} not found.`);
+
+            return;
+
+        }
+
+
+        container.innerHTML = await response.text();
+
+
+    } catch (error) {
+
+        console.error(
+            `Error loading ${file}:`,
+            error
+        );
 
     }
-
-    const container = document.getElementById(id);
-
-    if (!container) {
-
-        console.error(`Container #${id} not found.`);
-
-        return;
-
-    }
-
-    container.innerHTML = await response.text();
 
 }
 
 
-document.addEventListener("DOMContentLoaded", () => {
 
-    loadPartial(
-        "navbar",
-        "partials/navbar.html"
-    );
+document.addEventListener(
+    "DOMContentLoaded",
+    async () => {
 
-    loadPartial(
-        "hero",
-        "partials/hero.html"
-    );
 
-    loadPartial(
-        "financialSnapshot",
-        "partials/financial-snapshot.html"
-    );
+        await loadPartial(
+            "navbar",
+            "partials/navbar.html"
+        );
 
-    loadPartial(
-        "servicesSection",
-        "partials/services.html"
-    );
 
-    loadPartial(
-        "digitalBankingSection",
-        "partials/digital-banking.html"
-    );
+        await loadPartial(
+            "hero",
+            "partials/hero.html"
+        );
 
-    loadPartial(
-        "cardsSection",
-        "partials/cards-section.html"
-    );
 
-    loadPartial(
-        "securitySection",
-        "partials/security.html"
-    );
+        await loadPartial(
+            "financialSnapshot",
+            "partials/financial-snapshot.html"
+        );
 
-    loadPartial(
-        "testimonialsSection",
-        "partials/testimonials.html"
-    );
 
-    loadPartial(
-        "footerSection",
-        "partials/footer.html"
-    );
+        await loadPartial(
+            "servicesSection",
+            "partials/services.html"
+        );
 
-});
+
+        await loadPartial(
+            "digitalBankingSection",
+            "partials/digital-banking.html"
+        );
+
+
+        await loadPartial(
+            "cardsSection",
+            "partials/cards-section.html"
+        );
+
+
+        await loadPartial(
+            "securitySection",
+            "partials/security.html"
+        );
+
+
+        await loadPartial(
+            "testimonialsSection",
+            "partials/testimonials.html"
+        );
+
+
+        await loadPartial(
+            "footerSection",
+            "partials/footer.html"
+        );
+
+
+        // Apply translations after all partials exist
+        if (typeof applyTranslations === "function") {
+
+            applyTranslations();
+
+        }
+
+
+    }
+);

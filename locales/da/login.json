@@ -1,0 +1,51 @@
+{
+  "title": "Belgrave Private Bank | Kunde Login",
+
+  "hero": {
+    "title": "Privatbank Portal",
+    "description": "Sikker adgang til din Belgrave Private Bank-konto."
+  },
+
+  "form": {
+    "title": "Kundelogin",
+
+    "fields": {
+      "email": "E-mailadresse",
+      "password": "Adgangskode"
+    },
+
+    "placeholders": {
+      "email": "Indtast din e-mailadresse",
+      "password": "Indtast din adgangskode"
+    },
+
+    "button": "Log Ind"
+  },
+
+  "options": {
+    "remember": "Husk Mig",
+    "forgotPassword": "Glemt Adgangskode?"
+  },
+
+  "messages": {
+    "loading": "Godkender...",
+    "success": "Login lykkedes.",
+    "error": "Ugyldig e-mail eller adgangskode.",
+    "locked": "Kontoadgang er midlertidigt begrænset."
+  },
+
+  "security": {
+    "title": "Sikker Bankadgang",
+    "description": "Din login-session er beskyttet gennem avanceret sikkerhedsovervågning og kryptering."
+  },
+
+  "register": {
+    "question": "Har du ikke en konto?",
+    "button": "Opret Konto"
+  },
+
+  "footer": {
+    "privacy": "Privatlivspolitik",
+    "terms": "Vilkår & Betingelser"
+  }
+}

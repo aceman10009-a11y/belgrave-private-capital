@@ -1,0 +1,79 @@
+{
+  "hero": {
+    "tag": "PREMIUM BANKKORT",
+    "title": "Eksklusive Kort Designet Til Din Livsstil",
+    "description": "Belgraves premium debet- og kreditkort kombinerer avanceret sikkerhed, global accept og eksklusive fordele for private banking-kunder."
+  },
+
+  "intro": {
+    "title": "En Højere Standard Inden For Bankkort",
+    "description": "Vores premiumkort giver fleksibilitet, bekvemmelighed og forbedret beskyttelse til dine daglige og internationale økonomiske behov."
+  },
+
+  "creditCards": {
+    "title": "Premium Kreditkort",
+
+    "items": {
+      "platinum": {
+        "title": "Platinum Kreditkort",
+        "description": "En førsteklasses kreditløsning med global accept og eksklusive kundefordele."
+      },
+
+      "elite": {
+        "title": "Elite Kreditkort",
+        "description": "Designet til kunder, der ønsker forbedrede privilegier, belønninger og global økonomisk fleksibilitet."
+      }
+    }
+  },
+
+  "debitCards": {
+    "title": "Premium Debetkort",
+
+    "items": {
+      "world": {
+        "title": "World Debetkort",
+        "description": "Sikker adgang til dine midler med globale betalingsmuligheder."
+      },
+
+      "private": {
+        "title": "Privatbank Debetkort",
+        "description": "En personlig debetkortoplevelse forbundet med din privatbankkonto."
+      }
+    }
+  },
+
+  "features": {
+    "title": "Kortfordele",
+
+    "security": {
+      "title": "Avanceret Sikkerhed",
+      "description": "Beskyttet med moderne overvågning mod svindel og sikker transaktionsteknologi."
+    },
+
+    "globalAccess": {
+      "title": "Global Accept",
+      "description": "Brug dit Belgrave-kort over hele verden, hvor premiumbetalinger accepteres."
+    },
+
+    "concierge": {
+      "title": "Concierge-Service",
+      "description": "Få adgang til dedikeret support og personlig livsstilsassistance."
+    },
+
+    "rewards": {
+      "title": "Eksklusive Belønninger",
+      "description": "Nyd udvalgte fordele designet til private banking-kunder."
+    }
+  },
+
+  "security": {
+    "title": "Sikkerhed Ved Hver Transaktion",
+    "description": "Alle korttransaktioner er beskyttet gennem avancerede sikkerhedskontroller og kontinuerlig overvågning."
+  },
+
+  "cta": {
+    "title": "Bestil Dit Premium Bankkort",
+    "description": "Tal med vores specialister for at finde den kortløsning, der passer bedst til din økonomiske livsstil.",
+    "button": "Ansøg Om Et Kort"
+  }
+}

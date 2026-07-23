@@ -1,0 +1,56 @@
+{
+  "home": "Hjem",
+
+  "banking": {
+    "label": "Banking",
+    "accounts": "Konti",
+    "cards": "Kort",
+    "payments": "Betalinger",
+    "transfers": "Overførsler"
+  },
+
+  "wealth": {
+    "label": "Formue",
+    "wealthManagement": "Formueforvaltning",
+    "investments": "Investeringer",
+    "portfolio": "Portefølje",
+    "familyOffice": "Family Office"
+  },
+
+  "services": {
+    "label": "Tjenester",
+    "privateBanking": "Private Banking",
+    "internationalBanking": "International Banking",
+    "digitalBanking": "Digital Banking"
+  },
+
+  "security": {
+    "label": "Sikkerhed",
+    "protection": "Sikkerhed & Beskyttelse"
+  },
+
+  "about": {
+    "label": "Om Os",
+    "ourStory": "Vores Historie",
+    "leadership": "Ledelse"
+  },
+
+  "contact": "Kontakt Os",
+
+  "actions": {
+    "login": "Log Ind",
+    "openAccount": "Åbn Konto",
+    "createAccount": "Opret Konto",
+    "logout": "Log Ud"
+  },
+
+  "menu": {
+    "open": "Åbn Menu",
+    "close": "Luk Menu"
+  },
+
+  "brand": {
+    "name": "Belgrave",
+    "subtitle": "PRIVATE BANK"
+  }
+}

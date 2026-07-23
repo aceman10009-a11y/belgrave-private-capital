@@ -1,0 +1,62 @@
+{
+  "hero": {
+    "tag": "ABOUT BELGRAVE",
+    "title": "A Tradition of Trust, Excellence, and Private Banking",
+    "description": "Belgrave Private Bank provides trusted financial solutions for individuals, families, entrepreneurs, and global businesses seeking long-term financial confidence."
+  },
+
+  "intro": {
+    "title": "Who We Are",
+    "description": "We are a private banking institution dedicated to delivering personalized financial services, global expertise, and secure wealth management solutions."
+  },
+
+  "mission": {
+    "title": "Our Mission",
+    "description": "To provide exceptional private banking experiences through trusted relationships, innovative solutions, and responsible financial stewardship."
+  },
+
+  "vision": {
+    "title": "Our Vision",
+    "description": "To become a trusted global partner for clients seeking to preserve and grow their wealth across generations."
+  },
+
+  "values": {
+    "title": "Our Core Values",
+
+    "trust": {
+      "title": "Trust",
+      "description": "Building lasting relationships through integrity, transparency, and reliability."
+    },
+
+    "excellence": {
+      "title": "Excellence",
+      "description": "Delivering exceptional service through expertise, precision, and dedication."
+    },
+
+    "security": {
+      "title": "Security",
+      "description": "Protecting client wealth through advanced systems and strict operational standards."
+    },
+
+    "innovation": {
+      "title": "Innovation",
+      "description": "Combining traditional private banking with modern financial technology."
+    }
+  },
+
+  "history": {
+    "title": "Our Heritage",
+    "description": "Belgrave Private Bank represents a commitment to private banking excellence, combining global financial knowledge with personal client relationships."
+  },
+
+  "leadership": {
+    "title": "Experienced Leadership",
+    "description": "Our specialists bring extensive experience across private banking, investments, wealth management, and international finance."
+  },
+
+  "cta": {
+    "title": "Experience Private Banking Excellence",
+    "description": "Discover how Belgrave Private Bank can help protect and grow your financial future.",
+    "button": "Contact Us"
+  }
+}

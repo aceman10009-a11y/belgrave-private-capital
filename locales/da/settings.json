@@ -1,0 +1,77 @@
+{
+  "title": "Indstillinger",
+
+  "profile": {
+    "title": "Profilindstillinger",
+    "description": "Administrer dine personlige oplysninger og kontoindstillinger.",
+
+    "fields": {
+      "name": "Fulde Navn",
+      "email": "E-mailadresse",
+      "phone": "Telefonnummer",
+      "country": "Land",
+      "address": "Adresse"
+    }
+  },
+
+  "security": {
+    "title": "Sikkerhedsindstillinger",
+
+    "password": {
+      "title": "Adgangskodehåndtering",
+      "change": "Skift Adgangskode",
+      "current": "Nuværende Adgangskode",
+      "new": "Ny Adgangskode",
+      "confirm": "Bekræft Ny Adgangskode"
+    },
+
+    "authentication": {
+      "title": "Godkendelse",
+      "twoFactor": "To-Faktor Godkendelse",
+      "enabled": "Aktiveret",
+      "disabled": "Deaktiveret"
+    }
+  },
+
+  "preferences": {
+    "title": "Præferencer",
+
+    "language": {
+      "title": "Sprogindstilling",
+      "description": "Vælg dit foretrukne sprog."
+    },
+
+    "notifications": {
+      "title": "Notifikationer",
+      "email": "E-mailnotifikationer",
+      "security": "Sikkerhedsadvarsler",
+      "transactions": "Transaktionsnotifikationer"
+    }
+  },
+
+  "account": {
+    "title": "Kontohåndtering",
+
+    "statement": {
+      "title": "Kontoudtog",
+      "description": "Se og download dine kontoudtog."
+    },
+
+    "privacy": {
+      "title": "Privatlivskontrol",
+      "description": "Administrer dine privatlivs- og dataindstillinger."
+    }
+  },
+
+  "messages": {
+    "saved": "Indstillinger gemt med succes.",
+    "restricted": "Indstillinger er i øjeblikket begrænset under bankmæssig jurisdiktionskontrol.",
+    "comingSoon": "Indstillinger kommer snart."
+  },
+
+  "buttons": {
+    "save": "Gem Ændringer",
+    "cancel": "Annuller",
+    "update": "Opdater Indstillinger"
+  }
+}

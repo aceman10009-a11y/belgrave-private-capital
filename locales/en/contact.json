@@ -1,0 +1,69 @@
+{
+  "hero": {
+    "tag": "CONTACT US",
+    "title": "Connect With Belgrave Private Bank",
+    "description": "Whether you require private banking support, wealth management guidance, or assistance with your account, our specialists are ready to help."
+  },
+
+  "intro": {
+    "title": "Dedicated Support For Our Clients",
+    "description": "Our relationship managers provide personalised assistance and professional guidance tailored to your financial needs."
+  },
+
+  "form": {
+    "title": "Send Us A Message",
+
+    "fields": {
+      "name": "Full Name",
+      "email": "Email Address",
+      "phone": "Phone Number",
+      "subject": "Subject",
+      "message": "Message"
+    },
+
+    "placeholders": {
+      "name": "Enter your full name",
+      "email": "Enter your email address",
+      "phone": "Enter your phone number",
+      "subject": "Enter message subject",
+      "message": "Write your message"
+    },
+
+    "button": "Send Message",
+
+    "success": "Your message has been sent successfully.",
+    "error": "Unable to send your message. Please try again."
+  },
+
+  "support": {
+    "title": "Client Support",
+
+    "items": {
+      "privateBanking": {
+        "title": "Private Banking Support",
+        "description": "Speak with a dedicated relationship manager regarding your banking needs."
+      },
+
+      "wealthManagement": {
+        "title": "Wealth Management Support",
+        "description": "Receive guidance regarding investments, portfolios, and financial planning."
+      },
+
+      "technical": {
+        "title": "Digital Banking Support",
+        "description": "Get assistance with secure online banking access and platform services."
+      }
+    }
+  },
+
+  "office": {
+    "title": "Global Offices",
+    "description": "Belgrave Private Bank serves clients worldwide through a global network of financial professionals."
+  },
+
+  "cta": {
+    "title": "Ready To Begin Your Private Banking Journey?",
+    "description": "Contact our specialists to discover tailored financial solutions designed around your goals.",
+    "button": "Contact Our Team"
+  }
+}
