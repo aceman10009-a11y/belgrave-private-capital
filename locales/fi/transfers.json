@@ -1,1 +1,63 @@
-locales/fi/transfers.json
+{
+  "title": "Tilisiirrot",
+
+  "hero": {
+    "tag": "KANSAINVÄLISET TILISIIRROT",
+    "title": "Turvalliset kansainväliset rahansiirrot",
+    "description": "Lähetä ja vastaanota varoja maailmanlaajuisesti turvallisten maksuratkaisujen avulla, jotka on suunniteltu yksityispankin asiakkaille."
+  },
+
+  "transfer": {
+    "title": "Tee tilisiirto",
+    "description": "Siirrä varoja turvallisesti Belgrave-tiliesi sekä hyväksyttyjen ulkoisten tilien välillä.",
+
+    "fields": {
+      "recipient": "Saajan nimi",
+      "accountNumber": "Tilinumero",
+      "bankName": "Pankin nimi",
+      "amount": "Siirrettävä summa",
+      "currency": "Valuutta",
+      "reference": "Maksun viite"
+    },
+
+    "button": "Siirrä varoja"
+  },
+
+  "types": {
+    "title": "Siirtopalvelut",
+
+    "international": {
+      "title": "Kansainväliset tilisiirrot",
+      "description": "Siirrä varoja maiden välillä luotettavien maailmanlaajuisten maksujärjestelmien kautta."
+    },
+
+    "domestic": {
+      "title": "Kotimaan tilisiirrot",
+      "description": "Suorita kotimaiset tilisiirrot nopeasti ja turvallisesti."
+    },
+
+    "wire": {
+      "title": "Pankkisiirrot",
+      "description": "Suorita suuriarvoiset pankkisiirrot tehostetuilla turvallisuusvalvontatoimilla."
+    }
+  },
+
+  "security": {
+    "title": "Tilisiirtojen turvallisuus",
+    "description": "Jokaista tapahtumaa valvotaan edistyksellisillä petostentorjuntajärjestelmillä ja vaatimustenmukaisuuden valvonnalla."
+  },
+
+  "messages": {
+    "processing": "Tilisiirtoasi käsitellään.",
+    "successful": "Tilisiirto on suoritettu onnistuneesti.",
+    "failed": "Tilisiirtoa ei voitu suorittaa.",
+    "restricted": "Tilisiirrot ovat tällä hetkellä rajoitettuja pankkiviranomaisten tarkastuksen vuoksi.",
+    "pending": "Tilisiirtosi odottaa hyväksyntää."
+  },
+
+  "cta": {
+    "title": "Tarvitsetko apua tilisiirrossa?",
+    "description": "Ota yhteyttä omaan asiakasvastaavaasi saadaksesi apua tilisiirtoihin.",
+    "button": "Ota yhteyttä asiakastukeen"
+  }
+}

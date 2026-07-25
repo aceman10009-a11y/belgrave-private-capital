@@ -1,1 +1,66 @@
-locales/fi/payments.json
+{
+  "hero": {
+    "tag": "MAKSUT",
+    "title": "Turvalliset maailmanlaajuiset maksuratkaisut",
+    "description": "Hallitse kotimaisia ja kansainvälisiä maksuja turvallisen pankki-infrastruktuurin avulla, joka on suunniteltu yksityispankkiasiakkaille."
+  },
+
+  "intro": {
+    "title": "Joustavat maksupalvelut",
+    "description": "Belgrave Private Bank tarjoaa luotettavia maksuratkaisuja henkilökohtaisiin, perheen ja yrityksen taloudellisiin tarpeisiin."
+  },
+
+  "services": {
+    "title": "Maksupalvelut",
+
+    "internationalTransfers": {
+      "title": "Kansainväliset tilisiirrot",
+      "description": "Lähetä ja vastaanota varoja maailmanlaajuisesti turvallisten kansainvälisten maksupalvelujen avulla."
+    },
+
+    "wireTransfers": {
+      "title": "Pankkisiirrot",
+      "description": "Suorita suuriarvoiset tilisiirrot asiantuntevan tuen ja turvallisen käsittelyn avulla."
+    },
+
+    "scheduledPayments": {
+      "title": "Ajastetut maksut",
+      "description": "Automatisoi toistuvat maksut ja hallitse taloudellisia sitoumuksiasi tehokkaasti."
+    },
+
+    "currencyExchange": {
+      "title": "Valuutanvaihto",
+      "description": "Hyödynnä kilpailukykyisiä valuutanvaihtoratkaisuja kansainvälisiin maksutapahtumiin."
+    }
+  },
+
+  "transaction": {
+    "title": "Maksutapahtumat",
+
+    "reference": "Viite",
+    "date": "Päivämäärä",
+    "amount": "Summa",
+    "currency": "Valuutta",
+    "recipient": "Saaja",
+    "status": "Tila"
+  },
+
+  "status": {
+    "pending": "Odottaa",
+    "processing": "Käsitellään",
+    "completed": "Valmis",
+    "failed": "Epäonnistunut",
+    "cancelled": "Peruutettu"
+  },
+
+  "security": {
+    "title": "Suojatut maksut",
+    "description": "Jokaista maksua valvotaan edistyksellisillä turvatoimilla ja petostentorjuntajärjestelmillä."
+  },
+
+  "cta": {
+    "title": "Hallitse maksujasi luottavaisin mielin",
+    "description": "Asiantuntijamme ovat valmiina tukemaan maksutarpeissasi.",
+    "button": "Ota yhteyttä tukeen"
+  }
+}

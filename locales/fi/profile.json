@@ -1,1 +1,76 @@
-locales/fi/profile.json
+{
+  "title": "Asiakasprofiili",
+
+  "hero": {
+    "tag": "PROFIILI",
+    "title": "Hallitse yksityispankkiprofiiliasi",
+    "description": "Tarkastele ja päivitä henkilötietojasi, asetuksiasi ja tilitietojasi."
+  },
+
+  "personal": {
+    "title": "Henkilötiedot",
+
+    "fields": {
+      "fullName": "Koko nimi",
+      "email": "Sähköpostiosoite",
+      "phone": "Puhelinnumero",
+      "dateOfBirth": "Syntymäaika",
+      "nationality": "Kansalaisuus",
+      "address": "Kotiosoite"
+    }
+  },
+
+  "account": {
+    "title": "Tilitiedot",
+
+    "details": {
+      "accountNumber": "Tilinumero",
+      "accountType": "Tilin tyyppi",
+      "status": "Tilin tila",
+      "opened": "Tilin avauspäivä"
+    },
+
+    "types": {
+      "private": "Yksityispankkitili",
+      "premium": "Premium-asiakastili",
+      "business": "Yrityspankkitili"
+    }
+  },
+
+  "preferences": {
+    "title": "Asiakasasetukset",
+
+    "communication": {
+      "title": "Viestintäasetukset",
+      "email": "Sähköpostiviestintä",
+      "phone": "Puhelinviestintä",
+      "alerts": "Tietoturvahälytykset"
+    },
+
+    "language": {
+      "title": "Ensisijainen kieli",
+      "description": "Valitse pankkipalvelussa käytettävä kieli."
+    }
+  },
+
+  "security": {
+    "title": "Profiilin turvallisuus",
+
+    "items": {
+      "lastLogin": "Viimeisin kirjautuminen",
+      "devices": "Luotetut laitteet",
+      "sessions": "Aktiiviset istunnot"
+    }
+  },
+
+  "messages": {
+    "updated": "Profiili päivitetty onnistuneesti.",
+    "restricted": "Profiilin muutokset on tällä hetkellä rajoitettu pankkiviranomaisten tarkastuksen vuoksi."
+  },
+
+  "buttons": {
+    "edit": "Muokkaa profiilia",
+    "save": "Tallenna muutokset",
+    "cancel": "Peruuta"
+  }
+}

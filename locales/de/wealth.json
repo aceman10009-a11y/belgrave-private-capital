@@ -1,1 +1,71 @@
-locales/de/wealth.json
+{
+  "hero": {
+    "tag": "VERMÖGENSVERWALTUNG",
+    "title": "Ihr Vermögen erhalten und vermehren",
+    "description": "Die Belgrave Private Bank bietet maßgeschneiderte Vermögensverwaltungsstrategien, die darauf ausgerichtet sind, Vermögenswerte zu schützen, Chancen zu schaffen und langfristige finanzielle Ziele zu unterstützen."
+  },
+
+  "intro": {
+    "title": "Strategische Vermögensverwaltung",
+    "description": "Unsere Spezialisten kombinieren Anlageexpertise, Zugang zu globalen Märkten und individuelle Finanzplanung, um unseren Kunden nachhaltigen finanziellen Erfolg zu ermöglichen."
+  },
+
+  "services": {
+    "title": "Dienstleistungen der Vermögensverwaltung",
+
+    "investmentPlanning": {
+      "title": "Anlageplanung",
+      "description": "Individuelle Anlagestrategien, die auf Ihre Ziele, Ihr Risikoprofil und Ihre finanzielle Vision abgestimmt sind."
+    },
+
+    "portfolioManagement": {
+      "title": "Portfoliomanagement",
+      "description": "Professionelles Portfoliomanagement mit Fokus auf Diversifikation, Performance und langfristigen Kapitalerhalt."
+    },
+
+    "estatePlanning": {
+      "title": "Nachlassplanung",
+      "description": "Strukturierte Lösungen zum Erhalt Ihres Vermögens und für eine effiziente Vermögensübertragung über Generationen hinweg."
+    },
+
+    "familyOffice": {
+      "title": "Family-Office-Lösungen",
+      "description": "Umfassende Dienstleistungen zur Vermögenskoordination für Familien mit Bedarf an individueller finanzieller Betreuung."
+    },
+
+    "privateMarkets": {
+      "title": "Investitionen in private Märkte",
+      "description": "Zugang zu alternativen Anlagemöglichkeiten wie Private Equity, Sachwerten und spezialisierten Investmentstrategien."
+    },
+
+    "taxPlanning": {
+      "title": "Steuerplanung",
+      "description": "Strategische Planungslösungen zur Unterstützung einer effizienten Vermögensverwaltung."
+    }
+  },
+
+  "approach": {
+    "title": "Unser Ansatz in der Vermögensverwaltung",
+
+    "preservation": {
+      "title": "Vermögenserhalt",
+      "description": "Schutz Ihres Vermögens durch disziplinierte Strategien und sorgfältiges Risikomanagement."
+    },
+
+    "growth": {
+      "title": "Langfristiges Wachstum",
+      "description": "Nachhaltiger Vermögensaufbau durch sorgfältig ausgewählte Investitionsmöglichkeiten."
+    },
+
+    "legacy": {
+      "title": "Nachfolgeplanung",
+      "description": "Wir unterstützen Familien dabei, ein nachhaltiges finanzielles Vermächtnis für zukünftige Generationen aufzubauen."
+    }
+  },
+
+  "cta": {
+    "title": "Gestalten Sie Ihr finanzielles Vermächtnis",
+    "description": "Sprechen Sie mit einem Vermögensspezialisten von Belgrave und entdecken Sie Lösungen, die auf Ihre Ziele zugeschnitten sind.",
+    "button": "Vermögensberater kontaktieren"
+  }
+}

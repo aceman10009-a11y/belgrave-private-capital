@@ -1,1 +1,77 @@
-locales/es/settings.json
+{
+  "title": "Configuración",
+
+  "profile": {
+    "title": "Configuración del Perfil",
+    "description": "Administre su información personal y las preferencias de su cuenta.",
+
+    "fields": {
+      "name": "Nombre Completo",
+      "email": "Dirección de Correo Electrónico",
+      "phone": "Número de Teléfono",
+      "country": "País",
+      "address": "Dirección"
+    }
+  },
+
+  "security": {
+    "title": "Configuración de Seguridad",
+
+    "password": {
+      "title": "Gestión de Contraseña",
+      "change": "Cambiar Contraseña",
+      "current": "Contraseña Actual",
+      "new": "Nueva Contraseña",
+      "confirm": "Confirmar Nueva Contraseña"
+    },
+
+    "authentication": {
+      "title": "Autenticación",
+      "twoFactor": "Autenticación de Dos Factores",
+      "enabled": "Activada",
+      "disabled": "Desactivada"
+    }
+  },
+
+  "preferences": {
+    "title": "Preferencias",
+
+    "language": {
+      "title": "Idioma Preferido",
+      "description": "Seleccione su idioma preferido."
+    },
+
+    "notifications": {
+      "title": "Notificaciones",
+      "email": "Notificaciones por Correo Electrónico",
+      "security": "Alertas de Seguridad",
+      "transactions": "Notificaciones de Transacciones"
+    }
+  },
+
+  "account": {
+    "title": "Gestión de la Cuenta",
+
+    "statement": {
+      "title": "Extractos de Cuenta",
+      "description": "Visualice y descargue los extractos de su cuenta."
+    },
+
+    "privacy": {
+      "title": "Controles de Privacidad",
+      "description": "Administre sus preferencias de privacidad y datos."
+    }
+  },
+
+  "messages": {
+    "saved": "La configuración se ha guardado correctamente.",
+    "restricted": "La configuración está actualmente restringida debido a una revisión de la jurisdicción bancaria.",
+    "comingSoon": "La configuración estará disponible próximamente."
+  },
+
+  "buttons": {
+    "save": "Guardar Cambios",
+    "cancel": "Cancelar",
+    "update": "Actualizar Configuración"
+  }
+}

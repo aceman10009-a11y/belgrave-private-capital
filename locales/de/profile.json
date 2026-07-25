@@ -1,1 +1,76 @@
-locales/de/profile.json
+{
+  "title": "Kundenprofil",
+
+  "hero": {
+    "tag": "PROFIL",
+    "title": "Verwalten Sie Ihr Private-Banking-Profil",
+    "description": "Überprüfen und aktualisieren Sie Ihre persönlichen Informationen, Einstellungen und Kontodaten."
+  },
+
+  "personal": {
+    "title": "Persönliche Informationen",
+
+    "fields": {
+      "fullName": "Vollständiger Name",
+      "email": "E-Mail-Adresse",
+      "phone": "Telefonnummer",
+      "dateOfBirth": "Geburtsdatum",
+      "nationality": "Staatsangehörigkeit",
+      "address": "Wohnadresse"
+    }
+  },
+
+  "account": {
+    "title": "Kontoinformationen",
+
+    "details": {
+      "accountNumber": "Kontonummer",
+      "accountType": "Kontotyp",
+      "status": "Kontostatus",
+      "opened": "Kontoeröffnungsdatum"
+    },
+
+    "types": {
+      "private": "Private-Banking-Konto",
+      "premium": "Premium-Kundenkonto",
+      "business": "Geschäftskonto"
+    }
+  },
+
+  "preferences": {
+    "title": "Kundeneinstellungen",
+
+    "communication": {
+      "title": "Kommunikationseinstellungen",
+      "email": "Kommunikation per E-Mail",
+      "phone": "Telefonische Kommunikation",
+      "alerts": "Sicherheitsbenachrichtigungen"
+    },
+
+    "language": {
+      "title": "Bevorzugte Sprache",
+      "description": "Wählen Sie die Sprache für Ihr Banking-Erlebnis."
+    }
+  },
+
+  "security": {
+    "title": "Profilsicherheit",
+
+    "items": {
+      "lastLogin": "Letzte Anmeldung",
+      "devices": "Vertrauenswürdige Geräte",
+      "sessions": "Aktive Sitzungen"
+    }
+  },
+
+  "messages": {
+    "updated": "Profil erfolgreich aktualisiert.",
+    "restricted": "Profiländerungen sind derzeit aufgrund einer bankaufsichtsrechtlichen Prüfung eingeschränkt."
+  },
+
+  "buttons": {
+    "edit": "Profil bearbeiten",
+    "save": "Änderungen speichern",
+    "cancel": "Abbrechen"
+  }
+}

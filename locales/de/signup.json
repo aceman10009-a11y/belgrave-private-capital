@@ -1,1 +1,77 @@
-locales/de/signup.json
+{
+  "title": "Create Account | Belgrave Private Bank",
+
+  "hero": {
+    "title": "Private Banking Registration",
+    "description": "Create your Belgrave Private Bank account and begin your private banking experience."
+  },
+
+  "form": {
+    "title": "Create Account",
+
+    "fields": {
+      "firstName": "First Name",
+      "lastName": "Last Name",
+      "fullName": "Full Name",
+      "email": "Email Address",
+      "phone": "Phone Number",
+      "password": "Password",
+      "confirmPassword": "Confirm Password"
+    },
+
+    "placeholders": {
+      "firstName": "Enter your first name",
+      "lastName": "Enter your last name",
+      "email": "Enter your email address",
+      "phone": "Enter your phone number",
+      "password": "Create a password",
+      "confirmPassword": "Confirm your password"
+    },
+
+    "button": "Create Account"
+  },
+
+  "password": {
+    "strength": "Password Strength",
+    "weak": "Weak",
+    "medium": "Medium",
+    "strong": "Strong",
+    "requirements": {
+      "length": "Minimum 8 characters",
+      "uppercase": "At least one uppercase letter",
+      "number": "At least one number",
+      "special": "At least one special character"
+    }
+  },
+
+  "accountType": {
+    "title": "Select Account Type",
+
+    "private": {
+      "title": "Private Banking Account",
+      "description": "Personal banking solutions designed for individuals and families."
+    },
+
+    "business": {
+      "title": "Business Banking Account",
+      "description": "Financial solutions designed for entrepreneurs and organisations."
+    }
+  },
+
+  "messages": {
+    "creating": "Creating your account...",
+    "success": "Account created successfully.",
+    "error": "Unable to create account. Please try again.",
+    "exists": "An account with this email already exists."
+  },
+
+  "login": {
+    "question": "Already have an account?",
+    "button": "Login"
+  },
+
+  "security": {
+    "title": "Your Information Is Protected",
+    "description": "Your personal details are secured using advanced banking security standards."
+  }
+}

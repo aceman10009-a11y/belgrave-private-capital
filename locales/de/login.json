@@ -1,1 +1,51 @@
-locales/de/login.json
+{
+  "title": "Belgrave Private Bank | Kundenanmeldung",
+
+  "hero": {
+    "title": "Private-Banking-Portal",
+    "description": "Sicherer Zugriff auf Ihr Konto bei der Belgrave Private Bank."
+  },
+
+  "form": {
+    "title": "Kundenanmeldung",
+
+    "fields": {
+      "email": "E-Mail-Adresse",
+      "password": "Passwort"
+    },
+
+    "placeholders": {
+      "email": "Geben Sie Ihre E-Mail-Adresse ein",
+      "password": "Geben Sie Ihr Passwort ein"
+    },
+
+    "button": "Anmelden"
+  },
+
+  "options": {
+    "remember": "Angemeldet bleiben",
+    "forgotPassword": "Passwort vergessen?"
+  },
+
+  "messages": {
+    "loading": "Authentifizierung läuft...",
+    "success": "Anmeldung erfolgreich.",
+    "error": "Ungültige E-Mail-Adresse oder falsches Passwort.",
+    "locked": "Der Zugriff auf das Konto ist vorübergehend eingeschränkt."
+  },
+
+  "security": {
+    "title": "Sicherer Banking-Zugang",
+    "description": "Ihre Anmeldung wird durch moderne Sicherheitsüberwachung und Verschlüsselung geschützt."
+  },
+
+  "register": {
+    "question": "Sie haben noch kein Konto?",
+    "button": "Konto erstellen"
+  },
+
+  "footer": {
+    "privacy": "Datenschutzerklärung",
+    "terms": "Allgemeine Geschäftsbedingungen"
+  }
+}

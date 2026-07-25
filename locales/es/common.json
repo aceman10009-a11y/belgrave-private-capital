@@ -1,1 +1,142 @@
-locales/es/common.json
+{
+  "site": {
+    "name": "Belgrave Private Bank",
+    "shortName": "Belgrave",
+    "tagline": "Banca Privada. Patrimonio Global. Seguridad de Confianza.",
+    "copyright": "© 2026 Belgrave Private Bank. Todos los derechos reservados."
+  },
+
+  "meta": {
+    "title": "Belgrave Private Bank",
+    "description": "Belgrave Private Bank ofrece servicios de banca privada, gestión patrimonial, pagos internacionales, servicios de inversión, tarjetas bancarias premium y banca digital segura."
+  },
+
+  "language": {
+    "label": "Idioma",
+    "select": "Seleccionar idioma"
+  },
+
+  "buttons": {
+    "learnMore": "Más información",
+    "readMore": "Leer más",
+    "getStarted": "Comenzar",
+    "openAccount": "Abrir cuenta",
+    "login": "Iniciar sesión",
+    "logout": "Cerrar sesión",
+    "register": "Registrarse",
+    "createAccount": "Crear cuenta",
+    "contactUs": "Contáctenos",
+    "discoverMore": "Descubrir más",
+    "applyNow": "Solicitar ahora",
+    "explore": "Explorar",
+    "viewAll": "Ver todo",
+    "continue": "Continuar",
+    "back": "Atrás",
+    "next": "Siguiente",
+    "cancel": "Cancelar",
+    "save": "Guardar",
+    "submit": "Enviar",
+    "confirm": "Confirmar",
+    "download": "Descargar",
+    "upload": "Subir",
+    "search": "Buscar",
+    "send": "Enviar",
+    "close": "Cerrar",
+    "transfer": "Transferir",
+    "deposit": "Depositar",
+    "withdraw": "Retirar"
+  },
+
+  "forms": {
+    "required": "Obligatorio",
+    "optional": "Opcional",
+    "firstName": "Nombre",
+    "lastName": "Apellido",
+    "fullName": "Nombre completo",
+    "email": "Correo electrónico",
+    "phone": "Número de teléfono",
+    "country": "País",
+    "city": "Ciudad",
+    "address": "Dirección",
+    "message": "Mensaje",
+    "password": "Contraseña",
+    "confirmPassword": "Confirmar contraseña",
+    "username": "Nombre de usuario",
+    "accountNumber": "Número de cuenta"
+  },
+
+  "status": {
+    "active": "Activo",
+    "inactive": "Inactivo",
+    "online": "En línea",
+    "offline": "Sin conexión",
+    "available": "Disponible",
+    "pending": "Pendiente",
+    "processing": "En proceso",
+    "completed": "Completado",
+    "successful": "Exitoso",
+    "failed": "Fallido",
+    "verified": "Verificado",
+    "unverified": "No verificado",
+    "secured": "Protegido",
+    "restricted": "Restringido"
+  },
+
+  "labels": {
+    "currency": "Moneda",
+    "amount": "Importe",
+    "balance": "Saldo",
+    "account": "Cuenta",
+    "portfolio": "Cartera",
+    "investment": "Inversión",
+    "wealth": "Patrimonio",
+    "security": "Seguridad",
+    "transaction": "Transacción",
+    "reference": "Referencia",
+    "date": "Fecha",
+    "time": "Hora",
+    "client": "Cliente",
+    "category": "Categoría",
+    "description": "Descripción",
+    "debit": "Débito",
+    "credit": "Crédito",
+    "expiry": "Vencimiento",
+    "holder": "Titular de la tarjeta"
+  },
+
+  "messages": {
+    "loading": "Cargando...",
+    "pleaseWait": "Por favor, espere...",
+    "comingSoon": "Próximamente",
+    "noResults": "No se encontraron resultados.",
+    "success": "La operación se completó correctamente.",
+    "error": "Ha ocurrido un error. Por favor, inténtelo de nuevo.",
+    "saved": "Los cambios se guardaron correctamente.",
+    "submitted": "Su solicitud ha sido enviada correctamente.",
+    "returnHome": "Volver a la página principal",
+    "welcome": "Bienvenido",
+    "initializing": "Inicializando el sistema..."
+  },
+
+  "errors": {
+    "required": "Este campo es obligatorio.",
+    "invalidEmail": "Por favor, introduzca una dirección de correo electrónico válida.",
+    "invalidPhone": "Por favor, introduzca un número de teléfono válido.",
+    "passwordMismatch": "Las contraseñas no coinciden.",
+    "network": "Conexión de red no disponible.",
+    "server": "Error del servidor. Por favor, inténtelo más tarde.",
+    "unauthorized": "No está autorizado para realizar esta acción.",
+    "notFound": "No se pudo encontrar el recurso solicitado."
+  },
+
+  "accessibility": {
+    "openMenu": "Abrir menú de navegación",
+    "closeMenu": "Cerrar menú de navegación",
+    "previous": "Anterior",
+    "next": "Siguiente",
+    "play": "Reproducir",
+    "pause": "Pausar",
+    "showPassword": "Mostrar contraseña",
+    "hidePassword": "Ocultar contraseña"
+  }
+}

@@ -1,1 +1,76 @@
-locales/es/profile.json
+{
+  "title": "Perfil del Cliente",
+
+  "hero": {
+    "tag": "PERFIL",
+    "title": "Gestione su Perfil de Banca Privada",
+    "description": "Revise y actualice su información personal, preferencias y datos de la cuenta."
+  },
+
+  "personal": {
+    "title": "Información Personal",
+
+    "fields": {
+      "fullName": "Nombre Completo",
+      "email": "Dirección de Correo Electrónico",
+      "phone": "Número de Teléfono",
+      "dateOfBirth": "Fecha de Nacimiento",
+      "nationality": "Nacionalidad",
+      "address": "Dirección de Residencia"
+    }
+  },
+
+  "account": {
+    "title": "Información de la Cuenta",
+
+    "details": {
+      "accountNumber": "Número de Cuenta",
+      "accountType": "Tipo de Cuenta",
+      "status": "Estado de la Cuenta",
+      "opened": "Fecha de Apertura de la Cuenta"
+    },
+
+    "types": {
+      "private": "Cuenta de Banca Privada",
+      "premium": "Cuenta Premium para Clientes",
+      "business": "Cuenta Bancaria Empresarial"
+    }
+  },
+
+  "preferences": {
+    "title": "Preferencias del Cliente",
+
+    "communication": {
+      "title": "Preferencias de Comunicación",
+      "email": "Comunicación por Correo Electrónico",
+      "phone": "Comunicación Telefónica",
+      "alerts": "Alertas de Seguridad"
+    },
+
+    "language": {
+      "title": "Idioma Preferido",
+      "description": "Elija el idioma que desea utilizar en su experiencia bancaria."
+    }
+  },
+
+  "security": {
+    "title": "Seguridad del Perfil",
+
+    "items": {
+      "lastLogin": "Último Inicio de Sesión",
+      "devices": "Dispositivos de Confianza",
+      "sessions": "Sesiones Activas"
+    }
+  },
+
+  "messages": {
+    "updated": "El perfil se ha actualizado correctamente.",
+    "restricted": "Los cambios en el perfil están actualmente restringidos debido a una revisión de la jurisdicción bancaria."
+  },
+
+  "buttons": {
+    "edit": "Editar Perfil",
+    "save": "Guardar Cambios",
+    "cancel": "Cancelar"
+  }
+}

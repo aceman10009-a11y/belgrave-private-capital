@@ -1,1 +1,142 @@
-locales/de/common.json
+{
+  "site": {
+    "name": "Belgrave Privatbank",
+    "shortName": "Belgrave",
+    "tagline": "Private Banking. Globales Vermögen. Vertrauenswürdige Sicherheit.",
+    "copyright": "© 2026 Belgrave Privatbank. Alle Rechte vorbehalten."
+  },
+
+  "meta": {
+    "title": "Belgrave Privatbank",
+    "description": "Die Belgrave Privatbank bietet Private Banking, Vermögensverwaltung, internationale Zahlungen, Investmentdienstleistungen, Premium-Bankkarten und sicheres digitales Banking."
+  },
+
+  "language": {
+    "label": "Sprache",
+    "select": "Sprache auswählen"
+  },
+
+  "buttons": {
+    "learnMore": "Mehr erfahren",
+    "readMore": "Weiterlesen",
+    "getStarted": "Jetzt starten",
+    "openAccount": "Konto eröffnen",
+    "login": "Anmelden",
+    "logout": "Abmelden",
+    "register": "Registrieren",
+    "createAccount": "Konto erstellen",
+    "contactUs": "Kontaktieren Sie uns",
+    "discoverMore": "Mehr entdecken",
+    "applyNow": "Jetzt beantragen",
+    "explore": "Entdecken",
+    "viewAll": "Alle anzeigen",
+    "continue": "Weiter",
+    "back": "Zurück",
+    "next": "Weiter",
+    "cancel": "Abbrechen",
+    "save": "Speichern",
+    "submit": "Absenden",
+    "confirm": "Bestätigen",
+    "download": "Herunterladen",
+    "upload": "Hochladen",
+    "search": "Suchen",
+    "send": "Senden",
+    "close": "Schließen",
+    "transfer": "Überweisen",
+    "deposit": "Einzahlen",
+    "withdraw": "Abheben"
+  },
+
+  "forms": {
+    "required": "Erforderlich",
+    "optional": "Optional",
+    "firstName": "Vorname",
+    "lastName": "Nachname",
+    "fullName": "Vollständiger Name",
+    "email": "E-Mail-Adresse",
+    "phone": "Telefonnummer",
+    "country": "Land",
+    "city": "Stadt",
+    "address": "Adresse",
+    "message": "Nachricht",
+    "password": "Passwort",
+    "confirmPassword": "Passwort bestätigen",
+    "username": "Benutzername",
+    "accountNumber": "Kontonummer"
+  },
+
+  "status": {
+    "active": "Aktiv",
+    "inactive": "Inaktiv",
+    "online": "Online",
+    "offline": "Offline",
+    "available": "Verfügbar",
+    "pending": "Ausstehend",
+    "processing": "In Bearbeitung",
+    "completed": "Abgeschlossen",
+    "successful": "Erfolgreich",
+    "failed": "Fehlgeschlagen",
+    "verified": "Verifiziert",
+    "unverified": "Nicht verifiziert",
+    "secured": "Gesichert",
+    "restricted": "Eingeschränkt"
+  },
+
+  "labels": {
+    "currency": "Währung",
+    "amount": "Betrag",
+    "balance": "Kontostand",
+    "account": "Konto",
+    "portfolio": "Portfolio",
+    "investment": "Investition",
+    "wealth": "Vermögen",
+    "security": "Sicherheit",
+    "transaction": "Transaktion",
+    "reference": "Referenz",
+    "date": "Datum",
+    "time": "Uhrzeit",
+    "client": "Kunde",
+    "category": "Kategorie",
+    "description": "Beschreibung",
+    "debit": "Soll",
+    "credit": "Haben",
+    "expiry": "Gültig bis",
+    "holder": "Karteninhaber"
+  },
+
+  "messages": {
+    "loading": "Wird geladen...",
+    "pleaseWait": "Bitte warten...",
+    "comingSoon": "Demnächst verfügbar",
+    "noResults": "Keine Ergebnisse gefunden.",
+    "success": "Vorgang erfolgreich abgeschlossen.",
+    "error": "Etwas ist schiefgelaufen. Bitte versuchen Sie es erneut.",
+    "saved": "Änderungen wurden erfolgreich gespeichert.",
+    "submitted": "Ihre Anfrage wurde erfolgreich übermittelt.",
+    "returnHome": "Zur Startseite zurückkehren",
+    "welcome": "Willkommen",
+    "initializing": "System wird initialisiert..."
+  },
+
+  "errors": {
+    "required": "Dieses Feld ist erforderlich.",
+    "invalidEmail": "Bitte geben Sie eine gültige E-Mail-Adresse ein.",
+    "invalidPhone": "Bitte geben Sie eine gültige Telefonnummer ein.",
+    "passwordMismatch": "Die Passwörter stimmen nicht überein.",
+    "network": "Netzwerkverbindung nicht verfügbar.",
+    "server": "Serverfehler. Bitte versuchen Sie es später erneut.",
+    "unauthorized": "Sie sind nicht berechtigt, diese Aktion auszuführen.",
+    "notFound": "Die angeforderte Ressource wurde nicht gefunden."
+  },
+
+  "accessibility": {
+    "openMenu": "Navigationsmenü öffnen",
+    "closeMenu": "Navigationsmenü schließen",
+    "previous": "Zurück",
+    "next": "Weiter",
+    "play": "Wiedergabe",
+    "pause": "Pause",
+    "showPassword": "Passwort anzeigen",
+    "hidePassword": "Passwort ausblenden"
+  }
+}

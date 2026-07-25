@@ -1,1 +1,51 @@
-locales/es/login.json
+{
+  "title": "Belgrave Private Bank | Inicio de Sesión del Cliente",
+
+  "hero": {
+    "title": "Portal de Banca Privada",
+    "description": "Acceso seguro a su cuenta de Belgrave Private Bank."
+  },
+
+  "form": {
+    "title": "Inicio de Sesión del Cliente",
+
+    "fields": {
+      "email": "Dirección de Correo Electrónico",
+      "password": "Contraseña"
+    },
+
+    "placeholders": {
+      "email": "Introduzca su dirección de correo electrónico",
+      "password": "Introduzca su contraseña"
+    },
+
+    "button": "Iniciar Sesión"
+  },
+
+  "options": {
+    "remember": "Recordarme",
+    "forgotPassword": "¿Olvidó su contraseña?"
+  },
+
+  "messages": {
+    "loading": "Autenticando...",
+    "success": "Inicio de sesión realizado correctamente.",
+    "error": "Dirección de correo electrónico o contraseña no válidos.",
+    "locked": "El acceso a la cuenta está restringido temporalmente."
+  },
+
+  "security": {
+    "title": "Acceso Bancario Seguro",
+    "description": "Su sesión de inicio de sesión está protegida mediante supervisión de seguridad avanzada y cifrado."
+  },
+
+  "register": {
+    "question": "¿No tiene una cuenta?",
+    "button": "Crear Cuenta"
+  },
+
+  "footer": {
+    "privacy": "Política de Privacidad",
+    "terms": "Términos y Condiciones"
+  }
+}

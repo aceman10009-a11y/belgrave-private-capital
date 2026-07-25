@@ -1,1 +1,66 @@
-locales/es/payments.json
+{
+  "hero": {
+    "tag": "PAGOS",
+    "title": "Soluciones Seguras de Pagos Globales",
+    "description": "Gestione pagos nacionales e internacionales con una infraestructura bancaria segura diseñada para clientes de banca privada."
+  },
+
+  "intro": {
+    "title": "Servicios de Pago Flexibles",
+    "description": "Belgrave Private Bank ofrece soluciones de pago confiables para las necesidades financieras personales, familiares y empresariales."
+  },
+
+  "services": {
+    "title": "Servicios de Pago",
+
+    "internationalTransfers": {
+      "title": "Transferencias Internacionales",
+      "description": "Envíe y reciba fondos en todo el mundo mediante servicios de pago internacionales seguros."
+    },
+
+    "wireTransfers": {
+      "title": "Transferencias Bancarias",
+      "description": "Realice transferencias de alto valor con soporte profesional y procesamiento seguro."
+    },
+
+    "scheduledPayments": {
+      "title": "Pagos Programados",
+      "description": "Automatice pagos recurrentes y gestione sus compromisos financieros de manera eficiente."
+    },
+
+    "currencyExchange": {
+      "title": "Cambio de Divisas",
+      "description": "Acceda a soluciones competitivas de cambio de divisas para transacciones internacionales."
+    }
+  },
+
+  "transaction": {
+    "title": "Transacciones de Pago",
+
+    "reference": "Referencia",
+    "date": "Fecha",
+    "amount": "Importe",
+    "currency": "Moneda",
+    "recipient": "Beneficiario",
+    "status": "Estado"
+  },
+
+  "status": {
+    "pending": "Pendiente",
+    "processing": "En proceso",
+    "completed": "Completado",
+    "failed": "Fallido",
+    "cancelled": "Cancelado"
+  },
+
+  "security": {
+    "title": "Pagos Protegidos",
+    "description": "Cada pago es supervisado mediante controles avanzados de seguridad y sistemas de prevención del fraude."
+  },
+
+  "cta": {
+    "title": "Gestione Sus Pagos con Confianza",
+    "description": "Nuestros especialistas están disponibles para ayudarle con sus necesidades de pago.",
+    "button": "Contactar con Soporte"
+  }
+}

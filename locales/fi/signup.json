@@ -1,1 +1,77 @@
-locales/fi/signup.json
+{
+  "title": "Luo tili | Belgrave Private Bank",
+
+  "hero": {
+    "title": "Yksityispankin rekisteröityminen",
+    "description": "Luo Belgrave Private Bank -tilisi ja aloita yksityispankkiasiakkuutesi."
+  },
+
+  "form": {
+    "title": "Luo tili",
+
+    "fields": {
+      "firstName": "Etunimi",
+      "lastName": "Sukunimi",
+      "fullName": "Koko nimi",
+      "email": "Sähköpostiosoite",
+      "phone": "Puhelinnumero",
+      "password": "Salasana",
+      "confirmPassword": "Vahvista salasana"
+    },
+
+    "placeholders": {
+      "firstName": "Anna etunimesi",
+      "lastName": "Anna sukunimesi",
+      "email": "Anna sähköpostiosoitteesi",
+      "phone": "Anna puhelinnumerosi",
+      "password": "Luo salasana",
+      "confirmPassword": "Vahvista salasanasi"
+    },
+
+    "button": "Luo tili"
+  },
+
+  "password": {
+    "strength": "Salasanan vahvuus",
+    "weak": "Heikko",
+    "medium": "Keskitaso",
+    "strong": "Vahva",
+    "requirements": {
+      "length": "Vähintään 8 merkkiä",
+      "uppercase": "Vähintään yksi iso kirjain",
+      "number": "Vähintään yksi numero",
+      "special": "Vähintään yksi erikoismerkki"
+    }
+  },
+
+  "accountType": {
+    "title": "Valitse tilityyppi",
+
+    "private": {
+      "title": "Yksityispankkitili",
+      "description": "Henkilökohtaiset pankkipalvelut yksityishenkilöille ja perheille."
+    },
+
+    "business": {
+      "title": "Yrityspankkitili",
+      "description": "Rahoitusratkaisut yrittäjille ja organisaatioille."
+    }
+  },
+
+  "messages": {
+    "creating": "Luodaan tiliäsi...",
+    "success": "Tili luotu onnistuneesti.",
+    "error": "Tilin luominen epäonnistui. Yritä uudelleen.",
+    "exists": "Tällä sähköpostiosoitteella on jo olemassa tili."
+  },
+
+  "login": {
+    "question": "Onko sinulla jo tili?",
+    "button": "Kirjaudu sisään"
+  },
+
+  "security": {
+    "title": "Tietosi ovat suojattuja",
+    "description": "Henkilötietosi suojataan edistyksellisten pankkitason tietoturvastandardien mukaisesti."
+  }
+}

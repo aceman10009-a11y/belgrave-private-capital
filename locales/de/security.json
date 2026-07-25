@@ -1,1 +1,66 @@
-locales/de/security.json
+{
+  "hero": {
+    "tag": "SICHERHEIT",
+    "title": "Modernste Sicherheit ohne Kompromisse",
+    "description": "Die Belgrave Private Bank schützt Ihr Vermögen und Ihre persönlichen Daten durch moderne Technologien, strenge Sicherheitsmaßnahmen und kontinuierliche Überwachung."
+  },
+
+  "intro": {
+    "title": "Ihre Sicherheit hat für uns höchste Priorität",
+    "description": "Unser Sicherheitskonzept kombiniert Verschlüsselung, Betrugsprävention, Compliance-Überwachung und operative Kontrollen, um jede Kundenbeziehung optimal zu schützen."
+  },
+
+  "protection": {
+    "title": "Sicherheitsschutz",
+
+    "encryption": {
+      "title": "Moderne Verschlüsselung",
+      "description": "Alle sensiblen Informationen und Transaktionen werden durch modernste Verschlüsselungstechnologien geschützt."
+    },
+
+    "monitoring": {
+      "title": "24/7-Sicherheitsüberwachung",
+      "description": "Unsere Systeme überwachen Ihre Kontoaktivitäten rund um die Uhr, um unbefugte Zugriffe zu erkennen und zu verhindern."
+    },
+
+    "fraud": {
+      "title": "Betrugsprävention",
+      "description": "Moderne Sicherheitssysteme helfen dabei, verdächtige Aktivitäten zu erkennen und das Vermögen unserer Kunden zu schützen."
+    },
+
+    "privacy": {
+      "title": "Datenschutz für Kunden",
+      "description": "Ihre persönlichen und finanziellen Informationen werden nach strengsten Vertraulichkeitsstandards behandelt."
+    }
+  },
+
+  "features": {
+    "title": "Sicherheitsfunktionen",
+
+    "multiFactor": "Mehrstufige Authentifizierung",
+    "secureTransactions": "Sichere Transaktionsverifizierung",
+    "accountMonitoring": "Echtzeit-Kontoüberwachung",
+    "compliance": "Internationale Compliance-Standards",
+    "dataProtection": "Geschützte Kundendaten"
+  },
+
+  "alerts": {
+    "title": "Sicherheitsbenachrichtigungen",
+
+    "login": "Neue Anmeldung auf Ihrem Konto erkannt.",
+    "transaction": "Transaktionsbestätigung erforderlich.",
+    "restricted": "Dieser Vorgang ist derzeit aufgrund einer bankaufsichtsrechtlichen Prüfung eingeschränkt."
+  },
+
+  "messages": {
+    "secured": "Der Sicherheitsstatus Ihres Kontos ist aktiv.",
+    "protected": "Ihre Informationen sind geschützt.",
+    "warning": "Bitte wenden Sie sich an Ihren Kundenberater, wenn Sie ungewöhnliche Aktivitäten feststellen."
+  },
+
+  "cta": {
+    "title": "Benötigen Sie Unterstützung zur Kontosicherheit?",
+    "description": "Unser Sicherheitsteam steht Ihnen bei Fragen und Anliegen rund um die Sicherheit Ihres Kontos gerne zur Verfügung.",
+    "button": "Sicherheitsteam kontaktieren"
+  }
+}

@@ -1,1 +1,63 @@
-locales/es/transfers.json
+{
+  "title": "Transferencias",
+
+  "hero": {
+    "tag": "TRANSFERENCIAS GLOBALES",
+    "title": "Transferencias Internacionales de Dinero Seguras",
+    "description": "Envíe y reciba fondos en todo el mundo con soluciones de pago seguras diseñadas para clientes de banca privada."
+  },
+
+  "transfer": {
+    "title": "Realizar una Transferencia",
+    "description": "Transfiera fondos de forma segura entre sus cuentas de Belgrave y cuentas externas autorizadas.",
+
+    "fields": {
+      "recipient": "Nombre del Beneficiario",
+      "accountNumber": "Número de Cuenta",
+      "bankName": "Nombre del Banco",
+      "amount": "Importe de la Transferencia",
+      "currency": "Moneda",
+      "reference": "Referencia del Pago"
+    },
+
+    "button": "Transferir Fondos"
+  },
+
+  "types": {
+    "title": "Servicios de Transferencia",
+
+    "international": {
+      "title": "Transferencias Internacionales",
+      "description": "Mueva fondos a través de las fronteras mediante redes de pago globales fiables."
+    },
+
+    "domestic": {
+      "title": "Transferencias Nacionales",
+      "description": "Realice transferencias locales de forma rápida y segura."
+    },
+
+    "wire": {
+      "title": "Transferencias Bancarias",
+      "description": "Realice transferencias bancarias de alto valor con controles de seguridad mejorados."
+    }
+  },
+
+  "security": {
+    "title": "Seguridad en las Transferencias",
+    "description": "Cada transacción es supervisada mediante avanzados sistemas de prevención del fraude y controles de cumplimiento."
+  },
+
+  "messages": {
+    "processing": "Su transferencia está siendo procesada.",
+    "successful": "La transferencia se ha completado correctamente.",
+    "failed": "No se ha podido completar la transferencia.",
+    "restricted": "Las transferencias están actualmente restringidas debido a una revisión de la jurisdicción bancaria.",
+    "pending": "Su transferencia está pendiente de aprobación."
+  },
+
+  "cta": {
+    "title": "¿Necesita Ayuda con una Transferencia?",
+    "description": "Póngase en contacto con su gestor de relaciones para recibir asistencia con las transferencias.",
+    "button": "Contactar con Soporte"
+  }
+}

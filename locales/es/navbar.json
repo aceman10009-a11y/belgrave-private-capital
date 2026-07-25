@@ -1,1 +1,56 @@
-locales/es/navbar.json
+{
+  "home": "Inicio",
+
+  "banking": {
+    "label": "Banca",
+    "accounts": "Cuentas",
+    "cards": "Tarjetas",
+    "payments": "Pagos",
+    "transfers": "Transferencias"
+  },
+
+  "wealth": {
+    "label": "Patrimonio",
+    "wealthManagement": "Gestión Patrimonial",
+    "investments": "Inversiones",
+    "portfolio": "Cartera",
+    "familyOffice": "Family Office"
+  },
+
+  "services": {
+    "label": "Servicios",
+    "privateBanking": "Banca Privada",
+    "internationalBanking": "Banca Internacional",
+    "digitalBanking": "Banca Digital"
+  },
+
+  "security": {
+    "label": "Seguridad",
+    "protection": "Seguridad y Protección"
+  },
+
+  "about": {
+    "label": "Nosotros",
+    "ourStory": "Nuestra Historia",
+    "leadership": "Liderazgo"
+  },
+
+  "contact": "Contáctenos",
+
+  "actions": {
+    "login": "Iniciar Sesión",
+    "openAccount": "Abrir Cuenta",
+    "createAccount": "Crear Cuenta",
+    "logout": "Cerrar Sesión"
+  },
+
+  "menu": {
+    "open": "Abrir Menú",
+    "close": "Cerrar Menú"
+  },
+
+  "brand": {
+    "name": "Belgrave",
+    "subtitle": "BANCA PRIVADA"
+  }
+}

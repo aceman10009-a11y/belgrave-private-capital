@@ -1,1 +1,76 @@
-locales/fi/investments.json
+{
+  "hero": {
+    "tag": "SIJOITUSRATKAISUT",
+    "title": "Kasvata ja säilytä varallisuuttasi",
+    "description": "Belgrave Private Bank tarjoaa kehittyneitä sijoitusratkaisuja, jotka on suunniteltu auttamaan asiakkaita saavuttamaan pitkän aikavälin taloudelliset tavoitteensa."
+  },
+
+  "intro": {
+    "title": "Kansainvälistä sijoitusosaamista",
+    "description": "Asiantuntijamme yhdistävät markkinatuntemuksen, strategisen suunnittelun ja henkilökohtaisen neuvonnan rakentaakseen sijoitusratkaisuja, jotka vastaavat tavoitteitasi."
+  },
+
+  "services": {
+    "title": "Sijoituspalvelut",
+
+    "portfolioManagement": {
+      "title": "Salkunhoito",
+      "description": "Ammattimaisesti hallinnoidut sijoitussalkut, jotka on suunniteltu riskiprofiilisi, tavoitteidesi ja sijoitusstrategiasi mukaisesti."
+    },
+
+    "wealthPlanning": {
+      "title": "Sijoitussuunnittelu",
+      "description": "Strateginen sijoitussuunnittelu, joka keskittyy varallisuuden säilyttämiseen ja kasvattamiseen pitkällä aikavälillä."
+    },
+
+    "globalMarkets": {
+      "title": "Pääsy globaaleille markkinoille",
+      "description": "Hyödynnä mahdollisuuksia kansainvälisillä markkinoilla, eri omaisuusluokissa ja sijoitussektoreilla."
+    },
+
+    "alternativeInvestments": {
+      "title": "Vaihtoehtoiset sijoitukset",
+      "description": "Tutustu sijoitusmahdollisuuksiin, kuten pääomasijoituksiin, kiinteistöihin ja muihin erikoissijoituksiin."
+    }
+  },
+
+  "portfolio": {
+    "title": "Salkkuratkaisut",
+
+    "balanced": {
+      "title": "Tasapainoinen salkku",
+      "description": "Hajautettu sijoitusratkaisu, joka on suunniteltu vakaaseen pitkän aikavälin kasvuun."
+    },
+
+    "growth": {
+      "title": "Kasvusalkku",
+      "description": "Sijoitusstrategiat, jotka keskittyvät pääoman arvonnousuun ja maailmanlaajuisiin mahdollisuuksiin."
+    },
+
+    "preservation": {
+      "title": "Varallisuuden säilyttämiseen keskittyvä salkku",
+      "description": "Suunniteltu suojaamaan varoja ja tukemaan samalla kestävää taloudellista kasvua."
+    }
+  },
+
+  "markets": {
+    "title": "Globaali pääsy sijoitusmarkkinoille",
+
+    "equities": "Kansainväliset osakkeet",
+    "bonds": "Valtion- ja yrityslainat",
+    "realEstate": "Kiinteistösijoitukset",
+    "privateEquity": "Pääomasijoitukset",
+    "commodities": "Hyödykkeet"
+  },
+
+  "security": {
+    "title": "Vastuullinen sijoitusten hallinta",
+    "description": "Sijoituslähestymistapamme perustuu läpinäkyvyyteen, ammattimaiseen valvontaan ja kurinalaiseen riskienhallintaan."
+  },
+
+  "cta": {
+    "title": "Rakenna sijoitusstrategiasi",
+    "description": "Keskustele sijoitusasiantuntijoidemme kanssa ja luo ratkaisu, joka on suunniteltu taloudellisten tavoitteidesi ympärille.",
+    "button": "Tutustu sijoitusratkaisuihin"
+  }
+}

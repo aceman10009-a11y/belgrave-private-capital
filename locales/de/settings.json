@@ -1,1 +1,77 @@
-locales/de/settings.json
+{
+  "title": "Einstellungen",
+
+  "profile": {
+    "title": "Profileinstellungen",
+    "description": "Verwalten Sie Ihre persönlichen Informationen und Kontoeinstellungen.",
+
+    "fields": {
+      "name": "Vollständiger Name",
+      "email": "E-Mail-Adresse",
+      "phone": "Telefonnummer",
+      "country": "Land",
+      "address": "Adresse"
+    }
+  },
+
+  "security": {
+    "title": "Sicherheitseinstellungen",
+
+    "password": {
+      "title": "Passwortverwaltung",
+      "change": "Passwort ändern",
+      "current": "Aktuelles Passwort",
+      "new": "Neues Passwort",
+      "confirm": "Neues Passwort bestätigen"
+    },
+
+    "authentication": {
+      "title": "Authentifizierung",
+      "twoFactor": "Zwei-Faktor-Authentifizierung",
+      "enabled": "Aktiviert",
+      "disabled": "Deaktiviert"
+    }
+  },
+
+  "preferences": {
+    "title": "Einstellungen",
+
+    "language": {
+      "title": "Spracheinstellung",
+      "description": "Wählen Sie Ihre bevorzugte Sprache aus."
+    },
+
+    "notifications": {
+      "title": "Benachrichtigungen",
+      "email": "E-Mail-Benachrichtigungen",
+      "security": "Sicherheitswarnungen",
+      "transactions": "Transaktionsbenachrichtigungen"
+    }
+  },
+
+  "account": {
+    "title": "Kontoverwaltung",
+
+    "statement": {
+      "title": "Kontoauszüge",
+      "description": "Anzeigen und Herunterladen Ihrer Kontoauszüge."
+    },
+
+    "privacy": {
+      "title": "Datenschutzeinstellungen",
+      "description": "Verwalten Sie Ihre Datenschutz- und Dateneinstellungen."
+    }
+  },
+
+  "messages": {
+    "saved": "Einstellungen erfolgreich gespeichert.",
+    "restricted": "Die Einstellungen sind derzeit aufgrund einer bankaufsichtsrechtlichen Prüfung eingeschränkt.",
+    "comingSoon": "Einstellungen folgen in Kürze."
+  },
+
+  "buttons": {
+    "save": "Änderungen speichern",
+    "cancel": "Abbrechen",
+    "update": "Einstellungen aktualisieren"
+  }
+}

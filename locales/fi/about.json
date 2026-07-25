@@ -1,1 +1,62 @@
-locales/fi/about.json
+{
+  "hero": {
+    "tag": "TIETOA BELGRAVESTA",
+    "title": "Luottamuksen, Huippuosaamisen ja Yksityispankkitoiminnan Perinne",
+    "description": "Belgrave Private Bank tarjoaa luotettavia rahoitusratkaisuja yksityishenkilöille, perheille, yrittäjille ja kansainvälisille yrityksille, jotka tavoittelevat pitkäaikaista taloudellista vakautta."
+  },
+
+  "intro": {
+    "title": "Keitä Olemme",
+    "description": "Olemme yksityispankki, joka on sitoutunut tarjoamaan yksilöllisiä rahoituspalveluja, kansainvälistä asiantuntemusta ja turvallisia varainhoitoratkaisuja."
+  },
+
+  "mission": {
+    "title": "Missiomme",
+    "description": "Tarjota ensiluokkainen yksityispankkikokemus luotettavien asiakassuhteiden, innovatiivisten ratkaisujen ja vastuullisen varainhoidon kautta."
+  },
+
+  "vision": {
+    "title": "Visiomme",
+    "description": "Tulla luotetuksi maailmanlaajuiseksi kumppaniksi asiakkaille, jotka haluavat säilyttää ja kasvattaa varallisuuttaan sukupolvien ajan."
+  },
+
+  "values": {
+    "title": "Ydinarvomme",
+
+    "trust": {
+      "title": "Luottamus",
+      "description": "Rakennamme pitkäaikaisia asiakassuhteita rehellisyyden, avoimuuden ja luotettavuuden pohjalta."
+    },
+
+    "excellence": {
+      "title": "Huippuosaaminen",
+      "description": "Tarjoamme ensiluokkaista palvelua asiantuntemuksen, tarkkuuden ja sitoutumisen avulla."
+    },
+
+    "security": {
+      "title": "Turvallisuus",
+      "description": "Suojaamme asiakkaidemme varallisuutta kehittyneillä järjestelmillä ja tiukoilla toimintastandardeilla."
+    },
+
+    "innovation": {
+      "title": "Innovaatio",
+      "description": "Yhdistämme perinteisen yksityispankkitoiminnan moderniin finanssiteknologiaan."
+    }
+  },
+
+  "history": {
+    "title": "Perintömme",
+    "description": "Belgrave Private Bank edustaa sitoutumista korkeatasoiseen yksityispankkitoimintaan yhdistämällä maailmanlaajuisen rahoitusosaamisen henkilökohtaisiin asiakassuhteisiin."
+  },
+
+  "leadership": {
+    "title": "Kokenut Johto",
+    "description": "Asiantuntijoillamme on laaja kokemus yksityispankkitoiminnasta, sijoittamisesta, varainhoidosta ja kansainvälisestä rahoituksesta."
+  },
+
+  "cta": {
+    "title": "Koe Huippuluokan Yksityispankkipalvelut",
+    "description": "Tutustu siihen, kuinka Belgrave Private Bank voi auttaa suojaamaan ja kasvattamaan taloudellista tulevaisuuttasi.",
+    "button": "Ota Yhteyttä"
+  }
+}

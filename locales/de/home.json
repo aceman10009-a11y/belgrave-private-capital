@@ -1,1 +1,199 @@
-locales/de/home.json
+{
+  "hero": {
+    "tag": "PRIVATE BANKING",
+    "title": "Ihr Vermächtnis. Unser Engagement.",
+    "description": "Exklusive Private-Banking-Lösungen zum Schutz, Erhalt und Ausbau Ihres Vermögens über Generationen hinweg.",
+    "button": "Mehr entdecken",
+
+    "portfolio": {
+      "title": "Privatportfolio",
+      "status": "● Geschützt",
+      "investment": "Investition",
+      "performance": "+4.26%",
+      "liquidity": "Liquidität",
+      "currency": "USD",
+      "privateEquity": "Private Equity",
+      "active": "Aktiv",
+      "globalMarkets": "Globale Märkte",
+      "regions": "Regionen"
+    }
+  },
+
+  "stats": {
+    "assetsManaged": {
+      "value": "$967M+",
+      "label": "Verwaltetes Vermögen"
+    },
+    "countries": {
+      "value": "42",
+      "label": "Länder"
+    },
+    "clients": {
+      "value": "18.400+",
+      "label": "Privatkunden"
+    },
+    "regions": {
+      "value": "17",
+      "label": "Globale Regionen"
+    }
+  },
+
+  "financialSnapshot": {
+    "tag": "FINANZÜBERBLICK",
+    "title": "Finanzübersicht",
+
+    "assets": {
+      "value": "$967.9M",
+      "label": "Verwaltetes Vermögen"
+    },
+
+    "countries": {
+      "value": "42",
+      "label": "Betreute Länder"
+    },
+
+    "clients": {
+      "value": "18.400",
+      "label": "Privatkunden"
+    },
+
+    "availability": {
+      "value": "99.98%",
+      "label": "Plattformverfügbarkeit"
+    }
+  },
+
+  "services": {
+    "tag": "PRIVATE BANKING",
+
+    "heading": "Banking, das sich Ihrem Lebensstil anpasst",
+
+    "description": "Jede Bankbeziehung beginnt mit dem Verständnis Ihrer Ziele. Unsere Spezialisten bieten maßgeschneiderte Finanzlösungen für Privatpersonen, Unternehmer, Familien und internationale Kunden.",
+
+    "privateBanking": {
+      "title": "Private Banking",
+      "description": "Persönliche Relationship Manager bieten individuelle Finanzberatung und exklusive Bankdienstleistungen."
+    },
+
+    "investmentAdvisory": {
+      "title": "Anlageberatung",
+      "description": "Professionelles Portfoliomanagement, Vermögenserhalt und langfristige Anlagestrategien."
+    },
+
+    "digitalBanking": {
+      "title": "Digital Banking",
+      "description": "Sicheres Online-Banking mit Sofortüberweisungen, Investitionen und Kontoverwaltung – jederzeit und überall."
+    },
+
+    "internationalBanking": {
+      "title": "Internationales Banking",
+      "description": "Mehrwährungskonten, globale Überweisungen und weltweite Bankdienstleistungen in den wichtigsten Finanzmärkten."
+    },
+
+    "savingsDeposits": {
+      "title": "Sparen & Einlagen",
+      "description": "Flexible Sparlösungen zur sicheren Erhaltung und Vermehrung Ihres Vermögens."
+    },
+
+    "cashServices": {
+      "title": "Bargeld- & Geldautomatendienste",
+      "description": "Bequemer Zugriff auf Ihr Vermögen mit Premium-Debitkarten, Bargeldservices und weltweiter Geldautomatenunterstützung."
+    }
+  },
+
+  "digitalBanking": {
+    "tag": "DIGITAL BANKING",
+
+    "title": "Exzellenz im Digital Banking",
+
+    "description": "Verwalten Sie Ihr Vermögen sicher über eine leistungsstarke digitale Banking-Plattform für moderne Privatkunden.",
+
+    "security": "Erweiterte Sicherheit",
+
+    "access": "Globaler Zugriff",
+
+    "control": "Vollständige Finanzkontrolle"
+  },
+
+  "cards": {
+    "tag": "PREMIUM-KARTEN",
+
+    "title": "Exklusive Bankkarten",
+
+    "description": "Entwickelt für Kunden mit höchsten Ansprüchen. Unsere Premium-Debit- und Kreditkarten vereinen elegantes Design, weltweite Akzeptanz, moderne Sicherheit und exklusive Private-Banking-Vorteile.",
+
+    "signature": {
+      "title": "Signature-Kreditkarte",
+      "description": "Premium-Zahlungen mit weltweiter Akzeptanz, luxuriösen Reisevorteilen und exklusiven Concierge-Services."
+    },
+
+    "platinum": {
+      "title": "Platinum-Debitkarte",
+      "description": "Banking für den Alltag mit Mehrwährungszugang, kontaktlosem Bezahlen und sofortigen internationalen Überweisungen."
+    },
+
+    "private": {
+      "title": "Private-Debitkarte",
+      "description": "Für einen internationalen Lebensstil entwickelt – mit sicheren weltweiten Transaktionen und bevorzugtem Bankservice."
+    },
+
+    "infinite": {
+      "title": "Infinite-Kreditkarte",
+      "description": "Unsere exklusivste Bankkarte mit erstklassigen Privilegien, erhöhter Kaufkraft und luxuriösen Finanzdienstleistungen."
+    }
+  },
+
+  "security": {
+    "tag": "SICHERHEIT",
+
+    "title": "Sicherheit ohne Kompromisse",
+
+    "description": "Ihr Vermögen und Ihre persönlichen Daten werden durch moderne Sicherheitssysteme und strenge operative Kontrollen geschützt.",
+
+    "protection": "Vermögensschutz",
+
+    "protectionDescription": "Jede Verbindung ist durch Verschlüsselung auf Unternehmensniveau geschützt, der führende Finanzinstitute weltweit vertrauen.",
+
+    "privacy": "Datenschutz für Kunden",
+
+    "privacyDescription": "Intelligente Authentifizierung schützt jede Anmeldung und jede sensible Transaktion auf Ihren Konten.",
+
+    "monitoring": "24/7-Sicherheitsüberwachung",
+
+    "monitoringDescription": "Ihr persönlicher Berater und unsere Sicherheitsteams überwachen kontinuierlich Aktivitäten und schützen Ihre finanziellen Interessen."
+  },
+
+  "testimonials": {
+    "tag": "KUNDENREFERENZEN",
+
+    "title": "Das Vertrauen unserer Privatkunden",
+
+    "description": "Von Unternehmern und Familienunternehmen bis hin zu Family Offices und internationalen Investoren – unsere Kunden vertrauen der Belgrave Private Bank für diskreten Service, kompetente Beratung und langfristige Finanzpartnerschaften.",
+
+    "clients": {
+      "michael": {
+        "review": "Außergewöhnlicher Service, professionelle Beratung und ein Bankerlebnis, das vollständig auf Vertrauen basiert. Mein persönlicher Berater hat meine Erwartungen stets übertroffen.",
+        "name": "Michael Thornton",
+        "role": "Private-Banking-Kunde"
+      },
+
+      "sophia": {
+        "review": "Belgrave bietet genau die Diskretion, Fachkompetenz und persönliche Betreuung, die ich von einer erstklassigen Privatbank erwarte. Jede Interaktion wird mit höchster Professionalität durchgeführt.",
+        "name": "Sophia Whitmore",
+        "role": "Family-Office-Kundin"
+      },
+
+      "alexander": {
+        "review": "Internationales Banking war noch nie so unkompliziert. Von grenzüberschreitenden Transaktionen bis hin zur Anlageunterstützung wird alles effizient und sicher abgewickelt.",
+        "name": "Alexander Weber",
+        "role": "Internationaler Kunde"
+      }
+    }
+  },
+
+  "cta": {
+    "title": "Ein höherer Standard im Private Banking",
+    "description": "Kontaktieren Sie die Belgrave Private Bank und entdecken Sie Finanzlösungen, die auf Ihre Ziele zugeschnitten sind.",
+    "button": "Kontakt aufnehmen"
+  }
+}

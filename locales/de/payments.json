@@ -1,1 +1,66 @@
-locales/de/payments.json
+{
+  "hero": {
+    "tag": "ZAHLUNGEN",
+    "title": "Sichere globale Zahlungslösungen",
+    "description": "Verwalten Sie nationale und internationale Zahlungen über eine sichere Bankinfrastruktur, die speziell für Privatkunden entwickelt wurde."
+  },
+
+  "intro": {
+    "title": "Flexible Zahlungsdienstleistungen",
+    "description": "Die Belgrave Private Bank bietet zuverlässige Zahlungslösungen für private, familiäre und geschäftliche Finanzbedürfnisse."
+  },
+
+  "services": {
+    "title": "Zahlungsdienstleistungen",
+
+    "internationalTransfers": {
+      "title": "Internationale Überweisungen",
+      "description": "Senden und empfangen Sie Gelder weltweit mit sicheren internationalen Zahlungsdiensten."
+    },
+
+    "wireTransfers": {
+      "title": "Banküberweisungen",
+      "description": "Führen Sie Überweisungen mit hohem Volumen mit professioneller Unterstützung und sicherer Abwicklung durch."
+    },
+
+    "scheduledPayments": {
+      "title": "Geplante Zahlungen",
+      "description": "Automatisieren Sie wiederkehrende Zahlungen und verwalten Sie Ihre finanziellen Verpflichtungen effizient."
+    },
+
+    "currencyExchange": {
+      "title": "Währungsumtausch",
+      "description": "Profitieren Sie von wettbewerbsfähigen Devisenlösungen für internationale Transaktionen."
+    }
+  },
+
+  "transaction": {
+    "title": "Zahlungstransaktionen",
+
+    "reference": "Referenz",
+    "date": "Datum",
+    "amount": "Betrag",
+    "currency": "Währung",
+    "recipient": "Empfänger",
+    "status": "Status"
+  },
+
+  "status": {
+    "pending": "Ausstehend",
+    "processing": "In Bearbeitung",
+    "completed": "Abgeschlossen",
+    "failed": "Fehlgeschlagen",
+    "cancelled": "Storniert"
+  },
+
+  "security": {
+    "title": "Geschützte Zahlungen",
+    "description": "Jede Zahlung wird durch moderne Sicherheitskontrollen und Betrugspräventionssysteme überwacht."
+  },
+
+  "cta": {
+    "title": "Verwalten Sie Ihre Zahlungen mit Vertrauen",
+    "description": "Unsere Spezialisten stehen Ihnen bei allen Fragen rund um Ihre Zahlungsanforderungen zur Verfügung.",
+    "button": "Support kontaktieren"
+  }
+}

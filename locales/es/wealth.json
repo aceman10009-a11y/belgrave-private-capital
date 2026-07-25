@@ -1,1 +1,71 @@
-locales/es/wealth.json
+{
+  "hero": {
+    "tag": "GESTIÓN PATRIMONIAL",
+    "title": "Preservar y Hacer Crecer Su Patrimonio",
+    "description": "Belgrave Private Bank ofrece estrategias personalizadas de gestión patrimonial diseñadas para proteger sus activos, crear oportunidades y respaldar sus objetivos financieros a largo plazo."
+  },
+
+  "intro": {
+    "title": "Gestión Patrimonial Estratégica",
+    "description": "Nuestros especialistas combinan experiencia en inversiones, acceso a los mercados globales y planificación personalizada para ayudar a nuestros clientes a alcanzar un éxito financiero duradero."
+  },
+
+  "services": {
+    "title": "Servicios de Gestión Patrimonial",
+
+    "investmentPlanning": {
+      "title": "Planificación de Inversiones",
+      "description": "Estrategias de inversión personalizadas diseñadas según sus objetivos, perfil de riesgo y visión financiera."
+    },
+
+    "portfolioManagement": {
+      "title": "Gestión de Carteras",
+      "description": "Gestión profesional de carteras centrada en la diversificación, el rendimiento y la preservación del capital a largo plazo."
+    },
+
+    "estatePlanning": {
+      "title": "Planificación Patrimonial",
+      "description": "Soluciones estructuradas para preservar el patrimonio y facilitar su transmisión eficiente entre generaciones."
+    },
+
+    "familyOffice": {
+      "title": "Soluciones de Family Office",
+      "description": "Servicios integrales de coordinación patrimonial para familias que requieren una supervisión financiera especializada."
+    },
+
+    "privateMarkets": {
+      "title": "Inversiones en Mercados Privados",
+      "description": "Acceda a oportunidades de inversión alternativas, incluyendo capital privado, activos reales y estrategias especializadas."
+    },
+
+    "taxPlanning": {
+      "title": "Planificación Fiscal",
+      "description": "Soluciones estratégicas de planificación diseñadas para respaldar una gestión patrimonial eficiente."
+    }
+  },
+
+  "approach": {
+    "title": "Nuestro Enfoque de Gestión Patrimonial",
+
+    "preservation": {
+      "title": "Preservación del Patrimonio",
+      "description": "Protegemos sus activos mediante estrategias disciplinadas y una cuidadosa gestión del riesgo."
+    },
+
+    "growth": {
+      "title": "Crecimiento a Largo Plazo",
+      "description": "Construimos un patrimonio sostenible mediante oportunidades de inversión cuidadosamente seleccionadas."
+    },
+
+    "legacy": {
+      "title": "Planificación del Legado",
+      "description": "Ayudamos a las familias a crear un legado financiero duradero para las futuras generaciones."
+    }
+  },
+
+  "cta": {
+    "title": "Construya Su Legado Financiero",
+    "description": "Hable con un especialista en gestión patrimonial de Belgrave y descubra soluciones diseñadas en torno a sus objetivos.",
+    "button": "Contactar con un Asesor Patrimonial"
+  }
+}

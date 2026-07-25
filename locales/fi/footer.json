@@ -1,1 +1,52 @@
-locales/fi/footer.json
+{
+  "brand": {
+    "name": "Belgrave",
+    "subtitle": "YKSITYISPANKKI",
+    "description": "Luottamukseen, hienotunteisuuteen ja pitkäaikaisiin asiakassuhteisiin perustuvia yksityispankkipalveluja."
+  },
+
+  "sections": {
+    "services": {
+      "title": "Palvelumme",
+      "privateBanking": "Yksityispankkipalvelut",
+      "wealthManagement": "Varainhoito",
+      "security": "Turvallisuus ja Suojaus",
+      "digitalBanking": "Digitaaliset Pankkipalvelut"
+    },
+
+    "company": {
+      "title": "Yritys",
+      "about": "Tietoa Meistä",
+      "leadership": "Johto",
+      "careers": "Ura",
+      "contact": "Ota Yhteyttä"
+    },
+
+    "support": {
+      "title": "Asiakastuki",
+      "help": "Ohjekeskus",
+      "faq": "Usein Kysytyt Kysymykset",
+      "privacy": "Tietosuojakäytäntö",
+      "terms": "Käyttöehdot"
+    }
+  },
+
+  "contact": {
+    "title": "Yhteystiedot",
+    "address": "Kansainvälinen Yksityispankin Toimisto",
+    "email": "Sähköposti",
+    "phone": "Puhelin"
+  },
+
+  "social": {
+    "title": "Seuraa Meitä",
+    "linkedin": "LinkedIn",
+    "twitter": "Twitter",
+    "facebook": "Facebook"
+  },
+
+  "legal": {
+    "copyright": "© 2026 Belgrave Private Bank. Kaikki oikeudet pidätetään.",
+    "disclaimer": "Belgrave Private Bank tarjoaa rahoituspalveluja sovellettavien säädösten ja vaatimustenmukaisuusvaatimusten mukaisesti."
+  }
+}

@@ -1,1 +1,199 @@
-locales/fi/home.json
+{
+  "hero": {
+    "tag": "YKSITYISPANKKIPALVELUT",
+    "title": "Perintösi. Meidän Sitoumuksemme.",
+    "description": "Eksklusiiviset yksityispankkipalvelut, jotka on suunniteltu suojaamaan, säilyttämään ja kasvattamaan varallisuuttasi sukupolvien ajan.",
+    "button": "Lue Lisää",
+
+    "portfolio": {
+      "title": "Yksityinen Salkku",
+      "status": "● Suojattu",
+      "investment": "Sijoitus",
+      "performance": "+4.26%",
+      "liquidity": "Likviditeetti",
+      "currency": "USD",
+      "privateEquity": "Pääomasijoitukset",
+      "active": "Aktiivinen",
+      "globalMarkets": "Maailmanlaajuiset Markkinat",
+      "regions": "Alueet"
+    }
+  },
+
+  "stats": {
+    "assetsManaged": {
+      "value": "$967M+",
+      "label": "Hallinnoidut Varat"
+    },
+    "countries": {
+      "value": "42",
+      "label": "Maata"
+    },
+    "clients": {
+      "value": "18,400+",
+      "label": "Yksityisasiakkaat"
+    },
+    "regions": {
+      "value": "17",
+      "label": "Maailmanlaajuista Aluetta"
+    }
+  },
+
+  "financialSnapshot": {
+    "tag": "TALOUDELLINEN YLEISKUVA",
+    "title": "Taloudellinen Yleiskuva",
+
+    "assets": {
+      "value": "$967.9M",
+      "label": "Hallinnoitavat Varat"
+    },
+
+    "countries": {
+      "value": "42",
+      "label": "Palvellut Maat"
+    },
+
+    "clients": {
+      "value": "18,400",
+      "label": "Yksityisasiakkaat"
+    },
+
+    "availability": {
+      "value": "99.98%",
+      "label": "Palvelun Käytettävyys"
+    }
+  },
+
+  "services": {
+    "tag": "YKSITYISPANKKIPALVELUT",
+
+    "heading": "Pankkipalvelut, Jotka On Suunniteltu Elämäntyyliäsi Varten",
+
+    "description": "Jokainen pankkisuhde alkaa tavoitteidesi ymmärtämisestä. Asiantuntijamme tarjoavat räätälöityjä rahoitusratkaisuja yksityishenkilöille, yrittäjille, perheille ja kansainvälisille asiakkaille.",
+
+    "privateBanking": {
+      "title": "Yksityispankkipalvelut",
+      "description": "Omistautuneet asiakasvastaavat tarjoavat henkilökohtaista taloudellista neuvontaa ja eksklusiivisia pankkipalveluja."
+    },
+
+    "investmentAdvisory": {
+      "title": "Sijoitusneuvonta",
+      "description": "Asiantuntevaa salkunhoitoa, varallisuuden säilyttämistä ja pitkän aikavälin sijoitusstrategioita."
+    },
+
+    "digitalBanking": {
+      "title": "Digitaalinen Pankkipalvelu",
+      "description": "Turvallinen verkkopankki välittömillä siirroilla, sijoituksilla ja tilien hallinnalla mistä tahansa."
+    },
+
+    "internationalBanking": {
+      "title": "Kansainvälinen Pankkipalvelu",
+      "description": "Monivaluuttatilit, kansainväliset siirrot ja maailmanlaajuinen pankkituki tärkeimmillä rahoitusmarkkinoilla."
+    },
+
+    "savingsDeposits": {
+      "title": "Säästöt ja Talletukset",
+      "description": "Joustavat säästöratkaisut, jotka on suunniteltu säilyttämään ja kasvattamaan varallisuuttasi turvallisesti ajan myötä."
+    },
+
+    "cashServices": {
+      "title": "Käteis- ja Pankkiautomaattipalvelut",
+      "description": "Helppo pääsy varoihisi premium-pankkikorteilla, käteispalveluilla ja maailmanlaajuisella pankkiautomaattiverkostolla."
+    }
+  },
+
+  "digitalBanking": {
+    "tag": "DIGITAALINEN PANKKIPALVELU",
+
+    "title": "Digitaalisen Pankkitoiminnan Huippuosaamista",
+
+    "description": "Hallitse varallisuuttasi turvallisesti tehokkaan digitaalisen pankkialustan kautta, joka on suunniteltu nykyaikaisille yksityisasiakkaille.",
+
+    "security": "Edistynyt Tietoturva",
+
+    "access": "Maailmanlaajuinen Käyttö",
+
+    "control": "Täydellinen Talouden Hallinta"
+  },
+
+  "cards": {
+    "tag": "PREMIUM-KORTIT",
+
+    "title": "Eksklusiiviset Pankkikortit",
+
+    "description": "Suunniteltu asiakkaille, jotka odottavat enemmän kuin tavallista pankkitoimintaa. Premium-pankki- ja luottokorttimme yhdistävät tyylikkään muotoilun, maailmanlaajuisen hyväksynnän, edistyneen turvallisuuden ja eksklusiiviset yksityispankkiedut.",
+
+    "signature": {
+      "title": "Signature-luottokortti",
+      "description": "Premium-maksaminen maailmanlaajuisella hyväksynnällä, ylellisillä matkailueduilla ja eksklusiivisilla concierge-palveluilla."
+    },
+
+    "platinum": {
+      "title": "Platinum-pankkikortti",
+      "description": "Päivittäinen pankkiasiointi monivaluuttatuella, lähimaksuilla ja välittömillä kansainvälisillä siirroilla."
+    },
+
+    "private": {
+      "title": "Private-pankkikortti",
+      "description": "Suunniteltu kansainväliseen elämäntyyliin turvallisilla maailmanlaajuisilla maksutapahtumilla ja ensisijaisella pankkituella."
+    },
+
+    "infinite": {
+      "title": "Infinite-luottokortti",
+      "description": "Eksklusiivisin pankkikorttimme tarjoaa ensiluokkaisia etuja, suuremman ostovoiman ja ylellisiä finanssipalveluja."
+    }
+  },
+
+  "security": {
+    "tag": "TIETOTURVA",
+
+    "title": "Tietoturvaa Ilman Kompromisseja",
+
+    "description": "Varallisuutesi ja henkilötietosi suojataan edistyneillä tietoturvajärjestelmillä ja tiukoilla toimintavalvontamenettelyillä.",
+
+    "protection": "Varallisuuden Suojaus",
+
+    "protectionDescription": "Jokainen yhteys suojataan yritystason salauksella, johon maailman johtavat rahoituslaitokset luottavat.",
+
+    "privacy": "Asiakkaan Yksityisyys",
+
+    "privacyDescription": "Älykäs tunnistautuminen auttaa suojaamaan jokaisen kirjautumisen ja arkaluonteisen tapahtuman tileilläsi.",
+
+    "monitoring": "24/7 Tietoturvavalvonta",
+
+    "monitoringDescription": "Yksityispankkiirisi ja tietoturvatiimimme seuraavat jatkuvasti toimintaa ja suojaavat taloudellisia etujasi."
+  },
+
+  "testimonials": {
+    "tag": "ASIAKASARVOSTELUT",
+
+    "title": "Yksityisasiakkaiden Luottama",
+
+    "description": "Yrittäjistä ja yritysjohtajista family office -asiakkaisiin ja kansainvälisiin sijoittajiin – asiakkaamme luottavat Belgrave Private Bankiin sen hienotunteisen palvelun, asiantuntevan neuvonnan ja pitkäaikaisten taloudellisten kumppanuuksien vuoksi.",
+
+    "clients": {
+      "michael": {
+        "review": "Poikkeuksellista palvelua, ammattitaitoista neuvontaa ja pankkikokemus, joka perustuu täysin luottamukseen. Asiakasvastaavani on jatkuvasti ylittänyt odotukseni.",
+        "name": "Michael Thornton",
+        "role": "Yksityispankkiasiakas"
+      },
+
+      "sophia": {
+        "review": "Belgrave tarjoaa sen hienotunteisuuden, asiantuntemuksen ja henkilökohtaisen palvelun, jota odotan maailmanluokan yksityispankilta. Jokainen kohtaaminen hoidetaan ammattimaisesti.",
+        "name": "Sophia Whitmore",
+        "role": "Family Office -asiakas"
+      },
+
+      "alexander": {
+        "review": "Kansainvälinen pankkiasiointi ei ole koskaan ollut näin sujuvaa. Rajat ylittävistä maksutapahtumista sijoitustukeen kaikki hoidetaan tehokkaasti ja turvallisesti.",
+        "name": "Alexander Weber",
+        "role": "Kansainvälinen Asiakas"
+      }
+    }
+  },
+
+  "cta": {
+    "title": "Yksityispankkitoimintaa Korkeammalla Tasolla",
+    "description": "Ota yhteyttä Belgrave Private Bankiin ja tutustu taloudellisiin ratkaisuihin, jotka on suunniteltu tavoitteidesi ympärille.",
+    "button": "Ota Yhteyttä"
+  }
+}

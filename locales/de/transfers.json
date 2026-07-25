@@ -1,1 +1,63 @@
-locales/de/transfers.json
+{
+  "title": "Überweisungen",
+
+  "hero": {
+    "tag": "INTERNATIONALE ÜBERWEISUNGEN",
+    "title": "Sichere internationale Geldüberweisungen",
+    "description": "Senden und empfangen Sie Gelder weltweit mit sicheren Zahlungslösungen, die speziell für Private-Banking-Kunden entwickelt wurden."
+  },
+
+  "transfer": {
+    "title": "Überweisung ausführen",
+    "description": "Überweisen Sie Gelder sicher zwischen Ihren Belgrave-Konten und freigegebenen externen Konten.",
+
+    "fields": {
+      "recipient": "Name des Empfängers",
+      "accountNumber": "Kontonummer",
+      "bankName": "Bankname",
+      "amount": "Überweisungsbetrag",
+      "currency": "Währung",
+      "reference": "Verwendungszweck"
+    },
+
+    "button": "Geld überweisen"
+  },
+
+  "types": {
+    "title": "Überweisungsdienste",
+
+    "international": {
+      "title": "Internationale Überweisungen",
+      "description": "Überweisen Sie Geld weltweit über zuverlässige internationale Zahlungsnetzwerke."
+    },
+
+    "domestic": {
+      "title": "Inlandsüberweisungen",
+      "description": "Führen Sie nationale Überweisungen schnell und sicher durch."
+    },
+
+    "wire": {
+      "title": "Banküberweisungen",
+      "description": "Führen Sie hochvolumige Banküberweisungen mit erweiterten Sicherheitskontrollen aus."
+    }
+  },
+
+  "security": {
+    "title": "Sichere Überweisungen",
+    "description": "Jede Transaktion wird durch moderne Betrugspräventionssysteme und umfassende Compliance-Kontrollen überwacht."
+  },
+
+  "messages": {
+    "processing": "Ihre Überweisung wird bearbeitet.",
+    "successful": "Die Überweisung wurde erfolgreich abgeschlossen.",
+    "failed": "Die Überweisung konnte nicht abgeschlossen werden.",
+    "restricted": "Überweisungen sind derzeit aufgrund einer bankaufsichtsrechtlichen Prüfung eingeschränkt.",
+    "pending": "Ihre Überweisung wartet auf Genehmigung."
+  },
+
+  "cta": {
+    "title": "Benötigen Sie Unterstützung bei einer Überweisung?",
+    "description": "Kontaktieren Sie Ihren persönlichen Kundenberater für Unterstützung bei Überweisungen.",
+    "button": "Support kontaktieren"
+  }
+}

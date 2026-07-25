@@ -1,1 +1,76 @@
-locales/de/investments.json
+{
+  "hero": {
+    "tag": "ANLAGELÖSUNGEN",
+    "title": "Ihr Vermögen erhalten und vermehren",
+    "description": "Die Belgrave Private Bank bietet anspruchsvolle Anlagelösungen, die darauf ausgerichtet sind, Kunden beim Erreichen ihrer langfristigen finanziellen Ziele zu unterstützen."
+  },
+
+  "intro": {
+    "title": "Globale Anlagekompetenz",
+    "description": "Unsere Spezialisten verbinden Marktkenntnisse, strategische Planung und individuelle Beratung, um Anlagelösungen zu entwickeln, die auf Ihre Ziele abgestimmt sind."
+  },
+
+  "services": {
+    "title": "Anlagedienstleistungen",
+
+    "portfolioManagement": {
+      "title": "Portfoliomanagement",
+      "description": "Professionell verwaltete Portfolios, die auf Ihr Risikoprofil, Ihre Ziele und Ihre Anlagestrategie zugeschnitten sind."
+    },
+
+    "wealthPlanning": {
+      "title": "Anlageplanung",
+      "description": "Strategische Anlageplanung mit dem Fokus auf langfristigen Vermögenserhalt und Vermögenswachstum."
+    },
+
+    "globalMarkets": {
+      "title": "Zugang zu globalen Märkten",
+      "description": "Nutzen Sie Chancen auf internationalen Märkten, in verschiedenen Anlageklassen und Investitionssektoren."
+    },
+
+    "alternativeInvestments": {
+      "title": "Alternative Anlagen",
+      "description": "Entdecken Sie Anlagemöglichkeiten in den Bereichen Private Equity, Immobilien und weiteren spezialisierten Investments."
+    }
+  },
+
+  "portfolio": {
+    "title": "Portfoliolösungen",
+
+    "balanced": {
+      "title": "Ausgewogenes Portfolio",
+      "description": "Ein diversifizierter Ansatz für ein nachhaltiges langfristiges Vermögenswachstum."
+    },
+
+    "growth": {
+      "title": "Wachstumsportfolio",
+      "description": "Anlagestrategien mit Fokus auf Kapitalwachstum und globale Investitionsmöglichkeiten."
+    },
+
+    "preservation": {
+      "title": "Portfolio zum Vermögenserhalt",
+      "description": "Entwickelt, um Ihr Vermögen zu schützen und gleichzeitig nachhaltiges finanzielles Wachstum zu ermöglichen."
+    }
+  },
+
+  "markets": {
+    "title": "Globaler Anlagezugang",
+
+    "equities": "Globale Aktien",
+    "bonds": "Staats- und Unternehmensanleihen",
+    "realEstate": "Immobilieninvestitionen",
+    "privateEquity": "Private Equity",
+    "commodities": "Rohstoffe"
+  },
+
+  "security": {
+    "title": "Verantwortungsvolles Anlagemanagement",
+    "description": "Unser Anlageansatz basiert auf Transparenz, professioneller Betreuung und einem disziplinierten Risikomanagement."
+  },
+
+  "cta": {
+    "title": "Entwickeln Sie Ihre Anlagestrategie",
+    "description": "Sprechen Sie mit unseren Anlagespezialisten, um eine Lösung zu entwickeln, die auf Ihre finanziellen Ziele zugeschnitten ist.",
+    "button": "Anlagelösungen entdecken"
+  }
+}

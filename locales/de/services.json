@@ -1,1 +1,76 @@
-locales/de/services.json
+{
+  "hero": {
+    "tag": "UNSERE DIENSTLEISTUNGEN",
+    "title": "Private-Banking-Lösungen, die auf Sie zugeschnitten sind",
+    "description": "Die Belgrave Private Bank bietet maßgeschneiderte Finanzlösungen für Privatpersonen, Familien, Unternehmer und international tätige Unternehmen."
+  },
+
+  "intro": {
+    "title": "Umfassende Finanzdienstleistungen",
+    "description": "Unsere Spezialisten verbinden Erfahrung, Fachkompetenz und moderne Sicherheitstechnologien, um individuelle Banking- und Vermögenslösungen bereitzustellen."
+  },
+
+  "services": {
+    "privateBanking": {
+      "title": "Private Banking",
+      "description": "Persönliche Kundenberater und maßgeschneiderte Bankdienstleistungen, die auf Ihren finanziellen Lebensstil abgestimmt sind."
+    },
+
+    "wealthManagement": {
+      "title": "Vermögensverwaltung",
+      "description": "Schützen, erhalten und vermehren Sie Ihr Vermögen mit individuellen Anlagestrategien und langfristiger Finanzplanung."
+    },
+
+    "investmentSolutions": {
+      "title": "Anlagelösungen",
+      "description": "Nutzen Sie globale Investitionsmöglichkeiten, professionelle Portfoliostrategien und fundierte Finanzberatung."
+    },
+
+    "internationalBanking": {
+      "title": "Internationales Banking",
+      "description": "Verwalten Sie Ihre internationalen Finanzen mit Mehrwährungskonten, internationalen Zahlungen und Devisenlösungen."
+    },
+
+    "premiumCards": {
+      "title": "Premium-Bankkarten",
+      "description": "Exklusive Debit- und Kreditkarten mit erweiterten Sicherheitsfunktionen, weltweiter Akzeptanz und besonderen Vorteilen."
+    },
+
+    "digitalBanking": {
+      "title": "Digital Banking",
+      "description": "Sichere digitale Bankdienstleistungen, die Ihnen komfortablen Zugriff und vollständige Kontrolle über Ihre Finanzen bieten."
+    },
+
+    "businessBanking": {
+      "title": "Geschäftsbanking",
+      "description": "Moderne Banklösungen für Unternehmer, Führungskräfte und international tätige Unternehmen."
+    },
+
+    "familyOffice": {
+      "title": "Family-Office-Dienstleistungen",
+      "description": "Spezialisierte Lösungen für Vermögenserhalt, Nachfolgeplanung und generationenübergreifende Vermögensverwaltung."
+    }
+  },
+
+  "security": {
+    "title": "Modernste Sicherheit",
+    "description": "Jede Dienstleistung wird durch Verschlüsselung, Betrugsüberwachung und strenge Compliance-Standards abgesichert."
+  },
+
+  "benefits": {
+    "title": "Warum Kunden sich für Belgrave entscheiden",
+
+    "relationshipManager": "Persönlicher Kundenberater",
+    "globalAccess": "Globaler Zugang zu Bankdienstleistungen",
+    "securePlatform": "Hochsichere digitale Banking-Plattform",
+    "multiCurrency": "Mehrwährungs-Banking",
+    "investmentExperts": "Professionelle Anlageberatung",
+    "prioritySupport": "24/7-Prioritäts-Kundensupport"
+  },
+
+  "cta": {
+    "title": "Entdecken Sie eine neue Dimension des Private Banking",
+    "description": "Sprechen Sie mit unseren Private-Banking-Spezialisten und entdecken Sie Lösungen, die auf Ihre Ziele zugeschnitten sind.",
+    "button": "Private-Banking-Berater kontaktieren"
+  }
+}

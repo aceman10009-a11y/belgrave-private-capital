@@ -1,1 +1,79 @@
-locales/de/cards.json
+{
+  "hero": {
+    "tag": "PREMIUM-BANKKARTEN",
+    "title": "Exklusive Karten für Ihren Lebensstil",
+    "description": "Die Premium-Debit- und Kreditkarten von Belgrave vereinen höchste Sicherheit, weltweite Akzeptanz und exklusive Vorteile für Private-Banking-Kunden."
+  },
+
+  "intro": {
+    "title": "Ein Höherer Standard für Bankkarten",
+    "description": "Unsere Premium-Karten bieten Flexibilität, Komfort und erweiterten Schutz für Ihre täglichen und internationalen Finanzgeschäfte."
+  },
+
+  "creditCards": {
+    "title": "Premium-Kreditkarten",
+
+    "items": {
+      "platinum": {
+        "title": "Platinum-Kreditkarte",
+        "description": "Eine Premium-Kreditkarte mit weltweiter Akzeptanz und exklusiven Vorteilen für unsere Kunden."
+      },
+
+      "elite": {
+        "title": "Elite-Kreditkarte",
+        "description": "Entwickelt für Kunden, die erweiterte Privilegien, attraktive Vorteile und globale finanzielle Flexibilität erwarten."
+      }
+    }
+  },
+
+  "debitCards": {
+    "title": "Premium-Debitkarten",
+
+    "items": {
+      "world": {
+        "title": "World-Debitkarte",
+        "description": "Sicherer Zugriff auf Ihr Vermögen mit weltweiten Zahlungsmöglichkeiten."
+      },
+
+      "private": {
+        "title": "Private-Banking-Debitkarte",
+        "description": "Eine personalisierte Debitkarte, die direkt mit Ihrem Private-Banking-Konto verbunden ist."
+      }
+    }
+  },
+
+  "features": {
+    "title": "Kartenvorteile",
+
+    "security": {
+      "title": "Erweiterte Sicherheit",
+      "description": "Geschützt durch moderne Betrugserkennung und sichere Transaktionstechnologien."
+    },
+
+    "globalAccess": {
+      "title": "Weltweite Akzeptanz",
+      "description": "Nutzen Sie Ihre Belgrave-Karte weltweit überall dort, wo Premium-Zahlungen akzeptiert werden."
+    },
+
+    "concierge": {
+      "title": "Concierge-Service",
+      "description": "Profitieren Sie von persönlicher Unterstützung und exklusiven Lifestyle-Services."
+    },
+
+    "rewards": {
+      "title": "Exklusive Vorteile",
+      "description": "Genießen Sie ausgewählte Privilegien, die speziell für Private-Banking-Kunden entwickelt wurden."
+    }
+  },
+
+  "security": {
+    "title": "Jede Transaktion Sicher",
+    "description": "Jede Kartentransaktion wird durch moderne Sicherheitsmechanismen und kontinuierliche Überwachung geschützt."
+  },
+
+  "cta": {
+    "title": "Beantragen Sie Ihre Premium-Bankkarte",
+    "description": "Sprechen Sie mit unseren Spezialisten, um die Kartenlösung zu finden, die am besten zu Ihrem finanziellen Lebensstil passt.",
+    "button": "Karte Beantragen"
+  }
+}

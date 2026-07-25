@@ -1,1 +1,76 @@
-locales/fi/services.json
+{
+  "hero": {
+    "tag": "PALVELUMME",
+    "title": "Yksityispankkipalvelut Suunniteltu Juuri Sinulle",
+    "description": "Belgrave Private Bank tarjoaa räätälöityjä rahoitusratkaisuja yksityishenkilöille, perheille, yrittäjille ja kansainvälisille yrityksille."
+  },
+
+  "intro": {
+    "title": "Kattavat Rahoituspalvelut",
+    "description": "Asiantuntijamme yhdistävät kokemuksen, asiantuntemuksen ja turvallisen teknologian tarjotakseen yksilöllisiä pankki- ja varainhoitoratkaisuja."
+  },
+
+  "services": {
+    "privateBanking": {
+      "title": "Yksityispankkipalvelut",
+      "description": "Omat yhteyshenkilöt ja henkilökohtaiset pankkipalvelut, jotka on suunniteltu taloudellisen elämäntyylisi mukaan."
+    },
+
+    "wealthManagement": {
+      "title": "Varainhoito",
+      "description": "Suojaa, säilytä ja kasvata varallisuuttasi räätälöityjen sijoitusstrategioiden ja pitkäjänteisen suunnittelun avulla."
+    },
+
+    "investmentSolutions": {
+      "title": "Sijoitusratkaisut",
+      "description": "Hyödynnä maailmanlaajuisia sijoitusmahdollisuuksia, salkkustrategioita ja asiantuntevaa taloudellista neuvontaa."
+    },
+
+    "internationalBanking": {
+      "title": "Kansainväliset Pankkipalvelut",
+      "description": "Hallitse kansainvälistä talouttasi monivaluuttatileillä, kansainvälisillä maksuilla ja valuutanvaihtopalveluilla."
+    },
+
+    "premiumCards": {
+      "title": "Premium-pankkikortit",
+      "description": "Ylelliset debit- ja luottokortit, joissa yhdistyvät parannettu turvallisuus, maailmanlaajuinen hyväksyntä ja eksklusiiviset edut."
+    },
+
+    "digitalBanking": {
+      "title": "Digitaalinen Pankkipalvelu",
+      "description": "Turvalliset digitaaliset pankkipalvelut tarjoavat helpon pääsyn ja täydellisen hallinnan talouteesi."
+    },
+
+    "businessBanking": {
+      "title": "Yrityspankkipalvelut",
+      "description": "Edistykselliset pankkiratkaisut yrittäjille, yritysjohtajille ja kansainvälisille yrityksille."
+    },
+
+    "familyOffice": {
+      "title": "Family Office -palvelut",
+      "description": "Erikoistuneet ratkaisut varallisuuden säilyttämiseen, sukupolvenvaihdossuunnitteluun ja monisukupolviseen varainhallintaan."
+    }
+  },
+
+  "security": {
+    "title": "Edistynyt Turvallisuus",
+    "description": "Jokainen palvelu on suojattu salauksella, petosten valvonnalla ja tiukoilla vaatimustenmukaisuusstandardeilla."
+  },
+
+  "benefits": {
+    "title": "Miksi Asiakkaat Valitsevat Belgraven",
+
+    "relationshipManager": "Oma Yhteyspäällikkö",
+    "globalAccess": "Maailmanlaajuinen Pankkipalvelujen Saatavuus",
+    "securePlatform": "Erittäin Turvallinen Digitaalinen Alusta",
+    "multiCurrency": "Monivaluuttainen Pankkitoiminta",
+    "investmentExperts": "Ammattimainen Sijoitusneuvonta",
+    "prioritySupport": "24/7 Ensisijainen Asiakastuki"
+  },
+
+  "cta": {
+    "title": "Tutustu Korkeamman Tason Pankkipalveluihin",
+    "description": "Keskustele yksityispankkiasiantuntijoidemme kanssa ja tutustu tavoitteidesi mukaisiin ratkaisuihin.",
+    "button": "Ota Yhteyttä Yksityispankkiiriin"
+  }
+}

@@ -1,1 +1,77 @@
-locales/es/signup.json
+{
+  "title": "Crear Cuenta | Belgrave Private Bank",
+
+  "hero": {
+    "title": "Registro de Banca Privada",
+    "description": "Cree su cuenta en Belgrave Private Bank y comience su experiencia de banca privada."
+  },
+
+  "form": {
+    "title": "Crear Cuenta",
+
+    "fields": {
+      "firstName": "Nombre",
+      "lastName": "Apellido",
+      "fullName": "Nombre Completo",
+      "email": "Dirección de Correo Electrónico",
+      "phone": "Número de Teléfono",
+      "password": "Contraseña",
+      "confirmPassword": "Confirmar Contraseña"
+    },
+
+    "placeholders": {
+      "firstName": "Introduzca su nombre",
+      "lastName": "Introduzca su apellido",
+      "email": "Introduzca su dirección de correo electrónico",
+      "phone": "Introduzca su número de teléfono",
+      "password": "Cree una contraseña",
+      "confirmPassword": "Confirme su contraseña"
+    },
+
+    "button": "Crear Cuenta"
+  },
+
+  "password": {
+    "strength": "Seguridad de la Contraseña",
+    "weak": "Débil",
+    "medium": "Media",
+    "strong": "Fuerte",
+    "requirements": {
+      "length": "Mínimo 8 caracteres",
+      "uppercase": "Al menos una letra mayúscula",
+      "number": "Al menos un número",
+      "special": "Al menos un carácter especial"
+    }
+  },
+
+  "accountType": {
+    "title": "Seleccione el Tipo de Cuenta",
+
+    "private": {
+      "title": "Cuenta de Banca Privada",
+      "description": "Soluciones bancarias personales diseñadas para particulares y familias."
+    },
+
+    "business": {
+      "title": "Cuenta Bancaria Empresarial",
+      "description": "Soluciones financieras diseñadas para emprendedores y organizaciones."
+    }
+  },
+
+  "messages": {
+    "creating": "Creando su cuenta...",
+    "success": "La cuenta se ha creado correctamente.",
+    "error": "No se ha podido crear la cuenta. Inténtelo de nuevo.",
+    "exists": "Ya existe una cuenta con esta dirección de correo electrónico."
+  },
+
+  "login": {
+    "question": "¿Ya tiene una cuenta?",
+    "button": "Iniciar Sesión"
+  },
+
+  "security": {
+    "title": "Su Información Está Protegida",
+    "description": "Sus datos personales están protegidos mediante avanzados estándares de seguridad bancaria."
+  }
+}

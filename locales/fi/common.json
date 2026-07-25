@@ -1,1 +1,142 @@
-locales/fi/common.json
+{
+  "site": {
+    "name": "Belgrave Private Bank",
+    "shortName": "Belgrave",
+    "tagline": "Yksityispankkipalvelut. Kansainvälinen Varallisuus. Luotettava Turvallisuus.",
+    "copyright": "© 2026 Belgrave Private Bank. Kaikki oikeudet pidätetään."
+  },
+
+  "meta": {
+    "title": "Belgrave Private Bank",
+    "description": "Belgrave Private Bank tarjoaa yksityispankkipalveluja, varainhoitoa, kansainvälisiä maksuja, sijoituspalveluja, premium-pankkikortteja ja turvallisia digitaalisia pankkipalveluja."
+  },
+
+  "language": {
+    "label": "Kieli",
+    "select": "Valitse kieli"
+  },
+
+  "buttons": {
+    "learnMore": "Lue lisää",
+    "readMore": "Lue lisää",
+    "getStarted": "Aloita",
+    "openAccount": "Avaa tili",
+    "login": "Kirjaudu sisään",
+    "logout": "Kirjaudu ulos",
+    "register": "Rekisteröidy",
+    "createAccount": "Luo tili",
+    "contactUs": "Ota yhteyttä",
+    "discoverMore": "Tutustu lisää",
+    "applyNow": "Hae nyt",
+    "explore": "Tutustu",
+    "viewAll": "Näytä kaikki",
+    "continue": "Jatka",
+    "back": "Takaisin",
+    "next": "Seuraava",
+    "cancel": "Peruuta",
+    "save": "Tallenna",
+    "submit": "Lähetä",
+    "confirm": "Vahvista",
+    "download": "Lataa",
+    "upload": "Lataa palveluun",
+    "search": "Hae",
+    "send": "Lähetä",
+    "close": "Sulje",
+    "transfer": "Siirrä",
+    "deposit": "Talleta",
+    "withdraw": "Nosta"
+  },
+
+  "forms": {
+    "required": "Pakollinen",
+    "optional": "Valinnainen",
+    "firstName": "Etunimi",
+    "lastName": "Sukunimi",
+    "fullName": "Koko nimi",
+    "email": "Sähköpostiosoite",
+    "phone": "Puhelinnumero",
+    "country": "Maa",
+    "city": "Kaupunki",
+    "address": "Osoite",
+    "message": "Viesti",
+    "password": "Salasana",
+    "confirmPassword": "Vahvista salasana",
+    "username": "Käyttäjätunnus",
+    "accountNumber": "Tilinumero"
+  },
+
+  "status": {
+    "active": "Aktiivinen",
+    "inactive": "Ei aktiivinen",
+    "online": "Verkossa",
+    "offline": "Ei verkossa",
+    "available": "Saatavilla",
+    "pending": "Odottaa",
+    "processing": "Käsitellään",
+    "completed": "Valmis",
+    "successful": "Onnistunut",
+    "failed": "Epäonnistunut",
+    "verified": "Vahvistettu",
+    "unverified": "Vahvistamaton",
+    "secured": "Suojattu",
+    "restricted": "Rajoitettu"
+  },
+
+  "labels": {
+    "currency": "Valuutta",
+    "amount": "Summa",
+    "balance": "Saldo",
+    "account": "Tili",
+    "portfolio": "Sijoitussalkku",
+    "investment": "Sijoitus",
+    "wealth": "Varallisuus",
+    "security": "Turvallisuus",
+    "transaction": "Tapahtuma",
+    "reference": "Viite",
+    "date": "Päivämäärä",
+    "time": "Aika",
+    "client": "Asiakas",
+    "category": "Kategoria",
+    "description": "Kuvaus",
+    "debit": "Veloitus",
+    "credit": "Hyvitys",
+    "expiry": "Voimassa asti",
+    "holder": "Kortinhaltija"
+  },
+
+  "messages": {
+    "loading": "Ladataan...",
+    "pleaseWait": "Odota hetki...",
+    "comingSoon": "Tulossa pian",
+    "noResults": "Tuloksia ei löytynyt.",
+    "success": "Toiminto suoritettu onnistuneesti.",
+    "error": "Jotain meni pieleen. Yritä uudelleen.",
+    "saved": "Muutokset tallennettu onnistuneesti.",
+    "submitted": "Pyyntösi on lähetetty onnistuneesti.",
+    "returnHome": "Palaa etusivulle",
+    "welcome": "Tervetuloa",
+    "initializing": "Järjestelmää alustetaan..."
+  },
+
+  "errors": {
+    "required": "Tämä kenttä on pakollinen.",
+    "invalidEmail": "Anna kelvollinen sähköpostiosoite.",
+    "invalidPhone": "Anna kelvollinen puhelinnumero.",
+    "passwordMismatch": "Salasanat eivät täsmää.",
+    "network": "Verkkoyhteyttä ei ole saatavilla.",
+    "server": "Palvelinvirhe. Yritä myöhemmin uudelleen.",
+    "unauthorized": "Sinulla ei ole oikeutta suorittaa tätä toimintoa.",
+    "notFound": "Pyydettyä resurssia ei löytynyt."
+  },
+
+  "accessibility": {
+    "openMenu": "Avaa navigointivalikko",
+    "closeMenu": "Sulje navigointivalikko",
+    "previous": "Edellinen",
+    "next": "Seuraava",
+    "play": "Toista",
+    "pause": "Keskeytä",
+    "showPassword": "Näytä salasana",
+    "hidePassword": "Piilota salasana"
+  }
+}

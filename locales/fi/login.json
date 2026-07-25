@@ -1,1 +1,51 @@
-locales/fi/login.json
+{
+  "title": "Belgrave Private Bank | Asiakkaan kirjautuminen",
+
+  "hero": {
+    "title": "Yksityispankin asiakasportaali",
+    "description": "Turvallinen pääsy Belgrave Private Bank -tilillesi."
+  },
+
+  "form": {
+    "title": "Asiakkaan kirjautuminen",
+
+    "fields": {
+      "email": "Sähköpostiosoite",
+      "password": "Salasana"
+    },
+
+    "placeholders": {
+      "email": "Anna sähköpostiosoitteesi",
+      "password": "Anna salasanasi"
+    },
+
+    "button": "Kirjaudu sisään"
+  },
+
+  "options": {
+    "remember": "Muista minut",
+    "forgotPassword": "Unohditko salasanasi?"
+  },
+
+  "messages": {
+    "loading": "Todennetaan...",
+    "success": "Kirjautuminen onnistui.",
+    "error": "Virheellinen sähköpostiosoite tai salasana.",
+    "locked": "Tilin käyttö on tilapäisesti rajoitettu."
+  },
+
+  "security": {
+    "title": "Turvallinen pankkikäyttö",
+    "description": "Kirjautumisistuntosi on suojattu kehittyneellä tietoturvavalvonnalla ja salauksella."
+  },
+
+  "register": {
+    "question": "Eikö sinulla vielä ole tiliä?",
+    "button": "Luo tili"
+  },
+
+  "footer": {
+    "privacy": "Tietosuojakäytäntö",
+    "terms": "Käyttöehdot"
+  }
+}

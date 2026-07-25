@@ -1,1 +1,134 @@
-locales/es/dashboard.json
+{
+  "title": "Belgrave Private Bank | Panel de Control",
+
+  "navigation": {
+    "home": "Inicio",
+    "accounts": "Cuentas",
+    "investments": "Inversiones",
+    "statements": "Estados de Cuenta",
+    "transactions": "Transacciones",
+    "cards": "Tarjetas",
+    "transferFunds": "Transferir Fondos",
+    "settings": "Configuración"
+  },
+
+  "hero": {
+    "tag": "BANCA PRIVADA",
+    "welcome": "Bienvenido",
+    "loading": "Cargando...",
+    "description": "Gestione su patrimonio de forma segura desde una única plataforma bancaria."
+  },
+
+  "balance": {
+    "available": "Saldo Disponible",
+    "primaryAccount": "Cuenta Principal",
+    "currency": "USD"
+  },
+
+  "security": {
+    "secureBanking": "Banca Segura",
+    "securityLayerActive": "Capa de seguridad activa",
+    "secureSessionStarted": "Sesión segura iniciada"
+  },
+
+  "card": {
+    "title": "Tarjeta Privada Belgrave",
+    "holder": "Titular de la Tarjeta",
+    "expiry": "Vencimiento",
+    "show": "Mostrar Tarjeta"
+  },
+
+  "actions": {
+    "deposit": {
+      "title": "Depositar",
+      "description": "Añadir fondos a su cuenta"
+    },
+    "withdraw": {
+      "title": "Retirar",
+      "description": "Enviar dinero a su banco"
+    },
+    "transfer": {
+      "title": "Transferir",
+      "description": "Mover fondos al instante"
+    },
+    "statements": {
+      "title": "Estados de Cuenta",
+      "description": "Ver el historial de la cuenta"
+    }
+  },
+
+  "financialSummary": {
+    "availableBalance": "Saldo Disponible",
+    "totalIncome": "Ingresos Totales",
+    "totalExpenses": "Gastos Totales"
+  },
+
+  "transactions": {
+    "title": "Transacciones Anteriores",
+    "yearRange": "2024-2025",
+    "date": "Fecha",
+    "description": "Descripción",
+    "category": "Categoría",
+    "debit": "Débito",
+    "credit": "Crédito",
+    "balance": "Saldo",
+    "status": "Estado",
+    "completed": "Completada",
+    "restricted": "Restringida",
+    "hidden": "Transacciones ocultas",
+    "opened": "Transacciones abiertas"
+  },
+
+  "cards": {
+    "title": "Sus Tarjetas",
+    "statement": "Estado de Cuenta",
+    "download": "Descargar",
+    "close": "Cerrar"
+  },
+
+  "activity": {
+    "title": "Actividad del Sistema",
+    "open": "Abrir Actividad",
+    "close": "Cerrar Actividad"
+  },
+
+  "restrictions": {
+    "accounts": {
+      "title": "Cuentas Restringidas",
+      "message": "Las cuentas están actualmente restringidas debido a una revisión de la jurisdicción bancaria."
+    },
+
+    "deposits": {
+      "title": "Depósitos Restringidos",
+      "message": "Los depósitos están temporalmente restringidos debido a una revisión de la jurisdicción bancaria."
+    },
+
+    "withdrawals": {
+      "title": "Retiros Restringidos",
+      "message": "Los retiros están temporalmente restringidos debido a una revisión de la jurisdicción bancaria."
+    },
+
+    "transfers": {
+      "title": "Transferencias Restringidas",
+      "message": "Las transferencias están temporalmente restringidas debido a una revisión de la jurisdicción bancaria."
+    },
+
+    "settings": {
+      "title": "Configuración Restringida",
+      "message": "La configuración está actualmente restringida debido a una revisión de la jurisdicción bancaria."
+    },
+
+    "investments": {
+      "title": "Inversiones Bloqueadas",
+      "message": "Las inversiones están bloqueadas hasta 2029."
+    }
+  },
+
+  "messages": {
+    "statementRequested": "Se ha solicitado la descarga del estado de cuenta.",
+    "statementDownloaded": "Estado de cuenta descargado.",
+    "statementGenerated": "Estado de cuenta generado correctamente.",
+    "settingsComingSoon": "La configuración estará disponible próximamente.",
+    "operationRestricted": "Esta operación está actualmente sujeta a una revisión de la jurisdicción bancaria."
+  }
+}

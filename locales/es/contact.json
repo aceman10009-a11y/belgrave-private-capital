@@ -1,1 +1,69 @@
-locales/es/contact.json
+{
+  "hero": {
+    "tag": "CONTÁCTENOS",
+    "title": "Conéctese con Belgrave Private Bank",
+    "description": "Ya sea que necesite asistencia de banca privada, asesoramiento en gestión patrimonial o ayuda con su cuenta, nuestros especialistas están listos para ayudarle."
+  },
+
+  "intro": {
+    "title": "Soporte Dedicado para Nuestros Clientes",
+    "description": "Nuestros gestores de relaciones ofrecen asistencia personalizada y orientación profesional adaptada a sus necesidades financieras."
+  },
+
+  "form": {
+    "title": "Envíenos un Mensaje",
+
+    "fields": {
+      "name": "Nombre Completo",
+      "email": "Dirección de Correo Electrónico",
+      "phone": "Número de Teléfono",
+      "subject": "Asunto",
+      "message": "Mensaje"
+    },
+
+    "placeholders": {
+      "name": "Introduzca su nombre completo",
+      "email": "Introduzca su dirección de correo electrónico",
+      "phone": "Introduzca su número de teléfono",
+      "subject": "Introduzca el asunto del mensaje",
+      "message": "Escriba su mensaje"
+    },
+
+    "button": "Enviar Mensaje",
+
+    "success": "Su mensaje ha sido enviado correctamente.",
+    "error": "No fue posible enviar su mensaje. Por favor, inténtelo de nuevo."
+  },
+
+  "support": {
+    "title": "Atención al Cliente",
+
+    "items": {
+      "privateBanking": {
+        "title": "Soporte de Banca Privada",
+        "description": "Hable con un gestor de relaciones dedicado para atender sus necesidades bancarias."
+      },
+
+      "wealthManagement": {
+        "title": "Soporte de Gestión Patrimonial",
+        "description": "Reciba asesoramiento sobre inversiones, carteras y planificación financiera."
+      },
+
+      "technical": {
+        "title": "Soporte de Banca Digital",
+        "description": "Obtenga asistencia con el acceso seguro a la banca en línea y los servicios de la plataforma."
+      }
+    }
+  },
+
+  "office": {
+    "title": "Oficinas Globales",
+    "description": "Belgrave Private Bank presta servicios a clientes de todo el mundo a través de una red global de profesionales financieros."
+  },
+
+  "cta": {
+    "title": "¿Listo para Comenzar su Experiencia de Banca Privada?",
+    "description": "Póngase en contacto con nuestros especialistas para descubrir soluciones financieras personalizadas diseñadas en función de sus objetivos.",
+    "button": "Contacte con Nuestro Equipo"
+  }
+}

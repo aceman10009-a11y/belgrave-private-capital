@@ -1,1 +1,71 @@
-locales/fi/wealth.json
+{
+  "hero": {
+    "tag": "WEALTH MANAGEMENT",
+    "title": "Preserving and Growing Your Wealth",
+    "description": "Belgrave Private Bank delivers tailored wealth management strategies designed to protect assets, create opportunities, and support long-term financial goals."
+  },
+
+  "intro": {
+    "title": "Strategic Wealth Management",
+    "description": "Our specialists combine investment expertise, global market access, and personalized planning to help clients achieve lasting financial success."
+  },
+
+  "services": {
+    "title": "Wealth Management Services",
+
+    "investmentPlanning": {
+      "title": "Investment Planning",
+      "description": "Customized investment strategies designed around your objectives, risk profile, and financial vision."
+    },
+
+    "portfolioManagement": {
+      "title": "Portfolio Management",
+      "description": "Professional portfolio management focused on diversification, performance, and long-term preservation of capital."
+    },
+
+    "estatePlanning": {
+      "title": "Estate Planning",
+      "description": "Structured solutions to preserve wealth and support efficient transfer across generations."
+    },
+
+    "familyOffice": {
+      "title": "Family Office Solutions",
+      "description": "Comprehensive wealth coordination services for families requiring dedicated financial oversight."
+    },
+
+    "privateMarkets": {
+      "title": "Private Market Investments",
+      "description": "Access alternative investment opportunities including private equity, real assets, and specialized strategies."
+    },
+
+    "taxPlanning": {
+      "title": "Tax Planning",
+      "description": "Strategic planning solutions designed to support efficient wealth management."
+    }
+  },
+
+  "approach": {
+    "title": "Our Wealth Management Approach",
+
+    "preservation": {
+      "title": "Wealth Preservation",
+      "description": "Protecting your assets through disciplined strategies and careful risk management."
+    },
+
+    "growth": {
+      "title": "Long-Term Growth",
+      "description": "Building sustainable wealth through carefully selected investment opportunities."
+    },
+
+    "legacy": {
+      "title": "Legacy Planning",
+      "description": "Helping families create a lasting financial legacy for future generations."
+    }
+  },
+
+  "cta": {
+    "title": "Build Your Financial Legacy",
+    "description": "Speak with a Belgrave wealth specialist and discover solutions designed around your ambitions.",
+    "button": "Contact Wealth Advisor"
+  }
+}

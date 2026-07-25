@@ -1,1 +1,69 @@
-locales/fi/contact.json
+{
+  "hero": {
+    "tag": "OTA YHTEYTTÄ",
+    "title": "Ota Yhteyttä Belgrave Private Bankiin",
+    "description": "Tarvitsetpa tukea yksityispankkipalveluihin, varainhoidon neuvontaa tai apua tiliisi liittyvissä asioissa, asiantuntijamme ovat valmiina auttamaan."
+  },
+
+  "intro": {
+    "title": "Henkilökohtaista Tukea Asiakkaillemme",
+    "description": "Asiakasvastaavamme tarjoavat henkilökohtaista palvelua ja asiantuntevaa neuvontaa taloudellisten tarpeidesi mukaisesti."
+  },
+
+  "form": {
+    "title": "Lähetä Meille Viesti",
+
+    "fields": {
+      "name": "Koko nimi",
+      "email": "Sähköpostiosoite",
+      "phone": "Puhelinnumero",
+      "subject": "Aihe",
+      "message": "Viesti"
+    },
+
+    "placeholders": {
+      "name": "Kirjoita koko nimesi",
+      "email": "Kirjoita sähköpostiosoitteesi",
+      "phone": "Kirjoita puhelinnumerosi",
+      "subject": "Kirjoita viestin aihe",
+      "message": "Kirjoita viestisi"
+    },
+
+    "button": "Lähetä Viesti",
+
+    "success": "Viestisi on lähetetty onnistuneesti.",
+    "error": "Viestin lähettäminen epäonnistui. Yritä uudelleen."
+  },
+
+  "support": {
+    "title": "Asiakastuki",
+
+    "items": {
+      "privateBanking": {
+        "title": "Yksityispankkipalvelujen Tuki",
+        "description": "Keskustele oman asiakasvastaavasi kanssa pankkipalveluihisi liittyvistä tarpeista."
+      },
+
+      "wealthManagement": {
+        "title": "Varainhoidon Tuki",
+        "description": "Saat asiantuntevaa neuvontaa sijoituksista, sijoitussalkuista ja taloudellisesta suunnittelusta."
+      },
+
+      "technical": {
+        "title": "Digitaalisten Pankkipalvelujen Tuki",
+        "description": "Saat apua turvallisen verkkopankin käyttöön ja digitaalisiin pankkipalveluihin liittyvissä asioissa."
+      }
+    }
+  },
+
+  "office": {
+    "title": "Kansainväliset Toimistot",
+    "description": "Belgrave Private Bank palvelee asiakkaitaan maailmanlaajuisesti kokeneiden rahoitusalan asiantuntijoiden verkoston kautta."
+  },
+
+  "cta": {
+    "title": "Valmis Aloittamaan Yksityispankkiasiakkuutesi?",
+    "description": "Ota yhteyttä asiantuntijoihimme ja tutustu juuri sinun tavoitteisiisi räätälöityihin rahoitusratkaisuihin.",
+    "button": "Ota Yhteyttä Tiimiimme"
+  }
+}

@@ -1,1 +1,134 @@
-locales/fi/dashboard.json
+{
+  "title": "Belgrave Private Bank | Hallintapaneeli",
+
+  "navigation": {
+    "home": "Etusivu",
+    "accounts": "Tilit",
+    "investments": "Sijoitukset",
+    "statements": "Tiliotteet",
+    "transactions": "Tapahtumat",
+    "cards": "Kortit",
+    "transferFunds": "Siirrä Varoja",
+    "settings": "Asetukset"
+  },
+
+  "hero": {
+    "tag": "YKSITYISPANKKIPALVELUT",
+    "welcome": "Tervetuloa",
+    "loading": "Ladataan...",
+    "description": "Hallitse varallisuuttasi turvallisesti yhdeltä yhtenäiseltä pankkialustalta."
+  },
+
+  "balance": {
+    "available": "Käytettävissä Oleva Saldo",
+    "primaryAccount": "Päätili",
+    "currency": "USD"
+  },
+
+  "security": {
+    "secureBanking": "Turvallinen Pankkipalvelu",
+    "securityLayerActive": "Turvakerros aktiivinen",
+    "secureSessionStarted": "Suojattu istunto aloitettu"
+  },
+
+  "card": {
+    "title": "Belgrave Private Card",
+    "holder": "Kortinhaltija",
+    "expiry": "Voimassa asti",
+    "show": "Näytä Kortti"
+  },
+
+  "actions": {
+    "deposit": {
+      "title": "Talleta",
+      "description": "Lisää varoja tilillesi"
+    },
+    "withdraw": {
+      "title": "Nosta",
+      "description": "Lähetä rahaa pankkitilillesi"
+    },
+    "transfer": {
+      "title": "Siirto",
+      "description": "Siirrä varoja välittömästi"
+    },
+    "statements": {
+      "title": "Tiliotteet",
+      "description": "Näytä tilihistoria"
+    }
+  },
+
+  "financialSummary": {
+    "availableBalance": "Käytettävissä Oleva Saldo",
+    "totalIncome": "Kokonaistulot",
+    "totalExpenses": "Kokonaismenot"
+  },
+
+  "transactions": {
+    "title": "Aiemmat Tapahtumat",
+    "yearRange": "2024–2025",
+    "date": "Päivämäärä",
+    "description": "Kuvaus",
+    "category": "Kategoria",
+    "debit": "Veloitus",
+    "credit": "Hyvitys",
+    "balance": "Saldo",
+    "status": "Tila",
+    "completed": "Suoritettu",
+    "restricted": "Rajoitettu",
+    "hidden": "Tapahtumat piilotettu",
+    "opened": "Tapahtumat avattu"
+  },
+
+  "cards": {
+    "title": "Korttisi",
+    "statement": "Tiliote",
+    "download": "Lataa",
+    "close": "Sulje"
+  },
+
+  "activity": {
+    "title": "Järjestelmän Toiminta",
+    "open": "Avaa Toiminta",
+    "close": "Sulje Toiminta"
+  },
+
+  "restrictions": {
+    "accounts": {
+      "title": "Tilit Rajoitettu",
+      "message": "Tilien käyttöä on tällä hetkellä rajoitettu pankkiviranomaisten tarkastuksen vuoksi."
+    },
+
+    "deposits": {
+      "title": "Talletukset Rajoitettu",
+      "message": "Talletukset on väliaikaisesti rajoitettu pankkiviranomaisten tarkastuksen vuoksi."
+    },
+
+    "withdrawals": {
+      "title": "Nostot Rajoitettu",
+      "message": "Nostot on väliaikaisesti rajoitettu pankkiviranomaisten tarkastuksen vuoksi."
+    },
+
+    "transfers": {
+      "title": "Siirrot Rajoitettu",
+      "message": "Rahansiirrot on väliaikaisesti rajoitettu pankkiviranomaisten tarkastuksen vuoksi."
+    },
+
+    "settings": {
+      "title": "Asetukset Rajoitettu",
+      "message": "Asetukset ovat tällä hetkellä rajoitettu pankkiviranomaisten tarkastuksen vuoksi."
+    },
+
+    "investments": {
+      "title": "Sijoitukset Lukittu",
+      "message": "Sijoitukset on lukittu vuoteen 2029 asti."
+    }
+  },
+
+  "messages": {
+    "statementRequested": "Tiliotteen latausta pyydetty.",
+    "statementDownloaded": "Tiliote ladattu.",
+    "statementGenerated": "Tiliote luotu onnistuneesti.",
+    "settingsComingSoon": "Asetukset tulossa pian.",
+    "operationRestricted": "Tämä toiminto on tällä hetkellä pankkiviranomaisten tarkastuksen alainen."
+  }
+}

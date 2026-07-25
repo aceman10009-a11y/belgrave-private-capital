@@ -1,1 +1,69 @@
-locales/de/contact.json
+{
+  "hero": {
+    "tag": "KONTAKT",
+    "title": "Kontaktieren Sie die Belgrave Private Bank",
+    "description": "Ob Sie Unterstützung im Private Banking, Beratung im Vermögensmanagement oder Hilfe zu Ihrem Konto benötigen – unsere Spezialisten stehen Ihnen gerne zur Verfügung."
+  },
+
+  "intro": {
+    "title": "Persönlicher Support für unsere Kunden",
+    "description": "Unsere Relationship Manager bieten individuelle Unterstützung und professionelle Beratung, die auf Ihre finanziellen Bedürfnisse zugeschnitten ist."
+  },
+
+  "form": {
+    "title": "Senden Sie uns eine Nachricht",
+
+    "fields": {
+      "name": "Vollständiger Name",
+      "email": "E-Mail-Adresse",
+      "phone": "Telefonnummer",
+      "subject": "Betreff",
+      "message": "Nachricht"
+    },
+
+    "placeholders": {
+      "name": "Geben Sie Ihren vollständigen Namen ein",
+      "email": "Geben Sie Ihre E-Mail-Adresse ein",
+      "phone": "Geben Sie Ihre Telefonnummer ein",
+      "subject": "Geben Sie den Betreff Ihrer Nachricht ein",
+      "message": "Schreiben Sie Ihre Nachricht"
+    },
+
+    "button": "Nachricht senden",
+
+    "success": "Ihre Nachricht wurde erfolgreich gesendet.",
+    "error": "Ihre Nachricht konnte nicht gesendet werden. Bitte versuchen Sie es erneut."
+  },
+
+  "support": {
+    "title": "Kundensupport",
+
+    "items": {
+      "privateBanking": {
+        "title": "Private-Banking-Support",
+        "description": "Sprechen Sie mit einem persönlichen Relationship Manager über Ihre Bankangelegenheiten."
+      },
+
+      "wealthManagement": {
+        "title": "Vermögensmanagement-Support",
+        "description": "Erhalten Sie Beratung zu Investitionen, Portfolios und Ihrer Finanzplanung."
+      },
+
+      "technical": {
+        "title": "Digital-Banking-Support",
+        "description": "Erhalten Sie Unterstützung beim sicheren Online-Banking und den Plattformdiensten."
+      }
+    }
+  },
+
+  "office": {
+    "title": "Globale Standorte",
+    "description": "Die Belgrave Private Bank betreut Kunden weltweit über ein internationales Netzwerk von Finanzexperten."
+  },
+
+  "cta": {
+    "title": "Bereit, Ihre Private-Banking-Reise zu beginnen?",
+    "description": "Kontaktieren Sie unsere Spezialisten und entdecken Sie maßgeschneiderte Finanzlösungen, die auf Ihre Ziele abgestimmt sind.",
+    "button": "Unser Team kontaktieren"
+  }
+}

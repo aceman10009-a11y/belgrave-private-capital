@@ -1,1 +1,74 @@
-locales/de/accounts.json
+{
+  "hero": {
+    "tag": "KONTEN",
+    "title": "Bankkonten für Privatkunden",
+    "description": "Die Belgrave Private Bank bietet sichere Kontolösungen für Privatpersonen, Familien und Unternehmen, die flexible globale Bankdienstleistungen benötigen."
+  },
+
+  "intro": {
+    "title": "Ihr finanzielles Fundament",
+    "description": "Unsere Konten verbinden Sicherheit, Flexibilität und persönlichen Service, um Ihren täglichen Bankbedarf und Ihre langfristigen finanziellen Ziele zu unterstützen."
+  },
+
+  "types": {
+    "title": "Kontolösungen",
+
+    "private": {
+      "title": "Private-Banking-Konto",
+      "description": "Ein erstklassiges Konto mit persönlicher Beratung, maßgeschneiderten Dienstleistungen und exklusiven Bankvorteilen."
+    },
+
+    "premium": {
+      "title": "Premium-Konto",
+      "description": "Erweiterte Bankfunktionen für Kunden, die zusätzliche Flexibilität und finanziellen Komfort wünschen."
+    },
+
+    "business": {
+      "title": "Geschäftskonto",
+      "description": "Umfassende Banklösungen für Unternehmer, Führungskräfte und international tätige Unternehmen."
+    },
+
+    "international": {
+      "title": "Internationales Konto",
+      "description": "Mehrwährungskonten für Kunden, die ihre Finanzen über internationale Märkte hinweg verwalten."
+    }
+  },
+
+  "features": {
+    "title": "Kontofunktionen",
+
+    "multiCurrency": "Bankdienstleistungen in mehreren Währungen",
+    "globalPayments": "Globaler Zahlungsverkehr",
+    "secureOnline": "Sicheres Online-Banking",
+    "relationshipManager": "Persönlicher Kundenberater",
+    "prioritySupport": "Bevorzugter Kundensupport"
+  },
+
+  "management": {
+    "title": "Kontoverwaltung",
+
+    "balance": "Verfügbarer Kontostand",
+    "transactions": "Letzte Transaktionen",
+    "statements": "Kontoauszüge",
+    "transfers": "Geld überweisen",
+    "settings": "Kontoeinstellungen"
+  },
+
+  "security": {
+    "title": "Kontosicherheit",
+    "description": "Alle Konten werden durch moderne Sicherheitsüberwachung, Verschlüsselung und Kontrollmaßnahmen gemäß den geltenden gesetzlichen Vorschriften geschützt."
+  },
+
+  "messages": {
+    "active": "Konto aktiv",
+    "restricted": "Der Zugriff auf dieses Konto ist derzeit aufgrund einer bankrechtlichen Überprüfung eingeschränkt.",
+    "pending": "Kontoverifizierung ausstehend.",
+    "updated": "Kontodaten wurden erfolgreich aktualisiert."
+  },
+
+  "cta": {
+    "title": "Eröffnen Sie Ihr Private-Banking-Konto",
+    "description": "Beginnen Sie Ihre Beziehung mit der Belgrave Private Bank und erhalten Sie Zugang zu maßgeschneiderten Finanzlösungen.",
+    "button": "Konto eröffnen"
+  }
+}

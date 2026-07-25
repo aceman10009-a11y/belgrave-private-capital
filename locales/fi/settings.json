@@ -1,1 +1,77 @@
-locales/fi/settings.json
+{
+  "title": "Asetukset",
+
+  "profile": {
+    "title": "Profiiliasetukset",
+    "description": "Hallitse henkilötietojasi ja tilisi asetuksia.",
+
+    "fields": {
+      "name": "Koko nimi",
+      "email": "Sähköpostiosoite",
+      "phone": "Puhelinnumero",
+      "country": "Maa",
+      "address": "Osoite"
+    }
+  },
+
+  "security": {
+    "title": "Tietoturva-asetukset",
+
+    "password": {
+      "title": "Salasanan hallinta",
+      "change": "Vaihda salasana",
+      "current": "Nykyinen salasana",
+      "new": "Uusi salasana",
+      "confirm": "Vahvista uusi salasana"
+    },
+
+    "authentication": {
+      "title": "Todennus",
+      "twoFactor": "Kaksivaiheinen tunnistautuminen",
+      "enabled": "Käytössä",
+      "disabled": "Pois käytöstä"
+    }
+  },
+
+  "preferences": {
+    "title": "Asetukset",
+
+    "language": {
+      "title": "Kieliasetus",
+      "description": "Valitse haluamasi kieli."
+    },
+
+    "notifications": {
+      "title": "Ilmoitukset",
+      "email": "Sähköposti-ilmoitukset",
+      "security": "Tietoturvahälytykset",
+      "transactions": "Tapahtumailmoitukset"
+    }
+  },
+
+  "account": {
+    "title": "Tilin hallinta",
+
+    "statement": {
+      "title": "Tiliotteet",
+      "description": "Tarkastele ja lataa tiliotteesi."
+    },
+
+    "privacy": {
+      "title": "Tietosuoja-asetukset",
+      "description": "Hallitse yksityisyyttäsi ja tietosuoja-asetuksiasi."
+    }
+  },
+
+  "messages": {
+    "saved": "Asetukset tallennettu onnistuneesti.",
+    "restricted": "Asetuksia on tällä hetkellä rajoitettu pankkiviranomaisten tarkastuksen vuoksi.",
+    "comingSoon": "Asetukset tulossa pian."
+  },
+
+  "buttons": {
+    "save": "Tallenna muutokset",
+    "cancel": "Peruuta",
+    "update": "Päivitä asetukset"
+  }
+}

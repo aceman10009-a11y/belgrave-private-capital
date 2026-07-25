@@ -1,1 +1,56 @@
-locales/fi/navbar.json
+{
+  "home": "Etusivu",
+
+  "banking": {
+    "label": "Pankkipalvelut",
+    "accounts": "Tilit",
+    "cards": "Kortit",
+    "payments": "Maksut",
+    "transfers": "Siirrot"
+  },
+
+  "wealth": {
+    "label": "Varallisuus",
+    "wealthManagement": "Varallisuudenhoito",
+    "investments": "Sijoitukset",
+    "portfolio": "Salkku",
+    "familyOffice": "Perhetoimistopalvelut"
+  },
+
+  "services": {
+    "label": "Palvelut",
+    "privateBanking": "Yksityispankkipalvelut",
+    "internationalBanking": "Kansainväliset pankkipalvelut",
+    "digitalBanking": "Digitaalinen pankkipalvelu"
+  },
+
+  "security": {
+    "label": "Turvallisuus",
+    "protection": "Turvallisuus ja suojaus"
+  },
+
+  "about": {
+    "label": "Tietoa meistä",
+    "ourStory": "Tarinamme",
+    "leadership": "Johto"
+  },
+
+  "contact": "Ota yhteyttä",
+
+  "actions": {
+    "login": "Kirjaudu sisään",
+    "openAccount": "Avaa tili",
+    "createAccount": "Luo tili",
+    "logout": "Kirjaudu ulos"
+  },
+
+  "menu": {
+    "open": "Avaa valikko",
+    "close": "Sulje valikko"
+  },
+
+  "brand": {
+    "name": "Belgrave",
+    "subtitle": "YKSITYISPANKKI"
+  }
+}

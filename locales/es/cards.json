@@ -1,1 +1,79 @@
-locales/es/cards.json
+{
+  "hero": {
+    "tag": "TARJETAS BANCARIAS PREMIUM",
+    "title": "Tarjetas exclusivas diseñadas para su estilo de vida",
+    "description": "Las tarjetas de débito y crédito premium de Belgrave combinan seguridad avanzada, aceptación mundial y beneficios exclusivos para clientes de banca privada."
+  },
+
+  "intro": {
+    "title": "Un estándar superior en tarjetas bancarias",
+    "description": "Nuestras tarjetas premium ofrecen flexibilidad, comodidad y una protección mejorada para sus necesidades financieras diarias e internacionales."
+  },
+
+  "creditCards": {
+    "title": "Tarjetas de crédito premium",
+
+    "items": {
+      "platinum": {
+        "title": "Tarjeta de Crédito Platinum",
+        "description": "Una solución de crédito premium con aceptación mundial y beneficios exclusivos para nuestros clientes."
+      },
+
+      "elite": {
+        "title": "Tarjeta de Crédito Elite",
+        "description": "Diseñada para clientes que buscan privilegios exclusivos, recompensas y flexibilidad financiera internacional."
+      }
+    }
+  },
+
+  "debitCards": {
+    "title": "Tarjetas de débito premium",
+
+    "items": {
+      "world": {
+        "title": "Tarjeta de Débito World",
+        "description": "Acceda de forma segura a sus fondos con capacidades de pago internacionales."
+      },
+
+      "private": {
+        "title": "Tarjeta de Débito de Banca Privada",
+        "description": "Una experiencia personalizada con tarjeta de débito vinculada a su cuenta de banca privada."
+      }
+    }
+  },
+
+  "features": {
+    "title": "Beneficios de la tarjeta",
+
+    "security": {
+      "title": "Seguridad avanzada",
+      "description": "Protegida con tecnología moderna de prevención del fraude y seguridad en las transacciones."
+    },
+
+    "globalAccess": {
+      "title": "Aceptación mundial",
+      "description": "Utilice su tarjeta Belgrave en todo el mundo donde se acepten pagos premium."
+    },
+
+    "concierge": {
+      "title": "Servicios de concierge",
+      "description": "Acceda a asistencia personalizada y servicios exclusivos para su estilo de vida."
+    },
+
+    "rewards": {
+      "title": "Recompensas exclusivas",
+      "description": "Disfrute de beneficios seleccionados diseñados para clientes de banca privada."
+    }
+  },
+
+  "security": {
+    "title": "Seguridad en cada transacción",
+    "description": "Cada transacción con tarjeta está protegida mediante controles avanzados de seguridad y supervisión continua."
+  },
+
+  "cta": {
+    "title": "Solicite su tarjeta bancaria premium",
+    "description": "Hable con nuestros especialistas para descubrir la solución de tarjeta que mejor se adapte a su estilo de vida financiero.",
+    "button": "Solicitar una tarjeta"
+  }
+}

@@ -1,1 +1,134 @@
-locales/de/dashboard.json
+{
+  "title": "Belgrave Private Bank | Dashboard",
+
+  "navigation": {
+    "home": "Startseite",
+    "accounts": "Konten",
+    "investments": "Investitionen",
+    "statements": "Kontoauszüge",
+    "transactions": "Transaktionen",
+    "cards": "Karten",
+    "transferFunds": "Geld überweisen",
+    "settings": "Einstellungen"
+  },
+
+  "hero": {
+    "tag": "PRIVATE BANKING",
+    "welcome": "Willkommen",
+    "loading": "Wird geladen...",
+    "description": "Verwalten Sie Ihr Vermögen sicher über eine zentrale Banking-Plattform."
+  },
+
+  "balance": {
+    "available": "Verfügbarer Kontostand",
+    "primaryAccount": "Hauptkonto",
+    "currency": "USD"
+  },
+
+  "security": {
+    "secureBanking": "Sicheres Banking",
+    "securityLayerActive": "Sicherheitsebene aktiv",
+    "secureSessionStarted": "Sichere Sitzung gestartet"
+  },
+
+  "card": {
+    "title": "Belgrave Private Card",
+    "holder": "Karteninhaber",
+    "expiry": "Gültig bis",
+    "show": "Karte anzeigen"
+  },
+
+  "actions": {
+    "deposit": {
+      "title": "Einzahlen",
+      "description": "Geld auf Ihr Konto einzahlen"
+    },
+    "withdraw": {
+      "title": "Abheben",
+      "description": "Geld auf Ihr Bankkonto senden"
+    },
+    "transfer": {
+      "title": "Überweisen",
+      "description": "Geld sofort übertragen"
+    },
+    "statements": {
+      "title": "Kontoauszüge",
+      "description": "Kontoverlauf anzeigen"
+    }
+  },
+
+  "financialSummary": {
+    "availableBalance": "Verfügbarer Kontostand",
+    "totalIncome": "Gesamteinnahmen",
+    "totalExpenses": "Gesamtausgaben"
+  },
+
+  "transactions": {
+    "title": "Frühere Transaktionen",
+    "yearRange": "2024–2025",
+    "date": "Datum",
+    "description": "Beschreibung",
+    "category": "Kategorie",
+    "debit": "Soll",
+    "credit": "Haben",
+    "balance": "Kontostand",
+    "status": "Status",
+    "completed": "Abgeschlossen",
+    "restricted": "Eingeschränkt",
+    "hidden": "Transaktionen ausgeblendet",
+    "opened": "Transaktionen geöffnet"
+  },
+
+  "cards": {
+    "title": "Ihre Karten",
+    "statement": "Kontoauszug",
+    "download": "Herunterladen",
+    "close": "Schließen"
+  },
+
+  "activity": {
+    "title": "Systemaktivität",
+    "open": "Aktivität öffnen",
+    "close": "Aktivität schließen"
+  },
+
+  "restrictions": {
+    "accounts": {
+      "title": "Konten eingeschränkt",
+      "message": "Konten sind derzeit aufgrund einer bankrechtlichen Überprüfung eingeschränkt."
+    },
+
+    "deposits": {
+      "title": "Einzahlungen eingeschränkt",
+      "message": "Einzahlungen sind aufgrund einer bankrechtlichen Überprüfung vorübergehend eingeschränkt."
+    },
+
+    "withdrawals": {
+      "title": "Auszahlungen eingeschränkt",
+      "message": "Auszahlungen sind aufgrund einer bankrechtlichen Überprüfung vorübergehend eingeschränkt."
+    },
+
+    "transfers": {
+      "title": "Überweisungen eingeschränkt",
+      "message": "Überweisungen sind aufgrund einer bankrechtlichen Überprüfung vorübergehend eingeschränkt."
+    },
+
+    "settings": {
+      "title": "Einstellungen eingeschränkt",
+      "message": "Die Einstellungen sind derzeit aufgrund einer bankrechtlichen Überprüfung eingeschränkt."
+    },
+
+    "investments": {
+      "title": "Investitionen gesperrt",
+      "message": "Investitionen sind bis 2029 gesperrt."
+    }
+  },
+
+  "messages": {
+    "statementRequested": "Download des Kontoauszugs angefordert.",
+    "statementDownloaded": "Kontoauszug heruntergeladen.",
+    "statementGenerated": "Kontoauszug erfolgreich erstellt.",
+    "settingsComingSoon": "Einstellungen folgen in Kürze.",
+    "operationRestricted": "Dieser Vorgang ist derzeit aufgrund einer bankrechtlichen Überprüfung eingeschränkt."
+  }
+}

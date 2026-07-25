@@ -1,1 +1,76 @@
-locales/es/investments.json
+{
+  "hero": {
+    "tag": "SOLUCIONES DE INVERSIÓN",
+    "title": "Haga Crecer y Preserve su Patrimonio",
+    "description": "Belgrave Private Bank ofrece sofisticadas soluciones de inversión diseñadas para ayudar a los clientes a alcanzar sus objetivos financieros a largo plazo."
+  },
+
+  "intro": {
+    "title": "Experiencia Global en Inversiones",
+    "description": "Nuestros especialistas combinan conocimiento del mercado, planificación estratégica y asesoramiento personalizado para desarrollar soluciones de inversión alineadas con sus objetivos."
+  },
+
+  "services": {
+    "title": "Servicios de Inversión",
+
+    "portfolioManagement": {
+      "title": "Gestión de Carteras",
+      "description": "Carteras gestionadas profesionalmente y diseñadas según su perfil de riesgo, objetivos y estrategia de inversión."
+    },
+
+    "wealthPlanning": {
+      "title": "Planificación de Inversiones",
+      "description": "Planificación estratégica de inversiones centrada en preservar y hacer crecer su patrimonio con el tiempo."
+    },
+
+    "globalMarkets": {
+      "title": "Acceso a los Mercados Globales",
+      "description": "Acceda a oportunidades en mercados internacionales, clases de activos y sectores de inversión."
+    },
+
+    "alternativeInvestments": {
+      "title": "Inversiones Alternativas",
+      "description": "Explore oportunidades que incluyen capital privado, bienes raíces y otras inversiones especializadas."
+    }
+  },
+
+  "portfolio": {
+    "title": "Soluciones de Cartera",
+
+    "balanced": {
+      "title": "Cartera Equilibrada",
+      "description": "Un enfoque diversificado diseñado para un crecimiento estable a largo plazo."
+    },
+
+    "growth": {
+      "title": "Cartera de Crecimiento",
+      "description": "Estrategias de inversión centradas en la apreciación del capital y las oportunidades globales."
+    },
+
+    "preservation": {
+      "title": "Cartera de Preservación del Patrimonio",
+      "description": "Diseñada para proteger los activos mientras mantiene un crecimiento financiero sostenible."
+    }
+  },
+
+  "markets": {
+    "title": "Acceso Global a Inversiones",
+
+    "equities": "Acciones Globales",
+    "bonds": "Bonos Gubernamentales y Corporativos",
+    "realEstate": "Inversiones Inmobiliarias",
+    "privateEquity": "Capital Privado",
+    "commodities": "Materias Primas"
+  },
+
+  "security": {
+    "title": "Gestión Responsable de Inversiones",
+    "description": "Nuestro enfoque de inversión se basa en la transparencia, la supervisión profesional y una gestión disciplinada del riesgo."
+  },
+
+  "cta": {
+    "title": "Construya su Estrategia de Inversión",
+    "description": "Hable con nuestros especialistas en inversiones para crear una solución diseñada en torno a sus objetivos financieros.",
+    "button": "Explorar Soluciones de Inversión"
+  }
+}

@@ -1,1 +1,79 @@
-locales/fi/cards.json
+{
+  "hero": {
+    "tag": "PREMIUM-PANKKIKORTIT",
+    "title": "Eksklusiiviset Kortit Elämäntyyliisi",
+    "description": "Belgraven ensiluokkaiset pankki- ja luottokortit yhdistävät kehittyneen turvallisuuden, maailmanlaajuisen hyväksynnän ja eksklusiiviset edut yksityispankkiasiakkaille."
+  },
+
+  "intro": {
+    "title": "Pankkikorttien Uusi Standardi",
+    "description": "Premium-korttimme tarjoavat joustavuutta, helppokäyttöisyyttä ja entistä paremman suojan päivittäisiin ja kansainvälisiin taloudellisiin tarpeisiisi."
+  },
+
+  "creditCards": {
+    "title": "Premium-Luottokortit",
+
+    "items": {
+      "platinum": {
+        "title": "Platinum-luottokortti",
+        "description": "Ensiluokkainen luottokorttiratkaisu, joka tarjoaa maailmanlaajuisen hyväksynnän ja eksklusiivisia asiakasetuja."
+      },
+
+      "elite": {
+        "title": "Elite-luottokortti",
+        "description": "Suunniteltu asiakkaille, jotka arvostavat korkeatasoisia etuja, palkintoja ja maailmanlaajuista taloudellista joustavuutta."
+      }
+    }
+  },
+
+  "debitCards": {
+    "title": "Premium-Pankkikortit",
+
+    "items": {
+      "world": {
+        "title": "World-pankkikortti",
+        "description": "Turvallinen pääsy varoihisi maailmanlaajuisilla maksuominaisuuksilla."
+      },
+
+      "private": {
+        "title": "Yksityispankin pankkikortti",
+        "description": "Henkilökohtainen pankkikortti, joka on yhdistetty yksityispankkitiliisi."
+      }
+    }
+  },
+
+  "features": {
+    "title": "Korttien Edut",
+
+    "security": {
+      "title": "Edistynyt Turvallisuus",
+      "description": "Suojattu nykyaikaisella petosten valvonnalla ja turvallisella maksuteknologialla."
+    },
+
+    "globalAccess": {
+      "title": "Maailmanlaajuinen Hyväksyntä",
+      "description": "Käytä Belgrave-korttiasi kaikkialla maailmassa, missä premium-maksukortit hyväksytään."
+    },
+
+    "concierge": {
+      "title": "Concierge-palvelut",
+      "description": "Saat käyttöösi henkilökohtaisen tuen ja elämäntyyliäsi tukevat palvelut."
+    },
+
+    "rewards": {
+      "title": "Eksklusiiviset Edut",
+      "description": "Nauti valituista eduista, jotka on suunniteltu yksityispankkiasiakkaille."
+    }
+  },
+
+  "security": {
+    "title": "Turvallisuutta Jokaiselle Maksutapahtumalle",
+    "description": "Jokainen korttitapahtuma on suojattu kehittyneillä turvallisuusjärjestelmillä ja jatkuvalla valvonnalla."
+  },
+
+  "cta": {
+    "title": "Hae Premium-Pankkikorttia",
+    "description": "Keskustele asiantuntijoidemme kanssa löytääksesi elämäntyyliisi parhaiten sopivan korttiratkaisun.",
+    "button": "Hae Korttia"
+  }
+}

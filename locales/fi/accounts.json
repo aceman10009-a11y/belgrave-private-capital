@@ -1,1 +1,74 @@
-locales/fi/accounts.json
+{
+  "hero": {
+    "tag": "TILIT",
+    "title": "Pankkitilit Yksityisasiakkaille",
+    "description": "Belgrave Private Bank tarjoaa turvallisia tiliratkaisuja yksityishenkilöille, perheille ja yrityksille, jotka tarvitsevat joustavia kansainvälisiä pankkipalveluja."
+  },
+
+  "intro": {
+    "title": "Taloudellisen Turvallisuutesi Perusta",
+    "description": "Tilimme yhdistävät turvallisuuden, joustavuuden ja henkilökohtaisen palvelun tukemaan päivittäistä pankkiasiointiasi ja pitkän aikavälin taloudellisia tavoitteitasi."
+  },
+
+  "types": {
+    "title": "Tiliratkaisut",
+
+    "private": {
+      "title": "Yksityispankkitili",
+      "description": "Ensiluokkainen tilikokemus, joka tarjoaa henkilökohtaista palvelua, räätälöityjä ratkaisuja ja eksklusiivisia pankkietuja."
+    },
+
+    "premium": {
+      "title": "Premium-tili",
+      "description": "Parannetut pankkipalvelut asiakkaille, jotka arvostavat joustavuutta ja taloudellista mukavuutta."
+    },
+
+    "business": {
+      "title": "Yritystili",
+      "description": "Kattavat pankkiratkaisut yrittäjille, yritysjohdolle ja kansainvälisille yrityksille."
+    },
+
+    "international": {
+      "title": "Kansainvälinen Tili",
+      "description": "Monivaluuttatilit asiakkaille, jotka hallinnoivat varojaan maailmanlaajuisilla markkinoilla."
+    }
+  },
+
+  "features": {
+    "title": "Tilin Ominaisuudet",
+
+    "multiCurrency": "Monivaluuttapankkipalvelut",
+    "globalPayments": "Kansainväliset Maksupalvelut",
+    "secureOnline": "Turvallinen Verkkopankki",
+    "relationshipManager": "Oma Asiakasvastaava",
+    "prioritySupport": "Ensisijainen Asiakastuki"
+  },
+
+  "management": {
+    "title": "Tilinhallinta",
+
+    "balance": "Käytettävissä Oleva Saldo",
+    "transactions": "Viimeisimmät Tapahtumat",
+    "statements": "Tilitiliotteet",
+    "transfers": "Siirrä Varoja",
+    "settings": "Tilin Asetukset"
+  },
+
+  "security": {
+    "title": "Tilin Turvallisuus",
+    "description": "Kaikki tilit on suojattu kehittyneellä turvallisuusvalvonnalla, salauksella ja vaatimustenmukaisuuden valvonnalla."
+  },
+
+  "messages": {
+    "active": "Tili on aktiivinen",
+    "restricted": "Tilin käyttöä on tällä hetkellä rajoitettu pankkiviranomaisten tarkastuksen vuoksi.",
+    "pending": "Tilin vahvistus on odottaa.",
+    "updated": "Tilin tiedot on päivitetty onnistuneesti."
+  },
+
+  "cta": {
+    "title": "Avaa Yksityispankkitilisi",
+    "description": "Aloita asiakkuutesi Belgrave Private Bankissa ja hyödynnä yksilöllisesti räätälöityjä rahoitusratkaisuja.",
+    "button": "Avaa Tili"
+  }
+}

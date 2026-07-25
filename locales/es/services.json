@@ -1,1 +1,76 @@
-locales/es/services.json
+{
+  "hero": {
+    "tag": "NUESTROS SERVICIOS",
+    "title": "Soluciones de Banca Privada Diseñadas para Usted",
+    "description": "Belgrave Private Bank ofrece soluciones financieras personalizadas para particulares, familias, emprendedores y empresas internacionales."
+  },
+
+  "intro": {
+    "title": "Servicios Financieros Integrales",
+    "description": "Nuestros especialistas combinan experiencia, conocimientos y tecnología segura para ofrecer soluciones bancarias y de gestión patrimonial personalizadas."
+  },
+
+  "services": {
+    "privateBanking": {
+      "title": "Banca Privada",
+      "description": "Gestores de relaciones dedicados y servicios bancarios personalizados diseñados en función de su estilo de vida financiero."
+    },
+
+    "wealthManagement": {
+      "title": "Gestión Patrimonial",
+      "description": "Proteja, preserve y haga crecer su patrimonio mediante estrategias de inversión personalizadas y planificación a largo plazo."
+    },
+
+    "investmentSolutions": {
+      "title": "Soluciones de Inversión",
+      "description": "Acceda a oportunidades de inversión globales, estrategias de cartera y asesoramiento financiero profesional."
+    },
+
+    "internationalBanking": {
+      "title": "Banca Internacional",
+      "description": "Gestione sus finanzas globales con cuentas multidivisa, pagos internacionales y soluciones de cambio de divisas."
+    },
+
+    "premiumCards": {
+      "title": "Tarjetas Bancarias Premium",
+      "description": "Tarjetas de débito y crédito de lujo con seguridad mejorada, aceptación mundial y beneficios exclusivos."
+    },
+
+    "digitalBanking": {
+      "title": "Banca Digital",
+      "description": "Herramientas de banca digital seguras que ofrecen un acceso cómodo y un control total de sus finanzas."
+    },
+
+    "businessBanking": {
+      "title": "Banca Empresarial",
+      "description": "Soluciones bancarias avanzadas diseñadas para emprendedores, ejecutivos y empresas internacionales."
+    },
+
+    "familyOffice": {
+      "title": "Servicios de Family Office",
+      "description": "Servicios especializados de preservación patrimonial, planificación sucesoria y gestión financiera multigeneracional."
+    }
+  },
+
+  "security": {
+    "title": "Seguridad Avanzada",
+    "description": "Todos los servicios están respaldados por cifrado, supervisión contra el fraude y estrictos estándares de cumplimiento."
+  },
+
+  "benefits": {
+    "title": "Por Qué los Clientes Eligen Belgrave",
+
+    "relationshipManager": "Gestor de Relaciones Dedicado",
+    "globalAccess": "Acceso Bancario Global",
+    "securePlatform": "Plataforma Digital Altamente Segura",
+    "multiCurrency": "Banca Multidivisa",
+    "investmentExperts": "Asesoramiento Profesional en Inversiones",
+    "prioritySupport": "Atención Prioritaria al Cliente 24/7"
+  },
+
+  "cta": {
+    "title": "Descubra un Nivel Superior de Banca",
+    "description": "Hable con nuestros especialistas en banca privada y descubra soluciones diseñadas en torno a sus objetivos.",
+    "button": "Contactar con un Banquero Privado"
+  }
+}

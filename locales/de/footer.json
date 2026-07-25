@@ -1,1 +1,52 @@
-locales/de/footer.json
+{
+  "brand": {
+    "name": "Belgrave",
+    "subtitle": "PRIVATBANK",
+    "description": "Private-Banking-Lösungen, aufgebaut auf Vertrauen, Diskretion und langfristigen finanziellen Partnerschaften."
+  },
+
+  "sections": {
+    "services": {
+      "title": "Unsere Dienstleistungen",
+      "privateBanking": "Private Banking",
+      "wealthManagement": "Vermögensverwaltung",
+      "security": "Sicherheit & Schutz",
+      "digitalBanking": "Digital Banking"
+    },
+
+    "company": {
+      "title": "Unternehmen",
+      "about": "Über uns",
+      "leadership": "Führung",
+      "careers": "Karriere",
+      "contact": "Kontakt"
+    },
+
+    "support": {
+      "title": "Support",
+      "help": "Hilfezentrum",
+      "faq": "Häufig gestellte Fragen",
+      "privacy": "Datenschutzerklärung",
+      "terms": "Allgemeine Geschäftsbedingungen"
+    }
+  },
+
+  "contact": {
+    "title": "Kontakt",
+    "address": "Globales Private-Banking-Büro",
+    "email": "E-Mail",
+    "phone": "Telefon"
+  },
+
+  "social": {
+    "title": "Folgen Sie uns",
+    "linkedin": "LinkedIn",
+    "twitter": "X (Twitter)",
+    "facebook": "Facebook"
+  },
+
+  "legal": {
+    "copyright": "© 2026 Belgrave Private Bank. Alle Rechte vorbehalten.",
+    "disclaimer": "Die Belgrave Private Bank bietet Finanzdienstleistungen gemäß den geltenden gesetzlichen Vorschriften und Compliance-Anforderungen an."
+  }
+}

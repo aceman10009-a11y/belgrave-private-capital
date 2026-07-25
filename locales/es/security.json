@@ -1,1 +1,66 @@
-locales/es/security.json
+{
+  "hero": {
+    "tag": "SEGURIDAD",
+    "title": "Seguridad Avanzada Sin Compromisos",
+    "description": "Belgrave Private Bank protege su patrimonio y su información personal mediante tecnología avanzada, controles estrictos y supervisión continua."
+  },
+
+  "intro": {
+    "title": "Su Seguridad es Nuestra Prioridad",
+    "description": "Nuestro marco de seguridad combina cifrado, prevención del fraude, supervisión del cumplimiento normativo y controles operativos para proteger cada relación con nuestros clientes."
+  },
+
+  "protection": {
+    "title": "Protección de Seguridad",
+
+    "encryption": {
+      "title": "Cifrado Avanzado",
+      "description": "Toda la información confidencial y las transacciones están protegidas mediante tecnologías avanzadas de cifrado."
+    },
+
+    "monitoring": {
+      "title": "Supervisión de Seguridad 24/7",
+      "description": "Nuestros sistemas supervisan continuamente la actividad de las cuentas para detectar y prevenir accesos no autorizados."
+    },
+
+    "fraud": {
+      "title": "Prevención del Fraude",
+      "description": "Sistemas de seguridad avanzados ayudan a identificar actividades sospechosas y proteger los activos de los clientes."
+    },
+
+    "privacy": {
+      "title": "Privacidad del Cliente",
+      "description": "Su información personal y financiera se gestiona bajo estrictos estándares de confidencialidad."
+    }
+  },
+
+  "features": {
+    "title": "Funciones de Seguridad",
+
+    "multiFactor": "Autenticación Multifactor",
+    "secureTransactions": "Verificación Segura de Transacciones",
+    "accountMonitoring": "Supervisión de Cuentas en Tiempo Real",
+    "compliance": "Normas Globales de Cumplimiento",
+    "dataProtection": "Protección de los Datos del Cliente"
+  },
+
+  "alerts": {
+    "title": "Alertas de Seguridad",
+
+    "login": "Se ha detectado un nuevo inicio de sesión en su cuenta.",
+    "transaction": "Se requiere verificación de la transacción.",
+    "restricted": "Esta operación está actualmente restringida debido a una revisión de la jurisdicción bancaria."
+  },
+
+  "messages": {
+    "secured": "El estado de seguridad de su cuenta está activo.",
+    "protected": "Su información está protegida.",
+    "warning": "Póngase en contacto con su gestor de relaciones si observa alguna actividad inusual."
+  },
+
+  "cta": {
+    "title": "¿Necesita Asistencia de Seguridad?",
+    "description": "Nuestro equipo de soporte está disponible para ayudarle con cualquier consulta o inquietud relacionada con la seguridad de su cuenta.",
+    "button": "Contactar al Equipo de Seguridad"
+  }
+}

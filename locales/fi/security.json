@@ -1,1 +1,66 @@
-locales/fi/security.json
+{
+  "hero": {
+    "tag": "TURVALLISUUS",
+    "title": "Edistyksellistä turvallisuutta ilman kompromisseja",
+    "description": "Belgrave Private Bank suojaa varallisuuttasi ja henkilötietojasi edistyksellisellä teknologialla, tiukoilla valvontamenetelmillä ja jatkuvalla seurannalla."
+  },
+
+  "intro": {
+    "title": "Turvallisuutesi on meille ensisijaisen tärkeää",
+    "description": "Turvallisuusjärjestelmämme yhdistää salauksen, petostentorjunnan, vaatimustenmukaisuuden valvonnan ja operatiiviset kontrollit suojatakseen jokaisen asiakassuhteen."
+  },
+
+  "protection": {
+    "title": "Turvallisuussuojaus",
+
+    "encryption": {
+      "title": "Edistynyt salaus",
+      "description": "Kaikki arkaluonteiset tiedot ja tapahtumat suojataan kehittyneillä salausratkaisuilla."
+    },
+
+    "monitoring": {
+      "title": "24/7 turvallisuusvalvonta",
+      "description": "Järjestelmämme seuraavat jatkuvasti tilitoimintaa havaitakseen ja estääkseen luvattoman käytön."
+    },
+
+    "fraud": {
+      "title": "Petostentorjunta",
+      "description": "Kehittyneet turvallisuusjärjestelmät auttavat tunnistamaan epäilyttävän toiminnan ja suojaamaan asiakkaiden varoja."
+    },
+
+    "privacy": {
+      "title": "Asiakkaan yksityisyys",
+      "description": "Henkilö- ja taloustietojasi käsitellään tiukkojen luottamuksellisuusvaatimusten mukaisesti."
+    }
+  },
+
+  "features": {
+    "title": "Turvallisuusominaisuudet",
+
+    "multiFactor": "Monivaiheinen tunnistautuminen",
+    "secureTransactions": "Turvallinen tapahtumien vahvistus",
+    "accountMonitoring": "Reaaliaikainen tilin seuranta",
+    "compliance": "Kansainväliset vaatimustenmukaisuusstandardit",
+    "dataProtection": "Suojatut asiakastiedot"
+  },
+
+  "alerts": {
+    "title": "Turvallisuushälytykset",
+
+    "login": "Tililläsi havaittiin uusi kirjautuminen.",
+    "transaction": "Tapahtuman vahvistus vaaditaan.",
+    "restricted": "Tämä toiminto on tällä hetkellä rajoitettu pankkiviranomaisten tarkastuksen vuoksi."
+  },
+
+  "messages": {
+    "secured": "Tilisi turvallisuustila on aktiivinen.",
+    "protected": "Tietosi ovat suojattuja.",
+    "warning": "Ota yhteyttä asiakasvastaavaasi, jos havaitset epätavallista toimintaa."
+  },
+
+  "cta": {
+    "title": "Tarvitsetko apua turvallisuuteen liittyvissä asioissa?",
+    "description": "Tukitiimimme auttaa mielellään tilisi turvallisuuteen liittyvissä kysymyksissä ja huolenaiheissa.",
+    "button": "Ota yhteyttä turvallisuustiimiin"
+  }
+}
