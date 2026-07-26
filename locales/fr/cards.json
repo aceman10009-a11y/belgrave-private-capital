@@ -1,1 +1,79 @@
-locales/fr/cards.json
+{
+  "hero": {
+    "tag": "CARTES BANCAIRES PREMIUM",
+    "title": "Des cartes exclusives conçues pour votre style de vie",
+    "description": "Les cartes de débit et de crédit premium de Belgrave allient une sécurité avancée, une acceptation mondiale et des avantages exclusifs pour les clients de la banque privée."
+  },
+
+  "intro": {
+    "title": "Un niveau supérieur de cartes bancaires",
+    "description": "Nos cartes premium offrent flexibilité, praticité et protection renforcée pour répondre à vos besoins financiers quotidiens et internationaux."
+  },
+
+  "creditCards": {
+    "title": "Cartes de crédit Premium",
+
+    "items": {
+      "platinum": {
+        "title": "Carte de Crédit Platinum",
+        "description": "Une solution de crédit haut de gamme offrant une acceptation mondiale et des avantages exclusifs réservés à nos clients."
+      },
+
+      "elite": {
+        "title": "Carte de Crédit Elite",
+        "description": "Conçue pour les clients recherchant des privilèges renforcés, des récompenses exclusives et une flexibilité financière internationale."
+      }
+    }
+  },
+
+  "debitCards": {
+    "title": "Cartes de Débit Premium",
+
+    "items": {
+      "world": {
+        "title": "Carte de Débit World",
+        "description": "Accédez à vos fonds en toute sécurité avec des capacités de paiement à l'échelle mondiale."
+      },
+
+      "private": {
+        "title": "Carte de Débit Banque Privée",
+        "description": "Une expérience de carte de débit personnalisée, directement liée à votre compte de banque privée."
+      }
+    }
+  },
+
+  "features": {
+    "title": "Avantages des cartes",
+
+    "security": {
+      "title": "Sécurité avancée",
+      "description": "Protégée par une surveillance moderne contre la fraude et des technologies de transaction sécurisées."
+    },
+
+    "globalAccess": {
+      "title": "Acceptation mondiale",
+      "description": "Utilisez votre carte Belgrave partout dans le monde où les paiements premium sont acceptés."
+    },
+
+    "concierge": {
+      "title": "Services de conciergerie",
+      "description": "Bénéficiez d'une assistance dédiée et de services personnalisés pour votre style de vie."
+    },
+
+    "rewards": {
+      "title": "Récompenses exclusives",
+      "description": "Profitez d'avantages sélectionnés spécialement conçus pour les clients de la banque privée."
+    }
+  },
+
+  "security": {
+    "title": "Sécurisez chacune de vos transactions",
+    "description": "Chaque transaction effectuée avec votre carte est protégée par des contrôles de sécurité avancés et une surveillance continue."
+  },
+
+  "cta": {
+    "title": "Demandez votre carte bancaire Premium",
+    "description": "Échangez avec nos spécialistes pour découvrir la solution de carte la mieux adaptée à votre mode de vie financier.",
+    "button": "Demander une carte"
+  }
+}

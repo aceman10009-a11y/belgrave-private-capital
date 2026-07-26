@@ -1,1 +1,199 @@
-locales/fr/home.json
+{
+  "hero": {
+    "tag": "BANQUE PRIVÉE",
+    "title": "Votre héritage. Notre engagement.",
+    "description": "Des solutions de banque privée exclusives conçues pour protéger, préserver et faire croître votre patrimoine au fil des générations.",
+    "button": "Découvrir",
+
+    "portfolio": {
+      "title": "Portefeuille Privé",
+      "status": "● Protégé",
+      "investment": "Investissement",
+      "performance": "+4.26%",
+      "liquidity": "Liquidité",
+      "currency": "USD",
+      "privateEquity": "Capital-investissement",
+      "active": "Actif",
+      "globalMarkets": "Marchés Mondiaux",
+      "regions": "Régions"
+    }
+  },
+
+  "stats": {
+    "assetsManaged": {
+      "value": "$967M+",
+      "label": "Actifs Sous Gestion"
+    },
+    "countries": {
+      "value": "42",
+      "label": "Pays"
+    },
+    "clients": {
+      "value": "18 400+",
+      "label": "Clients Privés"
+    },
+    "regions": {
+      "value": "17",
+      "label": "Régions Mondiales"
+    }
+  },
+
+  "financialSnapshot": {
+    "tag": "APERÇU FINANCIER",
+    "title": "Aperçu Financier",
+
+    "assets": {
+      "value": "$967.9M",
+      "label": "Actifs Sous Gestion"
+    },
+
+    "countries": {
+      "value": "42",
+      "label": "Pays Desservis"
+    },
+
+    "clients": {
+      "value": "18 400",
+      "label": "Clients Privés"
+    },
+
+    "availability": {
+      "value": "99.98%",
+      "label": "Disponibilité de la Plateforme"
+    }
+  },
+
+  "services": {
+    "tag": "BANQUE PRIVÉE",
+
+    "heading": "Une Banque Conçue Autour de Votre Style de Vie",
+
+    "description": "Chaque relation bancaire commence par une compréhension de vos objectifs. Nos spécialistes proposent des solutions financières sur mesure destinées aux particuliers, entrepreneurs, familles et clients internationaux.",
+
+    "privateBanking": {
+      "title": "Banque Privée",
+      "description": "Des gestionnaires de clientèle dédiés offrant un accompagnement personnalisé et des services bancaires exclusifs."
+    },
+
+    "investmentAdvisory": {
+      "title": "Conseil en Investissement",
+      "description": "Gestion experte de portefeuille, préservation du patrimoine et stratégies d'investissement à long terme."
+    },
+
+    "digitalBanking": {
+      "title": "Banque Numérique",
+      "description": "Une banque en ligne sécurisée avec virements instantanés, investissements et gestion de comptes où que vous soyez."
+    },
+
+    "internationalBanking": {
+      "title": "Banque Internationale",
+      "description": "Comptes multidevises, transferts internationaux et services bancaires mondiaux sur les principaux marchés financiers."
+    },
+
+    "savingsDeposits": {
+      "title": "Épargne et Dépôts",
+      "description": "Des solutions d'épargne flexibles conçues pour préserver et développer votre patrimoine en toute sécurité."
+    },
+
+    "cashServices": {
+      "title": "Services Espèces et DAB",
+      "description": "Accès pratique à vos fonds grâce à des cartes premium, des services en espèces et un réseau mondial de distributeurs automatiques."
+    }
+  },
+
+  "digitalBanking": {
+    "tag": "BANQUE NUMÉRIQUE",
+
+    "title": "L'Excellence de la Banque Numérique",
+
+    "description": "Gérez votre patrimoine en toute sécurité grâce à une plateforme bancaire numérique performante conçue pour les clients privés d'aujourd'hui.",
+
+    "security": "Sécurité Avancée",
+
+    "access": "Accès Mondial",
+
+    "control": "Contrôle Financier Total"
+  },
+
+  "cards": {
+    "tag": "CARTES PREMIUM",
+
+    "title": "Cartes Bancaires Exclusives",
+
+    "description": "Conçues pour les clients qui attendent davantage que des services bancaires ordinaires. Nos cartes de débit et de crédit premium allient élégance, acceptation mondiale, sécurité avancée et privilèges exclusifs de banque privée.",
+
+    "signature": {
+      "title": "Carte de Crédit Signature",
+      "description": "Des paiements premium avec acceptation mondiale, avantages de voyage de luxe et services de conciergerie exclusifs."
+    },
+
+    "platinum": {
+      "title": "Carte de Débit Platinum",
+      "description": "Banque au quotidien avec accès multidevises, paiements sans contact et virements internationaux instantanés."
+    },
+
+    "private": {
+      "title": "Carte de Débit Privée",
+      "description": "Conçue pour les modes de vie internationaux avec des transactions sécurisées dans le monde entier et une assistance bancaire prioritaire."
+    },
+
+    "infinite": {
+      "title": "Carte de Crédit Infinite",
+      "description": "Notre carte bancaire la plus exclusive offrant des privilèges premium, un pouvoir d'achat renforcé et des services financiers de luxe."
+    }
+  },
+
+  "security": {
+    "tag": "SÉCURITÉ",
+
+    "title": "Une Sécurité Sans Compromis",
+
+    "description": "Votre patrimoine et vos informations personnelles sont protégés grâce à des systèmes de sécurité avancés et des contrôles opérationnels rigoureux.",
+
+    "protection": "Protection des Actifs",
+
+    "protectionDescription": "Chaque connexion est protégée par un chiffrement de niveau entreprise utilisé par les plus grandes institutions financières du monde.",
+
+    "privacy": "Confidentialité des Clients",
+
+    "privacyDescription": "Une authentification intelligente protège chaque connexion et chaque transaction sensible sur vos comptes.",
+
+    "monitoring": "Surveillance de Sécurité 24h/24 et 7j/7",
+
+    "monitoringDescription": "Votre banquier privé et nos équipes de sécurité surveillent en permanence les activités afin de protéger vos intérêts financiers."
+  },
+
+  "testimonials": {
+    "tag": "TÉMOIGNAGES CLIENTS",
+
+    "title": "La Confiance de Nos Clients Privés",
+
+    "description": "Des entrepreneurs aux family offices en passant par les investisseurs internationaux, nos clients font confiance à Belgrave Private Bank pour sa discrétion, son expertise et ses partenariats financiers durables.",
+
+    "clients": {
+      "michael": {
+        "review": "Un service exceptionnel, des conseils professionnels et une expérience bancaire entièrement fondée sur la confiance. Mon gestionnaire de clientèle dépasse constamment mes attentes.",
+        "name": "Michael Thornton",
+        "role": "Client Banque Privée"
+      },
+
+      "sophia": {
+        "review": "Belgrave offre la discrétion, l'expertise et l'attention personnalisée que j'attends d'une banque privée de renommée mondiale. Chaque interaction est traitée avec le plus grand professionnalisme.",
+        "name": "Sophia Whitmore",
+        "role": "Cliente Family Office"
+      },
+
+      "alexander": {
+        "review": "Les opérations bancaires internationales n'ont jamais été aussi simples. Des transactions transfrontalières au soutien en investissement, tout est géré efficacement et en toute sécurité.",
+        "name": "Alexander Weber",
+        "role": "Client International"
+      }
+    }
+  },
+
+  "cta": {
+    "title": "Une Nouvelle Référence en Banque Privée",
+    "description": "Prenez contact avec Belgrave Private Bank et découvrez des solutions financières conçues autour de vos ambitions.",
+    "button": "Nous Contacter"
+  }
+}

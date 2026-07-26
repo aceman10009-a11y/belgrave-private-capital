@@ -1,1 +1,74 @@
-locales/fr/accounts.json
+{
+  "hero": {
+    "tag": "COMPTES",
+    "title": "Des comptes bancaires conçus pour les clients de la banque privée",
+    "description": "Belgrave Private Bank propose des solutions de comptes sécurisées pour les particuliers, les familles et les entreprises ayant besoin de services bancaires internationaux et flexibles."
+  },
+
+  "intro": {
+    "title": "La base de votre avenir financier",
+    "description": "Nos comptes allient sécurité, flexibilité et service personnalisé afin de répondre à vos besoins bancaires quotidiens et à vos objectifs financiers à long terme."
+  },
+
+  "types": {
+    "title": "Solutions de comptes",
+
+    "private": {
+      "title": "Compte Banque Privée",
+      "description": "Une expérience bancaire haut de gamme avec un accompagnement personnalisé, des services sur mesure et des privilèges exclusifs."
+    },
+
+    "premium": {
+      "title": "Compte Premium",
+      "description": "Des fonctionnalités bancaires avancées conçues pour les clients recherchant davantage de flexibilité et de confort financier."
+    },
+
+    "business": {
+      "title": "Compte Professionnel",
+      "description": "Des solutions bancaires complètes pour les entrepreneurs, les dirigeants et les entreprises internationales."
+    },
+
+    "international": {
+      "title": "Compte International",
+      "description": "Des solutions de comptes multidevises destinées aux clients qui gèrent leurs finances sur les marchés internationaux."
+    }
+  },
+
+  "features": {
+    "title": "Caractéristiques du compte",
+
+    "multiCurrency": "Banque multidevises",
+    "globalPayments": "Accès aux paiements internationaux",
+    "secureOnline": "Banque en ligne sécurisée",
+    "relationshipManager": "Conseiller bancaire dédié",
+    "prioritySupport": "Service client prioritaire"
+  },
+
+  "management": {
+    "title": "Gestion du compte",
+
+    "balance": "Solde disponible",
+    "transactions": "Transactions récentes",
+    "statements": "Relevés de compte",
+    "transfers": "Transférer des fonds",
+    "settings": "Paramètres du compte"
+  },
+
+  "security": {
+    "title": "Sécurité du compte",
+    "description": "Tous les comptes sont protégés par une surveillance de sécurité avancée, un chiffrement des données et des contrôles de conformité réglementaire rigoureux."
+  },
+
+  "messages": {
+    "active": "Compte actif",
+    "restricted": "L'accès au compte est actuellement restreint en raison d'un contrôle réglementaire bancaire.",
+    "pending": "La vérification du compte est en attente.",
+    "updated": "Les informations du compte ont été mises à jour avec succès."
+  },
+
+  "cta": {
+    "title": "Ouvrez votre compte de banque privée",
+    "description": "Commencez votre relation avec Belgrave Private Bank et accédez à des solutions financières personnalisées.",
+    "button": "Ouvrir un compte"
+  }
+}

@@ -1,1 +1,134 @@
-locales/fr/dashboard.json
+{
+  "title": "Belgrave Private Bank | Tableau de bord",
+
+  "navigation": {
+    "home": "Accueil",
+    "accounts": "Comptes",
+    "investments": "Investissements",
+    "statements": "Relevés",
+    "transactions": "Transactions",
+    "cards": "Cartes",
+    "transferFunds": "Transférer des fonds",
+    "settings": "Paramètres"
+  },
+
+  "hero": {
+    "tag": "BANQUE PRIVÉE",
+    "welcome": "Bienvenue",
+    "loading": "Chargement...",
+    "description": "Gérez votre patrimoine en toute sécurité depuis une plateforme bancaire unifiée."
+  },
+
+  "balance": {
+    "available": "Solde disponible",
+    "primaryAccount": "Compte principal",
+    "currency": "USD"
+  },
+
+  "security": {
+    "secureBanking": "Banque sécurisée",
+    "securityLayerActive": "Couche de sécurité active",
+    "secureSessionStarted": "Session sécurisée démarrée"
+  },
+
+  "card": {
+    "title": "Carte Privée Belgrave",
+    "holder": "Titulaire de la carte",
+    "expiry": "Expiration",
+    "show": "Afficher la carte"
+  },
+
+  "actions": {
+    "deposit": {
+      "title": "Dépôt",
+      "description": "Ajouter des fonds à votre compte"
+    },
+    "withdraw": {
+      "title": "Retrait",
+      "description": "Envoyer de l'argent vers votre banque"
+    },
+    "transfer": {
+      "title": "Virement",
+      "description": "Transférer des fonds instantanément"
+    },
+    "statements": {
+      "title": "Relevés",
+      "description": "Consulter l'historique du compte"
+    }
+  },
+
+  "financialSummary": {
+    "availableBalance": "Solde disponible",
+    "totalIncome": "Revenus totaux",
+    "totalExpenses": "Dépenses totales"
+  },
+
+  "transactions": {
+    "title": "Transactions précédentes",
+    "yearRange": "2024-2025",
+    "date": "Date",
+    "description": "Description",
+    "category": "Catégorie",
+    "debit": "Débit",
+    "credit": "Crédit",
+    "balance": "Solde",
+    "status": "Statut",
+    "completed": "Terminée",
+    "restricted": "Restreinte",
+    "hidden": "Transactions masquées",
+    "opened": "Transactions affichées"
+  },
+
+  "cards": {
+    "title": "Vos cartes",
+    "statement": "Relevé de compte",
+    "download": "Télécharger",
+    "close": "Fermer"
+  },
+
+  "activity": {
+    "title": "Activité du système",
+    "open": "Ouvrir l'activité",
+    "close": "Fermer l'activité"
+  },
+
+  "restrictions": {
+    "accounts": {
+      "title": "Comptes restreints",
+      "message": "Les comptes sont actuellement restreints en raison d'un contrôle réglementaire bancaire."
+    },
+
+    "deposits": {
+      "title": "Dépôts restreints",
+      "message": "Les dépôts sont temporairement restreints en raison d'un contrôle réglementaire bancaire."
+    },
+
+    "withdrawals": {
+      "title": "Retraits restreints",
+      "message": "Les retraits sont temporairement restreints en raison d'un contrôle réglementaire bancaire."
+    },
+
+    "transfers": {
+      "title": "Virements restreints",
+      "message": "Les virements sont temporairement restreints en raison d'un contrôle réglementaire bancaire."
+    },
+
+    "settings": {
+      "title": "Paramètres restreints",
+      "message": "Les paramètres sont actuellement restreints en raison d'un contrôle réglementaire bancaire."
+    },
+
+    "investments": {
+      "title": "Investissements verrouillés",
+      "message": "Les investissements sont verrouillés jusqu'en 2029."
+    }
+  },
+
+  "messages": {
+    "statementRequested": "Téléchargement du relevé demandé.",
+    "statementDownloaded": "Relevé téléchargé.",
+    "statementGenerated": "Relevé généré avec succès.",
+    "settingsComingSoon": "Les paramètres seront bientôt disponibles.",
+    "operationRestricted": "Cette opération est actuellement soumise à un contrôle réglementaire bancaire."
+  }
+}

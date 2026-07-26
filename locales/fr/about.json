@@ -1,1 +1,62 @@
-locales/fr/about.json
+{
+  "hero": {
+    "tag": "À PROPOS DE BELGRAVE",
+    "title": "Une tradition de confiance, d’excellence et de banque privée",
+    "description": "Belgrave Private Bank propose des solutions financières de confiance aux particuliers, aux familles, aux entrepreneurs et aux entreprises internationales qui recherchent une sécurité financière durable."
+  },
+
+  "intro": {
+    "title": "Qui sommes-nous",
+    "description": "Nous sommes une institution de banque privée dédiée à la fourniture de services financiers personnalisés, d’une expertise internationale et de solutions sécurisées de gestion de patrimoine."
+  },
+
+  "mission": {
+    "title": "Notre mission",
+    "description": "Offrir une expérience de banque privée d’exception grâce à des relations de confiance, des solutions innovantes et une gestion financière responsable."
+  },
+
+  "vision": {
+    "title": "Notre vision",
+    "description": "Devenir un partenaire mondial de confiance pour les clients souhaitant préserver et développer leur patrimoine de génération en génération."
+  },
+
+  "values": {
+    "title": "Nos valeurs fondamentales",
+
+    "trust": {
+      "title": "Confiance",
+      "description": "Construire des relations durables grâce à l’intégrité, à la transparence et à la fiabilité."
+    },
+
+    "excellence": {
+      "title": "Excellence",
+      "description": "Offrir un service d’exception grâce à l’expertise, à la précision et à l’engagement."
+    },
+
+    "security": {
+      "title": "Sécurité",
+      "description": "Protéger le patrimoine de nos clients grâce à des systèmes avancés et à des normes opérationnelles rigoureuses."
+    },
+
+    "innovation": {
+      "title": "Innovation",
+      "description": "Allier les traditions de la banque privée aux technologies financières modernes."
+    }
+  },
+
+  "history": {
+    "title": "Notre héritage",
+    "description": "Belgrave Private Bank incarne un engagement envers l’excellence de la banque privée, en associant une expertise financière internationale à des relations personnalisées avec ses clients."
+  },
+
+  "leadership": {
+    "title": "Une direction expérimentée",
+    "description": "Nos spécialistes disposent d’une vaste expérience dans les domaines de la banque privée, des investissements, de la gestion de patrimoine et de la finance internationale."
+  },
+
+  "cta": {
+    "title": "Découvrez l’excellence de la banque privée",
+    "description": "Découvrez comment Belgrave Private Bank peut vous aider à protéger et à développer votre avenir financier.",
+    "button": "Nous contacter"
+  }
+}

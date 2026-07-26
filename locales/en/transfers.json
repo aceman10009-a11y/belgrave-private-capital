@@ -1,63 +1,63 @@
 {
-  "title": "Tilisiirrot",
+  "title": "Transfers",
 
   "hero": {
-    "tag": "KANSAINVÄLISET TILISIIRROT",
-    "title": "Turvalliset kansainväliset rahansiirrot",
-    "description": "Lähetä ja vastaanota varoja maailmanlaajuisesti turvallisten maksuratkaisujen avulla, jotka on suunniteltu yksityispankin asiakkaille."
+    "tag": "GLOBAL TRANSFERS",
+    "title": "Secure International Money Transfers",
+    "description": "Send and receive funds worldwide with secure payment solutions designed for private banking clients."
   },
 
   "transfer": {
-    "title": "Tee tilisiirto",
-    "description": "Siirrä varoja turvallisesti Belgrave-tiliesi sekä hyväksyttyjen ulkoisten tilien välillä.",
+    "title": "Make a Transfer",
+    "description": "Transfer funds securely between your Belgrave accounts and approved external accounts.",
 
     "fields": {
-      "recipient": "Saajan nimi",
-      "accountNumber": "Tilinumero",
-      "bankName": "Pankin nimi",
-      "amount": "Siirrettävä summa",
-      "currency": "Valuutta",
-      "reference": "Maksun viite"
+      "recipient": "Recipient Name",
+      "accountNumber": "Account Number",
+      "bankName": "Bank Name",
+      "amount": "Transfer Amount",
+      "currency": "Currency",
+      "reference": "Payment Reference"
     },
 
-    "button": "Siirrä varoja"
+    "button": "Transfer Funds"
   },
 
   "types": {
-    "title": "Siirtopalvelut",
+    "title": "Transfer Services",
 
     "international": {
-      "title": "Kansainväliset tilisiirrot",
-      "description": "Siirrä varoja maiden välillä luotettavien maailmanlaajuisten maksujärjestelmien kautta."
+      "title": "International Transfers",
+      "description": "Move funds across borders with reliable global payment networks."
     },
 
     "domestic": {
-      "title": "Kotimaan tilisiirrot",
-      "description": "Suorita kotimaiset tilisiirrot nopeasti ja turvallisesti."
+      "title": "Domestic Transfers",
+      "description": "Complete local transfers quickly and securely."
     },
 
     "wire": {
-      "title": "Pankkisiirrot",
-      "description": "Suorita suuriarvoiset pankkisiirrot tehostetuilla turvallisuusvalvontatoimilla."
+      "title": "Wire Transfers",
+      "description": "Execute high-value wire transfers with enhanced security controls."
     }
   },
 
   "security": {
-    "title": "Tilisiirtojen turvallisuus",
-    "description": "Jokaista tapahtumaa valvotaan edistyksellisillä petostentorjuntajärjestelmillä ja vaatimustenmukaisuuden valvonnalla."
+    "title": "Transfer Security",
+    "description": "Every transaction is monitored through advanced fraud prevention systems and compliance controls."
   },
 
   "messages": {
-    "processing": "Tilisiirtoasi käsitellään.",
-    "successful": "Tilisiirto on suoritettu onnistuneesti.",
-    "failed": "Tilisiirtoa ei voitu suorittaa.",
-    "restricted": "Tilisiirrot ovat tällä hetkellä rajoitettuja pankkiviranomaisten tarkastuksen vuoksi.",
-    "pending": "Tilisiirtosi odottaa hyväksyntää."
+    "processing": "Your transfer is being processed.",
+    "successful": "Transfer completed successfully.",
+    "failed": "Transfer could not be completed.",
+    "restricted": "Transfers are currently restricted under banking jurisdiction review.",
+    "pending": "Your transfer is pending approval."
   },
 
   "cta": {
-    "title": "Tarvitsetko apua tilisiirrossa?",
-    "description": "Ota yhteyttä omaan asiakasvastaavaasi saadaksesi apua tilisiirtoihin.",
-    "button": "Ota yhteyttä asiakastukeen"
+    "title": "Need Assistance With a Transfer?",
+    "description": "Contact your dedicated relationship manager for transfer support.",
+    "button": "Contact Support"
   }
 }

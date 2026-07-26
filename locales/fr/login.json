@@ -1,1 +1,51 @@
-locales/fr/login.json
+{
+  "title": "Belgrave Private Bank | Connexion Client",
+
+  "hero": {
+    "title": "Portail de Banque Privée",
+    "description": "Accédez en toute sécurité à votre compte Belgrave Private Bank."
+  },
+
+  "form": {
+    "title": "Connexion Client",
+
+    "fields": {
+      "email": "Adresse e-mail",
+      "password": "Mot de passe"
+    },
+
+    "placeholders": {
+      "email": "Saisissez votre adresse e-mail",
+      "password": "Saisissez votre mot de passe"
+    },
+
+    "button": "Se connecter"
+  },
+
+  "options": {
+    "remember": "Se souvenir de moi",
+    "forgotPassword": "Mot de passe oublié ?"
+  },
+
+  "messages": {
+    "loading": "Authentification en cours...",
+    "success": "Connexion réussie.",
+    "error": "Adresse e-mail ou mot de passe invalide.",
+    "locked": "L'accès au compte est temporairement restreint."
+  },
+
+  "security": {
+    "title": "Accès bancaire sécurisé",
+    "description": "Votre session de connexion est protégée par une surveillance de sécurité avancée et un chiffrement des données."
+  },
+
+  "register": {
+    "question": "Vous n'avez pas de compte ?",
+    "button": "Créer un compte"
+  },
+
+  "footer": {
+    "privacy": "Politique de confidentialité",
+    "terms": "Conditions générales"
+  }
+}

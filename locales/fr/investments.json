@@ -1,1 +1,76 @@
-locales/fr/investments.json
+{
+  "hero": {
+    "tag": "SOLUTIONS D'INVESTISSEMENT",
+    "title": "Développez et préservez votre patrimoine",
+    "description": "Belgrave Private Bank propose des solutions d'investissement sophistiquées conçues pour aider ses clients à atteindre leurs objectifs financiers à long terme."
+  },
+
+  "intro": {
+    "title": "Une expertise mondiale en investissement",
+    "description": "Nos spécialistes associent leur connaissance des marchés, une planification stratégique et des conseils personnalisés afin de concevoir des solutions d'investissement adaptées à vos objectifs."
+  },
+
+  "services": {
+    "title": "Services d'investissement",
+
+    "portfolioManagement": {
+      "title": "Gestion de portefeuille",
+      "description": "Des portefeuilles gérés par des professionnels, conçus en fonction de votre profil de risque, de vos objectifs et de votre stratégie d'investissement."
+    },
+
+    "wealthPlanning": {
+      "title": "Planification des investissements",
+      "description": "Une planification stratégique des investissements axée sur la préservation et la croissance de votre patrimoine au fil du temps."
+    },
+
+    "globalMarkets": {
+      "title": "Accès aux marchés mondiaux",
+      "description": "Accédez à des opportunités sur les marchés internationaux, à travers différentes classes d'actifs et secteurs d'investissement."
+    },
+
+    "alternativeInvestments": {
+      "title": "Investissements alternatifs",
+      "description": "Explorez des opportunités telles que le capital-investissement, l'immobilier et d'autres investissements spécialisés."
+    }
+  },
+
+  "portfolio": {
+    "title": "Solutions de portefeuille",
+
+    "balanced": {
+      "title": "Portefeuille équilibré",
+      "description": "Une approche diversifiée conçue pour une croissance régulière à long terme."
+    },
+
+    "growth": {
+      "title": "Portefeuille de croissance",
+      "description": "Des stratégies d'investissement axées sur l'appréciation du capital et les opportunités mondiales."
+    },
+
+    "preservation": {
+      "title": "Portefeuille de préservation du patrimoine",
+      "description": "Conçu pour protéger vos actifs tout en assurant une croissance financière durable."
+    }
+  },
+
+  "markets": {
+    "title": "Accès aux investissements mondiaux",
+
+    "equities": "Actions internationales",
+    "bonds": "Obligations d'État et d'entreprises",
+    "realEstate": "Investissements immobiliers",
+    "privateEquity": "Capital-investissement",
+    "commodities": "Matières premières"
+  },
+
+  "security": {
+    "title": "Une gestion responsable des investissements",
+    "description": "Notre approche de l'investissement repose sur la transparence, une supervision professionnelle et une gestion rigoureuse des risques."
+  },
+
+  "cta": {
+    "title": "Construisez votre stratégie d'investissement",
+    "description": "Échangez avec nos spécialistes en investissement pour créer une solution adaptée à vos ambitions financières.",
+    "button": "Découvrir nos solutions d'investissement"
+  }
+}

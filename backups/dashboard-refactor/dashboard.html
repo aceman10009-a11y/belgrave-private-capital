@@ -1,0 +1,804 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+<meta charset="UTF-8">
+
+<meta name="viewport"
+      content="width=device-width, initial-scale=1.0">
+
+<title>Belgrave Private Bank | Dashboard</title>
+
+<link rel="stylesheet" href="css/base.css">
+<link rel="stylesheet" href="css/components.css">
+
+<link rel="stylesheet" href="css/dashboard.css">
+<link rel="stylesheet" href="css/dashboard-components.css">
+<link rel="stylesheet" href="css/dashboard-sections.css">
+<link rel="stylesheet" href="css/dashboard-responsive.css">
+
+<link
+href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600;700&family=Inter:wght@300;400;500;600&display=swap"
+rel="stylesheet">
+
+<link rel="icon"
+type="image/png"
+href="assets/favicon.png">
+
+</head>
+
+<body>
+
+<button
+class="menu-btn"
+onclick="toggleSidebar()">
+☰
+</button>
+
+<div
+class="pin-modal hidden"
+id="pinModal">
+
+<div class="pin-box">
+
+<h3>
+Enter 4-digit PIN
+</h3>
+
+<input
+type="password"
+maxlength="4"
+id="pinInput"
+placeholder="••••">
+
+<button onclick="verifyPin()">
+Unlock Card
+</button>
+
+<p id="pinError"></p>
+
+</div>
+
+</div>
+
+<script type="module">
+
+import {
+auth,
+onAuthStateChanged,
+db,
+doc,
+getDoc
+} from "./firebase.js";
+
+onAuthStateChanged(auth, async(user)=>{
+
+if(!user){
+
+window.location.replace("login.html");
+
+return;
+
+}
+
+const welcome=document.getElementById("welcomeUser");
+
+welcome.innerHTML="Loading...";
+
+const ref=doc(db,"users",user.uid);
+
+const snap=await getDoc(ref);
+
+if(snap.exists()){
+
+const data=snap.data();
+
+welcome.innerHTML=
+`Welcome back, ${data.fullName.split(" ")[0]}`;
+
+}
+
+});
+
+window.logout=async()=>{
+
+await auth.signOut();
+
+location.href="login.html";
+
+};
+
+window.toggleSidebar=()=>{
+
+document
+.querySelector(".sidebar")
+.classList
+.toggle("active");
+
+};
+
+</script>
+
+<div class="dashboard-container">
+
+<div class="sidebar">
+
+    <div class="sidebar-title">
+
+        Belgrave Private Bank
+
+        <span>PRIVATE BANKING</span>
+
+    </div>
+
+    <nav>
+
+        <a href="#" class="active">
+            🏠 Home
+        </a>
+
+        <a href="#">
+            🏦 Accounts
+        </a>
+
+        <a href="#">
+            📈 Investments
+        </a>
+
+        <a href="#">
+            📄 Statements
+        </a>
+
+        <a href="#">
+            💳 Cards
+        </a>
+
+        <a href="#">
+            💸 Transfer Funds
+        </a>
+
+        <a href="#">
+            ⚙️ Settings
+        </a>
+
+    </nav>
+
+    <div class="sidebar-footer">
+
+        <small>Relationship Manager</small>
+
+        <strong>Emma Richardson</strong>
+
+    </div>
+
+</div>
+
+<main class="main-content">
+
+<section class="dashboard-hero">
+
+<div class="hero-top">
+
+<div class="hero-left">
+
+<span class="hero-tag">
+
+PRIVATE BANKING
+
+</span>
+
+<h1 id="welcomeUser">
+
+Loading...
+
+</h1>
+
+<p class="hero-description">
+
+Manage your wealth securely through one unified private banking platform.
+
+</p>
+
+</div>
+
+<div class="hero-balance">
+
+<small>
+
+Available Balance
+
+</small>
+
+<h2 id="balance">
+
+$146,243,300
+
+</h2>
+
+<span class="secure-badge">
+
+● Secure Banking
+
+</span>
+
+</div>
+
+</div>
+
+</section>
+
+<section class="card-section">
+
+<div class="card-column">
+
+<div
+class="bank-card"
+id="bankCard">
+
+<div class="card-top">
+
+<span>
+
+Belgrave Private Card
+
+</span>
+
+<div
+class="toggle-eye"
+onclick="toggleCardReveal()">
+
+👁️
+
+</div>
+
+</div>
+
+<div class="card-chip"></div>
+
+<div
+class="card-number"
+id="cardNumber">
+
+•••• •••• •••• 4821
+
+</div>
+
+<div class="card-bottom">
+
+<div>
+
+<small>
+
+Card Holder
+
+</small>
+
+<p>
+
+Fred Hallman
+
+</p>
+
+</div>
+
+<div>
+
+<small>
+
+Expiry
+
+</small>
+
+<p>
+
+09/29
+
+</p>
+
+</div>
+
+</div>
+
+</div>
+
+</div>
+
+<div class="portfolio-summary">
+
+<h3>
+
+Portfolio Summary
+
+</h3>
+
+<div class="summary-item">
+
+<span>
+
+Portfolio Value
+
+</span>
+
+<strong>
+
+$87,540,000
+
+</strong>
+
+</div>
+
+<div class="summary-item">
+
+<span>
+
+Today's Performance
+
+</span>
+
+<strong class="positive">
+
++$125,420
+
+</strong>
+
+</div>
+
+<div class="summary-item">
+
+<span>
+
+Investment Accounts
+
+</span>
+
+<strong>
+
+7
+
+</strong>
+
+</div>
+
+<div class="summary-item">
+
+<span>
+
+Relationship Manager
+
+</span>
+
+<strong>
+
+Emma Richardson
+
+</strong>
+
+</div>
+
+</div>
+
+</section>
+  <!-- ================= QUICK ACTIONS ================= -->
+
+<section class="quick-actions">
+
+<div class="quick-actions-container">
+
+<div
+class="action-card"
+onclick="openDeposit()">
+
+<div class="icon">
+
+💰
+
+</div>
+
+<h3>
+
+Deposit
+
+</h3>
+
+<p>
+
+Add funds to your account
+
+</p>
+
+</div>
+
+<div
+class="action-card"
+onclick="openWithdraw()">
+
+<div class="icon">
+
+📤
+
+</div>
+
+<h3>
+
+Withdraw
+
+</h3>
+
+<p>
+
+Send money to your bank
+
+</p>
+
+</div>
+
+<div
+class="action-card"
+onclick="openTransfer()">
+
+<div class="icon">
+
+🔄
+
+</div>
+
+<h3>
+
+Transfer
+
+</h3>
+
+<p>
+
+Move funds instantly
+
+</p>
+
+</div>
+
+<div
+class="action-card"
+onclick="openStatements()">
+
+<div class="icon">
+
+📄
+
+</div>
+
+<h3>
+
+Statements
+
+</h3>
+
+<p>
+
+View account history
+
+</p>
+
+</div>
+
+</div>
+
+</section>
+
+<!-- ================= ACCOUNT STATS ================= -->
+
+<section class="stats">
+
+<div class="stat-card">
+
+<small>
+
+Available Balance
+
+</small>
+
+<h3 id="primaryBalance">
+
+$146,243,300
+
+</h3>
+
+<p>
+
+Primary Account
+
+</p>
+
+</div>
+
+<div class="stat-card">
+
+<small>
+
+Total Income
+
+</small>
+
+<h3 id="totalIncome">
+
+$76,531,500
+
+</h3>
+
+<p>
+
+2026
+
+</p>
+
+</div>
+
+<div class="stat-card">
+
+<small>
+
+Total Expenses
+
+</small>
+
+<h3 id="totalExpenses">
+
+$2,288,200
+
+</h3>
+
+<p>
+
+2026
+
+</p>
+
+</div>
+
+</section>
+
+<!-- ================= TRANSACTIONS ================= -->
+
+<section class="transactions">
+
+<div class="transaction-header">
+
+<h2>
+
+Recent Transactions
+
+</h2>
+
+<button
+class="view-all-btn">
+
+View All
+
+</button>
+
+</div>
+
+<div
+id="transactionCards"
+class="transaction-cards">
+
+</div>
+
+<div class="transaction-table">
+
+<table>
+
+<thead>
+
+<tr>
+
+<th>Date</th>
+
+<th>Description</th>
+
+<th>Category</th>
+
+<th>Debit</th>
+
+<th>Credit</th>
+
+<th>Balance</th>
+
+<th>Status</th>
+
+</tr>
+
+</thead>
+
+<tbody id="transactionTable">
+
+</tbody>
+
+</table>
+
+</div>
+
+</section>
+
+<!-- ================= CARDS ================= -->
+
+<section
+id="cardsSection"
+style="display:none;">
+
+<h2>
+
+Your Cards
+
+</h2>
+
+</section>
+<!-- ================= POPUPS ================= -->
+
+<div id="transferPopup"
+     class="popup"
+     style="display:none;">
+</div>
+
+<div id="statementPopup"
+     class="popup"
+     style="display:none;">
+
+    <div class="popup-box">
+
+        <h3>
+            Account Statement
+        </h3>
+
+        <input
+            type="date"
+            id="fromDate">
+
+        <input
+            type="date"
+            id="toDate">
+
+        <button onclick="downloadStatement()">
+            Download
+        </button>
+
+        <button onclick="closeStatement()">
+            Close
+        </button>
+
+    </div>
+
+</div>
+
+
+<!-- ================= ACTIVITY PANEL ================= -->
+
+<button
+id="activityButton"
+class="activity-button"
+onclick="toggleActivityPanel()">
+
+📋 Activity
+
+</button>
+
+<div
+id="activityPanel"
+class="activity-panel"
+style="display:none;">
+
+<div
+class="activity-header"
+onclick="toggleActivityPanel()">
+
+<h4>
+
+System Activity
+
+</h4>
+
+<span id="activityToggle">
+
+▲
+
+</span>
+
+</div>
+
+<div id="activityLog">
+
+</div>
+
+</div>
+
+
+</main>
+
+</div>
+
+
+<!-- ================= JAVASCRIPT ================= -->
+
+<script src="actions.js"></script>
+<script src="script.js"></script>
+
+<script>
+
+let cardUnlocked=false;
+
+let revealed=false;
+
+const cardData={
+
+last4:"4821",
+
+fullNumber:"5391 7284 1928 4821"
+
+};
+
+
+function unlockDashboard(){
+
+document
+.getElementById("pinModal")
+.classList
+.add("hidden");
+
+}
+
+
+function verifyPin(){
+
+const pin=document
+.getElementById("pinInput")
+.value;
+
+if(pin==="1234"){
+
+cardUnlocked=true;
+
+unlockDashboard();
+
+}else{
+
+document
+.getElementById("pinError")
+.innerHTML="Invalid PIN";
+
+}
+
+}
+
+
+function toggleCardReveal(){
+
+if(!cardUnlocked){
+
+document
+.getElementById("pinModal")
+.classList
+.remove("hidden");
+
+return;
+
+}
+
+revealed=!revealed;
+
+document
+.getElementById("cardNumber")
+.innerHTML=
+
+revealed
+
+? cardData.fullNumber
+
+: "•••• •••• •••• "+cardData.last4;
+
+}
+
+</script>
+
+</body>
+
+</html>

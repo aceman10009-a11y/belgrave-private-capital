@@ -1,1 +1,69 @@
-locales/fr/contact.json
+{
+  "hero": {
+    "tag": "NOUS CONTACTER",
+    "title": "Entrez en contact avec Belgrave Private Bank",
+    "description": "Que vous ayez besoin d'une assistance en banque privée, de conseils en gestion de patrimoine ou d'un accompagnement concernant votre compte, nos spécialistes sont à votre disposition."
+  },
+
+  "intro": {
+    "title": "Un accompagnement dédié à nos clients",
+    "description": "Nos conseillers dédiés vous offrent une assistance personnalisée et des conseils professionnels adaptés à vos besoins financiers."
+  },
+
+  "form": {
+    "title": "Envoyez-nous un message",
+
+    "fields": {
+      "name": "Nom complet",
+      "email": "Adresse e-mail",
+      "phone": "Numéro de téléphone",
+      "subject": "Objet",
+      "message": "Message"
+    },
+
+    "placeholders": {
+      "name": "Saisissez votre nom complet",
+      "email": "Saisissez votre adresse e-mail",
+      "phone": "Saisissez votre numéro de téléphone",
+      "subject": "Saisissez l'objet du message",
+      "message": "Rédigez votre message"
+    },
+
+    "button": "Envoyer le message",
+
+    "success": "Votre message a été envoyé avec succès.",
+    "error": "Impossible d'envoyer votre message. Veuillez réessayer."
+  },
+
+  "support": {
+    "title": "Assistance clientèle",
+
+    "items": {
+      "privateBanking": {
+        "title": "Assistance Banque Privée",
+        "description": "Échangez avec un conseiller dédié concernant vos besoins en services bancaires."
+      },
+
+      "wealthManagement": {
+        "title": "Assistance en Gestion de Patrimoine",
+        "description": "Obtenez des conseils sur les investissements, les portefeuilles et la planification financière."
+      },
+
+      "technical": {
+        "title": "Assistance Banque en Ligne",
+        "description": "Recevez de l'aide pour l'accès sécurisé à votre banque en ligne et aux services de la plateforme."
+      }
+    }
+  },
+
+  "office": {
+    "title": "Nos bureaux dans le monde",
+    "description": "Belgrave Private Bank accompagne ses clients à travers le monde grâce à un réseau international de professionnels de la finance."
+  },
+
+  "cta": {
+    "title": "Prêt à commencer votre parcours en banque privée ?",
+    "description": "Contactez nos spécialistes pour découvrir des solutions financières personnalisées, conçues en fonction de vos objectifs.",
+    "button": "Contacter notre équipe"
+  }
+}
