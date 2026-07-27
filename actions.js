@@ -2,6 +2,7 @@
    BELGRAVE DASHBOARD ACTIONS
 =========================== */
 
+console.log("✅ actions.js loaded");
 const transactions = [
   {
     date: "03 Jan 2024",
@@ -419,145 +420,400 @@ const transactions = [
   }
 ];
 
-/* ===========================
-   POPUPS
-=========================== */
+/* ==========================================================
+   ACTION MODAL
+========================================================== */
 
-function showRestriction(
-  title = "Transaction Restricted",
-  message = "This operation is currently under banking jurisdiction review."
-) {
-  const popup = document.getElementById("transferPopup");
+function showActionModal(icon, title, message) {
 
-  if (!popup) return;
+    const modal = document.getElementById("actionModal");
+    const modalIcon = document.getElementById("modalIcon");
+    const modalTitle = document.getElementById("modalTitle");
+    const modalMessage = document.getElementById("modalMessage");
 
-  popup.innerHTML = `
-    <div class="popup-box">
-      <h3>${title}</h3>
+    if (!modal || !modalIcon || !modalTitle || !modalMessage) {
+        console.error("Action Modal not found.");
+        return;
+    }
 
-      <p>${message}</p>
+    modalIcon.textContent = icon;
+    modalTitle.textContent = title;
 
-      <button onclick="closePopup()">Close</button>
-    </div>
-  `;
+    // IMPORTANT:
+    // Allows forms and HTML to render correctly.
+    modalMessage.innerHTML = message;
 
-  popup.style.display = "flex";
+    modal.classList.add("active");
 }
 
-function closePopup() {
-  const popup = document.getElementById("transferPopup");
+function closeActionModal() {
 
-  if (popup) {
-    popup.style.display = "none";
-  }
+    const modal = document.getElementById("actionModal");
+
+    if (modal) {
+        modal.classList.remove("active");
+    }
+
 }
 
-/* ===========================
+
+/* ==========================================================
    QUICK ACTIONS
-=========================== */
-
-function openDeposit() {
-  showRestriction(
-    "Deposits Restricted",
-    "Deposits are temporarily restricted under banking jurisdiction review."
-  );
-}
-
-function openWithdraw() {
-  showRestriction(
-    "Withdrawals Restricted",
-    "Withdrawals are temporarily restricted under banking jurisdiction review."
-  );
-}
+========================================================== */
 
 function openTransfer() {
-  showRestriction(
-    "Transfers Restricted",
-    "Transfers are temporarily restricted under banking jurisdiction review."
-  );
+
+    showActionModal(
+
+        "💸",
+
+        "Transfer Restricted",
+
+        `
+        <p>
+        Online transfers are temporarily unavailable due to
+        regulatory compliance requirements.
+        </p>
+
+        <br>
+
+        <strong>
+        Please contact your Relationship Manager.
+        </strong>
+        `
+
+    );
+
 }
 
-/* ===========================
+
+function openDeposit() {
+
+    showActionModal(
+
+        "💰",
+
+        "Deposits Temporarily Unavailable",
+
+        `
+        <p>
+        Deposits into this account have been temporarily
+        suspended pending compliance review.
+        </p>
+        `
+
+    );
+
+}
+
+
+function openWithdraw() {
+
+    showActionModal(
+
+        "🏦",
+
+        "Withdrawals Restricted",
+
+        `
+        <p>
+        Withdrawals require manual authorization by
+        Belgrave Private Banking.
+        </p>
+        `
+
+    );
+
+}
+
+
+function openCards() {
+
+    showActionModal(
+
+        "💳",
+
+        "Card Management",
+
+        `
+        <p>
+        Card replacement, PIN reset and spending limit
+        changes are handled exclusively by your
+        Relationship Manager.
+        </p>
+        `
+
+    );
+
+}
+
+
+function openInvestments() {
+
+    showActionModal(
+
+        "📈",
+
+        "Investment Portfolio",
+
+        `
+        <p>
+        Your investment portfolio remains under a managed
+        holding period until 31 December 2029.
+        </p>
+        `
+
+    );
+
+}
+
+
+function openPayBills() {
+
+    showActionModal(
+
+        "🧾",
+
+        "Bill Payments",
+
+        `
+        <p>
+        Online bill payments are currently unavailable
+        for this account.
+        </p>
+        `
+
+    );
+
+}
+/* ==========================================================
    STATEMENTS
-=========================== */
+========================================================== */
 
 function openStatements() {
-  const popup = document.getElementById("statementPopup");
 
-  if (popup) {
-    popup.style.display = "flex";
-  }
+    showActionModal(
+
+        "📄",
+
+        "Generate Account Statement",
+
+        `
+
+        <div class="statement-form">
+
+            <label>Statement Period</label>
+
+            <select id="statementPeriod">
+
+                <option>Current Month</option>
+                <option>Last Month</option>
+                <option>Last 3 Months</option>
+                <option>Last 6 Months</option>
+                <option>Last 12 Months</option>
+
+            </select>
+
+            <label>Email Address</label>
+
+            <input
+                id="statementEmail"
+                type="email"
+                placeholder="Enter email address">
+
+            <button
+                class="modal-primary-btn"
+                onclick="generateStatement()">
+
+                Generate & Email Statement
+
+            </button>
+
+        </div>
+
+        `
+
+    );
+
 }
 
-function closeStatement() {
-  const popup = document.getElementById("statementPopup");
 
-  if (popup) {
-    popup.style.display = "none";
-  }
+function generateStatement() {
+
+    const email =
+        document.getElementById("statementEmail")?.value.trim();
+
+    const period =
+        document.getElementById("statementPeriod")?.value;
+
+    if (!email) {
+
+        showActionModal(
+
+            "⚠️",
+
+            "Email Required",
+
+            "Please enter a valid email address."
+
+        );
+
+        return;
+
+    }
+
+    showActionModal(
+
+        "✅",
+
+        "Statement Requested",
+
+        `
+
+        <p>
+
+        Your request has been received successfully.
+
+        </p>
+
+        <br>
+
+        <strong>Statement Period</strong><br>
+
+        ${period}
+
+        <br><br>
+
+        <strong>Delivery Email</strong><br>
+
+        ${email}
+
+        <br><br>
+
+        Your statement will be delivered securely.
+
+        `
+
+    );
+
 }
 
-function downloadStatement() {
-  alert("Statement generated successfully.");
+
+/* ==========================================================
+   SUPPORT
+========================================================== */
+
+function openSupport() {
+
+    showActionModal(
+
+        "💬",
+
+        "Private Banking Support",
+
+        `
+
+        <div class="statement-form">
+
+            <label>Subject</label>
+
+            <input
+                id="supportSubject"
+                placeholder="Subject">
+
+            <label>Message</label>
+
+            <textarea
+                id="supportMessage"
+                rows="6"
+                placeholder="How may we assist you today?"></textarea>
+
+            <button
+                class="modal-primary-btn"
+                onclick="sendSupportMessage()">
+
+                Send Secure Message
+
+            </button>
+
+        </div>
+
+        `
+
+    );
+
 }
 
-/* ===========================
+
+function sendSupportMessage() {
+
+    const subject =
+        document.getElementById("supportSubject")?.value.trim();
+
+    const message =
+        document.getElementById("supportMessage")?.value.trim();
+
+    if (!subject || !message) {
+
+        showActionModal(
+
+            "⚠️",
+
+            "Incomplete Form",
+
+            "Please complete all fields before sending your secure message."
+
+        );
+
+        return;
+
+    }
+
+    showActionModal(
+
+        "✅",
+
+        "Message Sent",
+
+        "Your secure message has been delivered successfully. A Relationship Manager will contact you shortly."
+
+    );
+
+}
+
+
+/* ==========================================================
    SIDEBAR
-=========================== */
+========================================================== */
 
 function goAccounts() {
-  showRestriction(
-    "Accounts Restricted",
-    "Accounts are currently restricted under banking jurisdiction review."
-  );
+    openCards();
 }
 
 function goInvestments() {
-  showRestriction(
-    "Investments Locked",
-    "Investments are locked until 2029."
-  );
+    openInvestments();
 }
 
 function openTransfers() {
-  showRestriction(
-    "Transfers Restricted",
-    "Transfers are currently restricted under banking jurisdiction review."
-  );
+    openTransfer();
 }
 
 function openSettings() {
-  showRestriction(
-    "Settings Restricted",
-    "Settings are currently restricted under banking jurisdiction review."
-  );
+
+    showActionModal(
+
+        "⚙️",
+
+        "Settings",
+
+        "Account settings are managed through your Relationship Manager."
+
+    );
+
 }
-
-function openCards() {
-  const cards = document.getElementById("cardsSection");
-
-  if (cards) {
-    cards.style.display = "block";
-
-    cards.scrollIntoView({
-      behavior: "smooth"
-    });
-  }
-}
-
-function toggleTransactions() {
-  const section = document.querySelector(".transactions");
-
-  if (section) {
-    section.scrollIntoView({
-      behavior: "smooth"
-    });
-  }
-}
-
-/* ===========================
+/* ==========================================================
    TRANSACTION TABLE
-=========================== */
+========================================================== */
 
 function renderTransactions() {
 
@@ -586,100 +842,137 @@ function renderTransactions() {
                 : "—";
 
         const amountClass =
-            tx.amount > 0
+            tx.amount >= 0
                 ? "credit"
                 : "debit";
 
         tableHTML += `
-        <tr>
 
-            <td>${tx.date}</td>
+            <tr>
 
-            <td>${tx.description}</td>
+                <td>${tx.date}</td>
 
-            <td>${tx.category}</td>
+                <td>${tx.description}</td>
 
-            <td>${debit}</td>
+                <td>${tx.category}</td>
 
-            <td>${credit}</td>
+                <td>${debit}</td>
 
-            <td>$${runningBalance.toLocaleString()}</td>
+                <td>${credit}</td>
 
-            <td>
+                <td>$${runningBalance.toLocaleString()}</td>
 
-                <span class="status success">
+                <td>
 
-                    Completed
+                    <span class="status success">
 
-                </span>
+                        Completed
 
-            </td>
+                    </span>
 
-        </tr>
+                </td>
+
+            </tr>
+
         `;
 
         cardHTML += `
 
-        <div class="transaction-card">
+            <div class="transaction-card">
 
-            <div class="transaction-card-header">
+                <div class="transaction-card-header">
+
+                    <div>
+
+                        <div class="transaction-card-title">
+
+                            ${tx.description}
+
+                        </div>
+
+                        <div class="transaction-card-date">
+
+                            ${tx.date}
+
+                        </div>
+
+                    </div>
+
+                    <div class="${amountClass}">
+
+                        ${tx.amount >= 0 ? "+" : "-"}$${Math.abs(tx.amount).toLocaleString()}
+
+                    </div>
+
+                </div>
 
                 <div>
 
-                    <div class="transaction-card-title">
-
-                        ${tx.description}
-
-                    </div>
-
-                    <div class="transaction-card-date">
-
-                        ${tx.date}
-
-                    </div>
+                    ${tx.category}
 
                 </div>
 
-                <div class="${amountClass}">
+                <div class="transaction-card-footer">
 
-                    ${tx.amount > 0 ? "+" : "-"}$${Math.abs(tx.amount).toLocaleString()}
+                    <strong>
+
+                        Balance
+
+                    </strong>
+
+                    <strong>
+
+                        $${runningBalance.toLocaleString()}
+
+                    </strong>
 
                 </div>
 
             </div>
-
-            <div>
-
-                ${tx.category}
-
-            </div>
-
-            <div class="transaction-card-footer">
-
-                <strong>
-
-                    Balance
-
-                </strong>
-
-                <strong>
-
-                    $${runningBalance.toLocaleString()}
-
-                </strong>
-
-            </div>
-
-        </div>
 
         `;
 
     });
 
     tableBody.innerHTML = tableHTML;
-
     cardContainer.innerHTML = cardHTML;
 
 }
 
+
+/* ==========================================================
+   INITIALIZATION
+========================================================== */
+
+document.addEventListener("DOMContentLoaded", () => {
+
+    renderTransactions();
+
+});
+
+
+/* ==========================================================
+   EXPORTS
+========================================================== */
+
 window.renderTransactions = renderTransactions;
+window.showActionModal = showActionModal;
+window.closeActionModal = closeActionModal;
+
+window.openTransfer = openTransfer;
+window.openDeposit = openDeposit;
+window.openWithdraw = openWithdraw;
+window.openCards = openCards;
+window.openInvestments = openInvestments;
+window.openPayBills = openPayBills;
+
+window.openStatements = openStatements;
+window.generateStatement = generateStatement;
+
+window.openSupport = openSupport;
+window.sendSupportMessage = sendSupportMessage;
+
+window.goAccounts = goAccounts;
+window.goInvestments = goInvestments;
+window.openTransfers = openTransfers;
+window.openSettings = openSettings;

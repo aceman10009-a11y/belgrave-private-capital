@@ -1,287 +1,696 @@
 console.log("Belgrave Private Bank Loaded");
 
+
+/* ==========================================================
+   SECURITY CONFIGURATION
+========================================================== */
+
 const USER_JURISDICTION = "restricted";
 
-function isAllowed(feature) {
-  const rules = {
-    cards: false,
-    transfers: false,
-    investments: true,
-    statements: true,
-    ledger: true
-  };
 
-  if (USER_JURISDICTION === "full") return true;
-  return rules[feature] || false;
+function isAllowed(feature){
+
+    const rules = {
+
+        cards:false,
+        transfers:false,
+        investments:true,
+        statements:true,
+        ledger:true
+
+    };
+
+
+    if(USER_JURISDICTION === "full"){
+
+        return true;
+
+    }
+
+
+    return rules[feature] || false;
+
 }
 
-document.addEventListener("DOMContentLoaded", () => {
-  initActivityPanel();
-  logActivity("System initializing...");
-  logActivity("Security layer active");
 
-  if (window.location.pathname.includes("dashboard.html")) {
-    logActivity("Secure session started");
-    // startSessionTimer();
-    initLedgerSystem();
 
-    setTimeout(() => {
-      const welcome = document.getElementById("welcomeUser");
-      if (!welcome) return;
+/* ==========================================================
+   INITIALIZATION
+========================================================== */
 
-      // Only override if Firebase left default text
-      if (
-        welcome.innerText === "Loading..." ||
-        welcome.innerText.includes("Client") ||
-        welcome.innerText.trim() === ""
-      ) {
-        welcome.innerText = "Welcome Fred";
-      }
-    }, 600);
-  }
+
+document.addEventListener("DOMContentLoaded",()=>{
+
+
+    initActivityPanel();
+
+
+    logActivity("System initializing...");
+
+
+    logActivity("Security layer active");
+
+
+
+    if(window.location.pathname.includes("dashboard.html")){
+
+
+        logActivity("Secure session started");
+
+
+        initLedgerSystem();
+
+
+
+        setTimeout(()=>{
+
+
+            const welcome =
+            document.getElementById("welcomeUser");
+
+
+
+            if(!welcome) return;
+
+
+
+            if(
+
+                welcome.innerText === "Loading..." ||
+
+                welcome.innerText.includes("Client") ||
+
+                welcome.innerText.trim()===""
+
+            ){
+
+                welcome.innerText="Welcome Fred";
+
+            }
+
+
+
+        },600);
+
+
+
+    }
+
+
+
 });
 
-// ================= ACTIVITY =================
 
-function initActivityPanel() {
-  const logBox = document.getElementById("activityLog");
-  if (logBox) logBox.innerHTML = "";
-}
 
-function logActivity(msg) {
-  const logBox = document.getElementById("activityLog");
-  if (!logBox) return;
 
-  const div = document.createElement("div");
-  div.textContent = "• " + msg;
-  logBox.prepend(div);
-}
 
-// ================= POPUPS =================
+/* ==========================================================
+   ACTIVITY PANEL
+========================================================== */
 
-function transferAttempt() {
-  const popup = document.getElementById("transferPopup");
-  if (popup) popup.style.display = "block";
-}
 
-function closePopup() {
-  const popup = document.getElementById("transferPopup");
-  if (popup) popup.style.display = "none";
-}
+function initActivityPanel(){
 
-// ================= STATEMENT =================
 
-window.openStatement = function () {
-  const p = document.getElementById("statementPopup");
-  if (p) p.style.display = "block";
-};
+    const logBox =
+    document.getElementById("activityLog");
 
-window.closeStatement = function () {
-  const p = document.getElementById("statementPopup");
-  if (p) p.style.display = "none";
-};
 
-window.downloadStatement = function () {
-  alert("Statement download requested");
-  logActivity("Statement downloaded");
-};
+    if(logBox){
 
-// ================= ACCOUNTS =================
+        logBox.innerHTML="";
 
-window.openAccounts = function () {
-  alert("Accounts are restricted under compliance rules.");
-};
-
-window.openInvestments = function () {
-  alert("Investments are locked until 2029.");
-};
-
-window.confirmHome = function () {
-  if (confirm("Return to homepage?")) {
-    window.location.href = "index.html";
-  }
-};
-
-window.openCards = function () {
-  const section = document.getElementById("cardsSection");
-  if (!section) return;
-
-  if (section.style.display === "block") {
-    section.style.display = "none";
-  } else {
-    section.style.display = "block";
-  }
-
-  logActivity("Cards toggled");
-};
-
-// ================= SESSION =================
-let sessionInterval = null;
-
-function startSessionTimer() {
-  let t = 300;
-
-  sessionInterval = setInterval(() => {
-    t--;
-
-    if (t <= 0) {
-      clearInterval(sessionInterval);
-      sessionInterval = null;
-      window.location.replace("login.html");
-    }
-  }, 1000);
-}
-
-// ================= LEDGER =================
-
-function initLedgerSystem() {
-  const table = document.getElementById("transactionTable");
-  const balanceEl = document.getElementById("balance");
-  const incomeEl = document.getElementById("totalIncome");
-  const expenseEl = document.getElementById("totalExpenses");
-
-  if (!table) return;
-
-  // Initial base calculation values
-  let balance = 72000000; 
-  let income = 0;
-  let expenses = 0;
-  let html = "";
-
-  // Properly converted from raw strings to JS data format object lists
-  const transactions = [
-    { date: "28 Jun 2026", desc: "Dividend Income", category: "Investment", debit: "", credit: "385,000" },
-    { date: "15 Jun 2026", desc: "Health Insurance Premium", category: "Insurance", debit: "-4,850", credit: "" },
-    { date: "02 Jun 2026", desc: "International Wire Transfer", category: "Transfer", debit: "-68,000", credit: "" },
-    { date: "15 May 2026", desc: "Health Insurance Premium", category: "Insurance", debit: "-4,850", credit: "" },
-    { date: "22 Apr 2026", desc: "Portfolio Rebalancing", category: "Investment", debit: "-215,000", credit: "" },
-    { date: "15 Apr 2026", desc: "Health Insurance Premium", category: "Insurance", debit: "-4,850", credit: "" },
-    { date: "11 Mar 2026", desc: "Treasury Bond Coupon", category: "Investment Income", debit: "", credit: "126,500" },
-    { date: "15 Mar 2026", desc: "Health Insurance Premium", category: "Insurance", debit: "-4,850", credit: "" },
-    { date: "15 Feb 2026", desc: "Health Insurance Premium", category: "Insurance", debit: "-4,850", credit: "" },
-    { date: "06 Jan 2026", desc: "Private Banking Service Fee", category: "Banking", debit: "-2,750", credit: "" },
-    { date: "15 Jan 2026", desc: "Health Insurance Premium", category: "Insurance", debit: "-4,850", credit: "" },
-    { date: "28 Dec 2025", desc: "Dividend Income", category: "Investment", debit: "", credit: "420,000" },
-    { date: "15 Dec 2025", desc: "Health Insurance Premium", category: "Insurance", debit: "-4,850", credit: "" },
-    { date: "15 Nov 2025", desc: "Health Insurance Premium", category: "Insurance", debit: "-4,850", credit: "" },
-    { date: "20 Oct 2025", desc: "Foreign Exchange Settlement", category: "FX", debit: "-96,000", credit: "" },
-    { date: "15 Oct 2025", desc: "Health Insurance Premium", category: "Insurance", debit: "-4,850", credit: "" },
-    { date: "15 Sep 2025", desc: "Health Insurance Premium", category: "Insurance", debit: "-4,850", credit: "" },
-    { date: "15 Aug 2025", desc: "Health Insurance Premium", category: "Insurance", debit: "-4,850", credit: "" },
-    { date: "18 Jul 2025", desc: "Private Equity Distribution", category: "Investment", debit: "", credit: "2,850,000" },
-    { date: "15 Jul 2025", desc: "Health Insurance Premium", category: "Insurance", debit: "-4,850", credit: "" },
-    { date: "15 Jun 2025", desc: "Health Insurance Premium", category: "Insurance", debit: "-4,850", credit: "" },
-    { date: "15 May 2025", desc: "Health Insurance Premium", category: "Insurance", debit: "-4,850", credit: "" },
-    { date: "09 May 2025", desc: "Luxury Property Maintenance", category: "Property", debit: "-48,600", credit: "" },
-    { date: "15 Apr 2025", desc: "Health Insurance Premium", category: "Insurance", debit: "-4,850", credit: "" },
-    { date: "15 Mar 2025", desc: "Patek Philippe Grand Complication", category: "Luxury Asset", debit: "-1,000,000", credit: "" },
-    { date: "15 Mar 2025", desc: "Health Insurance Premium", category: "Insurance", debit: "-4,850", credit: "" },
-    { date: "15 Feb 2025", desc: "Health Insurance Premium", category: "Insurance", debit: "-4,850", credit: "" },
-    { date: "15 Jan 2025", desc: "Range Rover Sport Acquisition", category: "Vehicle", debit: "-125,000", credit: "" },
-    { date: "20 Dec 2024", desc: "Dividend Income", category: "Investment", debit: "", credit: "210,000" },
-    { date: "15 Dec 2024", desc: "Health Insurance Premium", category: "Insurance", debit: "-4,850", credit: "" },
-    { date: "15 Nov 2024", desc: "Health Insurance Premium", category: "Insurance", debit: "-4,850", credit: "" },
-    { date: "15 Oct 2024", desc: "Health Insurance Premium", category: "Insurance", debit: "-4,850", credit: "" },
-    { date: "27 Sep 2024", desc: "Private Banking Service Fee", category: "Banking", debit: "-2,750", credit: "" },
-    { date: "15 Sep 2024", desc: "Health Insurance Premium", category: "Insurance", debit: "-4,850", credit: "" },
-    { date: "15 Aug 2024", desc: "Health Insurance Premium", category: "Insurance", debit: "-4,850", credit: "" },
-    { date: "15 Jul 2024", desc: "Health Insurance Premium", category: "Insurance", debit: "-4,850", credit: "" },
-    { date: "05 Jul 2024", desc: "Investment Subscription", category: "Investment", debit: "-250,000", credit: "" },
-    { date: "10 Jun 2024", desc: "Monaco Yacht Club Membership", category: "Lifestyle", debit: "-95,000", credit: "" },
-    { date: "15 Jun 2024", desc: "Health Insurance Premium", category: "Insurance", debit: "-4,850", credit: "" },
-    { date: "15 May 2024", desc: "Health Insurance Premium", category: "Insurance", debit: "-4,850", credit: "" },
-    { date: "21 May 2024", desc: "Tax Settlement", category: "Tax", debit: "-74,000", credit: "" },
-    { date: "18 Mar 2024", desc: "Private Aviation Membership", category: "Lifestyle", debit: "-185,000", credit: "" },
-    { date: "15 Mar 2024", desc: "Health Insurance Premium", category: "Insurance", debit: "-4,850", credit: "" },
-    { date: "14 Feb 2024", desc: "Dividend Income", category: "Investment", debit: "", credit: "540,000" },
-    { date: "03 Jan 2024", desc: "Private Inheritance Deposit", category: "Deposit", debit: "", credit: "72,000,000" }
-  ];
-
-  transactions.forEach(t => {
-    let amount = 0;
-
-    if (t.credit && t.credit !== "") {
-      amount = Number(t.credit.replace(/,/g, ""));
-    } else if (t.debit && t.debit !== "") {
-      amount = -Number(t.debit.replace(/,/g, "").replace("-", ""));
     }
 
-    balance += amount;
 
-    if (amount > 0) income += amount;
-    else expenses += Math.abs(amount);
-
-    html += `
-      <tr>
-        <td>${t.date}</td>
-        <td>${t.desc}</td>
-        <td>${t.category}</td>
-        <td style="color: #ef4444">${t.debit ? '$' + Math.abs(Number(t.debit.replace(/,/g, ""))).toLocaleString() : ""}</td>
-        <td style="color: #10b981">${t.credit ? '$' + Number(t.credit.replace(/,/g, "")).toLocaleString() : ""}</td>
-        <td>$${balance.toLocaleString()}</td>
-        <td><span class="status-completed">Completed</span></td>
-      </tr>
-    `;
-  });
-
-  table.innerHTML = html;
-
-  if (balanceEl) balanceEl.innerText = `$${balance.toLocaleString()}`;
-  if (incomeEl) incomeEl.innerText = `$${income.toLocaleString()}`;
-  if (expenseEl) expenseEl.innerText = `$${expenses.toLocaleString()}`;
 }
 
-// ================= ACTIVITY TOGGLE =================
-window.toggleActivityPanel = function () {
-  const panel = document.getElementById("activityPanel");
-  const icon = document.getElementById("activityToggle");
 
-  if (!panel) return;
 
-  if (panel.style.display === "none" || panel.style.display === "") {
-    panel.style.display = "block";
-    if (icon) icon.textContent = "▼";
-    panel.classList.remove("collapsed");
-    return;
-  }
 
-  panel.style.display = "none";
-  if (icon) icon.textContent = "▲";
+
+function logActivity(message){
+
+
+    const logBox =
+    document.getElementById("activityLog");
+
+
+
+    if(!logBox) return;
+
+
+
+    const div =
+    document.createElement("div");
+
+
+
+    div.textContent="• "+message;
+
+
+
+    logBox.prepend(div);
+
+
+
+}
+
+
+
+
+
+/* ==========================================================
+   SESSION TIMER
+========================================================== */
+
+
+let sessionInterval=null;
+
+
+
+function startSessionTimer(){
+
+
+    let time=300;
+
+
+
+    sessionInterval=setInterval(()=>{
+
+
+        time--;
+
+
+
+        if(time<=0){
+
+
+            clearInterval(sessionInterval);
+
+
+            sessionInterval=null;
+
+
+
+            window.location.replace("login.html");
+
+        }
+
+
+
+    },1000);
+
+
+
+}
+/* ==========================================================
+   LEDGER SYSTEM
+========================================================== */
+
+
+function initLedgerSystem(){
+
+
+    const table =
+    document.getElementById("transactionTable");
+
+
+    const balanceEl =
+    document.getElementById("balance");
+
+
+    const incomeEl =
+    document.getElementById("totalIncome");
+
+
+    const expenseEl =
+    document.getElementById("totalExpenses");
+
+
+
+    if(!table) return;
+
+
+
+    let balance = 72000000;
+
+    let income = 0;
+
+    let expenses = 0;
+
+    let html = "";
+
+
+
+    const ledgerTransactions = [
+
+
+        {
+            date:"28 Jun 2026",
+            desc:"Dividend Income",
+            category:"Investment",
+            debit:"",
+            credit:"385,000"
+        },
+
+
+        {
+            date:"15 Jun 2026",
+            desc:"Health Insurance Premium",
+            category:"Insurance",
+            debit:"-4,850",
+            credit:""
+        },
+
+
+        {
+            date:"02 Jun 2026",
+            desc:"International Wire Transfer",
+            category:"Transfer",
+            debit:"-68,000",
+            credit:""
+        },
+
+
+        {
+            date:"22 Apr 2026",
+            desc:"Portfolio Rebalancing",
+            category:"Investment",
+            debit:"-215,000",
+            credit:""
+        },
+
+
+        {
+            date:"11 Mar 2026",
+            desc:"Treasury Bond Coupon",
+            category:"Investment Income",
+            debit:"",
+            credit:"126,500"
+        },
+
+
+        {
+            date:"07 Mar 2026",
+            desc:"Private Equity Distribution",
+            category:"Investment",
+            debit:"",
+            credit:"2,950,000"
+        },
+
+
+        {
+            date:"15 Mar 2026",
+            desc:"Health Insurance Premium",
+            category:"Insurance",
+            debit:"-4,850",
+            credit:""
+        },
+
+
+        {
+            date:"15 Jan 2026",
+            desc:"Health Insurance Premium",
+            category:"Insurance",
+            debit:"-4,850",
+            credit:""
+        },
+
+
+        {
+            date:"06 Jan 2026",
+            desc:"Private Banking Service Fee",
+            category:"Banking",
+            debit:"-2,750",
+            credit:""
+        },
+
+
+        {
+            date:"28 Dec 2025",
+            desc:"Dividend Income",
+            category:"Investment",
+            debit:"",
+            credit:"420,000"
+        },
+
+
+        {
+            date:"18 Jul 2025",
+            desc:"Private Equity Distribution",
+            category:"Investment",
+            debit:"",
+            credit:"2,850,000"
+        },
+
+
+        {
+            date:"15 Mar 2025",
+            desc:"Patek Philippe Grand Complication",
+            category:"Luxury Asset",
+            debit:"-1,000,000",
+            credit:""
+        },
+
+
+        {
+            date:"15 Jan 2025",
+            desc:"Range Rover Sport Acquisition",
+            category:"Vehicle",
+            debit:"-125,000",
+            credit:""
+        },
+
+
+        {
+            date:"03 Jan 2024",
+            desc:"Private Inheritance Deposit",
+            category:"Deposit",
+            debit:"",
+            credit:"72,000,000"
+        }
+
+
+    ];
+
+
+
+
+    ledgerTransactions.forEach(transaction=>{
+
+
+        let amount=0;
+
+
+
+        if(transaction.credit){
+
+
+            amount =
+            Number(
+                transaction.credit.replace(/,/g,"")
+            );
+
+
+        }
+
+
+
+        if(transaction.debit){
+
+
+            amount =
+            -Number(
+                transaction.debit
+                .replace(/,/g,"")
+                .replace("-","")
+            );
+
+
+        }
+
+
+
+        balance += amount;
+
+
+
+        if(amount>0){
+
+            income += amount;
+
+        }
+        else{
+
+            expenses += Math.abs(amount);
+
+        }
+
+
+
+
+        html += `
+
+        <tr>
+
+            <td>
+                ${transaction.date}
+            </td>
+
+
+            <td>
+                ${transaction.desc}
+            </td>
+
+
+            <td>
+                ${transaction.category}
+            </td>
+
+
+            <td class="debit">
+
+                ${
+                    transaction.debit
+                    ?
+                    "$"+Math.abs(
+                    Number(
+                    transaction.debit.replace(/,/g,"")
+                    )
+                    ).toLocaleString()
+                    :
+                    ""
+                }
+
+            </td>
+
+
+            <td class="credit">
+
+                ${
+                    transaction.credit
+                    ?
+                    "$"+Number(
+                    transaction.credit.replace(/,/g,"")
+                    ).toLocaleString()
+                    :
+                    ""
+                }
+
+            </td>
+
+
+            <td>
+
+                $${balance.toLocaleString()}
+
+            </td>
+
+
+            <td>
+
+                <span class="status-completed">
+                    Completed
+                </span>
+
+            </td>
+
+
+        </tr>
+
+        `;
+
+
+    });
+
+
+
+    table.innerHTML=html;
+
+
+
+    if(balanceEl){
+
+        balanceEl.innerText =
+        "$"+balance.toLocaleString();
+
+    }
+
+
+
+    if(incomeEl){
+
+        incomeEl.innerText =
+        "$"+income.toLocaleString();
+
+    }
+
+
+
+    if(expenseEl){
+
+        expenseEl.innerText =
+        "$"+expenses.toLocaleString();
+
+    }
+
+
+
+}
+/* ==========================================================
+   ACTIVITY PANEL TOGGLE
+========================================================== */
+
+
+window.toggleActivityPanel = function(){
+
+
+    const panel =
+    document.getElementById("activityPanel");
+
+
+    const icon =
+    document.getElementById("activityToggle");
+
+
+
+    if(!panel) return;
+
+
+
+    if(
+        panel.style.display === "none" ||
+        panel.style.display === ""
+    ){
+
+
+        panel.style.display="block";
+
+
+        if(icon){
+
+            icon.textContent="▼";
+
+        }
+
+
+        panel.classList.remove("collapsed");
+
+
+        logActivity("Activity panel opened");
+
+
+        return;
+
+
+    }
+
+
+
+    panel.style.display="none";
+
+
+    if(icon){
+
+        icon.textContent="▲";
+
+    }
+
+
+
+    logActivity("Activity panel closed");
+
+
 };
 
-// ================= TRANSACTIONS TOGGLE =================
 
-window.toggleTransactions = function () {
-  const section = document.querySelector(".transactions");
-  if (!section) return;
 
-  const isHidden = section.style.display === "none";
-  section.style.display = isHidden ? "block" : "none";
-  logActivity(isHidden ? "Transactions opened" : "Transactions hidden");
+
+
+/* ==========================================================
+   TRANSACTIONS VIEW
+========================================================== */
+
+
+window.toggleTransactions = function(){
+
+
+    const section =
+    document.querySelector(".transactions");
+
+
+
+    if(!section) return;
+
+
+
+    section.scrollIntoView({
+
+        behavior:"smooth"
+
+    });
+
+
+
+    logActivity("Transactions viewed");
+
+
 };
 
-window.showRestriction = function () {
-  const popup = document.getElementById("transferPopup");
-  if (popup) popup.style.display = "flex";
+
+
+
+
+/* ==========================================================
+   HOMEPAGE RETURN
+========================================================== */
+
+
+window.confirmHome=function(){
+
+
+    if(confirm("Return to homepage?")){
+
+
+        window.location.href="index.html";
+
+
+    }
+
+
 };
 
-window.openDeposit = function () {
-  window.showRestriction();
+
+
+
+
+/* ==========================================================
+   BASIC ACCOUNT LOGGING
+========================================================== */
+
+
+window.openAccounts=function(){
+
+
+    logActivity(
+        "Accounts section opened"
+    );
+
+
 };
 
-window.openWithdraw = function () {
-  window.showRestriction();
-};
 
-window.openTransfer = function () {
-  window.showRestriction();
-};
 
-window.openStatements = function () {
-  const popup = document.getElementById("statementPopup");
-  if (popup) popup.style.display = "flex";
-};
 
-window.openSettings = function () {
-  alert("Settings coming soon");
-};
+
+/* ==========================================================
+   EXPORTS
+========================================================== */
+
+
+window.logActivity = logActivity;
+
+window.initLedgerSystem = initLedgerSystem;
+
+window.isAllowed = isAllowed;
