@@ -1,80 +1,183 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
+
 <head>
-<title>Contact Us</title>
-<link rel="stylesheet" href="css/base.css">
-<link rel="stylesheet" href="css/components.css">
-<link rel="stylesheet" href="css/home-layout.css">
-<link rel="stylesheet" href="css/home-sections.css">
-<link rel="icon" type="image/png" href="assets/favicon.png">
+
+<meta charset="UTF-8">
+
+<meta name="viewport"
+content="width=device-width, initial-scale=1.0">
+
+<title>Belgrave Private Bank | Contact Us</title>
+
+<link rel="icon"
+href="assets/favicon.png">
+
+<link rel="stylesheet"
+href="css/base.css">
+
+<link rel="stylesheet"
+href="css/components.css">
+
+<link rel="stylesheet"
+href="css/auth.css">
+
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600;700&family=Inter:wght@300;400;500;600&display=swap"
+rel="stylesheet">
+
 </head>
 
 <body class="auth-page">
 
 <div class="auth-container">
-  <div class="auth-card">
 
-    <h2>Contact Support</h2>
+    <div class="auth-card">
 
-    <form id="contactForm">
-      <input id="name" type="text" placeholder="Your Name" required>
+        <div class="auth-logo">
 
-<input id="email" type="email" placeholder="Your Email" required>
+            <img
+                src="assets/favicon.png"
+                alt="Belgrave Private Bank Logo">
 
-<textarea
-id="message"
-placeholder="Message"
-required
-style="width:100%; padding:12px; border-radius:8px; margin-bottom:15px; background:#0b1018; color:white;">
-</textarea>
-         <button type="submit">Send Message</button>
-    </form>
+            <h1>Belgrave</h1>
 
-    <p id="contactMsg" style="margin-top:10px; color:#9ea7b3;"></p>
+            <span>PRIVATE BANK</span>
 
-    <a href="index.html" style="color:#d4af37; display:block; margin-top:15px;">
-      ← Back to Home
-    </a>
+        </div>
 
-  </div>
+        <h2>
+            Contact Our Private Banking Team
+        </h2>
+
+        <form id="contactForm">
+
+            <input
+                id="name"
+                type="text"
+                placeholder="Full Name"
+                required>
+
+            <input
+                id="email"
+                type="email"
+                placeholder="Email Address"
+                required>
+
+            <textarea
+                id="message"
+                placeholder="How may we assist you today?"
+                required
+                style="
+                    width:100%;
+                    min-height:140px;
+                    padding:15px;
+                    margin-bottom:20px;
+                    border-radius:12px;
+                    border:1px solid rgba(255,255,255,.2);
+                    background:rgba(0,0,0,.25);
+                    color:white;
+                    resize:vertical;
+                    outline:none;
+                ">
+            </textarea>
+
+            <button type="submit">
+                Send Secure Message
+            </button>
+
+        </form>
+
+        <p
+            id="contactMsg"
+            style="
+                margin-top:18px;
+                text-align:center;
+                color:#9ea7b3;
+            ">
+        </p>
+
+        <div class="auth-link">
+
+            <a href="index.html">
+                ← Return to Homepage
+            </a>
+
+        </div>
+
+    </div>
+
 </div>
 
 <!-- =========================
-     EMAILJS SDK (UPDATED)
+     EMAILJS SDK
 ========================= -->
+
 <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
 
 <script>
-  (function () {
-    emailjs.init("4x7TunwBjBhNSxbhu"); // YOUR PUBLIC KEY (FIXED)
-  })();
+
+(function(){
+
+    emailjs.init("4x7TunwBjBhNSxbhu");
+
+})();
+
 </script>
 
 <!-- =========================
-     FORM HANDLER
+     CONTACT FORM
 ========================= -->
+
 <script>
-document.getElementById("contactForm").addEventListener("submit", function(e) {
-  e.preventDefault();
 
-  const msg = document.getElementById("contactMsg");
-  msg.innerText = "Sending...";
+document
+.getElementById("contactForm")
+.addEventListener("submit",function(e){
 
-  emailjs.send("service_dcymfve", "template_oyp0p6u", {
-    from_name: this[0].value,
-    from_email: this[1].value,
-    message: this[2].value
-  })
-  .then(() => {
-    msg.innerText = "Message sent successfully!";
-    this.reset();
-  })
-  .catch((error) => {
-    msg.innerText = "Failed to send message.";
-    console.log(error);
-  });
+    e.preventDefault();
+
+    const msg=document.getElementById("contactMsg");
+
+    msg.textContent="Sending secure message...";
+
+    emailjs.send(
+
+        "service_dcymfve",
+
+        "template_oyp0p6u",
+
+        {
+
+            from_name:this.name.value,
+
+            from_email:this.email.value,
+
+            message:this.message.value
+
+        }
+
+    )
+
+    .then(()=>{
+
+        msg.textContent="Your message has been sent successfully.";
+
+        this.reset();
+
+    })
+
+    .catch((error)=>{
+
+        console.error(error);
+
+        msg.textContent="Unable to send your message. Please try again later.";
+
+    });
+
 });
+
 </script>
 
 </body>
+
 </html>

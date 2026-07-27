@@ -36,41 +36,36 @@
     <nav>
 
 
-        <a
-            href="index.html"
-            data-i18n="navbar.home">
+        <a href="index.html"
+           data-i18n="navbar.home">
             Home
         </a>
 
 
 
-        <a
-            href="#banking"
-            data-i18n="navbar.banking.label">
+        <a href="#banking"
+           data-i18n="navbar.banking.label">
             Banking
         </a>
 
 
 
-        <a
-            href="#wealth"
-            data-i18n="navbar.wealth.label">
+        <a href="#wealth"
+           data-i18n="navbar.wealth.label">
             Wealth
         </a>
 
 
 
-        <a
-            href="#security"
-            data-i18n="navbar.security.label">
+        <a href="#security"
+           data-i18n="navbar.security.label">
             Security
         </a>
 
 
 
-        <a
-            href="contact.html"
-            data-i18n="navbar.contact">
+        <a href="contact.html"
+           data-i18n="navbar.contact">
             Contact
         </a>
 
@@ -81,73 +76,88 @@
 
 
 
+    <!-- MOBILE MENU BUTTON -->
+
+    <button
+        class="menu-toggle"
+        id="menuToggle">
+
+        ☰
+
+    </button>
+
+
+
+
 
     <div class="nav-actions">
 
 
-
-       <div class="language-switcher">
-        
-
-    <select
-        id="languageSwitcher"
-        aria-label="Language Selector">
-
-        <option value="en">
-            English
-        </option>
-
-        <option value="de">
-            Deutsch
-        </option>
-
-        <option value="fr">
-            Français
-        </option>
-
-        <option value="es">
-            Español
-        </option>
-
-        <option value="da">
-            Dansk
-        </option>
-
-        <option value="fi">
-            Suomi
-        </option>
-
-        <option value="nl">
-            Nederlands
-        </option>
-
-        <option value="no">
-            Norsk
-        </option>
-
-        <option value="pl">
-            Polski
-        </option>
-
-        <option value="pt">
-            Português
-        </option>
-
-        <option value="ru">
-            Русский
-        </option>
-
-    </select>
-
-</div>
+        <div class="language-switcher">
 
 
+            <select
+                id="languageSwitcher"
+                aria-label="Language Selector">
 
 
-        <a
-            href="login.html"
-            class="nav-login"
-            data-i18n="common.buttons.login">
+                <option value="en">
+                    English
+                </option>
+
+                <option value="de">
+                    Deutsch
+                </option>
+
+                <option value="fr">
+                    Français
+                </option>
+
+                <option value="es">
+                    Español
+                </option>
+
+                <option value="da">
+                    Dansk
+                </option>
+
+                <option value="fi">
+                    Suomi
+                </option>
+
+                <option value="nl">
+                    Nederlands
+                </option>
+
+                <option value="no">
+                    Norsk
+                </option>
+
+                <option value="pl">
+                    Polski
+                </option>
+
+                <option value="pt">
+                    Português
+                </option>
+
+                <option value="ru">
+                    Русский
+                </option>
+
+
+            </select>
+
+
+        </div>
+
+
+
+
+
+        <a href="login.html"
+           class="nav-login"
+           data-i18n="common.buttons.login">
 
             Login
 
@@ -157,16 +167,66 @@
 
 
 
-        <a
-            href="signup.html"
-            class="nav-open"
-            data-i18n="common.buttons.openAccount">
+        <a href="signup.html"
+           class="nav-open"
+           data-i18n="common.buttons.openAccount">
 
             Open Account
 
         </a>
 
 
+    </div>
+
+
+
+
+
+    <!-- MOBILE DROPDOWN MENU -->
+
+    <div class="mobile-menu" id="mobileMenu">
+
+
+        <a href="index.html">
+            Home
+        </a>
+
+
+        <a href="#banking">
+            Banking
+        </a>
+
+
+        <a href="#wealth">
+            Wealth
+        </a>
+
+
+        <a href="#security">
+            Security
+        </a>
+
+
+        <a href="contact.html">
+            Contact
+        </a>
+
+
+
+        <div class="mobile-menu-actions">
+
+
+            <a href="login.html">
+                Login
+            </a>
+
+
+            <a href="signup.html">
+                Open Account
+            </a>
+
+
+        </div>
 
 
     </div>

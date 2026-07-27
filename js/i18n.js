@@ -117,6 +117,7 @@ function getNestedValue(object, path) {
 
 
 
+
 async function applyTranslations() {
 
 
@@ -128,7 +129,8 @@ async function applyTranslations() {
 
 
     const translations =
-        await loadTranslations(language);
+        await loadTranslations();
+
 
 
 
@@ -157,10 +159,6 @@ async function applyTranslations() {
 
 
 
-        /*
-            Prevent [object Object]
-            when key points to an object
-        */
 
         if (
             typeof value === "string"
@@ -209,6 +207,7 @@ function setupLanguageSwitcher() {
 
 
 
+
     const currentLanguage =
         localStorage.getItem("language")
         || DEFAULT_LANGUAGE;
@@ -218,6 +217,8 @@ function setupLanguageSwitcher() {
 
     switcher.value =
         currentLanguage;
+
+
 
 
 
@@ -263,6 +264,65 @@ function setupLanguageSwitcher() {
 
 
 
+/* =================================
+   MOBILE NAVBAR MENU
+================================= */
+
+
+function setupMobileMenu(){
+
+
+    const menuToggle =
+        document.getElementById(
+            "menuToggle"
+        );
+
+
+    const mobileMenu =
+        document.getElementById(
+            "mobileMenu"
+        );
+
+
+
+    if(
+        !menuToggle ||
+        !mobileMenu
+    ){
+
+        return;
+
+    }
+
+
+
+
+
+    menuToggle.addEventListener(
+        "click",
+        () => {
+
+
+            mobileMenu.classList.toggle(
+                "active"
+            );
+
+
+        }
+    );
+
+
+
+}
+
+
+
+
+
+
+
+
+
 document.addEventListener(
     "DOMContentLoaded",
     async () => {
@@ -284,6 +344,9 @@ document.addEventListener(
 
 
                 setupLanguageSwitcher();
+
+
+                setupMobileMenu();
 
 
 

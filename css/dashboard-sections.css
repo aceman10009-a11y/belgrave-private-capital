@@ -5,7 +5,7 @@
 
 
 /* ==========================================================
-   SHARED WHITE SECTIONS
+   PREMIUM SHARED SECTIONS
 ========================================================== */
 
 .dashboard-section,
@@ -13,25 +13,41 @@
 .transactions,
 .account-overview{
 
-    background:#FFFFFF;
+    background:
 
-    border:1px solid #E7ECF3;
+    linear-gradient(
+        135deg,
+        #FFFFFF,
+        #F7FAFD
+    );
 
-    border-radius:18px;
+
+    border:
+
+    1px solid #E5ECF5;
+
+
+    border-radius:22px;
+
 
     padding:30px;
 
+
     margin-bottom:26px;
 
+
     box-shadow:
-        0 2px 8px rgba(15,23,42,.04);
+
+    0 12px 35px rgba(15,23,42,.06);
 
 }
+
 
 
 /* ==========================================================
    SECTION HEADERS
 ========================================================== */
+
 
 .section-header,
 .transaction-header{
@@ -50,67 +66,100 @@
 
 }
 
+
 .section-tag{
 
     display:inline-block;
 
     margin-bottom:8px;
 
+
     color:#B8860B;
+
 
     font-size:.72rem;
 
+
     font-weight:700;
 
-    letter-spacing:.12em;
+
+    letter-spacing:.14em;
+
 
     text-transform:uppercase;
 
 }
 
+
+
 .section-header h2,
 .transaction-header h2{
 
+
     font-family:"Playfair Display",serif;
+
 
     font-size:2rem;
 
+
     color:#0F172A;
+
 
 }
 
+
+
 .view-all-btn{
 
-    padding:10px 18px;
+
+    padding:10px 20px;
+
 
     background:#F8FAFC;
 
-    border:1px solid #E2E8F0;
+
+    border:
+
+    1px solid #DCE6F0;
+
 
     border-radius:12px;
 
+
     color:#0F172A;
+
 
     cursor:pointer;
 
+
     font-weight:600;
+
 
     transition:.25s;
 
 }
 
+
+
 .view-all-btn:hover{
+
 
     background:#0F172A;
 
-    color:white;
+
+    color:#FFFFFF;
+
+
+    border-color:#D4AF37;
 
 }
+
 
 
 /* ==========================================================
    ACCOUNT OVERVIEW
 ========================================================== */
+
 
 .account-overview{
 
@@ -118,335 +167,557 @@
 
 }
 
+
+
 .overview-grid{
+
 
     display:grid;
 
+
     grid-template-columns:repeat(4,1fr);
+
 
     gap:20px;
 
 }
 
+
+
 .overview-card{
 
-    background:white;
 
-    border:1px solid #E7ECF3;
+    background:
 
-    border-radius:16px;
+
+    linear-gradient(
+        145deg,
+        #FFFFFF,
+        #F8FBFE
+    );
+
+
+    border:
+
+    1px solid #E5ECF5;
+
+
+    border-radius:18px;
+
 
     padding:24px;
 
+
     transition:.25s;
 
+
 }
+
+
 
 .overview-card:hover{
 
-    transform:translateY(-3px);
+
+    transform:translateY(-4px);
+
+
+    border-color:#D4AF37;
+
 
     box-shadow:
-        0 10px 22px rgba(15,23,42,.06);
+
+    0 14px 30px rgba(15,23,42,.08);
+
 
 }
+
+
 
 .overview-card small{
 
+
     display:block;
 
+
     color:#64748B;
+
 
     margin-bottom:10px;
 
+
 }
+
+
 
 .overview-card h3{
 
+
     font-size:1.8rem;
+
 
     color:#0F172A;
 
+
     margin-bottom:8px;
 
+
 }
+
+
 
 .overview-card span{
 
+
     color:#64748B;
 
+
 }
+
+
 
 .positive{
 
+
     color:#16A34A;
+
 
     font-weight:700;
 
+
 }
+
 
 
 /* ==========================================================
    TRANSACTION TOOLBAR
 ========================================================== */
 
+
 .transaction-tools{
+
 
     display:flex;
 
+
     gap:14px;
+
 
     align-items:center;
 
+
 }
+
+
 
 .transaction-tools input{
 
+
     width:260px;
+
 
     padding:12px 16px;
 
-    border:1px solid #D9E2EC;
+
+    border:
+
+    1px solid #D9E2EC;
+
 
     border-radius:12px;
 
-    background:white;
+
+    background:#FFFFFF;
+
 
     outline:none;
 
+
     transition:.2s;
 
+
 }
+
+
 
 .transaction-tools input:focus{
 
+
     border-color:#D4AF37;
 
+
+    box-shadow:
+
+    0 0 0 3px rgba(212,175,55,.12);
+
+
 }
+
 
 
 /* ==========================================================
    TRANSACTION TABLE
 ========================================================== */
 
+
 .transactions-wrapper{
+
 
     margin-top:26px;
 
+
     overflow:hidden;
+
 
     border-radius:18px;
 
+
 }
+
+
 
 .transaction-table{
 
+
     overflow:hidden;
 
-    border:1px solid #E7ECF3;
+
+    border:
+
+    1px solid #E5ECF5;
+
 
     border-radius:18px;
 
-    background:white;
+
+    background:#FFFFFF;
+
 
 }
+
+
 
 .transaction-table table{
 
+
     width:100%;
+
 
     border-collapse:collapse;
 
+
 }
+
+
 
 .transaction-table thead{
 
-    background:#F5F7FA;
+
+    background:#0F172A;
+
 
 }
+
+
 
 .transaction-table th{
 
+
     padding:16px 18px;
+
 
     text-align:left;
 
+
     font-size:.78rem;
+
 
     letter-spacing:.08em;
 
+
     text-transform:uppercase;
 
-    color:#64748B;
 
-    border-bottom:1px solid #E7ECF3;
+    color:#D4AF37;
+
+
+    border-bottom:
+
+    1px solid rgba(212,175,55,.25);
+
 
 }
+
+
 
 .transaction-table td{
 
-    padding:16px 18px;
 
-    border-bottom:1px solid #EEF2F7;
+    padding:17px 18px;
+
+
+    border-bottom:
+
+    1px solid #EEF2F7;
+
 
     color:#0F172A;
 
+
     white-space:nowrap;
 
+
 }
+
+
 
 .transaction-table tbody tr{
 
-    transition:.2s;
+
+    transition:.25s;
+
 
 }
+
+
 
 .transaction-table tbody tr:hover{
 
-    background:#F7F9FC;
+
+    background:#F7FAFD;
+
+
+    transform:scale(1.002);
+
 
 }
+
+
 
 .transaction-table tbody tr:last-child td{
 
+
     border-bottom:none;
 
+
 }
+
 
 
 /* ==========================================================
    MOBILE TRANSACTION CARDS
 ========================================================== */
 
+
 .transaction-cards{
+
 
     display:none;
 
+
     flex-direction:column;
+
 
     gap:16px;
 
+
 }
+
+
 
 .transaction-card{
 
-    background:white;
 
-    border:1px solid #E7ECF3;
+    background:
 
-    border-radius:16px;
+
+    linear-gradient(
+        145deg,
+        #FFFFFF,
+        #F8FBFE
+    );
+
+
+    border:
+
+    1px solid #E5ECF5;
+
+
+    border-radius:18px;
+
 
     padding:20px;
 
+
     box-shadow:
-        0 4px 12px rgba(15,23,42,.04);
+
+    0 8px 22px rgba(15,23,42,.05);
+
 
 }
+
+
 
 .transaction-card-header{
 
+
     display:flex;
 
+
     justify-content:space-between;
+
 
     align-items:flex-start;
 
+
     margin-bottom:16px;
 
+
 }
+
+
 
 .transaction-card-title{
 
+
     font-weight:700;
+
 
     color:#0F172A;
 
+
 }
+
+
 
 .transaction-card-date{
 
+
     color:#64748B;
+
 
     font-size:.84rem;
 
+
 }
+
+
 
 .transaction-card-footer{
 
+
     display:flex;
+
 
     justify-content:space-between;
 
+
     align-items:center;
+
 
     margin-top:18px;
 
+
 }
+
 
 
 /* ==========================================================
    TRANSACTION COLORS
 ========================================================== */
 
+
 .credit{
+
 
     color:#16A34A;
 
+
     font-weight:700;
 
+
 }
+
+
 
 .debit{
 
+
     color:#DC2626;
+
 
     font-weight:700;
 
+
 }
+
 
 
 /* ==========================================================
    STATUS BADGES
 ========================================================== */
 
+
 .status{
+
 
     display:inline-flex;
 
+
     align-items:center;
+
 
     justify-content:center;
 
+
     padding:6px 14px;
+
 
     border-radius:999px;
 
+
     font-size:.75rem;
+
 
     font-weight:700;
 
+
 }
+
+
 
 .status.success{
 
+
     background:#DCFCE7;
+
 
     color:#15803D;
 
+
 }
+
+
 
 .status.pending{
 
+
     background:#FEF3C7;
+
 
     color:#B45309;
 
+
 }
+
+
 
 .status.failed{
 
+
     background:#FEE2E2;
 
+
     color:#B91C1C;
+
 
 }

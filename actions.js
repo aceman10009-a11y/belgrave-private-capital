@@ -561,82 +561,125 @@ function toggleTransactions() {
 
 function renderTransactions() {
 
-  const table = document.getElementById("transactionTable");
-  const cards = document.getElementById("transactionCards");
+    const tableBody = document.getElementById("transactionTable");
+    const cardContainer = document.getElementById("transactionCards");
 
-  if (!table || !cards) return;
+    if (!tableBody || !cardContainer) return;
 
-  table.innerHTML = "";
-  cards.innerHTML = "";
+    let runningBalance = 0;
 
-  let runningBalance = 0;
+    let tableHTML = "";
+    let cardHTML = "";
 
-  transactions.forEach((tx) => {
+    transactions.forEach((tx) => {
 
-    runningBalance += tx.amount;
+        runningBalance += tx.amount;
 
-    const debit =
-      tx.amount < 0
-        ? `$${Math.abs(tx.amount).toLocaleString()}`
-        : "—";
+        const debit =
+            tx.amount < 0
+                ? `$${Math.abs(tx.amount).toLocaleString()}`
+                : "—";
 
-    const credit =
-      tx.amount > 0
-        ? `$${tx.amount.toLocaleString()}`
-        : "—";
+        const credit =
+            tx.amount > 0
+                ? `$${tx.amount.toLocaleString()}`
+                : "—";
 
-    const balance = `$${runningBalance.toLocaleString()}`;
+        const amountClass =
+            tx.amount > 0
+                ? "credit"
+                : "debit";
 
-    /* Desktop Table */
+        tableHTML += `
+        <tr>
 
-    table.innerHTML += `
-      <tr>
-        <td>${tx.date}</td>
-        <td>${tx.description}</td>
-        <td>${tx.category}</td>
-        <td style="color:#d83b3b">${debit}</td>
-        <td style="color:#1ca34a">${credit}</td>
-        <td>${balance}</td>
-        <td><span class="status completed">Completed</span></td>
-      </tr>
-    `;
+            <td>${tx.date}</td>
 
-    /* Mobile Card */
+            <td>${tx.description}</td>
 
-    cards.innerHTML += `
-      <div class="transaction-card">
+            <td>${tx.category}</td>
 
-          <div class="transaction-card-top">
+            <td>${debit}</td>
 
-              <div>
+            <td>${credit}</td>
 
-                  <div class="transaction-title">
-                      ${tx.description}
-                  </div>
+            <td>$${runningBalance.toLocaleString()}</td>
 
-                  <div class="transaction-date">
-                      ${tx.date}
-                  </div>
+            <td>
 
-              </div>
+                <span class="status success">
 
-              <div class="${tx.amount > 0 ? "credit" : "debit"}">
+                    Completed
 
-                  ${tx.amount > 0 ? "+" : "-"}$${Math.abs(tx.amount).toLocaleString()}
+                </span>
 
-              </div>
+            </td>
 
-          </div>
+        </tr>
+        `;
 
-          <div class="transaction-category">
-              ${tx.category}
-          </div>
+        cardHTML += `
 
-      </div>
-    `;
+        <div class="transaction-card">
 
-  });
+            <div class="transaction-card-header">
+
+                <div>
+
+                    <div class="transaction-card-title">
+
+                        ${tx.description}
+
+                    </div>
+
+                    <div class="transaction-card-date">
+
+                        ${tx.date}
+
+                    </div>
+
+                </div>
+
+                <div class="${amountClass}">
+
+                    ${tx.amount > 0 ? "+" : "-"}$${Math.abs(tx.amount).toLocaleString()}
+
+                </div>
+
+            </div>
+
+            <div>
+
+                ${tx.category}
+
+            </div>
+
+            <div class="transaction-card-footer">
+
+                <strong>
+
+                    Balance
+
+                </strong>
+
+                <strong>
+
+                    $${runningBalance.toLocaleString()}
+
+                </strong>
+
+            </div>
+
+        </div>
+
+        `;
+
+    });
+
+    tableBody.innerHTML = tableHTML;
+
+    cardContainer.innerHTML = cardHTML;
 
 }
 
-window.addEventListener("DOMContentLoaded", renderTransactions);
+window.renderTransactions = renderTransactions;

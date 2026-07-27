@@ -14,7 +14,12 @@ body{
 
     font-family:"Inter",sans-serif;
 
-    background:#F5F7FA;
+    background:
+    linear-gradient(
+        180deg,
+        #F8FAFC 0%,
+        #EEF3F8 100%
+    );
 
     color:#0F172A;
 
@@ -35,7 +40,12 @@ body{
 
     min-height:100vh;
 
-    background:#F5F7FA;
+    background:
+    linear-gradient(
+        180deg,
+        #F8FAFC 0%,
+        #EEF3F8 100%
+    );
 
 }
 
@@ -54,14 +64,25 @@ body{
 
     overflow-y:auto;
 
+
     background:
     linear-gradient(
         180deg,
-        #07111F,
-        #0D1A2D
+        #06101E 0%,
+        #0B1728 55%,
+        #111827 100%
     );
 
-    border-right:1px solid rgba(212,175,55,.10);
+
+    border-right:
+
+    1px solid rgba(212,175,55,.12);
+
+
+    box-shadow:
+
+    15px 0 45px rgba(15,23,42,.18);
+
 
     z-index:100;
 
@@ -80,7 +101,9 @@ body{
 
     gap:24px;
 
-    padding:30px;
+
+    padding:38px;
+
 
     min-width:0;
 
@@ -110,11 +133,15 @@ body{
 
     inset:0;
 
-    background:rgba(0,0,0,.45);
+
+    background:
+    rgba(0,0,0,.45);
+
 
     z-index:90;
 
 }
+
 
 .sidebar-overlay.active{
 
@@ -133,9 +160,13 @@ body{
 
 }
 
+
 .sidebar::-webkit-scrollbar-thumb{
 
-    background:rgba(255,255,255,.15);
+    background:
+
+    rgba(212,175,55,.25);
+
 
     border-radius:20px;
 
@@ -148,11 +179,14 @@ body{
 
 @media (max-width:992px){
 
+
 .dashboard-container{
 
     display:block;
 
 }
+
+
 
 .sidebar{
 
@@ -164,11 +198,17 @@ body{
 
     width:280px;
 
+
     transition:left .35s ease;
 
-    box-shadow:0 20px 70px rgba(0,0,0,.35);
+
+    box-shadow:
+
+    0 20px 70px rgba(0,0,0,.35);
 
 }
+
+
 
 .sidebar.active{
 
@@ -176,49 +216,69 @@ body{
 
 }
 
+
+
 .main-content{
 
     padding:88px 18px 24px;
 
 }
 
+
+
 .menu-btn{
 
     display:flex;
+
 
     justify-content:center;
 
     align-items:center;
 
+
     position:fixed;
+
 
     top:18px;
 
     left:18px;
 
+
     width:50px;
 
     height:50px;
 
+
     border:none;
+
 
     border-radius:16px;
 
+
     background:#0F172A;
+
 
     color:#D4AF37;
 
+
     font-size:24px;
+
 
     cursor:pointer;
 
+
     z-index:9999;
 
-    box-shadow:0 10px 25px rgba(0,0,0,.25);
+
+    box-shadow:
+
+    0 10px 25px rgba(0,0,0,.25);
 
 }
 
+
 }
+
 
 
 /* ==========================================================
@@ -226,6 +286,7 @@ body{
 ========================================================== */
 
 @media (max-width:768px){
+
 
 .main-content{
 
@@ -235,7 +296,9 @@ body{
 
 }
 
+
 }
+
 
 
 /* ==========================================================
@@ -244,10 +307,12 @@ body{
 
 @media (max-width:480px){
 
+
 .main-content{
 
     padding:74px 12px 18px;
 
 }
+
 
 }
