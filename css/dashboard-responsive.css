@@ -1,373 +1,1381 @@
 /* ==========================================================
    BELGRAVE PRIVATE BANK
-   DASHBOARD RESPONSIVE
-==========================================================*/
+   FINAL DASHBOARD RESPONSIVE SYSTEM
+
+   This file is intentionally loaded LAST.
+   It provides the final responsive overrides for the
+   dashboard without changing the desktop architecture.
+========================================================== */
 
 
 /* ==========================================================
-   LARGE TABLETS
-==========================================================*/
+   GLOBAL RESPONSIVE SAFETY
+========================================================== */
 
-@media (max-width:1200px){
-
-.dashboard-container{
-
-    grid-template-columns:250px 1fr;
-
+html,
+body {
+    max-width: 100%;
+    overflow-x: hidden;
 }
 
-.hero-top{
-
-    grid-template-columns:1fr;
-
-    gap:24px;
-
+.dashboard-container,
+.main-content,
+.dashboard-hero,
+.accounts-page,
+.transactions-section {
+    min-width: 0;
+    max-width: 100%;
 }
 
-.card-section{
-
-    grid-template-columns:1fr;
-
-}
-
-.overview-grid{
-
-    grid-template-columns:repeat(2,1fr);
-
-}
-
+img,
+svg,
+video,
+canvas {
+    max-width: 100%;
 }
 
 
 /* ==========================================================
-   TABLET
-==========================================================*/
+   LAPTOPS
+========================================================== */
 
-@media (max-width:992px){
+@media (max-width: 1200px) {
 
-.dashboard-container{
+    .overview-grid {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
 
-    display:block;
+    .executive-grid {
+        grid-template-columns: 1fr;
+    }
 
-}
-
-.menu-btn{
-
-    display:flex;
-
-    position:fixed;
-
-    top:18px;
-
-    left:18px;
-
-    width:50px;
-
-    height:50px;
-
-    justify-content:center;
-
-    align-items:center;
-
-    border:none;
-
-    border-radius:16px;
-
-    background:#0F172A;
-
-    color:#D4AF37;
-
-    box-shadow:0 12px 30px rgba(15,23,42,.30);
-
-    z-index:99999;
-
-    cursor:pointer;
-
-    font-size:24px;
+    .quick-actions-container {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
 
 }
 
-.sidebar{
 
-    position:fixed;
+/* ==========================================================
+   TABLETS
+========================================================== */
 
-    top:0;
+@media (max-width: 992px) {
 
-    left:-300px;
+    /* Dashboard shell */
 
-    width:280px;
+    .dashboard-container {
+        grid-template-columns: 1fr;
+    }
 
-    height:100vh;
+    .main-content {
+        width: 100%;
+        padding: 24px;
+    }
 
-    overflow-y:auto;
 
-    transition:left .35s ease;
+    /* General grids */
 
-    z-index:9999;
+    .overview-grid {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
 
-}
+    .executive-grid {
+        grid-template-columns: 1fr;
+    }
 
-.sidebar.active{
+    .quick-actions-container {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
 
-    left:0;
 
-}
+    /* Hero */
 
-.main-content{
+    .hero-top {
+        flex-direction: column;
+        align-items: stretch;
+    }
 
-    width:100%;
+    .hero-profile {
+        width: 100%;
+    }
 
-    padding:90px 20px 30px;
+    .hero-grid {
+        grid-template-columns: 1fr;
+    }
 
-}
+    .hero-stats {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
 
-.hero-top{
 
-    display:flex;
+    /* Accounts */
 
-    flex-direction:column;
+    .accounts-header {
+        flex-direction: column;
+        align-items: stretch;
+    }
 
-}
+    .accounts-header-actions {
+        width: 100%;
+    }
 
-.card-section{
-
-    display:flex;
-
-    flex-direction:column;
-
-}
-
-.overview-grid{
-
-    grid-template-columns:1fr;
-
-}
+    .relationship-actions {
+        width: 100%;
+    }
 
 }
 
 
 /* ==========================================================
    MOBILE
-==========================================================*/
+========================================================== */
 
-@media (max-width:768px){
+@media (max-width: 768px) {
 
-.main-content{
+    /* ------------------------------------------------------
+       PAGE / SHELL
+    ------------------------------------------------------ */
 
-    padding:80px 14px 24px;
+    .dashboard-container {
+        display: block !important;
+        width: 100% !important;
+        min-width: 0 !important;
+        max-width: 100% !important;
+    }
 
-    gap:20px;
+    .main-content {
+        display: block !important;
+        width: 100% !important;
+        min-width: 0 !important;
+        max-width: 100% !important;
+        padding: 18px 16px !important;
+        margin: 0 !important;
+        overflow-x: hidden !important;
+    }
 
-}
 
-.dashboard-section,
-.quick-actions,
-.transactions-section,
-.account-overview{
+    /* ------------------------------------------------------
+       GENERAL SECTIONS
+    ------------------------------------------------------ */
 
-    padding:22px;
+    .dashboard-section {
+        width: 100%;
+        min-width: 0;
+        margin-bottom: 28px;
+    }
 
-    border-radius:20px;
+    .overview-grid,
+    .executive-grid,
+    .quick-actions-container,
+    .dashboard-grid,
+    .dashboard-grid-2,
+    .dashboard-grid-3,
+    .dashboard-grid-4,
+    .dashboard-workspace {
+        width: 100%;
+        min-width: 0;
+        grid-template-columns: 1fr;
+    }
 
-}
 
-.hero-left h1{
+    /* ======================================================
+       HERO
+    ====================================================== */
 
-    font-size:2rem;
+    .dashboard-hero {
+        width: 100%;
+        min-width: 0;
+        overflow: hidden;
+    }
 
-    line-height:1.2;
 
-}
+    .hero-top {
+        display: flex;
+        flex-direction: column;
+        align-items: stretch;
+        gap: 24px;
+    }
 
-.hero-description{
 
-    font-size:.95rem;
+    .hero-intro {
+        width: 100%;
+        min-width: 0;
+    }
 
-}
 
-.hero-balance{
+    .hero-badge {
+        display: inline-flex;
+        max-width: 100%;
+        white-space: nowrap;
+    }
 
-    width:100%;
 
-}
+    .hero-intro h1,
+    .hero-intro h2 {
+        max-width: 100%;
+        overflow-wrap: break-word;
+        word-break: normal;
+    }
 
-.bank-card{
 
-    width:100%;
+    .hero-description {
+        max-width: 100%;
+        overflow-wrap: break-word;
+    }
 
-    min-height:220px;
 
-    padding:22px;
+    /* Hero buttons */
 
-}
+    .hero-actions {
+        display: grid;
+        grid-template-columns: 1fr;
+        width: 100%;
+        gap: 12px;
+    }
 
-.card-number{
+    .hero-actions .btn {
+        width: 100%;
+        min-width: 0;
+    }
 
-    font-size:1rem;
 
-    letter-spacing:2px;
+    /* Profile */
 
-}
+    .hero-profile {
+        width: 100%;
+        min-width: 0;
+        display: flex;
+        align-items: center;
+    }
 
-.card-bottom{
 
-    margin-top:28px;
+    /* Hero balance/cards */
 
-}
+    .hero-grid {
+        display: grid;
+        grid-template-columns: 1fr;
+        width: 100%;
+        min-width: 0;
+        gap: 20px;
+    }
 
-.quick-actions-container{
 
-    grid-template-columns:repeat(2,1fr);
+    .balance-card {
+        width: 100%;
+        min-width: 0;
+        max-width: 100%;
+        overflow: hidden;
+    }
 
-    gap:14px;
 
-}
+    .balance-card h2 {
+        max-width: 100%;
+        min-width: 0;
+        font-size: clamp(2rem, 9vw, 3rem);
+        line-height: 1.05;
+        letter-spacing: -0.03em;
+        overflow-wrap: normal;
+        white-space: nowrap;
+    }
 
-.action-card{
 
-    padding:18px;
+    .market-row {
+        width: 100%;
+        min-width: 0;
+        gap: 12px;
+    }
 
-}
 
-.stats{
+    .market-row span {
+        min-width: 0;
+        overflow-wrap: break-word;
+    }
 
-    grid-template-columns:1fr;
 
-}
+    .market-row strong {
+        min-width: 0;
+        max-width: 58%;
+        text-align: right;
+        overflow-wrap: anywhere;
+    }
 
-.overview-grid{
 
-    grid-template-columns:1fr;
+    /* Credit/debit card preview */
 
-}
+    .cards-preview {
+        width: 100%;
+        max-width: 100%;
+        min-height: 210px;
+        overflow: hidden;
+    }
 
-.transaction-table{
 
-    display:none;
+    .premium-card {
+        max-width: 85%;
+    }
 
-}
 
-.transaction-cards{
+    /* Hero statistics */
 
-    display:flex;
+    .hero-stats {
+        display: grid;
+        grid-template-columns: 1fr;
+        width: 100%;
+        gap: 14px;
+    }
 
-    flex-direction:column;
 
-    gap:16px;
+    .hero-stat {
+        width: 100%;
+        min-width: 0;
+    }
 
-}
 
-.activity-button{
+    .hero-stat strong,
+    .hero-stat small {
+        overflow-wrap: anywhere;
+    }
 
-    right:16px;
 
-    bottom:16px;
+    /* ======================================================
+       OVERVIEW
+    ====================================================== */
 
-}
+    .financial-overview {
+        width: 100%;
+        min-width: 0;
+        padding: 20px 0;
+    }
 
-.activity-panel{
 
-    left:12px;
+    .overview-header {
+        width: 100%;
+        min-width: 0;
+    }
 
-    right:12px;
 
-    width:auto;
+    .overview-header h2 {
+        font-size: clamp(1.75rem, 7vw, 2.2rem);
+        line-height: 1.15;
+    }
 
-    bottom:78px;
 
-}
+    .overview-grid {
+        grid-template-columns: 1fr;
+        gap: 16px;
+    }
+
+
+    .overview-card {
+        width: 100%;
+        min-width: 0;
+        max-width: 100%;
+        padding: 22px;
+        overflow: hidden;
+    }
+
+
+    /* ======================================================
+       ACCOUNTS
+    ====================================================== */
+
+    .accounts-page {
+        width: 100%;
+        min-width: 0;
+        padding: 20px 0;
+        gap: 24px;
+    }
+
+
+    .accounts-header {
+        width: 100%;
+        min-width: 0;
+        gap: 20px;
+    }
+
+
+    .accounts-header-content {
+        width: 100%;
+        min-width: 0;
+    }
+
+
+    .accounts-header-content h1,
+    .accounts-header-content p {
+        max-width: 100%;
+        overflow-wrap: break-word;
+    }
+
+
+    .accounts-header-actions {
+        display: grid;
+        grid-template-columns: 1fr;
+        width: 100%;
+        gap: 10px;
+    }
+
+
+    .accounts-header-actions .btn {
+        width: 100%;
+        min-width: 0;
+    }
+
+
+    /* Account summary */
+
+    .accounts-summary {
+        width: 100%;
+        min-width: 0;
+        grid-template-columns: 1fr;
+        gap: 14px;
+    }
+
+
+    .summary-card {
+        width: 100%;
+        min-width: 0;
+        max-width: 100%;
+        overflow: hidden;
+    }
+
+
+    .summary-content {
+        min-width: 0;
+        max-width: 100%;
+    }
+
+
+    .summary-content h3 {
+        max-width: 100%;
+        min-width: 0;
+        font-size: clamp(1.45rem, 7vw, 2rem);
+        overflow-wrap: anywhere;
+    }
+
+
+    .summary-content span,
+    .summary-content small {
+        overflow-wrap: anywhere;
+    }
+
+
+    /* Account toolbar */
+
+    .accounts-toolbar {
+        width: 100%;
+        min-width: 0;
+        flex-direction: column;
+        align-items: stretch;
+        gap: 12px;
+    }
+
+
+    .accounts-search {
+        width: 100%;
+        min-width: 0;
+    }
+
+
+    .accounts-search input {
+        width: 100%;
+        min-width: 0;
+        max-width: 100%;
+    }
+
+
+    .toolbar-actions {
+        display: grid;
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+        width: 100%;
+        gap: 10px;
+    }
+
+
+    .toolbar-actions .btn {
+        width: 100%;
+        min-width: 0;
+    }
+
+
+    /* Account tabs */
+
+    .account-tabs {
+        width: 100%;
+        min-width: 0;
+        max-width: 100%;
+        display: flex;
+        flex-wrap: nowrap;
+        overflow-x: auto;
+        overflow-y: hidden;
+        scrollbar-width: none;
+        -webkit-overflow-scrolling: touch;
+        padding-bottom: 6px;
+    }
+
+
+    .account-tabs::-webkit-scrollbar {
+        display: none;
+    }
+
+
+    .account-tab {
+        flex: 0 0 auto;
+        white-space: nowrap;
+    }
+
+
+    /* Account table */
+
+    .accounts-table {
+        width: 100%;
+        min-width: 0;
+        max-width: 100%;
+        overflow-x: auto;
+    }
+
+
+    /* ======================================================
+       TRANSACTIONS
+    ====================================================== */
+
+    .transactions-section {
+        width: 100%;
+        min-width: 0;
+        max-width: 100%;
+        overflow: hidden;
+    }
+
+
+    .transactions-section .section-header {
+        width: 100%;
+        min-width: 0;
+        flex-direction: column;
+        align-items: stretch;
+        gap: 14px;
+    }
+
+
+    .transactions-section .section-header h2 {
+        font-size: clamp(1.65rem, 7vw, 2rem);
+        line-height: 1.2;
+    }
+
+
+    .transaction-tools {
+        width: 100%;
+        min-width: 0;
+        flex-direction: column;
+        align-items: stretch;
+    }
+
+
+    .transaction-tools input {
+        width: 100%;
+        min-width: 0;
+        max-width: 100%;
+    }
+
+
+    .transaction-table {
+        display: none;
+    }
+
+
+    .transaction-cards {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        min-width: 0;
+        gap: 14px;
+    }
+
+
+    .transaction-card {
+        width: 100%;
+        min-width: 0;
+        max-width: 100%;
+        overflow: hidden;
+    }
+
+
+    .transaction-card * {
+        min-width: 0;
+        max-width: 100%;
+    }
+
+
+    /* Pagination */
+
+    .transaction-pagination {
+        width: 100%;
+        min-width: 0;
+        display: grid;
+        grid-template-columns: minmax(0, 1fr) auto minmax(0, 1fr);
+        align-items: center;
+        gap: 8px;
+        margin-top: 20px;
+    }
+
+
+    .pagination-btn {
+        width: 100%;
+        min-width: 0;
+        padding: 11px 8px;
+        white-space: nowrap;
+        font-size: 0.82rem;
+    }
+
+
+    #transactionPageInfo {
+        min-width: 45px;
+        text-align: center;
+        white-space: nowrap;
+        font-size: 0.8rem;
+    }
+
+
+    /* ======================================================
+       CARDS / ACTIONS
+    ====================================================== */
+
+    .bank-card,
+    .portfolio-summary,
+    .action-card {
+        width: 100%;
+        min-width: 0;
+        max-width: 100%;
+        border-radius: 20px;
+        overflow: hidden;
+    }
+
+
+    .action-icon {
+        width: 52px;
+        height: 52px;
+        flex: 0 0 52px;
+        font-size: 1.25rem;
+    }
+
+
+    /* ======================================================
+       SECTION HEADERS
+    ====================================================== */
+
+    .section-header {
+        width: 100%;
+        min-width: 0;
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 14px;
+    }
+
+
+    .view-all-btn {
+        width: 100%;
+    }
 
 }
 
 
 /* ==========================================================
    SMALL PHONES
-==========================================================*/
+========================================================== */
 
-@media (max-width:480px){
+@media (max-width: 480px) {
 
-.main-content{
+    .main-content {
+        padding: 14px 12px;
+    }
 
-    padding:76px 12px 20px;
+
+    .dashboard-section {
+        margin-bottom: 22px;
+    }
+
+
+    /* Hero */
+
+    .dashboard-hero {
+        border-radius: 22px;
+    }
+
+
+    .hero-intro h1 {
+        font-size: clamp(2.1rem, 11vw, 3rem);
+        line-height: 1.02;
+    }
+
+
+    .hero-description {
+        font-size: 0.95rem;
+        line-height: 1.65;
+    }
+
+
+    .hero-profile {
+        gap: 12px;
+    }
+
+
+    .hero-profile .avatar {
+        flex: 0 0 auto;
+    }
+
+
+    .online-pill {
+        margin-left: auto;
+        white-space: nowrap;
+        font-size: 0.7rem;
+    }
+
+
+    .balance-card {
+        padding: 22px;
+    }
+
+
+    .balance-card h2 {
+        font-size: clamp(1.9rem, 9.5vw, 2.5rem);
+    }
+
+
+    .market-row {
+        align-items: flex-start;
+    }
+
+
+    .market-row strong {
+        max-width: 55%;
+        font-size: 0.9rem;
+    }
+
+
+    .cards-preview {
+        min-height: 185px;
+    }
+
+
+    .premium-card {
+        max-width: 88%;
+    }
+
+
+    /* Overview */
+
+    .overview-card {
+        padding: 20px;
+    }
+
+
+    /* Accounts */
+
+    .accounts-page {
+        padding: 16px 0;
+        gap: 20px;
+    }
+
+
+    .toolbar-actions {
+        grid-template-columns: 1fr;
+    }
+
+
+    .summary-card {
+        padding: 18px;
+    }
+
+
+    /* Transactions */
+
+    .transaction-pagination {
+        grid-template-columns: 1fr 58px 1fr;
+        gap: 6px;
+    }
+
+
+    .pagination-btn {
+        padding: 10px 5px;
+        font-size: 0.75rem;
+    }
+
+
+    #transactionPageInfo {
+        font-size: 0.72rem;
+    }
 
 }
 
-.hero-tag{
 
-    font-size:.70rem;
+/* ==========================================================
+   VERY SMALL PHONES
+========================================================== */
 
-}
+@media (max-width: 360px) {
 
-.hero-left h1{
+    .main-content {
+        padding-left: 10px;
+        padding-right: 10px;
+    }
 
-    font-size:1.65rem;
 
-}
+    .hero-intro h1 {
+        font-size: 2rem;
+    }
 
-.hero-description{
 
-    font-size:.9rem;
+    .balance-card {
+        padding: 18px;
+    }
 
-}
 
-.hero-balance h2{
+    .balance-card h2 {
+        font-size: 1.8rem;
+    }
 
-    font-size:1.7rem;
 
-}
+    .market-row {
+        gap: 8px;
+    }
 
-.bank-card{
 
-    padding:18px;
+    .market-row span {
+        font-size: 0.82rem;
+    }
 
-}
 
-.card-number{
+    .market-row strong {
+        font-size: 0.8rem;
+        max-width: 52%;
+    }
 
-    font-size:.88rem;
 
-    letter-spacing:1px;
+    .summary-content h3 {
+        font-size: 1.35rem;
+    }
 
-    word-spacing:1px;
 
-}
-
-.quick-actions-container{
-
-    grid-template-columns:1fr;
-
-}
-
-.section-header{
-
-    flex-direction:column;
-
-    align-items:flex-start;
-
-    gap:14px;
-
-}
-
-.transaction-tools{
-
-    width:100%;
-
-    flex-direction:column;
-
-    align-items:stretch;
+    .transaction-pagination {
+        grid-template-columns: 1fr 50px 1fr;
+    }
 
 }
 
-.transaction-tools input{
+/* ==========================================================
+   MOBILE ACCOUNTS — PREMIUM CARD LAYOUT
+   Replaces desktop account grid below 768px
+========================================================== */
 
-    width:100%;
+@media (max-width: 768px){
+
+    /* ------------------------------------------------------
+       ACCOUNT TABLE CONTAINER
+    ------------------------------------------------------ */
+
+    .accounts-table{
+
+        width:100%;
+        min-width:0;
+        max-width:100%;
+
+        overflow:visible;
+
+        background:transparent;
+
+        border:none;
+
+        border-radius:0;
+
+        box-shadow:none;
+
+    }
+
+
+    /* ------------------------------------------------------
+       HIDE DESKTOP TABLE HEADER
+    ------------------------------------------------------ */
+
+    .accounts-table .table-header{
+
+        display:none;
+
+    }
+
+
+    /* ------------------------------------------------------
+       ACCOUNT ROW → MOBILE CARD
+    ------------------------------------------------------ */
+
+    .accounts-table .account-row{
+
+        display:flex;
+
+        flex-direction:column;
+
+        align-items:stretch;
+
+        gap:18px;
+
+        width:100%;
+
+        min-width:0;
+
+        margin:0 0 18px;
+
+        padding:22px;
+
+        border:1px solid #E7EEF5;
+
+        border-radius:22px;
+
+        background:#FFFFFF;
+
+        box-shadow:
+            0 12px 30px rgba(15,23,42,.06);
+
+        overflow:hidden;
+
+    }
+
+
+    .accounts-table .account-row:last-child{
+
+        margin-bottom:0;
+
+        border-bottom:1px solid #E7EEF5;
+
+    }
+
+
+    .accounts-table .account-row:hover{
+
+        background:#FFFFFF;
+
+        transform:none;
+
+    }
+
+
+    /* ------------------------------------------------------
+       ACCOUNT NAME / ICON
+    ------------------------------------------------------ */
+
+    .accounts-table .account-cell{
+
+        display:flex;
+
+        align-items:center;
+
+        width:100%;
+
+        min-width:0;
+
+        gap:14px;
+
+    }
+
+
+    .accounts-table .account-icon{
+
+        width:48px;
+
+        height:48px;
+
+        min-width:48px;
+
+        border-radius:14px;
+
+    }
+
+
+    .accounts-table .account-details{
+
+        min-width:0;
+
+        flex:1;
+
+    }
+
+
+    .accounts-table .account-details h3{
+
+        margin:0;
+
+        font-size:1rem;
+
+        line-height:1.25;
+
+        overflow-wrap:anywhere;
+
+    }
+
+
+    .accounts-table .account-details p{
+
+        margin-top:5px;
+
+        font-size:.86rem;
+
+        line-height:1.45;
+
+        overflow-wrap:anywhere;
+
+    }
+
+
+    /* ------------------------------------------------------
+       ACCOUNT DATA ROWS
+    ------------------------------------------------------ */
+
+    .accounts-table .account-row > div:not(.account-cell){
+
+        display:flex;
+
+        justify-content:space-between;
+
+        align-items:center;
+
+        width:100%;
+
+        min-width:0;
+
+        gap:16px;
+
+        font-size:.9rem;
+
+        color:#475569;
+
+    }
+
+
+    /* Labels */
+
+    .accounts-table .account-row > div:not(.account-cell)::before{
+
+        flex-shrink:0;
+
+        font-weight:600;
+
+        color:#64748B;
+
+    }
+
+
+    .accounts-table .account-row > div:nth-child(2)::before{
+
+        content:"Type";
+
+    }
+
+
+    .accounts-table .account-row > div:nth-child(3)::before{
+
+        content:"Number";
+
+    }
+
+
+    .accounts-table .account-row > div:nth-child(4)::before{
+
+        content:"Balance";
+
+    }
+
+
+    .accounts-table .account-row > div:nth-child(5)::before{
+
+        content:"Status";
+
+    }
+
+
+    /* ------------------------------------------------------
+       VALUES
+    ------------------------------------------------------ */
+
+    .accounts-table .account-row > div:nth-child(2),
+    .accounts-table .account-row > div:nth-child(3){
+
+        overflow-wrap:anywhere;
+
+        text-align:right;
+
+    }
+
+
+    .accounts-table .balance{
+
+        font-size:1.18rem;
+
+        font-weight:800;
+
+        color:#0F172A;
+
+        text-align:right;
+
+    }
+
+
+    /* ------------------------------------------------------
+       STATUS
+    ------------------------------------------------------ */
+
+    .accounts-table .status-badge{
+
+        min-width:auto;
+
+        padding:7px 12px;
+
+        font-size:.74rem;
+
+    }
+
+
+    /* ------------------------------------------------------
+       ACTION
+    ------------------------------------------------------ */
+
+    .accounts-table .row-action{
+
+        align-self:flex-end;
+
+        width:42px;
+
+        height:42px;
+
+        flex-shrink:0;
+
+        margin-top:-4px;
+
+    }
 
 }
 
-.view-all-btn{
 
-    width:100%;
+/* ==========================================================
+   SMALL PHONES
+========================================================== */
+
+@media (max-width:576px){
+
+    .accounts-table .account-row{
+
+        padding:20px;
+
+        border-radius:20px;
+
+        gap:16px;
+
+    }
+
+
+    .accounts-table .account-icon{
+
+        width:44px;
+
+        height:44px;
+
+        min-width:44px;
+
+    }
+
+
+    .accounts-table .account-details h3{
+
+        font-size:.96rem;
+
+    }
+
+
+    .accounts-table .account-details p{
+
+        font-size:.82rem;
+
+    }
+
+
+    .accounts-table .account-row > div:not(.account-cell){
+
+        font-size:.86rem;
+
+    }
+
+
+    .accounts-table .balance{
+
+        font-size:1.08rem;
+
+    }
 
 }
 
+
+/* ==========================================================
+   VERY SMALL PHONES
+========================================================== */
+
+@media (max-width:380px){
+
+    .accounts-table .account-row{
+
+        padding:18px;
+
+        gap:15px;
+
+    }
+
+
+    .accounts-table .account-row > div:not(.account-cell){
+
+        gap:10px;
+
+    }
+
+
+    .accounts-table .account-row > div:nth-child(2),
+    .accounts-table .account-row > div:nth-child(3){
+
+        font-size:.82rem;
+
+    }
+
+
+    .accounts-table .balance{
+
+        font-size:1rem;
+
+    }
+
+}
+
+/* ==========================================================
+   BELGRAVE — MOBILE SIDEBAR DRAWER
+   Drawer positioning only.
+   Sidebar contents are controlled by sidebar.css.
+========================================================== */
+
+.mobile-menu-button {
+    display: none;
+}
+
+.mobile-sidebar-overlay {
+    display: none;
+}
+
+@media (max-width: 768px) {
+
+    .mobile-menu-button {
+        display: flex !important;
+        position: fixed !important;
+        top: 16px !important;
+        left: 16px !important;
+
+        width: 48px !important;
+        height: 48px !important;
+
+        align-items: center !important;
+        justify-content: center !important;
+
+        padding: 0 !important;
+        margin: 0 !important;
+
+        border: 0 !important;
+        border-radius: 14px !important;
+
+        background: #102544 !important;
+        color: #D4AF37 !important;
+
+        font-size: 0 !important;
+        cursor: pointer !important;
+
+        z-index: 10002 !important;
+    }
+
+    .mobile-menu-button::before {
+        content: "☰";
+        display: block;
+        font-size: 25px;
+        line-height: 1;
+        color: #D4AF37;
+    }
+
+    .mobile-menu-button[aria-expanded="true"]::before {
+        content: "×";
+        font-size: 30px;
+    }
+
+
+    /* ======================================================
+       SIDEBAR DRAWER
+    ====================================================== */
+
+    #dashboard-sidebar {
+        display: block !important;
+
+        position: fixed !important;
+
+        top: 0 !important;
+        left: 0 !important;
+        right: auto !important;
+        bottom: auto !important;
+
+        width: 300px !important;
+        max-width: 86vw !important;
+
+        height: 100vh !important;
+        min-height: 100vh !important;
+
+        padding: 0 !important;
+
+        z-index: 10001 !important;
+
+        transform: translateX(-100%) !important;
+
+        transition: transform .3s ease !important;
+
+        overflow-x: hidden !important;
+        overflow-y: auto !important;
+
+        background: #ffffff !important;
+
+        box-shadow: 8px 0 30px rgba(0,0,0,.18) !important;
+    }
+
+    #dashboard-sidebar.mobile-open {
+        transform: translateX(0) !important;
+    }
+
+
+    /* ======================================================
+       OVERLAY
+    ====================================================== */
+
+    .mobile-sidebar-overlay {
+        display: block !important;
+
+        position: fixed !important;
+
+        inset: 0 !important;
+
+        background: rgba(15,23,42,.48);
+
+        backdrop-filter: blur(2px);
+        -webkit-backdrop-filter: blur(2px);
+
+        opacity: 0;
+        visibility: hidden;
+        pointer-events: none;
+
+        transition:
+            opacity .3s ease,
+            visibility .3s ease;
+
+        z-index: 10000 !important;
+    }
+
+    .mobile-sidebar-overlay.active {
+        opacity: 1;
+        visibility: visible;
+        pointer-events: auto;
+    }
 }

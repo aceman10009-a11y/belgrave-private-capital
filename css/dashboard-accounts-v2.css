@@ -1,0 +1,461 @@
+/* ==========================================================
+   BELGRAVE PRIVATE BANK
+   ACCOUNTS V2
+   PAGE LAYOUT
+========================================================== */
+
+
+/* ==========================================================
+   PAGE CONTAINER
+========================================================== */
+
+
+
+.accounts-page>*{
+
+    width:100%;
+
+}
+
+
+/* ==========================================================
+   PAGE HEADER
+========================================================== */
+
+
+
+.accounts-header-content{
+
+    flex:1;
+
+    max-width:760px;
+
+}
+
+.accounts-header h1{
+
+    margin:18px 0 18px;
+
+}
+
+.accounts-header p{
+
+    max-width:680px;
+
+}
+
+.accounts-header-actions{
+
+    display:flex;
+
+    align-items:center;
+
+    gap:16px;
+
+    flex-wrap:wrap;
+
+}
+/* ==========================================================
+   RELATIONSHIP HERO
+========================================================== */
+
+.relationship-hero{
+
+    display:grid;
+
+    grid-template-columns:2fr 420px;
+
+    gap:32px;
+
+    align-items:stretch;
+
+}
+
+.relationship-panel{
+
+    padding:42px;
+
+    border-radius:var(--radius-xl);
+
+}
+
+.relationship-panel h2{
+
+    margin:18px 0;
+
+}
+
+.relationship-panel p{
+
+    max-width:640px;
+
+}
+
+.relationship-actions{
+
+    display:flex;
+
+    gap:18px;
+
+    margin-top:36px;
+
+    flex-wrap:wrap;
+
+}
+
+.relationship-value{
+
+    display:flex;
+
+    flex-direction:column;
+
+    justify-content:center;
+
+    padding:40px;
+
+    border-radius:var(--radius-xl);
+
+}
+
+.relationship-value small{
+
+    color:var(--bp-text-muted);
+
+    text-transform:uppercase;
+
+    letter-spacing:.08em;
+
+    font-size:.80rem;
+
+}
+
+.relationship-value h2{
+
+    margin:18px 0;
+
+    font-family:"Playfair Display",serif;
+
+    font-size:3rem;
+
+    color:var(--bp-text);
+
+}
+
+.relationship-value p{
+
+    color:var(--bp-text-muted);
+
+}
+/* ==========================================================
+   SUMMARY GRID
+========================================================== */
+
+
+
+.summary-card{
+
+    display:flex;
+
+    align-items:center;
+
+    gap:20px;
+
+    padding:30px;
+
+}
+
+.summary-content{
+
+    flex:1;
+
+}
+
+.summary-content span{
+
+    display:block;
+
+    margin-bottom:8px;
+
+    font-size:.80rem;
+
+    color:var(--bp-text-muted);
+
+    letter-spacing:.05em;
+
+    text-transform:uppercase;
+
+}
+
+.summary-content h3{
+
+    margin:0;
+
+    font-family:"Playfair Display",serif;
+
+    font-size:1.6rem;
+
+    color:var(--bp-text);
+
+}
+
+.summary-content small{
+
+    display:block;
+
+    margin-top:8px;
+
+    color:var(--bp-text-faded);
+
+}
+/* ==========================================================
+   TOOLBAR
+========================================================== */
+
+
+
+.accounts-search{
+
+    position:relative;
+
+    flex:1;
+
+    min-width:340px;
+
+}
+
+.accounts-search i{
+
+    position:absolute;
+
+    left:22px;
+
+    top:50%;
+
+    transform:translateY(-50%);
+
+    color:var(--bp-text-faded);
+
+}
+
+.accounts-search input{
+
+    width:100%;
+
+    padding-left:60px;
+
+}
+
+.toolbar-actions{
+
+    display:flex;
+
+    gap:14px;
+
+    flex-wrap:wrap;
+
+}
+/* ==========================================================
+   FILTER TABS
+========================================================== */
+
+.account-tabs{
+
+    display:flex;
+
+    gap:14px;
+
+    flex-wrap:wrap;
+
+}
+
+.account-tab{
+
+    display:inline-flex;
+
+    align-items:center;
+
+    justify-content:center;
+
+    min-height:52px;
+
+    padding:0 24px;
+
+    border-radius:999px;
+
+    background:#FFFFFF;
+
+    border:1px solid var(--bp-border);
+
+    color:var(--bp-text-muted);
+
+    font-weight:600;
+
+    transition:all var(--transition);
+
+}
+
+.account-tab:hover{
+
+    border-color:var(--bp-gold);
+
+    color:var(--bp-text);
+
+    transform:translateY(-2px);
+
+}
+
+.account-tab.active{
+
+    background:var(--bp-navy);
+
+    color:#FFFFFF;
+
+    border-color:var(--bp-navy);
+
+}
+/* ==========================================================
+   RESPONSIVE LAYOUT
+========================================================== */
+
+@media (max-width:1200px){
+
+    .relationship-hero{
+
+        grid-template-columns:1fr;
+
+    }
+
+    .accounts-summary{
+
+        grid-template-columns:repeat(2,1fr);
+
+    }
+
+}
+
+@media (max-width:992px){
+
+    .accounts-page{
+
+        padding:28px;
+
+    }
+
+    .accounts-header{
+
+        flex-direction:column;
+
+    }
+
+    .accounts-header-actions{
+
+        width:100%;
+
+    }
+
+    .relationship-actions{
+
+        width:100%;
+
+    }
+
+}
+
+@media (max-width:768px){
+
+    .accounts-page{
+
+        padding:20px;
+
+        gap:30px;
+
+    }
+
+    .accounts-summary{
+
+        grid-template-columns:1fr;
+
+    }
+
+    .accounts-toolbar{
+
+        flex-direction:column;
+
+        align-items:stretch;
+
+    }
+
+    .accounts-search{
+
+        min-width:100%;
+
+    }
+
+    .toolbar-actions{
+
+        display:grid;
+
+        grid-template-columns:repeat(2,1fr);
+
+        width:100%;
+
+    }
+
+    .account-tabs{
+
+        flex-wrap:nowrap;
+
+        overflow-x:auto;
+
+        scrollbar-width:none;
+
+        padding-bottom:6px;
+
+    }
+
+    .account-tabs::-webkit-scrollbar{
+
+        display:none;
+
+    }
+
+    .account-tab{
+
+        flex:0 0 auto;
+
+    }
+
+}
+
+@media (max-width:576px){
+
+    .accounts-page{
+
+        padding:16px;
+
+    }
+
+    .toolbar-actions{
+
+        grid-template-columns:1fr;
+
+    }
+
+}
+/* ==========================================================
+
+/* ==========================================================
+   ACCOUNTS HEADER — DARK TEXT
+========================================================== */
+
+.accounts-header-content h1 {
+    color: #0F172A !important;
+}
+
+.accounts-header-content p {
+    color: #475569 !important;
+}
+
+.accounts-header-content .section-eyebrow {
+    color: #B8860B !important;
+}

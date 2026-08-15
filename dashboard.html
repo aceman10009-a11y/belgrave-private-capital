@@ -1,315 +1,196 @@
-<!DOCTYPE html>
-<html lang="en">
+<!-- ==========================================================
+     META
+========================================================== -->
 
-<head>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-<meta charset="UTF-8">
 
-<meta
-name="viewport"
-content="width=device-width, initial-scale=1.0">
+<!-- ==========================================================
+     GLOBAL DESIGN SYSTEM
+========================================================== -->
 
-<title>Belgrave Private Bank | Dashboard</title>
-
+<link rel="stylesheet" href="css/variables.css">
 <link rel="stylesheet" href="css/base.css">
 <link rel="stylesheet" href="css/components.css">
+<link rel="stylesheet" href="css/buttons.css">
+<link rel="stylesheet" href="css/forms.css">
+<link rel="stylesheet" href="css/tables.css">
+<link rel="stylesheet" href="css/utilities.css">
+<link rel="stylesheet" href="css/animations.css">
+
+
+<!-- ==========================================================
+     BELGRAVE DASHBOARD
+     Master stylesheet for the entire dashboard
+========================================================== -->
 
 <link rel="stylesheet" href="css/dashboard.css">
-<link rel="stylesheet" href="css/dashboard-components.css">
-<link rel="stylesheet" href="css/dashboard-sections.css">
-<link rel="stylesheet" href="css/dashboard-responsive.css">
 
-<link
-href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600;700&family=Inter:wght@300;400;500;600&display=swap"
-rel="stylesheet">
-
-<link
-rel="icon"
-type="image/png"
-href="assets/favicon.png">
-
-</head>
-
-<body>
-
-<button
-class="menu-btn"
-onclick="toggleSidebar()">
-☰
-</button>
-
-<!-- ================= PIN MODAL ================= -->
-
-<div
-class="pin-modal hidden"
-id="pinModal">
-
-<div class="pin-box">
-
-<h3>
-
-Enter 4-digit PIN
-
-</h3>
-
-<input
-type="password"
-maxlength="4"
-id="pinInput"
-placeholder="••••">
-
-<button onclick="verifyPin()">
-
-Unlock Card
-
-</button>
-
-<p id="pinError"></p>
-
-</div>
-
-</div>
-
-<!-- ================= FIREBASE AUTH ================= -->
-
-<script type="module">
-
-import {
-auth,
-onAuthStateChanged,
-db,
-doc,
-getDoc
-} from "./firebase.js";
-
-onAuthStateChanged(auth, async (user) => {
-
-    if (!user) {
-
-        window.location.replace("login.html");
-
-        return;
-
-    }
-
-    const welcome = document.getElementById("welcomeUser");
-
-    if (welcome) {
-
-        welcome.innerHTML = "Loading...";
-
-    }
-
-    const ref = doc(db, "users", user.uid);
-
-    const snap = await getDoc(ref);
-
-    if (snap.exists() && welcome) {
-
-        const data = snap.data();
-
-        welcome.innerHTML =
-        `Welcome back, ${data.fullName.split(" ")[0]}`;
-
-    }
-
-});
-
-window.logout = async () => {
-
-    await auth.signOut();
-
-    location.href = "login.html";
-
-};
-
-window.toggleSidebar = () => {
-
-    document
-        .querySelector(".sidebar")
-        ?.classList.toggle("active");
-
-};
-
-</script>
-
-<!-- ================= DASHBOARD ================= -->
+<!-- ==========================================================
+     DASHBOARD
+========================================================== -->
 
 <div class="dashboard-container">
 
-<div id="dashboard-sidebar"></div>
+    <!-- Sidebar -->
+    <button type="button" id="mobileMenuButton" class="mobile-menu-button" aria-label="Open navigation" aria-controls="dashboard-sidebar" aria-expanded="false"><i class="fa-solid fa-bars"></i></button>
 
-<main class="main-content">
+<div id="mobileSidebarOverlay" class="mobile-sidebar-overlay" aria-hidden="true"></div>
 
-<div id="dashboard-hero"></div>
+<aside id="dashboard-sidebar"></aside>
 
-<div id="dashboard-cards"></div>
+    <!-- Main Content -->
+    <main class="main-content">
 
-<div id="dashboard-actions"></div>
+        <div class="dashboard-content">
 
-<div id="dashboard-stats"></div>
+            <!-- Hero -->
+            <div id="dashboard-hero"></div>
 
-<div id="dashboard-transactions"></div>
+            <!-- Overview -->
+            <div id="dashboard-overview"></div>
 
-<div id="dashboard-activity"></div>
+            <!-- Accounts -->
+            <div id="dashboard-accounts"></div>
 
-<div id="dashboard-popups"></div>
+            <!-- Cards -->
+            <div id="dashboard-cards"></div>
 
-</main>
+            <!-- Quick Actions -->
+            <div id="dashboard-actions"></div>
+
+            <!-- Statistics -->
+            <div id="dashboard-stats"></div>
+
+            <!-- Transactions -->
+            <div id="dashboard-transactions"></div>
+
+            <!-- Activity -->
+            <div id="dashboard-activity"></div>
+
+            <!-- Popups -->
+            <div id="dashboard-popups"></div>
+
+        </div>
+
+    </main>
 
 </div>
 
-<!-- ================= LOAD DASHBOARD PARTIALS ================= -->
+
+<!-- ==========================================================
+     LOAD DASHBOARD PARTIALS
+========================================================== -->
 
 <script>
 
 const dashboardSections = {
 
     "dashboard-sidebar":
-    "partials/dashboard/sidebar.html",
+        "partials/dashboard/sidebar.html",
 
     "dashboard-hero":
-    "partials/dashboard/hero.html",
+        "partials/dashboard/hero.html",
+
+    "dashboard-overview":
+        "partials/dashboard/overview-v2.html",
+
+    "dashboard-accounts":
+        "partials/dashboard/accounts-v2.html",
 
     "dashboard-cards":
-    "partials/dashboard/cards.html",
+        "partials/dashboard/cards.html",
 
     "dashboard-actions":
-    "partials/dashboard/actions.html",
+        "partials/dashboard/actions.html",
 
     "dashboard-stats":
-    "partials/dashboard/stats.html",
+        "partials/dashboard/stats.html",
 
     "dashboard-transactions":
-    "partials/dashboard/transactions.html",
+        "partials/dashboard/transactions.html",
 
     "dashboard-activity":
-    "partials/dashboard/activity.html",
+        "partials/dashboard/activity.html",
 
     "dashboard-popups":
-    "partials/dashboard/popups.html"
+        "partials/dashboard/popups.html"
 
 };
 
+
 async function loadDashboardPartials() {
 
-    const loaders = Object.entries(dashboardSections).map(
+    const loaders = Object.entries(dashboardSections).map(async ([id, path]) => {
 
-        async ([id, path]) => {
+        const container = document.getElementById(id);
 
-            const container = document.getElementById(id);
+        if (!container) return;
 
-            if (!container) return;
+        try {
 
-            try {
+            const response = await fetch(path);
 
-                const response = await fetch(path);
-
-                if (!response.ok) {
-
-                    throw new Error(path);
-
-                }
-
-                container.innerHTML =
-                    await response.text();
-
+            if (!response.ok) {
+                throw new Error(`Unable to load ${path}`);
             }
 
-            catch (error) {
+            container.innerHTML = await response.text();
 
-                console.error(
-                    "Failed loading:",
-                    path,
-                    error
-                );
+        } catch (error) {
 
-            }
+            console.error(error);
 
         }
 
-    );
+    });
 
     await Promise.all(loaders);
 
 }
 
-document.addEventListener(
 
-    "DOMContentLoaded",
 
-    async () => {
+document.addEventListener("DOMContentLoaded", async () => {
 
-        await loadDashboardPartials();
+    await loadDashboardPartials();
 
-        if (typeof renderTransactions === "function") {
+    if (typeof initializeSidebar === "function")
+        initializeSidebar();
 
-            renderTransactions();
+    if (typeof renderTransactions === "function")
+        renderTransactions();
 
-        }
+    if (typeof initActivityPanel === "function")
+        initActivityPanel();
 
-    }
+    if (typeof initLedgerSystem === "function")
+        initLedgerSystem();
 
-);
+});
 
 </script>
-<!-- ================= ACTION MODAL ================= -->
 
-<div id="actionModal" class="action-modal">
 
-    <div class="action-modal-content">
 
-        <button
-            class="action-modal-close"
-            onclick="closeActionModal()">
-
-            ×
-
-        </button>
-
-        <div class="action-modal-icon"
-             id="modalIcon">
-
-            🏦
-
-        </div>
-
-        <h2 id="modalTitle">
-
-            Private Banking
-
-        </h2>
-
-        <p id="modalMessage">
-
-            Message
-
-        </p>
-
-        <button
-            class="modal-primary-btn"
-            onclick="closeActionModal()">
-
-            Close
-
-        </button>
-
-    </div>
-
-</div>
-
-<!-- ================= APPLICATION ================= -->
+<!-- ==========================================================
+     APPLICATION
+========================================================== -->
 
 <script src="actions.js"></script>
-
+<script src="js/mobile-sidebar.js"></script>
+<script src="js/dashboard-transactions.js"></script>
 <script src="script.js"></script>
 
-<!-- ================= CARD SECURITY ================= -->
+
+
+<!-- ==========================================================
+     CARD SECURITY
+========================================================== -->
 
 <script>
 
 let cardUnlocked = false;
-
 let revealed = false;
 
 const cardData = {
@@ -331,8 +212,7 @@ function unlockDashboard() {
 
 function verifyPin() {
 
-    const pin =
-        document
+    const pin = document
         .getElementById("pinInput")
         .value;
 
@@ -342,14 +222,11 @@ function verifyPin() {
 
         unlockDashboard();
 
-    }
-
-    else {
+    } else {
 
         document
             .getElementById("pinError")
-            .innerHTML =
-            "Invalid PIN";
+            .innerHTML = "Invalid PIN";
 
     }
 
@@ -372,18 +249,41 @@ function toggleCardReveal() {
 
     document
         .getElementById("cardNumber")
-        .innerHTML =
-
-        revealed
-
-        ? cardData.fullNumber
-
-        : "•••• •••• •••• " + cardData.last4;
+        .innerHTML = revealed
+            ? cardData.fullNumber
+            : "•••• •••• •••• " + cardData.last4;
 
 }
 
 </script>
 
-</body>
 
+<!-- CHATWOOT LIVE CHAT -->
+<script>
+  window.chatwootSettings = {
+    position: "right",
+    type: "standard",
+    launcherTitle: ""
+  };
+
+  (function(d,t) {
+    var BASE_URL = "https://app.chatwoot.com";
+    var g = d.createElement(t);
+    var s = d.getElementsByTagName(t)[0];
+
+    g.src = BASE_URL + "/packs/js/sdk.js";
+    g.async = true;
+
+    s.parentNode.insertBefore(g,s);
+
+    g.onload = function() {
+      window.chatwootSDK.run({
+        websiteToken: "R56yu5wbqHqADuUC8hKGc6Uy",
+        baseUrl: BASE_URL
+      });
+    };
+  })(document,"script");
+</script>
+
+</body>
 </html>

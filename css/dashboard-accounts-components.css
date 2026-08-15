@@ -1,0 +1,426 @@
+/* ==========================================================
+   BELGRAVE PRIVATE BANK
+   ACCOUNTS COMPONENTS
+========================================================== */
+
+
+/* ==========================================================
+   TABLE CONTAINER
+========================================================== */
+
+.accounts-table{
+
+    background:var(--bp-surface);
+
+    border:1px solid var(--bp-border);
+
+    border-radius:var(--radius-xl);
+
+    overflow:hidden;
+
+    box-shadow:var(--shadow-md);
+
+}
+
+/* ==========================================================
+   ACCOUNT TABLE
+========================================================== */
+
+.accounts-table{
+
+    background:#FFFFFF;
+
+    border:1px solid #E8EDF4;
+
+    border-radius:24px;
+
+    overflow:hidden;
+
+    box-shadow:
+        0 12px 32px rgba(15,23,42,.05);
+
+}
+
+.table-header{
+
+    display:grid;
+
+    grid-template-columns:
+        3fr
+        1.2fr
+        1.3fr
+        1.5fr
+        1fr
+        70px;
+
+    align-items:center;
+
+    padding:18px 30px;
+
+    background:#F8FAFD;
+
+    border-bottom:1px solid #E9EEF5;
+
+    font-size:.78rem;
+
+    font-weight:700;
+
+    letter-spacing:.08em;
+
+    text-transform:uppercase;
+
+    color:#64748B;
+
+}
+
+
+
+/* ==========================================================
+   TABLE ROW
+========================================================== */
+.account-row{
+
+    display:grid;
+
+    grid-template-columns:
+        3fr
+        1.2fr
+        1.3fr
+        1.5fr
+        1fr
+        70px;
+
+    align-items:center;
+
+    padding:24px 30px;
+
+    border-bottom:1px solid #EEF3F8;
+
+    transition:.28s;
+
+    background:#FFFFFF;
+
+}
+
+.account-row:last-child{
+
+    border-bottom:none;
+
+}
+
+.account-row:hover{
+
+    background:#FAFCFE;
+
+}
+/* ==========================================================
+   ACCOUNT INFORMATION
+========================================================== */
+.account-cell{
+
+    display:flex;
+
+    align-items:center;
+
+    gap:18px;
+
+}
+
+.account-icon{
+
+    width:54px;
+
+    height:54px;
+
+    border-radius:16px;
+
+    display:flex;
+
+    justify-content:center;
+
+    align-items:center;
+
+    background:
+
+        linear-gradient(
+            135deg,
+            rgba(212,175,55,.16),
+            rgba(15,23,42,.04)
+        );
+
+    color:#B8860B;
+
+    font-size:1.2rem;
+
+    flex-shrink:0;
+
+}
+
+
+/* Different account types */
+
+.icon-checking{
+
+    background:linear-gradient(135deg,#102544,#1C3F6E);
+
+}
+
+.icon-savings{
+
+    background:linear-gradient(135deg,#D4AF37,#E9C969);
+
+    color:#102544;
+
+}
+
+.icon-investment{
+
+    background:linear-gradient(135deg,#5B7FFF,#3858D6);
+
+}
+
+.icon-credit{
+
+    background:linear-gradient(135deg,#00A99D,#00796B);
+
+}
+
+.icon-business{
+
+    background:linear-gradient(135deg,#7C3AED,#5B21B6);
+
+}
+
+.account-details h3{
+
+    margin:0;
+
+    font-size:1rem;
+
+    font-weight:700;
+
+    color:#0F172A;
+
+}
+
+.account-details p{
+
+    margin-top:5px;
+
+    color:#64748B;
+
+    font-size:.9rem;
+
+    line-height:1.45;
+
+}
+/* ==========================================================
+   TABLE VALUES
+========================================================== */
+
+.account-row>div{
+
+    color:var(--bp-text-light);
+
+    font-size:.92rem;
+
+}
+
+.balance{
+
+    font-size:1.08rem;
+
+    font-weight:800;
+
+    color:#0F172A;
+
+}
+
+/* ==========================================================
+   STATUS BADGES
+========================================================== */
+
+.status-badge{
+
+    display:inline-flex;
+
+    align-items:center;
+
+    justify-content:center;
+
+    min-width:95px;
+
+    padding:8px 14px;
+
+    border-radius:999px;
+
+    font-size:.78rem;
+
+    font-weight:700;
+
+}
+
+.status-badge.active{
+
+    background:#EAF8EF;
+
+    color:#1A7F37;
+
+}
+
+.status-badge.locked{
+
+    background:#FEF3C7;
+
+    color:#B45309;
+
+}
+
+.status-badge.pending{
+
+    background:#E8F0FE;
+
+    color:#2563EB;
+
+}
+
+.account-number{
+
+    letter-spacing:.08em;
+
+}
+
+.account-type{
+
+    font-weight:600;
+
+    color:var(--bp-text);
+
+}
+/* ==========================================================
+   ACTION BUTTON
+========================================================== */
+
+.row-action{
+
+    width:42px;
+
+    height:42px;
+
+    border:none;
+
+    border-radius:12px;
+
+    background:#F7FAFD;
+
+    color:#64748B;
+
+    cursor:pointer;
+
+    transition:.25s;
+
+}
+
+.row-action:hover{
+
+    background:#102544;
+
+    color:#FFFFFF;
+
+}
+/* ==========================================================
+   ACCOUNTS FOOTER
+========================================================== */
+
+.accounts-footer{
+
+    display:flex;
+
+    justify-content:space-between;
+
+    align-items:center;
+
+    padding:28px 32px;
+
+    background:#FFFFFF;
+
+    border-top:1px solid #EEF2F7;
+
+    flex-wrap:wrap;
+
+    gap:20px;
+
+}
+
+.accounts-results{
+
+    font-size:.95rem;
+
+    color:#64748B;
+
+}
+
+.accounts-results strong{
+
+    color:#102544;
+
+    font-weight:700;
+
+}
+/* ==========================================================
+   PAGINATION
+========================================================== */
+
+.pagination{
+
+    display:flex;
+
+    align-items:center;
+
+    gap:10px;
+
+}
+
+.pagination-btn{
+
+    width:44px;
+
+    height:44px;
+
+    border-radius:14px;
+
+    border:1px solid #E5ECF5;
+
+    background:#FFFFFF;
+
+    color:#64748B;
+
+    font-weight:600;
+
+    cursor:pointer;
+
+    transition:.28s;
+
+}
+
+.pagination-btn:hover{
+
+    background:#F7FAFD;
+
+    border-color:#D4AF37;
+
+    color:#102544;
+
+    transform:translateY(-2px);
+
+}
+
+.pagination-btn.active{
+
+    background:#102544;
+
+    color:#FFFFFF;
+
+    border-color:#102544;
+
+}

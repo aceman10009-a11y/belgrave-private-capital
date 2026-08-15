@@ -1,0 +1,866 @@
+<main class="accounts-page">
+
+    <!-- ==========================================================
+         ACCOUNTS HEADER
+    =========================================================== -->
+
+    <header class="accounts-header">
+
+        <div class="accounts-header-content">
+
+            <span
+                class="section-eyebrow"
+                data-i18n="accounts.eyebrow">
+
+                Private Banking
+
+            </span>
+
+            <h1 data-i18n="accounts.title">
+
+                Accounts
+
+            </h1>
+
+            <p data-i18n="accounts.subtitle">
+
+                Manage your banking relationships, monitor balances,
+                and securely access every active account from one
+                premium workspace.
+
+            </p>
+
+        </div></header>
+
+
+
+    <!-- ==========================================================
+         ACCOUNT SUMMARY
+    =========================================================== -->
+
+    <section
+        class="accounts-summary"
+        aria-label="Account summary">
+
+        <article class="summary-card">
+
+            <div class="summary-icon">
+
+                <i class="fa-solid fa-wallet" aria-hidden="true"></i>
+
+            </div>
+
+            <div class="summary-content">
+
+                <span data-i18n="accounts.summary.totalBalance">
+
+                    Total Balance
+
+                </span>
+
+                <h3>$148,243,725</h3>
+
+                <small
+                    data-i18n="accounts.summary.totalBalanceNote">
+
+                    Across all banking relationships
+
+                </small>
+
+            </div>
+
+        </article>
+
+
+
+        <article class="summary-card">
+
+            <div class="summary-icon">
+
+                <i class="fa-solid fa-building-columns" aria-hidden="true"></i>
+
+            </div>
+
+            <div class="summary-content">
+
+                <span data-i18n="accounts.summary.availableCash">
+
+                    Available Cash
+
+                </span>
+
+                <h3>$72,000,000</h3>
+
+                <small
+                    data-i18n="accounts.summary.availableCashNote">
+
+                    Immediately available
+
+                </small>
+
+            </div>
+
+        </article>
+
+
+
+        <article class="summary-card">
+
+            <div class="summary-icon">
+
+                <i class="fa-solid fa-layer-group" aria-hidden="true"></i>
+
+            </div>
+
+            <div class="summary-content">
+
+                <span data-i18n="accounts.summary.activeAccounts">
+
+                    Active Accounts
+
+                </span>
+
+                <h3>08</h3>
+
+                <small
+                    data-i18n="accounts.summary.activeAccountsNote">
+
+                    Personal and investment accounts
+
+                </small>
+
+            </div>
+
+        </article>
+
+
+
+        <article class="summary-card">
+
+            <div class="summary-icon">
+
+                <i class="fa-solid fa-crown" aria-hidden="true"></i>
+
+            </div>
+
+            <div class="summary-content">
+
+                <span data-i18n="accounts.summary.relationshipTier">
+
+                    Relationship Tier
+
+                </span>
+
+                <h3 data-i18n="accounts.summary.relationshipValue">
+
+                    Private Elite
+
+                </h3>
+
+                <small
+                    data-i18n="accounts.summary.relationshipNote">
+
+                    Dedicated relationship manager
+
+                </small>
+
+            </div>
+
+        </article>
+
+    </section>
+
+
+
+    <!-- ==========================================================
+         TOOLBAR
+    =========================================================== -->
+
+    <section
+        class="accounts-toolbar"
+        aria-label="Accounts toolbar">
+
+        <div class="accounts-search">
+
+            <label
+                class="sr-only"
+                for="accounts-search"
+                data-i18n="accounts.searchLabel">
+
+                Search Accounts
+
+            </label>
+
+            <i
+                class="fa-solid fa-magnifying-glass"
+                aria-hidden="true"></i>
+
+            <input
+                id="accounts-search"
+                type="search"
+                placeholder="Search accounts..."
+                data-i18n-placeholder="accounts.searchPlaceholder"
+                autocomplete="off">
+
+        </div>
+
+
+
+        <div class="toolbar-actions">
+
+            <button
+                type="button"
+                class="btn btn-secondary">
+
+                <i class="fa-solid fa-filter" aria-hidden="true"></i>
+
+                <span data-i18n="accounts.filter">
+
+                    Filter
+
+                </span>
+
+            </button>
+
+
+
+            <button
+                type="button"
+                class="btn btn-secondary">
+
+                <i class="fa-solid fa-arrow-down-wide-short" aria-hidden="true"></i>
+
+                <span data-i18n="accounts.sort">
+
+                    Sort
+
+                </span>
+
+            </button>
+
+        </div>
+
+    </section>
+        <!-- ==========================================================
+         ACCOUNT FILTERS
+    =========================================================== -->
+
+    <nav
+        class="account-tabs"
+        aria-label="Account categories">
+
+        <button
+            type="button"
+            class="account-tab active"
+            data-filter="all"
+            data-i18n="accounts.tabs.all">
+
+            All Accounts
+
+        </button>
+
+        <button
+            type="button"
+            class="account-tab"
+            data-filter="deposit"
+            data-i18n="accounts.tabs.deposit">
+
+            Deposit Accounts
+
+        </button>
+
+        <button
+            type="button"
+            class="account-tab"
+            data-filter="investment"
+            data-i18n="accounts.tabs.investment">
+
+            Investment Accounts
+
+        </button>
+
+        <button
+            type="button"
+            class="account-tab"
+            data-filter="credit"
+            data-i18n="accounts.tabs.credit">
+
+            Credit Facilities
+
+        </button>
+
+    </nav>
+
+
+
+    <!-- ==========================================================
+         ACCOUNTS LIST
+    =========================================================== -->
+
+    <section
+        class="accounts-table"
+        aria-label="Accounts list">
+
+        <!-- HEADER -->
+
+        <div class="table-header">
+
+            <div data-i18n="accounts.table.account">
+
+                Account
+
+            </div>
+
+            <div data-i18n="accounts.table.type">
+
+                Type
+
+            </div>
+
+            <div data-i18n="accounts.table.number">
+
+                Number
+
+            </div>
+
+            <div data-i18n="accounts.table.balance">
+
+                Balance
+
+            </div>
+
+            <div data-i18n="accounts.table.status">
+
+                Status
+
+            </div>
+
+            <div></div>
+
+        </div>
+
+
+
+        <!-- ======================================================
+             ROW 1
+        ======================================================= -->
+
+        <article
+            class="account-row"
+            data-account-type="deposit">
+
+            <div class="account-cell">
+
+                <div class="account-icon">
+
+                    <i class="fa-solid fa-building-columns"></i>
+
+                </div>
+
+                <div class="account-details">
+
+                    <h3>
+
+                        Private Checking
+
+                    </h3>
+
+                    <p
+                        data-i18n="accounts.privateCheckingDescription">
+
+                        Primary operating account
+
+                    </p>
+
+                </div>
+
+            </div>
+
+            <div>
+
+                Checking
+
+            </div>
+
+            <div>
+
+                ••••••••4821
+
+            </div>
+
+            <div class="balance">
+
+                $4,860,425
+
+            </div>
+
+            <div>
+
+                <span class="status-badge locked">
+
+                    Locked
+
+                </span>
+
+            </div>
+
+            <button
+                class="row-action"
+                type="button"
+                aria-label="View account">
+
+                <i class="fa-solid fa-chevron-right"></i>
+
+            </button>
+
+        </article>
+
+
+
+        <!-- ======================================================
+             ROW 2
+        ======================================================= -->
+
+        <article
+            class="account-row"
+            data-account-type="deposit">
+
+            <div class="account-cell">
+
+                <div class="account-icon">
+
+                    <i class="fa-solid fa-piggy-bank"></i>
+
+                </div>
+
+                <div class="account-details">
+
+                    <h3>
+
+                        High-Yield Savings
+
+                    </h3>
+
+                    <p
+                        data-i18n="accounts.highYieldDescription">
+
+                        Premium savings relationship
+
+                    </p>
+
+                </div>
+
+            </div>
+
+            <div>
+
+                Savings
+
+            </div>
+
+            <div>
+
+                ••••••••9254
+
+            </div>
+
+            <div class="balance">
+
+                $15,750,000
+
+            </div>
+
+            <div>
+
+                <span class="status-badge locked">
+
+                    Locked
+
+                </span>
+
+            </div>
+
+            <button
+                class="row-action"
+                type="button"
+                aria-label="View account">
+
+                <i class="fa-solid fa-chevron-right"></i>
+
+            </button>
+
+        </article>
+
+
+
+        <!-- ======================================================
+             ROW 3
+        ======================================================= -->
+
+        <article
+            class="account-row"
+            data-account-type="investment">
+
+            <div class="account-cell">
+
+                <div class="account-icon">
+
+                    <i class="fa-solid fa-chart-line"></i>
+
+                </div>
+
+                <div class="account-details">
+
+                    <h3>
+
+                        Investment Portfolio
+
+                    </h3>
+
+                    <p
+                        data-i18n="accounts.portfolioDescription">
+
+                        Managed wealth portfolio
+
+                    </p>
+
+                </div>
+
+            </div>
+
+            <div>
+
+                Investment
+
+            </div>
+
+            <div>
+
+                ••••••••1187
+
+            </div>
+
+            <div class="balance">
+
+                $51,389,575
+
+            </div>
+
+            <div>
+
+                <span class="status-badge locked">
+
+                    Locked
+
+                </span>
+
+            </div>
+
+            <button
+                class="row-action"
+                type="button"
+                aria-label="View account">
+
+                <i class="fa-solid fa-chevron-right"></i>
+
+            </button>
+
+        </article>
+                <!-- ======================================================
+             ROW 4
+        ======================================================= -->
+
+        <article
+            class="account-row"
+            data-account-type="deposit">
+
+            <div class="account-cell">
+
+                <div class="account-icon">
+
+                    <i class="fa-solid fa-vault"></i>
+
+                </div>
+
+                <div class="account-details">
+
+                    <h3>Private Reserve Account</h3>
+
+                    <p data-i18n="accounts.reserveDescription">
+
+                        Long-term capital reserve
+
+                    </p>
+
+                </div>
+
+            </div>
+
+            <div>Deposit</div>
+
+            <div>••••••••7402</div>
+
+            <div class="balance">$28,243,300</div>
+
+            <div>
+
+                <span class="status-badge locked">
+
+                    Locked
+
+                </span>
+
+            </div>
+
+            <button
+                class="row-action"
+                type="button"
+                aria-label="View account">
+
+                <i class="fa-solid fa-chevron-right"></i>
+
+            </button>
+
+        </article>
+
+
+
+        <!-- ======================================================
+             ROW 5
+        ======================================================= -->
+
+        <article
+            class="account-row"
+            data-account-type="investment">
+
+            <div class="account-cell">
+
+                <div class="account-icon">
+
+                    <i class="fa-solid fa-chart-pie"></i>
+
+                </div>
+
+                <div class="account-details">
+
+                    <h3>Private Equity Portfolio</h3>
+
+                    <p data-i18n="accounts.privateEquityDescription">
+
+                        Alternative investment assets
+
+                    </p>
+
+                </div>
+
+            </div>
+
+            <div>Investment</div>
+
+            <div>••••••••9048</div>
+
+            <div class="balance">$9,845,000</div>
+
+            <div>
+
+                <span class="status-badge locked">
+
+                    Locked
+
+                </span>
+
+            </div>
+
+            <button
+                class="row-action"
+                type="button"
+                aria-label="View account">
+
+                <i class="fa-solid fa-chevron-right"></i>
+
+            </button>
+
+        </article>
+
+
+
+        <!-- ======================================================
+             ROW 6
+        ======================================================= -->
+
+        <article
+            class="account-row"
+            data-account-type="credit">
+
+            <div class="account-cell">
+
+                <div class="account-icon">
+
+                    <i class="fa-solid fa-credit-card"></i>
+
+                </div>
+
+                <div class="account-details">
+
+                    <h3>Private Credit Facility</h3>
+
+                    <p data-i18n="accounts.creditFacilityDescription">
+
+                        Secured relationship credit line
+
+                    </p>
+
+                </div>
+
+            </div>
+
+            <div>Credit</div>
+
+            <div>••••••••6119</div>
+
+            <div class="balance">$18,500,000</div>
+
+            <div>
+
+                <span class="status-badge locked">
+
+                    Locked
+
+                </span>
+
+            </div>
+
+            <button
+                class="row-action"
+                type="button"
+                aria-label="View account">
+
+                <i class="fa-solid fa-chevron-right"></i>
+
+            </button>
+
+        </article>
+
+
+
+        <!-- ======================================================
+             ROW 7
+        ======================================================= -->
+
+        <article
+            class="account-row"
+            data-account-type="investment">
+
+            <div class="account-cell">
+
+                <div class="account-icon">
+
+                    <i class="fa-solid fa-landmark"></i>
+
+                </div>
+
+                <div class="account-details">
+
+                    <h3>Family Trust</h3>
+
+                    <p data-i18n="accounts.trustDescription">
+
+                        Multi-generational wealth structure
+
+                    </p>
+
+                </div>
+
+            </div>
+
+            <div>Trust</div>
+
+            <div>••••••••2374</div>
+
+            <div class="balance">$6,780,000</div>
+
+            <div>
+
+                <span class="status-badge locked">
+
+                    Locked
+
+                </span>
+
+            </div>
+
+            <button
+                class="row-action"
+                type="button"
+                aria-label="View account">
+
+                <i class="fa-solid fa-chevron-right"></i>
+
+            </button>
+
+        </article>
+
+
+
+        <!-- ======================================================
+             ROW 8
+        ======================================================= -->
+
+        <article
+            class="account-row"
+            data-account-type="deposit">
+
+            <div class="account-cell">
+
+                <div class="account-icon">
+
+                    <i class="fa-solid fa-globe"></i>
+
+                </div>
+
+                <div class="account-details">
+
+                    <h3>Multi-Currency Account</h3>
+
+                    <p data-i18n="accounts.multiCurrencyDescription">
+
+                        International banking relationship
+
+                    </p>
+
+                </div>
+
+            </div>
+
+            <div>Multi-Currency</div>
+
+            <div>••••••••5186</div>
+
+            <div class="balance">$12,875,425</div>
+
+            <div>
+
+                <span class="status-badge locked">
+
+                    Locked
+
+                </span>
+
+            </div>
+
+            <button
+                class="row-action"
+                type="button"
+                aria-label="View account">
+
+                <i class="fa-solid fa-chevron-right"></i>
+
+            </button>
+
+        </article>
+
+    </section>
+        <!-- ==========================================================
+         TABLE FOOTER
+    =========================================================== -->
+</main>

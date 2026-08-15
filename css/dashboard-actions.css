@@ -1,0 +1,156 @@
+/* ==========================================================
+   BELGRAVE PRIVATE BANK
+   DASHBOARD ACTIONS V2
+========================================================== */
+
+
+/* ==========================================================
+   QUICK ACTIONS SECTION
+========================================================== */
+
+.quick-actions{
+
+    margin-top:48px;
+
+}
+
+
+/* ==========================================================
+   ACTION GRID
+========================================================== */
+
+.quick-actions-container{
+
+    display:grid;
+
+    grid-template-columns:repeat(3,minmax(0,1fr));
+
+    gap:24px;
+
+}
+
+
+/* ==========================================================
+   ACTION CARD
+========================================================== */
+
+.action-card{
+
+    background:#FFFFFF;
+
+    border:1px solid rgba(15,23,42,.08);
+
+    border-radius:24px;
+
+    padding:28px;
+
+    box-shadow:0 18px 42px rgba(15,23,42,.06);
+
+    cursor:pointer;
+
+    transition:
+        transform .3s ease,
+        border-color .3s ease,
+        box-shadow .3s ease;
+
+}
+
+.action-card:hover{
+
+    transform:translateY(-6px);
+
+    border-color:rgba(212,175,55,.45);
+
+    box-shadow:0 24px 55px rgba(15,23,42,.12);
+
+}
+
+
+/* ==========================================================
+   ACTION ICON
+========================================================== */
+
+.action-icon{
+
+    width:64px;
+
+    height:64px;
+
+    display:flex;
+
+    align-items:center;
+
+    justify-content:center;
+
+    margin-bottom:20px;
+
+    border-radius:18px;
+
+    background:rgba(212,175,55,.10);
+
+    font-size:1.7rem;
+
+}
+
+
+/* ==========================================================
+   ACTION CONTENT
+========================================================== */
+
+.action-card h3{
+
+    margin:0 0 12px;
+
+    color:#102544;
+
+    font-size:1.15rem;
+
+    font-weight:700;
+
+}
+
+.action-card p{
+
+    margin:0;
+
+    color:#64748B;
+
+    font-size:.92rem;
+
+    line-height:1.7;
+
+}
+/* ==========================================================
+   SHARED DASHBOARD SECTION HEADERS
+========================================================== */
+
+.section-header{
+    display:flex;
+    justify-content:space-between;
+    align-items:flex-start;
+    margin-bottom:32px;
+}
+
+.section-tag{
+    display:block;
+    color:#64748B;
+    font-size:.75rem;
+    font-weight:700;
+    letter-spacing:.12em;
+    text-transform:uppercase;
+    margin-bottom:8px;
+}
+
+.section-header h2{
+    color:#102544;
+    font-size:2rem;
+    font-weight:700;
+    margin:0;
+}
+
+.section-description{
+    margin-top:10px;
+    color:#64748B;
+    font-size:1rem;
+    line-height:1.7;
+}

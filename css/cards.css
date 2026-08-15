@@ -1,0 +1,163 @@
+/* ==========================================================
+   BELGRAVE PREMIUM CARDS
+========================================================== */
+
+.accounts-grid{
+
+    display:grid;
+
+    grid-template-columns:repeat(auto-fit,minmax(340px,1fr));
+
+    gap:32px;
+
+    margin-top:40px;
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+.card-top{
+
+    display:flex;
+
+    justify-content:space-between;
+
+    align-items:center;
+
+    margin-bottom:30px;
+
+}
+
+
+
+.card-top span{
+
+    color:#9aa7bc;
+
+    font-size:13px;
+
+    letter-spacing:2px;
+
+    text-transform:uppercase;
+
+}
+
+
+
+.card-top i{
+
+    font-size:34px;
+
+    color:#d4af37;
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+.card-actions{
+
+    display:flex;
+
+    gap:14px;
+
+}
+
+
+
+.card-actions button{
+
+    flex:1;
+
+    cursor:pointer;
+
+    border:none;
+
+    border-radius:14px;
+
+    padding:15px;
+
+    font-weight:600;
+
+    transition:.3s;
+
+}
+
+
+
+.card-actions button:first-child{
+
+    background:#d4af37;
+
+    color:#071321;
+
+}
+
+
+
+.card-actions button:first-child:hover{
+
+    background:#f2ca4d;
+
+}
+
+
+
+.card-actions button:last-child{
+
+    background:rgba(255,255,255,.06);
+
+    color:white;
+
+    border:1px solid rgba(255,255,255,.08);
+
+}
+
+
+
+.card-actions button:last-child:hover{
+
+    background:rgba(255,255,255,.12);
+
+}
+
+
+
+.checking{
+
+    border-top:5px solid #4e8cff;
+
+}
+
+
+
+.savings{
+
+    border-top:5px solid #2ecc71;
+
+}
+
+
+
+.investment{
+
+    border-top:5px solid #d4af37;
+
+}

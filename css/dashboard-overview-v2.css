@@ -1,0 +1,228 @@
+/* ==========================================================
+   BELGRAVE PRIVATE BANK
+   FINANCIAL OVERVIEW V2
+========================================================== */
+
+
+/* SECTION */
+
+.financial-overview{
+    width:100%;
+    padding:40px 0;
+}
+
+
+/* HEADER */
+
+.overview-header{
+    margin-bottom:32px;
+}
+
+.section-eyebrow{
+    display:block;
+    color:#D4AF37;
+    font-size:13px;
+    font-weight:600;
+    text-transform:uppercase;
+    letter-spacing:1.8px;
+    margin-bottom:12px;
+}
+
+
+.overview-header h2{
+    margin:0;
+    color:#102544;
+    font-family:"Playfair Display", serif;
+    font-size:34px;
+    font-weight:600;
+}
+
+
+.overview-header p{
+    margin-top:12px;
+    max-width:650px;
+    color:#64748b;
+    font-size:15px;
+    line-height:1.7;
+}
+
+
+
+/* GRID */
+
+.overview-grid{
+    display:grid;
+    grid-template-columns:repeat(4,1fr);
+    gap:24px;
+}
+
+
+
+/* CARDS */
+
+.overview-card{
+
+    background:#ffffff;
+
+    border-radius:30px;
+
+    padding:30px;
+
+    min-height:220px;
+
+    box-shadow:
+    0 15px 45px rgba(16,37,68,0.08);
+
+    transition:
+    transform .3s ease,
+    box-shadow .3s ease;
+
+}
+
+
+.overview-card:hover{
+
+    transform:translateY(-6px);
+
+    box-shadow:
+    0 22px 55px rgba(16,37,68,0.14);
+
+}
+
+
+
+.overview-card-top{
+
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+
+}
+
+
+.overview-label{
+
+    color:#64748b;
+
+    font-size:14px;
+
+    font-weight:500;
+
+}
+
+
+
+.overview-icon{
+
+    width:42px;
+    height:42px;
+
+    display:flex;
+
+    align-items:center;
+    justify-content:center;
+
+    border-radius:50%;
+
+    background:#f8f5ea;
+
+    color:#D4AF37;
+
+    font-weight:700;
+
+}
+
+
+
+.overview-card h3{
+
+    margin:35px 0 20px;
+
+    color:#102544;
+
+    font-size:38px;
+
+    font-weight:700;
+
+    letter-spacing:-1px;
+
+}
+
+
+
+.overview-status{
+
+    color:#64748b;
+
+    font-size:14px;
+
+}
+
+
+.overview-status.positive{
+
+    color:#1d8f57;
+
+}
+
+
+
+/* ==========================================================
+   RESPONSIVE
+========================================================== */
+
+
+@media(max-width:1100px){
+
+    .overview-grid{
+
+        grid-template-columns:repeat(2,1fr);
+
+    }
+
+}
+
+
+
+@media(max-width:768px){
+
+
+    .financial-overview{
+
+        padding:25px 0;
+
+    }
+
+
+    .overview-header h2{
+
+        font-size:28px;
+
+    }
+
+
+    .overview-grid{
+
+        grid-template-columns:1fr;
+
+        gap:18px;
+
+    }
+
+
+    .overview-card{
+
+        padding:26px;
+
+        min-height:190px;
+
+    }
+
+
+    .overview-card h3{
+
+        font-size:32px;
+
+    }
+
+}

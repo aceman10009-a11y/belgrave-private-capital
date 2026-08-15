@@ -1,99 +1,189 @@
 /* ==========================================================
    BELGRAVE PRIVATE BANK
-   DASHBOARD MASTER STYLESHEET
+   ACCOUNTS WORKSPACE LAYOUT
 ========================================================== */
 
 
 /* ==========================================================
-   DESIGN SYSTEM
+   PAGE
 ========================================================== */
 
-@import url("dashboard-design-system.css");
+.accounts-page{
+
+    display:flex;
+
+    flex-direction:column;
+
+    gap:42px;
+
+    width:100%;
+
+    padding:42px;
+
+    position:relative;
+
+    isolation:isolate;
+
+}
+
 
 
 /* ==========================================================
-   DASHBOARD LAYOUT
+   HEADER
 ========================================================== */
 
-@import url("dashboard-layout.css");
+.accounts-header{
+
+    display:flex;
+
+    justify-content:space-between;
+
+    align-items:flex-start;
+
+    gap:32px;
+
+    flex-wrap:wrap;
+
+}
+
 
 
 /* ==========================================================
-   SIDEBAR
+   SUMMARY
 ========================================================== */
 
-@import url("sidebar.css");
+.accounts-summary{
+
+    display:grid;
+
+    grid-template-columns:repeat(4,minmax(0,1fr));
+
+    gap:24px;
+
+}
+
 
 
 /* ==========================================================
-   EFFECTS
+   TOOLBAR
 ========================================================== */
 
-@import url("dashboard-effects.css");
+.accounts-toolbar{
+
+    display:flex;
+
+    justify-content:space-between;
+
+    align-items:center;
+
+    gap:24px;
+
+    flex-wrap:wrap;
+
+}
+
 
 
 /* ==========================================================
-   HERO
+   MAIN WORKSPACE
 ========================================================== */
 
-@import url("dashboard-hero.css");
+.accounts-workspace{
+
+    display:grid;
+
+    grid-template-columns:minmax(0,2fr) 360px;
+
+    gap:32px;
+
+    align-items:start;
+
+}
+
 
 
 /* ==========================================================
-   OVERVIEW
+   LEFT COLUMN
 ========================================================== */
 
-@import url("dashboard-overview-v2.css");
+.accounts-main{
+
+    display:flex;
+
+    flex-direction:column;
+
+    gap:28px;
+
+}
+
 
 
 /* ==========================================================
-   ACCOUNTS
+   RIGHT COLUMN
 ========================================================== */
 
-@import url("dashboard-accounts-v2.css");
-@import url("dashboard-accounts-layout.css");
-@import url("dashboard-accounts-components.css");
+.accounts-sidebar{
+
+    display:flex;
+
+    flex-direction:column;
+
+    gap:24px;
+
+}
+
 
 
 /* ==========================================================
-   TRANSACTIONS
+   DESKTOP
 ========================================================== */
 
-@import url("dashboard-transactions.css");
+@media (max-width:1200px){
+
+    .accounts-workspace{
+
+        grid-template-columns:1fr;
+
+    }
+
+}
+
 
 
 /* ==========================================================
-   CARDS
+   TABLET
 ========================================================== */
 
-@import url("dashboard-cards.css");
+@media (max-width:992px){
+
+    .accounts-summary{
+
+        grid-template-columns:repeat(2,1fr);
+
+    }
+
+}
+
 
 
 /* ==========================================================
-   ACTIONS
+   MOBILE
 ========================================================== */
 
-@import url("dashboard-actions.css");
+@media (max-width:768px){
 
-/* ==========================================================
-   POPUPS
-========================================================== */
+    .accounts-summary{
 
-@import url("dashboard-popups.css");
+        grid-template-columns:1fr;
 
+    }
 
-/* ==========================================================
-   RESPONSIVE
-========================================================== */
+    .accounts-toolbar{
 
-@import url("dashboard-responsive.css");
+        flex-direction:column;
 
+        align-items:stretch;
 
-/* ==========================================================
-   FUTURE MODULES
-========================================================== */
+    }
 
-/*
-@import url("dashboard-statistics.css");
-@import url("dashboard-activity.css");
-*/
+}

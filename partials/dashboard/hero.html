@@ -1,10 +1,11 @@
 <section class="dashboard-hero">
 
-    <div class="hero-header">
+    <div class="hero-top">
 
-        <div class="hero-left">
+        <div class="hero-intro">
 
-            <span class="hero-tag">
+            <span class="hero-badge">
+                <i class="fa-solid fa-shield-halved"></i>
                 PRIVATE BANKING
             </span>
 
@@ -13,204 +14,246 @@
             </h1>
 
             <p class="hero-description">
-                Our new cards are now available, conatct customer support to order yours.
+                Your portfolio remains in excellent standing. All banking
+                services are operating normally and your Relationship Manager
+                is available for assistance.
             </p>
+
+            <div class="hero-actions">
+
+                <button
+                    class="btn btn-primary"
+                    onclick="openTransfer()">
+
+                    <i class="fa-solid fa-arrow-right-arrow-left"></i>
+
+                    Transfer Funds
+
+                </button>
+
+                <button
+                    class="btn btn-secondary"
+                    onclick="goAccounts()">
+
+                    <i class="fa-solid fa-wallet"></i>
+
+                    View Accounts
+
+                </button>
+
+            </div>
 
         </div>
 
         <div class="hero-profile">
 
-            <div class="profile-top">
+            <div class="avatar">
 
-                <div class="avatar">
-                    FH
-                </div>
-
-                <div class="profile-details">
-
-                    <strong>
-                        Fred Hallman
-                    </strong>
-
-                    <small>
-                        Private Banking Client
-                    </small>
-
-                </div>
+                FH
 
             </div>
 
-            <div class="profile-status">
+            <div>
 
-                <span class="status-dot"></span>
+                <strong>
 
-                Secure Session
+                    Fred Hallman
+
+                </strong>
+
+                <small>
+
+                    Private Banking Client
+
+                </small>
 
             </div>
 
-        </div>
+            <span class="online-pill">
 
-    </div>
-
-
-
-    <div class="hero-balance-card">
-
-        <div class="balance-icon">
-
-            <i class="fa-regular fa-wallet"></i>
-
-        </div>
-
-        <div class="balance-content">
-
-            <small>
-
-                AVAILABLE BALANCE
-
-            </small>
-
-            <h2 id="balance">
-
-                $146,243,300
-
-            </h2>
-
-            <span class="balance-change">
-
-                ▲ +2.46% this month
+                ● Secure Session
 
             </span>
 
         </div>
 
-        <div class="hero-watermark">
-
-            B
-
-        </div>
-
     </div>
 
+    <div class="hero-grid">
 
+        <div class="balance-card">
 
-    <div class="hero-stats">
+            <small>Total Available Balance</small>
 
-        <div class="stat-item">
+            <h2 id="balance">
 
-            <div class="stat-icon">
+                $148,243,725
 
-                <i class="fa-solid fa-chart-column"></i>
+            </h2>
+
+            <div class="balance-growth">
+
+                <i class="fa-solid fa-arrow-trend-up"></i>
+
+                +2.46% this month
 
             </div>
 
-            <div>
+            <div class="market-row">
 
-                <small>
+                <span>
 
-                    PORTFOLIO VALUE
+                    Portfolio Value
 
-                </small>
+                </span>
 
-                <h3>
+                <strong>
 
                     $87,540,000
 
-                </h3>
+                </strong>
+
+            </div>
+
+            <div class="market-row">
 
                 <span>
 
-                    Managed Assets
+                    Assets Managed
 
                 </span>
+
+                <strong>
+
+                    $231,900,000
+
+                </strong>
+
+            </div>
+
+            <div class="market-row">
+
+                <span>
+
+                    Today's Markets
+
+                </span>
+
+                <strong class="positive">
+
+                    ▲ Positive
+
+                </strong>
 
             </div>
 
         </div>
 
+        <div class="cards-preview">
 
+            <img
+                src="assets/credit-card4.png"
+                class="premium-card card-back"
+                alt="Credit Card">
 
-        <div class="stat-item">
-
-            <div class="stat-icon">
-
-                <i class="fa-regular fa-user"></i>
-
-            </div>
-
-            <div>
-
-                <small>
-
-                    RELATIONSHIP MANAGER
-
-                </small>
-
-                <h3>
-
-                    Emma Richardson
-
-                </h3>
-
-                <span>
-
-                    Available Online
-
-                </span>
-
-            </div>
-
-        </div>
-
-
-
-        <div class="stat-item">
-
-            <div class="stat-icon">
-
-                <i class="fa-regular fa-calendar"></i>
-
-            </div>
-
-            <div>
-
-                <small>
-
-                    LAST LOGIN
-
-                </small>
-
-                <h3>
-
-                    Today
-
-                </h3>
-
-                <span>
-
-                    Secure Device
-
-                </span>
-
-            </div>
+            <img
+                src="assets/debit-card2.png"
+                class="premium-card card-front"
+                alt="Debit Card">
 
         </div>
 
     </div>
 
+    <div class="hero-stats">
 
+        <div class="hero-stat">
 
-    <div class="hero-cards">
+            <i class="fa-solid fa-chart-column"></i>
 
-        <img
-            src="assets/debit-card2.png"
-            class="dashboard-card card-front"
-            alt="Belgrave Debit Card">
+            <div>
 
-        <img
-            src="assets/credit-card4.png"
-            class="dashboard-card card-back"
-            alt="Belgrave Credit Card">
+                <small>
+
+                    Portfolio Performance
+
+                </small>
+
+                <strong>
+
+                    +8.74%
+
+                </strong>
+
+            </div>
+
+        </div>
+
+        <div class="hero-stat">
+
+            <i class="fa-solid fa-user-tie"></i>
+
+            <div>
+
+                <small>
+
+                    Relationship Manager
+
+                </small>
+
+                <strong>
+
+                    Emma Richardson
+
+                </strong>
+
+            </div>
+
+        </div>
+
+        <div class="hero-stat">
+
+            <i class="fa-solid fa-clock"></i>
+
+            <div>
+
+                <small>
+
+                    Last Login
+
+                </small>
+
+                <strong>
+
+                    Today · Secure Device
+
+                </strong>
+
+            </div>
+
+        </div>
+
+        <div class="hero-stat">
+
+            <i class="fa-solid fa-globe"></i>
+
+            <div>
+
+                <small>
+
+                    Base Currency
+
+                </small>
+
+                <strong>
+
+                    USD
+
+                </strong>
+
+            </div>
+
+        </div>
 
     </div>
 

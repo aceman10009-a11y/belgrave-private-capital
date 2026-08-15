@@ -1,0 +1,776 @@
+/* ==========================================================
+   BELGRAVE PRIVATE BANK
+   DESIGN SYSTEM
+   VERSION 3
+========================================================== */
+
+
+/* ==========================================================
+   ROOT VARIABLES
+========================================================== */
+
+:root{
+
+    /* ======================================================
+       BRAND COLORS
+    ====================================================== */
+
+    --bp-navy:#102544;
+    --bp-navy-light:#1B3B66;
+    --bp-navy-dark:#08182F;
+
+    --bp-gold:#D4AF37;
+    --bp-gold-light:#E8C867;
+    --bp-gold-soft:#FFF8E7;
+
+    --bp-success:#16A34A;
+    --bp-warning:#B45309;
+    --bp-danger:#DC2626;
+    --bp-info:#2563EB;
+
+
+
+    /* ======================================================
+       SURFACES
+    ====================================================== */
+
+    --bp-page:#F3F7FC;
+
+    --bp-surface:#FFFFFF;
+
+    --bp-surface-soft:#FAFCFE;
+
+    --bp-glass:rgba(255,255,255,.70);
+
+    --bp-glass-dark:rgba(16,37,68,.78);
+
+    --bp-glass-border:rgba(255,255,255,.60);
+
+
+
+    /* ======================================================
+       TYPOGRAPHY
+    ====================================================== */
+
+    --bp-text:#102544;
+
+    --bp-text-light:#475569;
+
+    --bp-text-muted:#64748B;
+
+    --bp-text-faded:#94A3B8;
+
+
+
+    /* ======================================================
+       BORDERS
+    ====================================================== */
+
+    --bp-border:#E6EDF5;
+
+    --bp-border-light:#F1F5F9;
+
+
+
+    /* ======================================================
+       BORDER RADIUS
+    ====================================================== */
+
+    --radius-xs:12px;
+
+    --radius-sm:16px;
+
+    --radius-md:22px;
+
+    --radius-lg:30px;
+
+    --radius-xl:36px;
+
+    --radius-pill:999px;
+
+
+
+    /* ======================================================
+       SHADOWS
+    ====================================================== */
+
+    --shadow-xs:
+        0 4px 12px rgba(15,23,42,.03);
+
+    --shadow-sm:
+        0 10px 28px rgba(15,23,42,.05);
+
+    --shadow-md:
+        0 18px 45px rgba(15,23,42,.07);
+
+    --shadow-lg:
+        0 28px 70px rgba(15,23,42,.09);
+
+    --shadow-xl:
+        0 40px 90px rgba(15,23,42,.12);
+
+
+
+    /* ======================================================
+       SPACING
+    ====================================================== */
+
+    --space-1:.5rem;
+    --space-2:.75rem;
+    --space-3:1rem;
+    --space-4:1.5rem;
+    --space-5:2rem;
+    --space-6:2.5rem;
+    --space-7:3rem;
+    --space-8:4rem;
+
+
+
+    /* ======================================================
+       TRANSITIONS
+    ====================================================== */
+
+    --transition-fast:.20s ease;
+
+    --transition:.30s ease;
+
+    --transition-slow:.45s ease;
+
+}
+/* ==========================================================
+   GLASSMORPHISM
+========================================================== */
+
+.glass{
+
+    background:var(--bp-glass);
+
+    backdrop-filter:blur(22px);
+
+    -webkit-backdrop-filter:blur(22px);
+
+    border:1px solid var(--bp-glass-border);
+
+    box-shadow:var(--shadow-md);
+
+}
+
+.glass-light{
+
+    background:rgba(255,255,255,.82);
+
+    backdrop-filter:blur(16px);
+
+    -webkit-backdrop-filter:blur(16px);
+
+    border:1px solid rgba(255,255,255,.75);
+
+    box-shadow:var(--shadow-sm);
+
+}
+
+.glass-dark{
+
+    background:var(--bp-glass-dark);
+
+    backdrop-filter:blur(24px);
+
+    -webkit-backdrop-filter:blur(24px);
+
+    border:1px solid rgba(255,255,255,.12);
+
+    color:#FFFFFF;
+
+}
+
+.glass-gold{
+
+    background:rgba(255,248,231,.82);
+
+    backdrop-filter:blur(18px);
+
+    -webkit-backdrop-filter:blur(18px);
+
+    border:1px solid rgba(212,175,55,.22);
+
+}
+/* ==========================================================
+   PREMIUM SURFACE CARDS
+========================================================== */
+
+.card{
+
+    background:var(--bp-surface);
+
+    border:1px solid var(--bp-border);
+
+    border-radius:var(--radius-lg);
+
+    box-shadow:var(--shadow-md);
+
+    transition:
+
+        transform var(--transition),
+
+        box-shadow var(--transition),
+
+        border-color var(--transition);
+
+}
+
+.card:hover{
+
+    transform:translateY(-6px);
+
+    border-color:rgba(212,175,55,.22);
+
+    box-shadow:var(--shadow-lg);
+
+}
+
+.card-premium{
+
+    position:relative;
+
+    overflow:hidden;
+
+}
+
+.card-premium::before{
+
+    content:"";
+
+    position:absolute;
+
+    left:0;
+
+    top:0;
+
+    width:100%;
+
+    height:4px;
+
+    background:linear-gradient(
+
+        90deg,
+
+        var(--bp-navy),
+
+        var(--bp-gold)
+
+    );
+
+}
+/* ==========================================================
+   PREMIUM BUTTONS
+========================================================== */
+
+.btn{
+
+    display:inline-flex;
+
+    align-items:center;
+
+    justify-content:center;
+
+    gap:12px;
+
+    min-height:52px;
+
+    padding:0 26px;
+
+    border-radius:16px;
+
+    font-weight:600;
+
+    transition:
+
+        all var(--transition);
+
+}
+
+.btn i{
+
+    font-size:.95rem;
+
+}
+
+.btn-primary{
+
+    background:var(--bp-navy);
+
+    color:#FFFFFF;
+
+}
+
+.btn-primary:hover{
+
+    background:var(--bp-navy-light);
+
+    transform:translateY(-2px);
+
+    box-shadow:
+
+        0 18px 40px rgba(16,37,68,.20);
+
+}
+
+.btn-secondary{
+
+    background:var(--bp-gold);
+
+    color:var(--bp-navy);
+
+}
+
+.btn-secondary:hover{
+
+    filter:brightness(1.04);
+
+    transform:translateY(-2px);
+
+}
+
+.btn-outline{
+
+    background:#FFFFFF;
+
+    color:var(--bp-navy);
+
+    border:1px solid var(--bp-border);
+
+}
+
+.btn-outline:hover{
+
+    border-color:var(--bp-gold);
+
+    background:#FAFCFF;
+
+}
+
+.btn-glass{
+
+    background:rgba(255,255,255,.70);
+
+    backdrop-filter:blur(18px);
+
+    -webkit-backdrop-filter:blur(18px);
+
+    border:1px solid rgba(255,255,255,.70);
+
+}
+/* ==========================================================
+   FORM CONTROLS
+========================================================== */
+
+.input{
+
+    width:100%;
+
+    height:56px;
+
+    padding:0 20px;
+
+    background:#FFFFFF;
+
+    border:1px solid var(--bp-border);
+
+    border-radius:16px;
+
+    transition:
+
+        border-color var(--transition),
+
+        box-shadow var(--transition);
+
+}
+
+.input:focus{
+
+    outline:none;
+
+    border-color:var(--bp-gold);
+
+    box-shadow:
+
+        0 0 0 4px rgba(212,175,55,.12);
+
+}
+
+.input::placeholder{
+
+    color:var(--bp-text-muted);
+
+}
+/* ==========================================================
+   GLOBAL ICON CONTAINERS
+========================================================== */
+
+.icon-box{
+
+    width:60px;
+
+    height:60px;
+
+    display:flex;
+
+    align-items:center;
+
+    justify-content:center;
+
+    flex-shrink:0;
+
+    border-radius:18px;
+
+    background:linear-gradient(
+
+        135deg,
+
+        #FFF8E8,
+
+        #FFFFFF
+
+    );
+
+    border:1px solid rgba(212,175,55,.18);
+
+    color:var(--bp-gold);
+
+    font-size:1.25rem;
+
+}
+/* ==========================================================
+   GLOBAL FOCUS STATES
+========================================================== */
+
+button:focus-visible,
+input:focus-visible,
+select:focus-visible,
+textarea:focus-visible{
+
+    outline:3px solid rgba(212,175,55,.30);
+
+    outline-offset:3px;
+
+}
+/* ==========================================================
+   TYPOGRAPHY
+========================================================== */
+
+.display-title{
+
+    font-family:"Playfair Display",serif;
+
+    font-size:clamp(2.5rem,4vw,4rem);
+
+    font-weight:600;
+
+    line-height:1.1;
+
+    color:var(--bp-text);
+
+}
+
+.section-title{
+
+    font-family:"Playfair Display",serif;
+
+    font-size:2rem;
+
+    font-weight:600;
+
+    line-height:1.2;
+
+    color:var(--bp-text);
+
+}
+
+.card-title{
+
+    font-family:"Playfair Display",serif;
+
+    font-size:1.4rem;
+
+    font-weight:600;
+
+    color:var(--bp-text);
+
+}
+
+.section-label{
+
+    display:inline-flex;
+
+    align-items:center;
+
+    gap:10px;
+
+    padding:10px 18px;
+
+    border-radius:999px;
+
+    background:var(--bp-gold-soft);
+
+    border:1px solid rgba(212,175,55,.18);
+
+    color:var(--bp-gold);
+
+    font-size:.75rem;
+
+    font-weight:700;
+
+    letter-spacing:.12em;
+
+    text-transform:uppercase;
+
+}
+
+.lead{
+
+    font-size:1.05rem;
+
+    line-height:1.9;
+
+    color:var(--bp-text-muted);
+
+}
+
+.text-muted{
+
+    color:var(--bp-text-muted);
+
+}
+
+.text-light{
+
+    color:var(--bp-text-faded);
+
+}
+/* ==========================================================
+   STATUS BADGES
+========================================================== */
+
+.badge{
+
+    display:inline-flex;
+
+    align-items:center;
+
+    justify-content:center;
+
+    gap:8px;
+
+    padding:8px 16px;
+
+    border-radius:999px;
+
+    font-size:.78rem;
+
+    font-weight:700;
+
+    letter-spacing:.04em;
+
+}
+
+.badge-success{
+
+    background:#ECFDF3;
+
+    color:var(--bp-success);
+
+}
+
+.badge-warning{
+
+    background:#FEF3C7;
+
+    color:var(--bp-warning);
+
+}
+
+.badge-info{
+
+    background:#EFF6FF;
+
+    color:var(--bp-info);
+
+}
+
+.badge-danger{
+
+    background:#FEE2E2;
+
+    color:var(--bp-danger);
+
+}
+/* ==========================================================
+   DIVIDERS
+========================================================== */
+
+.divider{
+
+    width:100%;
+
+    height:1px;
+
+    background:var(--bp-border-light);
+
+}
+
+.divider-lg{
+
+    margin:32px 0;
+
+}
+/* ==========================================================
+   SPACING UTILITIES
+========================================================== */
+
+.mt-1{margin-top:var(--space-1);}
+.mt-2{margin-top:var(--space-2);}
+.mt-3{margin-top:var(--space-3);}
+.mt-4{margin-top:var(--space-4);}
+.mt-5{margin-top:var(--space-5);}
+
+.mb-1{margin-bottom:var(--space-1);}
+.mb-2{margin-bottom:var(--space-2);}
+.mb-3{margin-bottom:var(--space-3);}
+.mb-4{margin-bottom:var(--space-4);}
+.mb-5{margin-bottom:var(--space-5);}
+
+.gap-1{gap:var(--space-1);}
+.gap-2{gap:var(--space-2);}
+.gap-3{gap:var(--space-3);}
+.gap-4{gap:var(--space-4);}
+.gap-5{gap:var(--space-5);}
+/* ==========================================================
+   FLEX UTILITIES
+========================================================== */
+
+.flex{
+
+    display:flex;
+
+}
+
+.flex-column{
+
+    display:flex;
+
+    flex-direction:column;
+
+}
+
+.flex-center{
+
+    display:flex;
+
+    align-items:center;
+
+    justify-content:center;
+
+}
+
+.flex-between{
+
+    display:flex;
+
+    align-items:center;
+
+    justify-content:space-between;
+
+}
+
+.flex-wrap{
+
+    flex-wrap:wrap;
+
+}
+
+.align-center{
+
+    align-items:center;
+
+}
+
+.justify-center{
+
+    justify-content:center;
+
+}
+/* ==========================================================
+   RESPONSIVE FOUNDATION
+========================================================== */
+
+@media (max-width:1200px){
+
+    :root{
+
+        --space-8:3.5rem;
+
+    }
+
+}
+
+@media (max-width:992px){
+
+    .display-title{
+
+        font-size:3rem;
+
+    }
+
+    .section-title{
+
+        font-size:1.8rem;
+
+    }
+
+}
+
+@media (max-width:768px){
+
+    .display-title{
+
+        font-size:2.4rem;
+
+    }
+
+    .section-title{
+
+        font-size:1.6rem;
+
+    }
+
+    .card-title{
+
+        font-size:1.25rem;
+
+    }
+
+}
+
+@media (max-width:576px){
+
+    .display-title{
+
+        font-size:2rem;
+
+    }
+
+    .lead{
+
+        font-size:.96rem;
+
+        line-height:1.8;
+
+    }
+
+    .btn{
+
+        width:100%;
+
+    }
+
+}

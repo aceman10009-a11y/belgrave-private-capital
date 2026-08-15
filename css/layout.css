@@ -1,0 +1,356 @@
+/* ==========================================================
+   BELGRAVE GLOBAL LAYOUT
+   PREMIUM PRIVATE BANKING FOUNDATION
+========================================================== */
+
+
+*{
+
+    margin:0;
+
+    padding:0;
+
+    box-sizing:border-box;
+
+}
+
+
+
+html{
+
+    scroll-behavior:smooth;
+
+}
+
+
+
+body{
+
+    font-family:"Inter",sans-serif;
+
+    background:#F5F7FB;
+
+    color:#0F172A;
+
+    min-height:100vh;
+
+}
+
+
+
+/* ==========================================================
+   APP LAYOUT
+========================================================== */
+
+
+.dashboard-container{
+
+    display:grid;
+
+    grid-template-columns:280px minmax(0,1fr);
+
+    min-height:100vh;
+
+    background:#F5F7FB;
+
+}
+
+
+
+/* ==========================================================
+   MAIN CONTENT
+========================================================== */
+
+
+.main-content{
+
+    padding:40px;
+
+    overflow-y:auto;
+
+}
+
+
+
+/* ==========================================================
+   PAGE WIDTH
+========================================================== */
+
+
+.main-content>*{
+
+    width:100%;
+
+    max-width:1500px;
+
+    margin:0 auto;
+
+}
+
+
+
+/* ==========================================================
+   PAGE HERO
+   PRIVATE BANKING SKY BLUE ACCENT
+========================================================== */
+
+
+.accounts-hero{
+
+    display:flex;
+
+    justify-content:space-between;
+
+    align-items:center;
+
+    gap:40px;
+
+    margin-bottom:45px;
+
+    padding:45px;
+
+    border-radius:28px;
+
+
+    background:
+
+    linear-gradient(
+        135deg,
+        #FFFFFF 0%,
+        #F5FAFF 55%,
+        #E8F3FF 100%
+    );
+
+
+    border:
+
+    1px solid #D8E8F8;
+
+
+    box-shadow:
+
+    0 25px 70px rgba(16,37,68,.08);
+
+}
+
+
+
+.accounts-hero h1{
+
+    font-size:52px;
+
+    font-family:"Playfair Display",serif;
+
+    margin-top:14px;
+
+    margin-bottom:18px;
+
+    color:#102544;
+
+}
+
+
+
+.accounts-hero p{
+
+    max-width:650px;
+
+    color:#64748B;
+
+    font-size:18px;
+
+    line-height:1.8;
+
+}
+
+
+
+/* ==========================================================
+   PAGE BADGE
+========================================================== */
+
+
+.page-badge{
+
+    display:inline-flex;
+
+    align-items:center;
+
+    gap:10px;
+
+    padding:8px 18px;
+
+    border-radius:999px;
+
+
+    background:
+
+    rgba(212,175,55,.10);
+
+
+    border:
+
+    1px solid rgba(212,175,55,.25);
+
+
+    color:#B8860B;
+
+    font-size:13px;
+
+    letter-spacing:2px;
+
+    font-weight:600;
+
+}
+
+
+
+/* ==========================================================
+   HERO BUTTONS
+========================================================== */
+
+
+.hero-buttons{
+
+    display:flex;
+
+    gap:18px;
+
+}
+
+
+
+.hero-buttons button{
+
+    padding:16px 30px;
+
+    border:none;
+
+    border-radius:14px;
+
+    cursor:pointer;
+
+    transition:.30s;
+
+    font-size:15px;
+
+    font-weight:600;
+
+}
+
+
+
+.hero-buttons button:first-child{
+
+    background:#D4AF37;
+
+    color:#102544;
+
+}
+
+
+
+.hero-buttons button:first-child:hover{
+
+    transform:translateY(-3px);
+
+    background:#E6C55C;
+
+}
+
+
+
+.hero-buttons button:last-child{
+
+    background:#102544;
+
+    border:1px solid #102544;
+
+    color:#FFFFFF;
+
+}
+
+
+
+.hero-buttons button:last-child:hover{
+
+    background:#17365F;
+
+}
+
+
+
+/* ==========================================================
+   SECTION SPACING
+========================================================== */
+
+
+section{
+
+    margin-bottom:45px;
+
+}
+/* ==========================================================
+   ACCOUNTS HERO
+   SKY BLUE PRIVATE BANKING HEADER
+========================================================== */
+
+.accounts-hero{
+
+    background:
+    linear-gradient(
+        135deg,
+        #EAF6FF,
+        #D7EEFF
+    ) !important;
+
+    border:
+    1px solid #C5E3F8 !important;
+
+    box-shadow:
+    0 25px 70px rgba(16,37,68,.10) !important;
+
+}
+
+
+.accounts-hero h1{
+
+    color:#102544 !important;
+
+}
+
+
+.accounts-hero p{
+
+    color:#475569 !important;
+
+}
+
+
+.accounts-hero .page-badge{
+
+    background:rgba(212,175,55,.15);
+
+    border-color:rgba(212,175,55,.35);
+
+    color:#102544;
+
+}
+
+
+.accounts-hero .hero-buttons button:first-child{
+
+    background:#D4AF37;
+
+    color:#102544;
+
+}
+
+
+.accounts-hero .hero-buttons button:last-child{
+
+    background:#102544;
+
+    color:#FFFFFF;
+
+}

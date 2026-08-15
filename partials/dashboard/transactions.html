@@ -18,29 +18,28 @@
 
         </div>
 
-        <div class="transaction-tools">
+       <div class="transaction-tools">
 
-            <input
-                type="text"
-                placeholder="Search transactions...">
+    <input
+        id="transactionSearch"
+        type="text"
+        placeholder="Search transactions...">
 
-            <button class="view-all-btn">
-
-                View All
-
-            </button>
-
-        </div>
+</div>
 
     </div>
 
     <div class="transactions-wrapper">
+
+        <!-- Mobile Cards -->
 
         <div
             id="transactionCards"
             class="transaction-cards">
 
         </div>
+
+        <!-- Desktop Table -->
 
         <div class="transaction-table">
 
@@ -51,15 +50,10 @@
                     <tr>
 
                         <th>Date</th>
-
                         <th>Description</th>
-
                         <th>Category</th>
-
                         <th>Amount</th>
-
                         <th>Balance</th>
-
                         <th>Status</th>
 
                     </tr>
@@ -73,6 +67,34 @@
             </table>
 
         </div>
+
+    </div>
+
+    <!-- Pagination -->
+
+    <div class="transaction-pagination">
+
+        <button
+            id="previousTransactions"
+            class="pagination-btn">
+
+            ← Previous
+
+        </button>
+
+        <span id="transactionPageInfo">
+
+            Page 1
+
+        </span>
+
+        <button
+            id="nextTransactions"
+            class="pagination-btn">
+
+            Next →
+
+        </button>
 
     </div>
 

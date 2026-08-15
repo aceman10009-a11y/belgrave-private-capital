@@ -1,91 +1,26 @@
 /* ==========================================================
    BELGRAVE PRIVATE BANK
-   DASHBOARD LAYOUT
+   DASHBOARD LAYOUT ENGINE
 ========================================================== */
 
-
-/* ==========================================================
-   ROOT
-========================================================== */
-
-body{
-
-    margin:0;
-
-    font-family:"Inter",sans-serif;
-
-    background:
-    linear-gradient(
-        180deg,
-        #F8FAFC 0%,
-        #EEF3F8 100%
-    );
-
-    color:#0F172A;
-
-    overflow-x:hidden;
+:root{
+    --dashboard-max-width: 1440px;
+    --dashboard-gap: 24px;
+    --dashboard-section-space: 40px;
+    --sidebar-width: 300px;
 
 }
 
 
 /* ==========================================================
-   CONTAINER
+   DASHBOARD SHELL
 ========================================================== */
 
 .dashboard-container{
-
-    display:grid;
-
-    grid-template-columns:290px 1fr;
-
-    min-height:100vh;
-
-    background:
-    linear-gradient(
-        180deg,
-        #F8FAFC 0%,
-        #EEF3F8 100%
-    );
-
-}
-
-
-/* ==========================================================
-   SIDEBAR
-========================================================== */
-
-.sidebar{
-
-    position:sticky;
-
-    top:0;
-
-    height:100vh;
-
-    overflow-y:auto;
-
-
-    background:
-    linear-gradient(
-        180deg,
-        #06101E 0%,
-        #0B1728 55%,
-        #111827 100%
-    );
-
-
-    border-right:
-
-    1px solid rgba(212,175,55,.12);
-
-
-    box-shadow:
-
-    15px 0 45px rgba(15,23,42,.18);
-
-
-    z-index:100;
-
+    display: grid;
+    grid-template-columns: var(--sidebar-width) minmax(0, 1fr);
+    min-height: 100vh;
+    background: #F5F7FB;
 }
 
 
@@ -94,225 +29,163 @@ body{
 ========================================================== */
 
 .main-content{
-
-    display:flex;
-
-    flex-direction:column;
-
-    gap:24px;
+    min-width: 0;
+    padding: 40px;
+    overflow-x: hidden;
+}
 
 
-    padding:38px;
+/* ==========================================================
+   CONTENT WRAPPER
+========================================================== */
+
+.dashboard-content{
+    width: 100%;
+    max-width: var(--dashboard-max-width);
+    margin: 0 auto;
+}
 
 
-    min-width:0;
+/* ==========================================================
+   SECTION WRAPPER
+========================================================== */
+
+.dashboard-section{
+    margin-bottom: var(--dashboard-section-space);
+}
+
+
+/* ==========================================================
+   UNIVERSAL GRID SYSTEM
+========================================================== */
+
+.dashboard-grid{
+    display: grid;
+    gap: var(--dashboard-gap);
+}
+
+.dashboard-grid-2{
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: var(--dashboard-gap);
+}
+
+.dashboard-grid-3{
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: var(--dashboard-gap);
+}
+
+.dashboard-grid-4{
+    display: grid;
+    grid-template-columns: repeat(4, minmax(0, 1fr));
+    gap: var(--dashboard-gap);
+}
+
+
+/* ==========================================================
+   WORKSPACE GRID
+========================================================== */
+
+.dashboard-workspace{
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    gap: var(--dashboard-gap);
+}
+
+
+/* ==========================================================
+   EXTRA LARGE DESKTOPS
+========================================================== */
+
+@media (min-width: 1440px){
+
+    .main-content{
+        padding: 48px;
+    }
 
 }
 
 
 /* ==========================================================
-   MOBILE MENU BUTTON
+   LARGE LAPTOPS
 ========================================================== */
 
-.menu-btn{
+@media (max-width: 1200px){
 
-    display:none;
+    .dashboard-grid-4{
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .dashboard-grid-3{
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .dashboard-workspace{
+        grid-template-columns: 1fr;
+    }
 
 }
 
 
 /* ==========================================================
-   SIDEBAR OVERLAY
+   TABLETS
 ========================================================== */
 
-.sidebar-overlay{
+@media (max-width: 992px){
 
-    display:none;
+    .dashboard-container{
+        grid-template-columns: var(--sidebar-width) minmax(0, 1fr);
+    }
 
-    position:fixed;
-
-    inset:0;
-
-
-    background:
-    rgba(0,0,0,.45);
-
-
-    z-index:90;
-
-}
-
-
-.sidebar-overlay.active{
-
-    display:block;
+    .main-content{
+        padding: 30px 24px;
+    }
 
 }
 
 
 /* ==========================================================
-   SCROLLBAR
+   MOBILE
 ========================================================== */
 
-.sidebar::-webkit-scrollbar{
+@media (max-width: 768px){
 
-    width:6px;
+    .dashboard-container{
+        grid-template-columns: 1fr;
+    }
 
-}
+    .main-content{
+        padding: 20px 16px;
+    }
 
+    .dashboard-grid,
+    .dashboard-grid-2,
+    .dashboard-grid-3,
+    .dashboard-grid-4,
+    .dashboard-workspace{
+        grid-template-columns: 1fr;
+    }
 
-.sidebar::-webkit-scrollbar-thumb{
-
-    background:
-
-    rgba(212,175,55,.25);
-
-
-    border-radius:20px;
+    .dashboard-section{
+        margin-bottom: 28px;
+    }
 
 }
 
 
 /* ==========================================================
-   TABLET
+   SMALL PHONES
 ========================================================== */
 
-@media (max-width:992px){
-
-
-.dashboard-container{
-
-    display:block;
-
-}
-
-
-
-.sidebar{
-
-    position:fixed;
-
-    top:0;
-
-    left:-300px;
-
-    width:280px;
-
-
-    transition:left .35s ease;
-
-
-    box-shadow:
-
-    0 20px 70px rgba(0,0,0,.35);
-
-}
-
-
-
-.sidebar.active{
-
-    left:0;
-
-}
-
-
-
-.main-content{
-
-    padding:88px 18px 24px;
-
-}
-
-
-
-.menu-btn{
-
-    display:flex;
-
-
-    justify-content:center;
-
-    align-items:center;
-
-
-    position:fixed;
-
-
-    top:18px;
-
-    left:18px;
-
-
-    width:50px;
-
-    height:50px;
-
-
-    border:none;
-
-
-    border-radius:16px;
-
-
-    background:#0F172A;
-
-
-    color:#D4AF37;
-
-
-    font-size:24px;
-
-
-    cursor:pointer;
-
-
-    z-index:9999;
-
-
-    box-shadow:
-
-    0 10px 25px rgba(0,0,0,.25);
-
-}
-
-
-}
-
-
-
-/* ==========================================================
-   PHONE
-========================================================== */
-
-@media (max-width:768px){
-
-
-.main-content{
-
-    padding:80px 14px 20px;
-
-    gap:20px;
-
-}
-
-
-}
-
-
-
-/* ==========================================================
-   SMALL PHONE
-========================================================== */
-
-@media (max-width:480px){
-
-
-.main-content{
-
-    padding:74px 12px 18px;
-
-}
-
+@media (max-width: 576px){
+
+    .main-content{
+        padding: 16px;
+    }
+
+    .dashboard-section{
+        margin-bottom: 24px;
+    }
 
 }

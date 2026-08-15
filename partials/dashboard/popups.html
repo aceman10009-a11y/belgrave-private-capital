@@ -1,29 +1,23 @@
-<!-- ==========================================================
-     ACTION MODAL
-========================================================== -->
+<!-- BELGRAVE ACTION MODAL -->
 
-<div id="actionModal" class="action-modal">
+<div id="actionModal" class="action-modal" aria-hidden="true" role="dialog" aria-modal="true" aria-labelledby="modalTitle">
+
+    <div class="action-modal-overlay" onclick="closeActionModal()"></div>
 
     <div class="action-modal-content">
 
-        <div id="modalIcon" class="action-modal-icon">
-            💳
-        </div>
+        <button type="button" class="action-modal-close" onclick="closeActionModal()" aria-label="Close">
+            <i class="fa-solid fa-xmark"></i>
+        </button>
 
-        <h2 id="modalTitle">
-            Belgrave Private Bank
-        </h2>
+        <div id="modalIcon" class="action-modal-icon">💳</div>
 
-        <div id="modalMessage">
-            Message
-        </div>
+        <h2 id="modalTitle">Belgrave Private Bank</h2>
 
-        <button
-            class="action-modal-button"
-            onclick="closeActionModal()">
+        <div id="modalMessage">Message</div>
 
+        <button type="button" class="action-modal-button" onclick="closeActionModal()">
             Close
-
         </button>
 
     </div>

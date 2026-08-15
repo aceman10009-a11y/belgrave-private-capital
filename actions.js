@@ -444,6 +444,7 @@ function showActionModal(icon, title, message) {
     modalMessage.innerHTML = message;
 
     modal.classList.add("active");
+modal.setAttribute("aria-hidden", "false");
 }
 
 function closeActionModal() {
@@ -451,11 +452,16 @@ function closeActionModal() {
     const modal = document.getElementById("actionModal");
 
     if (modal) {
+
         modal.classList.remove("active");
+
+        modal.style.removeProperty("display");
+
+        modal.setAttribute("aria-hidden", "true");
+
     }
 
 }
-
 
 /* ==========================================================
    QUICK ACTIONS
@@ -528,43 +534,35 @@ function openWithdraw() {
 
 
 function openCards() {
-
     showActionModal(
-
         "💳",
-
         "Card Management",
-
         `
         <p>
-        Card replacement, PIN reset and spending limit
-        changes are handled exclusively by your
-        Relationship Manager.
+            Card management is currently restricted for this account.
+        </p>
+        <p>
+            Please contact your Relationship Manager for assistance.
         </p>
         `
-
     );
-
 }
 
 
 function openInvestments() {
-
     showActionModal(
-
         "📈",
-
         "Investment Portfolio",
-
         `
         <p>
-        Your investment portfolio remains under a managed
-        holding period until 31 December 2029.
+            Investment portfolio access is currently restricted.
+        </p>
+        <p>
+            Your portfolio remains under a managed holding period until
+            31 December 2029.
         </p>
         `
-
     );
-
 }
 
 
@@ -699,9 +697,99 @@ function generateStatement() {
 }
 
 
+
+/* ==========================================================
+   RELATIONSHIP MANAGER
+========================================================== */
+
+function openRelationshipManager() {
+
+    const modal = document.getElementById("actionModal");
+    const title = document.getElementById("modalTitle");
+    const message = document.getElementById("modalMessage");
+
+    if (!modal || !title || !message) {
+
+        console.error("Relationship Manager modal elements not found.");
+        return;
+
+    }
+
+    title.textContent = "Relationship Manager";
+
+    message.innerHTML = `
+        <div class="relationship-manager-prompt">
+
+            <p>
+                Your Relationship Manager,
+                <strong>Emma Richardson</strong>,
+                is available to assist you.
+            </p>
+
+            <p>
+                You can now click
+                <strong>Secure Message</strong>
+                below to start a live conversation.
+            </p>
+
+            <button
+                type="button"
+                class="modal-primary-btn"
+                onclick="closeActionModal(); setTimeout(openLiveChat, 150);">
+
+                <i class="fa-regular fa-comments"></i>
+                Secure Message
+
+            </button>
+
+        </div>
+    `;
+
+    modal.classList.add("active");
+    modal.style.display = "flex";
+    modal.setAttribute("aria-hidden", "false");
+
+}
+
+
+/* ==========================================================
+   CHATWOOT LIVE CHAT
+========================================================== */
+
+function openLiveChat() {
+
+    if (window.$chatwoot) {
+
+        window.$chatwoot.toggle("open");
+
+        return;
+
+    }
+
+    if (window.chatwootSDK) {
+
+        setTimeout(function() {
+
+            if (window.$chatwoot) {
+                window.$chatwoot.toggle("open");
+            }
+
+        }, 1000);
+
+        return;
+
+    }
+
+    console.warn("Chatwoot has not finished loading yet.");
+
+}
+
+
 /* ==========================================================
    SUPPORT
 ========================================================== */
+
+
 
 function openSupport() {
 
@@ -811,151 +899,11 @@ function openSettings() {
     );
 
 }
-/* ==========================================================
-   TRANSACTION TABLE
-========================================================== */
-
-function renderTransactions() {
-
-    const tableBody = document.getElementById("transactionTable");
-    const cardContainer = document.getElementById("transactionCards");
-
-    if (!tableBody || !cardContainer) return;
-
-    let runningBalance = 0;
-
-    let tableHTML = "";
-    let cardHTML = "";
-
-    transactions.forEach((tx) => {
-
-        runningBalance += tx.amount;
-
-        const debit =
-            tx.amount < 0
-                ? `$${Math.abs(tx.amount).toLocaleString()}`
-                : "—";
-
-        const credit =
-            tx.amount > 0
-                ? `$${tx.amount.toLocaleString()}`
-                : "—";
-
-        const amountClass =
-            tx.amount >= 0
-                ? "credit"
-                : "debit";
-
-        tableHTML += `
-
-            <tr>
-
-                <td>${tx.date}</td>
-
-                <td>${tx.description}</td>
-
-                <td>${tx.category}</td>
-
-                <td>${debit}</td>
-
-                <td>${credit}</td>
-
-                <td>$${runningBalance.toLocaleString()}</td>
-
-                <td>
-
-                    <span class="status success">
-
-                        Completed
-
-                    </span>
-
-                </td>
-
-            </tr>
-
-        `;
-
-        cardHTML += `
-
-            <div class="transaction-card">
-
-                <div class="transaction-card-header">
-
-                    <div>
-
-                        <div class="transaction-card-title">
-
-                            ${tx.description}
-
-                        </div>
-
-                        <div class="transaction-card-date">
-
-                            ${tx.date}
-
-                        </div>
-
-                    </div>
-
-                    <div class="${amountClass}">
-
-                        ${tx.amount >= 0 ? "+" : "-"}$${Math.abs(tx.amount).toLocaleString()}
-
-                    </div>
-
-                </div>
-
-                <div>
-
-                    ${tx.category}
-
-                </div>
-
-                <div class="transaction-card-footer">
-
-                    <strong>
-
-                        Balance
-
-                    </strong>
-
-                    <strong>
-
-                        $${runningBalance.toLocaleString()}
-
-                    </strong>
-
-                </div>
-
-            </div>
-
-        `;
-
-    });
-
-    tableBody.innerHTML = tableHTML;
-    cardContainer.innerHTML = cardHTML;
-
-}
-
-
-/* ==========================================================
-   INITIALIZATION
-========================================================== */
-
-document.addEventListener("DOMContentLoaded", () => {
-
-    renderTransactions();
-
-});
-
 
 /* ==========================================================
    EXPORTS
 ========================================================== */
 
-window.renderTransactions = renderTransactions;
 window.showActionModal = showActionModal;
 window.closeActionModal = closeActionModal;
 
@@ -969,6 +917,8 @@ window.openPayBills = openPayBills;
 window.openStatements = openStatements;
 window.generateStatement = generateStatement;
 
+window.openRelationshipManager = openRelationshipManager;
+window.openLiveChat = openLiveChat;
 window.openSupport = openSupport;
 window.sendSupportMessage = sendSupportMessage;
 
@@ -976,3 +926,62 @@ window.goAccounts = goAccounts;
 window.goInvestments = goInvestments;
 window.openTransfers = openTransfers;
 window.openSettings = openSettings;
+/* ==========================================================
+   SIDEBAR NAVIGATION
+========================================================== */
+
+window.initializeSidebar = function () {
+
+    const bind = (id, action) => {
+
+        const element = document.getElementById(id);
+
+        if (!element) return;
+
+        element.addEventListener("click", function (e) {
+
+            e.preventDefault();
+
+            action();
+
+        });
+
+    };
+
+    bind("dashboardLink", () => {
+
+        window.scrollTo({
+            top: 0,
+            behavior: "smooth"
+        });
+
+    });
+
+    bind("accountsLink", goAccounts);
+
+    bind("cardsLink", openCards);
+
+    bind("transferLink", openTransfer);
+
+    bind("investmentsLink", openInvestments);
+
+    bind("statementsLink", openStatements);
+
+    bind("notificationsLink", () => {
+
+        showActionModal(
+
+            "🔔",
+
+            "Notifications",
+
+            "You currently have no unread notifications."
+
+        );
+
+    });
+
+    bind("settingsLink", openSettings);
+
+};
+

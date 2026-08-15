@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta
+        name="viewport"
+        content="width=device-width, initial-scale=1.0">
+
+    <title>Belgrave Private Bank | Accounts</title>
+
+    <!-- Google Fonts -->
+    <link
+        href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&family=Inter:wght@300;400;500;600;700&display=swap"
+        rel="stylesheet">
+
+    <!-- Font Awesome -->
+    <link
+        rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+
+    <!-- Global Design System -->
+    <link rel="stylesheet" href="css/variables.css">
+    <link rel="stylesheet" href="css/base.css">
+    <link rel="stylesheet" href="css/components.css">
+    <link rel="stylesheet" href="css/buttons.css">
+    <link rel="stylesheet" href="css/forms.css">
+    <link rel="stylesheet" href="css/tables.css">
+    <link rel="stylesheet" href="css/utilities.css">
+    <link rel="stylesheet" href="css/animations.css">
+
+    <!-- Dashboard Master Stylesheet -->
+    <link rel="stylesheet" href="css/dashboard.css">
+
+</head>
+
+<body>
+
+<div class="dashboard-container">
+
+    <!-- Mobile Navigation -->
+    <button
+        type="button"
+        id="mobileMenuButton"
+        class="mobile-menu-button"
+        aria-label="Open navigation"
+        aria-controls="dashboard-sidebar"
+        aria-expanded="false">
+
+        <i class="fa-solid fa-bars"></i>
+
+    </button>
+
+    <div
+        id="mobileSidebarOverlay"
+        class="mobile-sidebar-overlay"
+        aria-hidden="true">
+    </div>
+
+    <!-- Sidebar -->
+    <aside id="dashboard-sidebar"></aside>
+
+    <!-- Main Content -->
+    <main class="main-content">
+
+        <div class="dashboard-content">
+
+            <!-- Accounts -->
+            <div id="dashboard-accounts"></div>
+
+        </div>
+
+    </main>
+
+</div>
+
+
+<!-- ==========================================================
+     LOAD ACCOUNTS PARTIAL
+========================================================== -->
+
+<script>
+
+const accountsSections = {
+
+    "dashboard-sidebar":
+        "partials/dashboard/accounts-sidebar.html",
+
+    "dashboard-accounts":
+        "partials/dashboard/accounts-v2.html"
+
+};
+
+
+async function loadAccountsPartials() {
+
+    const loaders = Object.entries(accountsSections).map(
+        async ([id, path]) => {
+
+            const container =
+                document.getElementById(id);
+
+            if (!container) return;
+
+            try {
+
+                const response =
+                    await fetch(path);
+
+                if (!response.ok) {
+
+                    throw new Error(
+                        `Unable to load ${path}`
+                    );
+
+                }
+
+                container.innerHTML =
+                    await response.text();
+
+            } catch (error) {
+
+                console.error(error);
+
+            }
+
+        }
+    );
+
+    await Promise.all(loaders);
+
+}
+
+
+document.addEventListener(
+    "DOMContentLoaded",
+    async () => {
+
+        await loadAccountsPartials();
+
+        if (typeof initializeSidebar === "function") {
+            initializeSidebar();
+        }
+
+    }
+);
+
+</script>
+
+
+<!-- ==========================================================
+     APPLICATION
+========================================================== -->
+
+<script src="actions.js"></script>
+<script src="js/mobile-sidebar.js"></script>
+<script src="script.js"></script>
+
+
+<!-- CHATWOOT LIVE CHAT -->
+<script>
+  window.chatwootSettings = {
+    position: "right",
+    type: "standard",
+    launcherTitle: ""
+  };
+
+  (function(d,t) {
+    var BASE_URL = "https://app.chatwoot.com";
+    var g = d.createElement(t);
+    var s = d.getElementsByTagName(t)[0];
+
+    g.src = BASE_URL + "/packs/js/sdk.js";
+    g.async = true;
+
+    s.parentNode.insertBefore(g,s);
+
+    g.onload = function() {
+      window.chatwootSDK.run({
+        websiteToken: "R56yu5wbqHqADuUC8hKGc6Uy",
+        baseUrl: BASE_URL
+      });
+    };
+  })(document,"script");
+</script>
+
+</body>
+
+</html>

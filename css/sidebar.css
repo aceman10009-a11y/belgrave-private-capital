@@ -1,0 +1,504 @@
+/* ==========================================================
+   BELGRAVE SIDEBAR
+========================================================== */
+
+#dashboard-sidebar {
+
+    width: 300px;
+    min-height: 100vh;
+
+    background: var(--sidebar-bg);
+
+    color: var(--white);
+
+    display: flex;
+    flex-direction: column;
+
+    justify-content: space-between;
+
+    padding: 32px 22px;
+
+    border-right: 1px solid rgba(255,255,255,.06);
+
+    box-shadow: 15px 0 40px rgba(0,0,0,.18);
+
+    position: relative;
+
+}
+
+/* ==========================================================
+   LOGO
+========================================================== */
+
+.sidebar-top{
+
+    margin-bottom:40px;
+
+}
+
+.sidebar-logo{
+
+    display:flex;
+
+    align-items:center;
+
+    gap:18px;
+
+}
+
+.logo-circle{
+
+    width:64px;
+
+    height:64px;
+
+    border-radius:50%;
+
+    background:linear-gradient(
+        135deg,
+        var(--gold-400),
+        var(--gold-500)
+    );
+
+    display:flex;
+
+    align-items:center;
+
+    justify-content:center;
+
+    font-family:var(--font-heading);
+
+    font-size:30px;
+
+    font-weight:bold;
+
+    color:var(--navy-950);
+
+    box-shadow:var(--gold-glow);
+
+}
+
+.sidebar-logo h2{
+
+    margin:0;
+
+    color:white;
+
+    font-family:var(--font-heading);
+
+    font-size:28px;
+
+}
+
+.sidebar-logo p{
+
+    margin-top:4px;
+
+    color:rgba(255,255,255,.65);
+
+    letter-spacing:4px;
+
+    font-size:11px;
+
+}
+
+/* ==========================================================
+   NAVIGATION
+========================================================== */
+
+.sidebar-nav{
+
+    display:flex;
+
+    flex-direction:column;
+
+    gap:10px;
+
+}
+
+.nav-item{
+
+    display:flex;
+
+    align-items:center;
+
+    gap:16px;
+
+    text-decoration:none;
+
+    color:#D4DBE7;
+
+    padding:15px 18px;
+
+    border-radius:18px;
+
+    transition:var(--transition);
+
+    font-weight:500;
+
+}
+
+.nav-item:hover{
+
+    background:rgba(255,255,255,.06);
+
+    color:white;
+
+    transform:translateX(6px);
+
+}
+
+.nav-item.active{
+
+    background:linear-gradient(
+        90deg,
+        rgba(201,161,74,.20),
+        rgba(255,255,255,.03)
+    );
+
+    color:white;
+
+    border-left:4px solid var(--gold-500);
+
+}
+
+/* ==========================================================
+   ICONS
+========================================================== */
+
+.nav-item i{
+
+    width:42px;
+
+    height:42px;
+
+    border-radius:14px;
+
+    display:flex;
+
+    align-items:center;
+
+    justify-content:center;
+
+    background:rgba(255,255,255,.05);
+
+    font-size:18px;
+
+    transition:var(--transition);
+
+}
+
+.nav-item:hover i{
+
+    background:var(--gold-500);
+
+    color:var(--navy-950);
+
+}
+
+/* ==========================================================
+   MANAGER CARD
+========================================================== */
+
+.relationship-card{
+
+    margin-top:40px;
+
+    background:rgba(255,255,255,.05);
+
+    border:1px solid rgba(255,255,255,.08);
+
+    border-radius:24px;
+
+    padding:22px;
+
+}
+
+.manager-avatar{
+
+    width:58px;
+
+    height:58px;
+
+    border-radius:50%;
+
+    background:linear-gradient(
+        135deg,
+        var(--gold-400),
+        var(--gold-500)
+    );
+
+    color:var(--navy-950);
+
+    display:flex;
+
+    align-items:center;
+
+    justify-content:center;
+
+    font-weight:bold;
+
+    font-size:20px;
+
+    margin-bottom:18px;
+
+}
+
+.relationship-card small{
+
+    color:#BFC9D8;
+
+}
+
+.relationship-card h4{
+
+    margin:8px 0;
+
+    color:white;
+
+}
+
+.online-status{
+
+    color:#4ADE80;
+
+    font-size:13px;
+
+}
+
+.message-btn{
+
+    width:100%;
+
+    margin-top:20px;
+
+    border:none;
+
+    background:var(--gold-500);
+
+    color:var(--navy-950);
+
+    border-radius:14px;
+
+    padding:14px;
+
+    cursor:pointer;
+
+    font-weight:700;
+
+    transition:var(--transition);
+
+}
+
+.message-btn:hover{
+
+    transform:translateY(-2px);
+
+    box-shadow:var(--gold-glow);
+
+}
+
+/* ==========================================================
+   LOGOUT
+========================================================== */
+
+.sidebar-bottom{
+
+    margin-top:35px;
+
+    padding-top:25px;
+
+    border-top:1px solid rgba(255,255,255,.08);
+
+}
+
+.logout-btn{
+
+    width:100%;
+
+    background:transparent;
+
+    color:white;
+
+    border:1px solid rgba(255,255,255,.12);
+
+    padding:15px;
+
+    border-radius:16px;
+
+    cursor:pointer;
+
+    font-weight:600;
+
+    transition:var(--transition);
+
+}
+
+.logout-btn:hover{
+
+    background:#B91C1C;
+
+    border-color:#B91C1C;
+
+    transform:translateY(-2px);
+
+}
+/* ==========================================================
+   BELGRAVE — RESPONSIVE SIDEBAR
+========================================================== */
+
+/* Tablet */
+@media (max-width: 992px) {
+
+    #dashboard-sidebar {
+        width: 280px;
+    }
+
+    #dashboard-sidebar .sidebar-logo h2,
+    #dashboard-sidebar .sidebar-logo p,
+    #dashboard-sidebar .nav-item span,
+    #dashboard-sidebar .relationship-card,
+    #dashboard-sidebar .logout-btn span {
+        display: none;
+    }
+
+    #dashboard-sidebar .sidebar-logo {
+        justify-content: center;
+    }
+
+    #dashboard-sidebar .sidebar-nav {
+        align-items: center;
+    }
+
+    #dashboard-sidebar .nav-item {
+        justify-content: center;
+        padding: 14px;
+    }
+}
+
+
+/* Mobile drawer CONTENT */
+@media (max-width: 768px) {
+
+    #dashboard-sidebar .sidebar {
+        width: 100%;
+        min-height: 100%;
+        position: relative;
+        padding: 24px 18px;
+    }
+
+    #dashboard-sidebar .sidebar-top {
+        margin-bottom: 20px;
+    }
+
+    #dashboard-sidebar .sidebar-logo {
+        justify-content: flex-start;
+    }
+
+    #dashboard-sidebar .sidebar-logo h2,
+    #dashboard-sidebar .sidebar-logo p {
+        display: block !important;
+    }
+
+    #dashboard-sidebar .sidebar-nav {
+        display: flex !important;
+        flex-direction: column !important;
+        align-items: stretch !important;
+        gap: 8px !important;
+        overflow: visible !important;
+        padding-bottom: 0 !important;
+    }
+
+    #dashboard-sidebar .nav-item {
+        display: flex !important;
+        flex-direction: row !important;
+        justify-content: flex-start !important;
+        align-items: center !important;
+        width: 100% !important;
+        flex: 0 0 auto !important;
+        padding: 14px 16px !important;
+    }
+
+    #dashboard-sidebar .nav-item span {
+        display: inline !important;
+    }
+
+    #dashboard-sidebar .relationship-card {
+        display: block !important;
+    }
+
+    #dashboard-sidebar .sidebar-bottom {
+        display: flex !important;
+    }
+
+    #dashboard-sidebar .logout-btn span {
+        display: inline !important;
+    }
+}
+
+/* ==========================================================
+   BELGRAVE — MOBILE DRAWER LIGHT THEME
+========================================================== */
+
+@media (max-width: 768px) {
+
+    #dashboard-sidebar .sidebar {
+        background: #ffffff !important;
+        color: #102544 !important;
+    }
+
+    #dashboard-sidebar .sidebar-logo h2 {
+        color: #102544 !important;
+    }
+
+    #dashboard-sidebar .sidebar-logo p {
+        color: #64748b !important;
+    }
+
+    #dashboard-sidebar .nav-item {
+        color: #334155 !important;
+    }
+
+    #dashboard-sidebar .nav-item:hover {
+        background: rgba(16, 37, 68, 0.06) !important;
+        color: #102544 !important;
+    }
+
+    #dashboard-sidebar .nav-item.active {
+        background: rgba(212, 175, 55, 0.12) !important;
+        color: #102544 !important;
+    }
+
+    #dashboard-sidebar .nav-item i {
+        background: #f1f5f9 !important;
+        color: #102544 !important;
+    }
+
+    #dashboard-sidebar .nav-item.active i {
+        background: #D4AF37 !important;
+        color: #102544 !important;
+    }
+
+    #dashboard-sidebar .relationship-card {
+        background: #f8fafc !important;
+        border-color: #e2e8f0 !important;
+    }
+
+    #dashboard-sidebar .relationship-card h4 {
+        color: #102544 !important;
+    }
+
+    #dashboard-sidebar .relationship-card small {
+        color: #64748b !important;
+    }
+
+    #dashboard-sidebar .sidebar-bottom {
+        border-top-color: #e2e8f0 !important;
+    }
+
+    #dashboard-sidebar .logout-btn {
+        color: #102544 !important;
+        border-color: #e2e8f0 !important;
+    }
+
+}

@@ -1,82 +1,143 @@
 <div class="sidebar">
 
-    <div class="sidebar-logo">
+    <!-- ================= LOGO ================= -->
 
-        <img
-            src="assets/logo.png"
-            alt="Belgrave Private Bank">
+    <div class="sidebar-top">
 
-        <div>
+        <div class="sidebar-logo">
 
-            <h2>Belgrave</h2>
+            <div class="logo-circle">
+                B
+            </div>
 
-            <small>PRIVATE BANK</small>
+            <div class="logo-text">
+                <h2>Belgrave</h2>
+                <p>PRIVATE BANK</p>
+            </div>
 
         </div>
 
     </div>
 
+
+    <!-- ================= NAVIGATION ================= -->
+
     <nav class="sidebar-nav">
 
-        <a href="#" class="active">
+        <!-- DASHBOARD -->
 
-            <span class="icon">🏠</span>
+        <a
+            href="dashboard.html"
+            class="nav-item"
+            data-page="dashboard">
+
+            <i class="fa-solid fa-house"></i>
 
             <span>Dashboard</span>
 
         </a>
 
-        <a href="#">
 
-            <span class="icon">🏦</span>
+        <!-- ACCOUNTS -->
+
+        <a
+            href="accounts.html"
+            class="nav-item"
+            data-page="accounts">
+
+            <i class="fa-solid fa-building-columns"></i>
 
             <span>Accounts</span>
 
         </a>
 
-        <a href="#">
 
-            <span class="icon">💳</span>
+        <!-- CARDS -->
+
+        <a
+            href="#"
+            class="nav-item"
+            onclick="openCards(); return false;">
+
+            <i class="fa-solid fa-credit-card"></i>
 
             <span>Cards</span>
 
         </a>
 
-        <a href="#">
 
-            <span class="icon">💸</span>
+        <!-- TRANSFER -->
+
+        <a
+            href="#"
+            class="nav-item"
+            onclick="openTransfer(); return false;">
+
+            <i class="fa-solid fa-right-left"></i>
 
             <span>Transfer</span>
 
         </a>
 
-        <a href="#">
 
-            <span class="icon">📈</span>
+        <!-- INVESTMENTS -->
+
+        <a
+            href="#"
+            class="nav-item"
+            onclick="showActionModal(
+                '📈',
+                'Investments Restricted',
+                '<p>All investments are currently locked until 2029.</p>'
+            ); return false;">
+
+            <i class="fa-solid fa-chart-line"></i>
 
             <span>Investments</span>
 
         </a>
 
-        <a href="#">
 
-            <span class="icon">📄</span>
+        <!-- STATEMENTS -->
+
+        <a
+            href="#"
+            class="nav-item"
+            onclick="openStatements(); return false;">
+
+            <i class="fa-solid fa-file-lines"></i>
 
             <span>Statements</span>
 
         </a>
 
-        <a href="#">
 
-            <span class="icon">🔔</span>
+        <!-- NOTIFICATIONS -->
+
+        <a
+            href="#"
+            class="nav-item"
+            onclick="showActionModal(
+                '🔔',
+                'Notifications',
+                '<p>You have no new banking notifications.</p>'
+            ); return false;">
+
+            <i class="fa-solid fa-bell"></i>
 
             <span>Notifications</span>
 
         </a>
 
-        <a href="#">
 
-            <span class="icon">⚙️</span>
+        <!-- SETTINGS -->
+
+        <a
+            href="#"
+            class="nav-item"
+            onclick="openSettings(); return false;">
+
+            <i class="fa-solid fa-gear"></i>
 
             <span>Settings</span>
 
@@ -84,19 +145,51 @@
 
     </nav>
 
-    <div class="sidebar-footer">
 
-        <div class="manager-card">
+    <!-- ================= RELATIONSHIP MANAGER ================= -->
 
-            <small>Relationship Manager</small>
+    <div class="relationship-card">
 
-            <strong>Emma Richardson</strong>
-
-            <span>Available Online</span>
-
+        <div class="manager-avatar">
+            ER
         </div>
 
-        <button onclick="logout()" class="logout-btn">
+        <small>
+            Relationship Manager
+        </small>
+
+        <h4>
+            Emma Richardson
+        </h4>
+
+        <span class="online-status">
+            ● Available Online
+        </span>
+
+        <button
+            type="button"
+            class="message-btn"
+            onclick="openLiveChat()">
+
+            <i class="fa-regular fa-comments"></i>
+
+            Secure Message
+
+        </button>
+
+    </div>
+
+
+    <!-- ================= LOGOUT ================= -->
+
+    <div class="sidebar-bottom">
+
+        <button
+            type="button"
+            class="logout-btn"
+            onclick="logout()">
+
+            <i class="fa-solid fa-right-from-bracket"></i>
 
             Logout
 

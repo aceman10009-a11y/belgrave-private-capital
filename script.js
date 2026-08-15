@@ -233,7 +233,7 @@ function initLedgerSystem(){
 
 
 
-    let balance = 72000000;
+    let balance = 70937525;
 
     let income = 0;
 
@@ -681,7 +681,92 @@ window.openAccounts=function(){
 };
 
 
+/* ==========================================================
+   TIME-BASED DASHBOARD GREETING
+========================================================== */
 
+function getTimeBasedGreeting() {
+
+    const hour = new Date().getHours();
+
+    if (hour >= 5 && hour < 12) {
+        return "Good Morning";
+    }
+
+    if (hour >= 12 && hour < 17) {
+        return "Good Afternoon";
+    }
+
+    return "Good Evening";
+}
+
+
+function updateDashboardGreeting() {
+
+    const greeting = getTimeBasedGreeting();
+
+    /* Desktop greeting */
+
+    const welcomeUser =
+        document.getElementById("welcomeUser");
+
+    if (welcomeUser) {
+
+        const currentText =
+            welcomeUser.textContent.trim();
+
+        const nameMatch =
+            currentText.match(/,\s*(.+)$/);
+
+        const name =
+            nameMatch
+                ? nameMatch[1]
+                : "Fred";
+
+        welcomeUser.textContent =
+            `${greeting}, ${name}`;
+
+    }
+
+
+    /* Mobile greeting */
+
+    const mobileGreeting =
+        document.querySelector(".mobile-greeting-label");
+
+    if (mobileGreeting) {
+
+        mobileGreeting.textContent =
+            `${greeting},`;
+
+    }
+
+}
+
+
+/* Run when dashboard loads */
+
+document.addEventListener(
+    "DOMContentLoaded",
+    updateDashboardGreeting
+);
+
+
+/* Keep greeting accurate if the page remains open */
+
+setInterval(
+    updateDashboardGreeting,
+    60000
+);
+
+
+/* Make available globally */
+
+window.getTimeBasedGreeting =
+    getTimeBasedGreeting;
+
+window.updateDashboardGreeting =
+    updateDashboardGreeting;
 
 
 /* ==========================================================
