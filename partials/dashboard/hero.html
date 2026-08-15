@@ -257,4 +257,149 @@
 
     </div>
 
+    
+    <!-- ==========================================================
+         MOBILE DASHBOARD VIEW
+         Desktop hero remains untouched.
+    =========================================================== -->
+    
+    <div class="mobile-dashboard-view">
+
+        <div class="mobile-dashboard-header">
+
+            <div class="mobile-dashboard-user">
+
+                <div class="mobile-avatar">
+                    FH
+                </div>
+
+                <div class="mobile-greeting">
+
+                    <span>Good Evening,</span>
+
+                    <strong>Fred Hallman</strong>
+
+                </div>
+
+            </div>
+
+            <button
+                type="button"
+                class="mobile-theme-button"
+                aria-label="Dashboard appearance">
+
+                <i class="fa-solid fa-moon"></i>
+
+            </button>
+
+        </div>
+
+
+        <div class="mobile-balance-card">
+
+            <div class="mobile-balance-top">
+
+                <div>
+                    <span class="mobile-balance-label">
+                        FIAT BALANCE
+                    </span>
+
+                    <strong class="mobile-account-name">
+                        USD Account
+                    </strong>
+                </div>
+
+                <span class="mobile-account-number">
+                    **** 0335
+                </span>
+
+            </div>
+
+
+            <div class="mobile-available-label">
+                Available Funds
+            </div>
+
+            <div class="mobile-balance-value-row">
+
+                <strong id="mobileBalance">
+                    $148,243,725.00
+                </strong>
+
+                <button
+                    type="button"
+                    class="mobile-balance-eye"
+                    aria-label="Toggle balance visibility">
+
+                    <i class="fa-regular fa-eye-slash"></i>
+
+                </button>
+
+            </div>
+
+
+            <div class="mobile-balance-divider"></div>
+
+
+            <div class="mobile-account-status-row">
+
+                <span>Account Status</span>
+
+                <span class="mobile-active-status">
+                    <i class="fa-solid fa-circle"></i>
+                    ACTIVE
+                </span>
+
+            </div>
+
+        </div>
+
+
+        <div class="mobile-quick-actions">
+
+            <button
+                type="button"
+                class="mobile-quick-action mobile-quick-action-primary"
+                onclick="openTransfer()">
+
+                <span class="mobile-action-icon">
+                    <i class="fa-solid fa-plus"></i>
+                </span>
+
+                <strong>Top Up</strong>
+
+            </button>
+
+
+            <button
+                type="button"
+                class="mobile-quick-action"
+                onclick="openTransfer()">
+
+                <span class="mobile-action-icon">
+                    <i class="fa-solid fa-paper-plane"></i>
+                </span>
+
+                <strong>Send</strong>
+
+            </button>
+
+
+            <button
+                type="button"
+                class="mobile-quick-action"
+                onclick="document.getElementById('dashboard-transactions')?.scrollIntoView({behavior:'smooth'})">
+
+                <span class="mobile-action-icon">
+                    <i class="fa-solid fa-chart-line"></i>
+                </span>
+
+                <strong>Activity</strong>
+
+            </button>
+
+        </div>
+
+    </div>
+
 </section>
