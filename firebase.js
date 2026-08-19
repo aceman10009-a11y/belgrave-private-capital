@@ -57,3 +57,23 @@ export {
   onAuthStateChanged,
   signOut
 };
+
+/* ==========================================================
+   GLOBAL LOGOUT
+========================================================== */
+
+window.logout = async function () {
+
+    try {
+
+        await signOut(auth);
+
+        window.location.href = "login.html";
+
+    } catch (error) {
+
+        console.error("Logout failed:", error);
+
+    }
+
+};
